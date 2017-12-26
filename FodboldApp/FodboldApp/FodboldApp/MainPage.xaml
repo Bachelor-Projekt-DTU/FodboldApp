@@ -12,14 +12,9 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <ListView x:Name="clubList" BackgroundColor="#007741" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding ClubName}" TextColor="Black" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
             </ListView>
 
-            <Button Text="Næste"
+            <Button x:Name="continueBtn" Text="Næste"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand" />
         </StackLayout>
