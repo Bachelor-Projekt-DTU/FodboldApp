@@ -14,7 +14,7 @@
             <ListView x:Name="clubList" BackgroundColor="#007741" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell TextColor="Black"></TextCell>
+                        <TextCell Text="{Binding ClubName}" TextColor="Black" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

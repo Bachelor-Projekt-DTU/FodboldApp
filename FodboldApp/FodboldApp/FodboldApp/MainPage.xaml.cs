@@ -11,7 +11,18 @@ namespace FodboldApp
 			InitializeComponent();
 
             // Sætter data i listviewet
-            clubList.ItemsSource = new string[]{"BK Frem", "Klub 2", "Klub 3", "Klub 4", "Klub 5"};
+
+            ObservableCollection<Clubs> clubsCollection = new ObservableCollection<Clubs>();
+
+                clubList.ItemsSource = clubsCollection;
+
+                clubsCollection.Add(new Clubs { ClubName = "BK Frem" });
+                clubsCollection.Add(new Clubs { ClubName = "Klub 2" });
+                clubsCollection.Add(new Clubs { ClubName = "Klub 3" });
+                clubsCollection.Add(new Clubs { ClubName = "Klub 4" });
+                clubsCollection.Add(new Clubs { ClubName = "Klub 5" });
+            
+
 
             // Sætter farven til linjen mellem items i listviewt
             clubList.SeparatorColor = Color.Black;
