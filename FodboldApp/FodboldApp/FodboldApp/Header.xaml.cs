@@ -7,15 +7,41 @@ using Xamarin.Forms;
 
 namespace FodboldApp
 {
-	public partial class Header : ContentPage
-	{
-		public Header ()
-		{
-			Content = new StackLayout {
-				Children = {
-					new Label { Text = "Welcome to Xamarin.Forms!" }
-				}
-			};
-		}
-	}
+    public partial class Header : ContentPage
+    {
+        void Nyheder_Tapped(object sender, System.EventArgs e)
+        {
+            var page = new MainPage();
+            PlaceHolder.Content = page.Content;
+        }
+
+        void Aaretsspiller_Tapped(object sender, System.EventArgs e)
+        {
+            var page = new MainPage();
+            PlaceHolder.Content = page.Content;
+        }
+
+        void Turnering_Tapped(object sender, System.EventArgs e)
+        {
+            var page = new MainPage();
+            PlaceHolder.Content = page.Content;
+        }
+
+        void Statistik_Tapped(object sender, System.EventArgs e)
+        {
+            var page = new MainPage();
+            PlaceHolder.Content = page.Content;
+        }
+
+        void Burgermenu_Tapped(object sender, System.EventArgs e)
+        {
+            var page = new MainPage();
+            PlaceHolder.Content = page.Content;
+        }
+
+        public Header()
+        {
+            InitializeComponent();
+        }
+    }
 }

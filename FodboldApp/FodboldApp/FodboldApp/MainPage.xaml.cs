@@ -7,7 +7,6 @@ namespace FodboldApp
 {
 	public partial class MainPage : ContentPage
 	{
-        static string page = "Header";
         public MainPage()
 		{
 			InitializeComponent();
@@ -24,8 +23,6 @@ namespace FodboldApp
                 clubsCollection.Add(new Clubs { ClubName = "Klub 4" });
                 clubsCollection.Add(new Clubs { ClubName = "Klub 5" });
             
-
-
             // Sætter farven til linjen mellem items i listviewt
             clubList.SeparatorColor = Color.Black;
 

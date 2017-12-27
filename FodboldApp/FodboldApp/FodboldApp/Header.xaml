@@ -1,14 +1,61 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.Header">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="Microsoft.png" Text="Item 1" Priority="0" />
-        <ToolbarItem Name="MenuItem2" Order="Primary" Icon="Xamarin.png" Text="Item 2" Priority="1" />
-    </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentPage.Content>
+             x:Class="FodboldApp.Header"
+             BackgroundColor="#F0F0F0">
+   
+    <Grid ColumnSpacing="0" RowSpacing="0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+        <ContentView x:Name="PlaceHolder" Grid.Row="0"/>
+        <BoxView Grid.Row="1"/>
+
+        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Spacing="0" Grid.Column="0" BackgroundColor="White">
+                <Image HeightRequest="30" Source="nyheder.png"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Nyheder_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White">
+                <Image HeightRequest="30" Source="aaretsspiller.png"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Aaretsspiller_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White">
+                <Image HeightRequest="30" Source="turnering.png"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Turnering_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White">
+                <Image HeightRequest="30" Source="statistik.png"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Statistik_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White">
+                <Image HeightRequest="30" Source="burgermenu.png"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Burgermenu_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
