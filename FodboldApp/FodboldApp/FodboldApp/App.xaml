@@ -2,9 +2,61 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.App">
-	<Application.Resources>
+    <Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <ControlTemplate x:Key="MainPageTemplate">
 
-	</Application.Resources>
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Begin Header -->
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Spacing="0"
+                        BackgroundColor="#fb433c"
+                        HeightRequest="50"
+                        Grid.Column="0" Grid.Row="0">
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                            iOS="10, 10, 10, 10"
+                            Android="10, 10, 10, 10"
+                            WinPhone="10, 10, 10, 10" />
+                        </StackLayout.Padding>
+                        <!-- My header content to make my app the prettiest. -->
+                        <SearchBar x:Name="search"
+                                   Placeholder="Søg"
+                                   PlaceholderColor="#d0d0d0"
+                                   CancelButtonColor="#d0d0d0"
+                                   TextColor="#d0d0d0"
+                                   BackgroundColor="#e43932"
+                                   HorizontalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   Margin="0, 0, 10, 0"/>
+                        <Label Text="LOG IND"
+                               TextColor="#d0d0d0"
+                               HorizontalOptions="End"
+                               VerticalTextAlignment="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Login"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                    <!-- End Header -->
+
+                    <!-- Begin Content -->
+                    <ScrollView Grid.Column="0" Grid.Row="1">
+                        <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                    </ScrollView>
+                    <!-- End Content -->
+        </Grid>
+        </ControlTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
 </Application>

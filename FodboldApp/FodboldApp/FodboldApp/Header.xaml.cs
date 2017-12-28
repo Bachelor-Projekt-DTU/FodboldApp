@@ -62,7 +62,10 @@ namespace FodboldApp
         public Header()
         {
             InitializeComponent();
+          
             ResetIconTint();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

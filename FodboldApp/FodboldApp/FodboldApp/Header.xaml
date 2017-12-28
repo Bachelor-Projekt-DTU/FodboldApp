@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.Header"
-             xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions"
-             BackgroundColor="#F0F0F0">
-   
+             BackgroundColor="#F0F0F0"
+                ControlTemplate="{StaticResource MainPageTemplate}"
+                          xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
+
+
     <Grid ColumnSpacing="0" RowSpacing="0" >
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
