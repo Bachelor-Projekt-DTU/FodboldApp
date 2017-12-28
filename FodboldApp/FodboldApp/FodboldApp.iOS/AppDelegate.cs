@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Plugin.CrossPlatformTintedImage.iOS;
 using UIKit;
 
 namespace FodboldApp.iOS
@@ -30,6 +31,7 @@ namespace FodboldApp.iOS
                 statusBar.TintColor = UIColor.White;
             }
             LoadApplication(new App());
+            TintedImageRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }
