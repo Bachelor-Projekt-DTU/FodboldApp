@@ -38,8 +38,10 @@
                                    BackgroundColor="#e43932"
                                    HorizontalOptions="Start"
                                    Margin="0, 0, 10, 0"/>
-                        <Label Text="LOG IND"
-                               TextColor="White"
+                        <Button Text="LOG IND"
+                                BackgroundColor="#fb433c"
+                               TextColor="#d0d0d0"
+                                HeightRequest="50"
                                HorizontalOptions="End"/>
                     </StackLayout>
                     <!-- End Header -->
