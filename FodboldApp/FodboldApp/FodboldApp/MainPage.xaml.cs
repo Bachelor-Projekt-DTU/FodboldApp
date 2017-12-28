@@ -7,7 +7,6 @@ namespace FodboldApp
 {
 	public partial class MainPage : ContentPage
 	{
-        static string page = "Header";
         public MainPage()
 		{
 			InitializeComponent();
@@ -26,7 +25,9 @@ namespace FodboldApp
 
         private void OnBtnClick(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new Header());
+            NavigationPage nav = new NavigationPage(new Header());
+            App.Navigation = nav;
+            Application.Current.MainPage = App.Navigation;
         }
     }
 }

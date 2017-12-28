@@ -23,6 +23,12 @@ namespace FodboldApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            var statusBar = UIApplication.SharedApplication.ValueForKey(new NSString("statusBar")) as UIView;
+            if (statusBar.RespondsToSelector(new ObjCRuntime.Selector("setBackgroundColor:")))
+            {
+                statusBar.BackgroundColor = UIColor.FromRGB(251, 67, 60);
+                statusBar.TintColor = UIColor.White;
+            }
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
