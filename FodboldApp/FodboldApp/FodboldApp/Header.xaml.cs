@@ -42,6 +42,8 @@ namespace FodboldApp
         public Header()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
