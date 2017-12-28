@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Plugin.CrossPlatformTintedImage.Android;
 
 namespace FodboldApp.Droid
 {
@@ -21,6 +22,7 @@ namespace FodboldApp.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+            TintedImageRenderer.Init();
         }
     }
 }

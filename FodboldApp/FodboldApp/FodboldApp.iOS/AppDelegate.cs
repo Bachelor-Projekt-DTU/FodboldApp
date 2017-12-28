@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Plugin.CrossPlatformTintedImage.iOS;
 using UIKit;
 
 namespace FodboldApp.iOS
@@ -24,6 +25,7 @@ namespace FodboldApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+            TintedImageRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }
