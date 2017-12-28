@@ -37,5 +37,10 @@ namespace FodboldApp
         {
             await Navigation.PopAsync();
         }
+
+        public async void Login(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

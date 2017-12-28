@@ -37,16 +37,20 @@
                                    TextColor="#d0d0d0"
                                    BackgroundColor="#e43932"
                                    HorizontalOptions="Start"
+                                   VerticalTextAlignment="Center"
                                    Margin="0, 0, 10, 0"/>
-                        <Button Text="LOG IND"
-                                BackgroundColor="#fb433c"
+                        <Label Text="LOG IND"
                                TextColor="#d0d0d0"
-                                HeightRequest="50"
-                               HorizontalOptions="End"/>
+                               HorizontalOptions="End"
+                               VerticalTextAlignment="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Login"/>
+                            </Label.GestureRecognizers>
+                        </Label>
                     </StackLayout>
                     <!-- End Header -->
 
-        <!-- Begin Content -->
+                    <!-- Begin Content -->
                     <ScrollView Grid.Column="0" Grid.Row="1">
                         <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
                     </ScrollView>
