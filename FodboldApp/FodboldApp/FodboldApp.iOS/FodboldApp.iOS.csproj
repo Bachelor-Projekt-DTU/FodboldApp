@@ -121,6 +121,51 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\turnering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\turnering%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\turnering%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burgermenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burgermenu%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burgermenu%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\statistik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\statistik%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\statistik%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aaretsspiller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aaretsspiller%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aaretsspiller%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nyheder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nyheder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nyheder%403x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\FodboldApp\FodboldApp.projitems" Label="Shared" />
 </Project>
