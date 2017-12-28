@@ -35,18 +35,21 @@
                                    PlaceholderColor="#d0d0d0"
                                    CancelButtonColor="#d0d0d0"
                                    TextColor="#d0d0d0"
+                                   VerticalOptions="Center"
                                    BackgroundColor="#e43932"
-                                   HorizontalOptions="Start"
-                                   VerticalTextAlignment="Center"
-                                   Margin="0, 0, 10, 0"/>
+                                   HorizontalOptions="FillAndExpand"
+                                   Margin="0, 0, 10, 0"
+                                   MinimumWidthRequest="30"/>
                         <Label Text="LOG IND"
                                TextColor="#d0d0d0"
                                HorizontalOptions="End"
-                               VerticalTextAlignment="Center">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="Login"/>
-                            </Label.GestureRecognizers>
-                        </Label>
+                               MinimumWidthRequest="50"
+                               VerticalTextAlignment="Center"
+                           Margin="10, 0, 10, 0 ">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Login"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                     </StackLayout>
                     <!-- End Header -->
 
