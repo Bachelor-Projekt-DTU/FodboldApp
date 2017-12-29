@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FodboldApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page1 : ContentPage
+	public partial class Tournament : ContentPage
 	{
-		public Page1 ()
+		public Tournament ()
 		{
 			InitializeComponent ();
 		}
