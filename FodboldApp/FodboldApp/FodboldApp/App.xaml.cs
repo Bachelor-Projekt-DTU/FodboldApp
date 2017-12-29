@@ -15,7 +15,7 @@ namespace FodboldApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new FrontPage();
         }
 
         protected override void OnStart()

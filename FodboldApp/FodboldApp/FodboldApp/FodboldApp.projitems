@@ -10,8 +10,8 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FrontPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Header.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)News.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Players.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Matches.xaml" />
@@ -23,11 +23,11 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Clubs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrontPage.xaml.cs">
+      <DependentUpon>FrontPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Header.xaml.cs">
-      <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)News.xaml.cs">
       <DependentUpon>News.xaml</DependentUpon>

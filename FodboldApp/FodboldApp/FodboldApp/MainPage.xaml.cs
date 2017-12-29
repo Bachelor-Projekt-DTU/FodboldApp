@@ -1,42 +1,71 @@
-﻿using System;
+﻿using Plugin.CrossPlatformTintedImage.Abstractions;
+using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+
 using Xamarin.Forms;
 
 namespace FodboldApp
 {
-	public partial class MainPage : ContentPage
-	{
-        public MainPage()
-		{
-			InitializeComponent();
-
-            // Sætter data i listviewet
-
-            ObservableCollection<Clubs> clubsCollection = new ObservableCollection<Clubs>();
-
-                clubList.ItemsSource = clubsCollection;
-
-                clubsCollection.Add(new Clubs { ClubName = "BK Frem" });
-                clubsCollection.Add(new Clubs { ClubName = "Klub 2" });
-                clubsCollection.Add(new Clubs { ClubName = "Klub 3" });
-                clubsCollection.Add(new Clubs { ClubName = "Klub 4" });
-                clubsCollection.Add(new Clubs { ClubName = "Klub 5" });
-            
-            // Sætter farven til linjen mellem items i listviewt
-            clubList.SeparatorColor = Color.Black;
-
-            // Listviewet skal reduceres for at fjerne tomrum: HeightRequest = (#items * itemHeight) +(Standardhøjde + #items)
-            clubList.HeightRequest = (5 * clubList.RowHeight) + (10 * 22.5);
-
-            continueBtn.Clicked += OnBtnClick;
+    public partial class MainPage : ContentPage
+    {
+        void ResetIconTint()
+        {
+            tintedImage_News.TintColor = Color.FromRgb(84,84,84);
+            tintedImage_Players.TintColor = Color.FromRgb(84, 84, 84);
+            tintedImage_Matches.TintColor = Color.FromRgb(84, 84, 84);
+            tintedImage_Tournament.TintColor = Color.FromRgb(84, 84, 84);
+            tintedImage_History.TintColor = Color.FromRgb(84, 84, 84);
         }
 
-        private void OnBtnClick(object sender, EventArgs e)
+        void News_Tapped(object sender, EventArgs e)
         {
-            NavigationPage nav = new NavigationPage(new Header());
-            App.Navigation = nav;
-            Application.Current.MainPage = App.Navigation;
+            ResetIconTint();
+            var page = new News();
+            PlaceHolder.Content = page.Content;
+            tintedImage_News.TintColor = Color.FromRgb(49, 91, 170);
+        }
+
+        void Players_Tapped(object sender, EventArgs e)
+        {
+            ResetIconTint();
+            var page = new Players();
+            PlaceHolder.Content = page.Content;
+            tintedImage_Players.TintColor = Color.FromRgb(49, 91, 170);
+        }
+
+        void Matches_Tapped(object sender, EventArgs e)
+        {
+            ResetIconTint();
+            var page = new Matches();
+            PlaceHolder.Content = page.Content;
+            tintedImage_Matches.TintColor = Color.FromRgb(49, 91, 170);
+        }
+
+        void Tournament_Tapped(object sender, EventArgs e)
+        {
+            ResetIconTint();
+            var page = new Tournament();
+            PlaceHolder.Content = page.Content;
+            tintedImage_Tournament.TintColor = Color.FromRgb(49, 91, 170);
+        }
+
+        void History_Tapped(object sender, EventArgs e)
+        {
+            ResetIconTint();
+            var page = new History();
+            PlaceHolder.Content = page.Content;
+            tintedImage_History.TintColor = Color.FromRgb(49, 91, 170);
+        }
+
+        public MainPage()
+        {
+            InitializeComponent();
+          
+            ResetIconTint();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

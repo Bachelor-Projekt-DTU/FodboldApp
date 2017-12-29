@@ -1,28 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FodboldApp"
-             BackgroundColor="#005A31"
-             x:Class="FodboldApp.MainPage">
+             x:Class="FodboldApp.MainPage"
+             BackgroundColor="#F0F0F0"
+                ControlTemplate="{StaticResource MainPageTemplate}"
+                          xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
 
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label Text="Intern App til sportsklub"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
 
-            <ListView x:Name="clubList" BackgroundColor="#007741" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding ClubName}" TextColor="Black" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+    <Grid ColumnSpacing="0" RowSpacing="0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+        <ContentView x:Name="PlaceHolder" Grid.Row="0"/>
+        <BoxView Grid.Row="1"/>
 
-            <Button x:Name="continueBtn" Text="Næste"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
+            <StackLayout Spacing="0" Grid.Column="0" BackgroundColor="White">
+                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="News_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White">
+                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Players_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White">
+                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Matches_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White">
+                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Tournament_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White">
+                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="History_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
