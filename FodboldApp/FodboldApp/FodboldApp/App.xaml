@@ -6,6 +6,19 @@
 
         <!-- Application resource dictionary -->
         <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="BorderColor" Value="Lime" />
+                <Setter Property="BorderRadius" Value="5" />
+                <Setter Property="BorderWidth" Value="5" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="TextColor" Value="#8791a8" />
+            </Style>
+
+            <Color x:Key="textColor">#243f73</Color>
+            <Color x:Key="backgroundColor">#f0f0f0</Color>
+
             <ControlTemplate x:Key="MainPageTemplate">
 
                 <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">

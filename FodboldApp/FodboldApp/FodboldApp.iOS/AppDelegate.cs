@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using ImageCircle.Forms.Plugin.iOS;
 using Plugin.CrossPlatformTintedImage.iOS;
 using UIKit;
 
@@ -24,6 +25,8 @@ namespace FodboldApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            ImageCircleRenderer.Init();
+
             var statusBar = UIApplication.SharedApplication.ValueForKey(new NSString("statusBar")) as UIView;
             if (statusBar.RespondsToSelector(new ObjCRuntime.Selector("setBackgroundColor:")))
             {

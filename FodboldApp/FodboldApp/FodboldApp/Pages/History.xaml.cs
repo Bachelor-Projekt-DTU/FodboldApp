@@ -9,7 +9,7 @@ namespace FodboldApp
 	{
         public History()
         {
-            
+            InitializeComponent();
         }
     }
 }
