@@ -54,9 +54,9 @@
                     <!-- End Header -->
 
                     <!-- Begin Content -->
-                    <ScrollView Grid.Column="0" Grid.Row="1">
+                    <ContentView Grid.Column="0" Grid.Row="1">
                         <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
-                    </ScrollView>
+                    </ContentView>
                     <!-- End Content -->
         </Grid>
         </ControlTemplate>

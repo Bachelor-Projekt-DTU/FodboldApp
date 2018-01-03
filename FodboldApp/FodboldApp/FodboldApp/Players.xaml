@@ -1,12 +1,125 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.Players">
+    x:Class="FodboldApp.Players">
+    
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="1. Holdet" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
+           HorizontalOptions="Center"/>
+
+            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <Grid VerticalOptions="FillAndExpand" ColumnSpacing="5" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!--===============================================================-->
+                    <!--First element in scrollable grid-->
+                    <!--Implement a user control for the players instead of coding the same several times-->
+                    <Grid x:Name="grid_Element0" Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        
+                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                    </Grid>
+                    <!--===============================================================-->
+                    
+                    <!--Second element in scrollable grid-->
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                    </Grid>
+                    <!--===============================================================-->
+                    
+                    <!--Third element in scrollable grid-->
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                    </Grid>
+                    <!--===============================================================-->
+
+                    <!--Fourth element in scrollable grid-->
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                    </Grid>
+                    <!--===============================================================-->
+
+                    <!--Fifth element in scrollable grid-->
+                    <Grid Grid.Row="2" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                    </Grid>
+                    <!--===============================================================-->
+                    
+                    <!--Sixth element in scrollable grid-->
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                    </Grid>
+                    <!--===============================================================-->
+
+                </Grid>
+            </ScrollView>
+
         </StackLayout>
+
     </ContentPage.Content>
+
 </ContentPage>
