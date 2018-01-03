@@ -11,6 +11,8 @@ namespace FodboldApp
 		{
 			InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             // Sætter data i listviewet
 
             ObservableCollection<Clubs> clubsCollection = new ObservableCollection<Clubs>();
@@ -36,7 +38,7 @@ namespace FodboldApp
         {
             NavigationPage nav = new NavigationPage(new MainPage());
             App.Navigation = nav;
-            Application.Current.MainPage = App.Navigation;
+            Application.Current.MainPage = nav;
         }
     }
 }

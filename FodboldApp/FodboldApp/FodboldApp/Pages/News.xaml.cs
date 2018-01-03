@@ -16,14 +16,13 @@ namespace FodboldApp
 		public News ()
 		{
 			InitializeComponent ();
-		}
+        }
 
         async void News_Tapped(object sender, EventArgs e)
         {
-            //var page = new NewsPage();
             System.Diagnostics.Debug.WriteLine("WE ON IT");
-            //this.Content = page.Content;
-            await Navigation.PushAsync(new Players());
+
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(new NewsPage());
         }
     }
 }

@@ -24,7 +24,7 @@
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"/>
                 <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"/>
-                <Label Text="{Binding Source=str}"/>
+                <Label Text="{Binding newsText}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

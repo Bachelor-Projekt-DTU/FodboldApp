@@ -11,8 +11,7 @@
                          BackgroundColor="#f0f0f0">
 
                 <Label Text="NÆSTE KAMP"
-                   TextColor="{StaticResource textColor}"
-                   FontSize="Large"
+                   TextColor="{StaticResource textColor}"                   FontSize="Large"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#f0f0f0"
@@ -69,8 +68,14 @@
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
                 <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"
-                       HorizontalOptions="StartAndExpand"/>
-            
+                       HorizontalOptions="StartAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                Tapped="News_Tapped"
+                NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
                 <Label Text="Exit i pokalen"
                        TextColor="#e11e2c"
                        FontSize="Large"
@@ -93,9 +98,7 @@
                        BackgroundColor="#ffffff"/>
                 <Image Source="http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg"
                        HorizontalOptions="StartAndExpand">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer TappedCallback="News_Tapped"/>
-                    </Image.GestureRecognizers>
+                    
                 </Image>
             </StackLayout>
         </ScrollView>
