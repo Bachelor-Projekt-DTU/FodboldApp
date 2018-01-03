@@ -8,7 +8,7 @@
     <ContentPage.Content>
 
         <StackLayout>
-            <Label Text="1. Holdet" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
+            <Label Text="1. HOLDET" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
            HorizontalOptions="Center"/>
 
             <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
@@ -33,7 +33,7 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="3"/>
                         
                         <!--<Image Source="nyheder.png" Grid.Row="0"/>-->
                         <ff:CachedImage Source = "icon.png" Grid.Row="0">
