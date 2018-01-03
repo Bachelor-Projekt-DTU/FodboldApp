@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.CrossPlatformTintedImage.Android;
+using ImageCircle.Forms.Plugin.Droid;
 
 namespace FodboldApp.Droid
 {
@@ -21,6 +22,8 @@ namespace FodboldApp.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            ImageCircleRenderer.Init();
+
             Window window = this.Window;
             window.ClearFlags(WindowManagerFlags.TranslucentStatus);
             window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);

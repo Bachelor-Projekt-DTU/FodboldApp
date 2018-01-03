@@ -10,39 +10,43 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FrontPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\FrontPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)News.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Players.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Matches.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Tournament.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)History.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\News.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Players.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\History.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Clubs.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FrontPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Data\PlayersData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FrontPage.xaml.cs">
       <DependentUpon>FrontPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)News.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\News.xaml.cs">
       <DependentUpon>News.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Players.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Players.xaml.cs">
       <DependentUpon>Players.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Matches.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml.cs">
       <DependentUpon>Matches.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Tournament.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml.cs">
       <DependentUpon>Tournament.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)History.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\History.xaml.cs">
       <DependentUpon>History.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
 </Project>
