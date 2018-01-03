@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Plugin.CrossPlatformTintedImage.Android;
 using ImageCircle.Forms.Plugin.Droid;
+using FFImageLoading.Forms.Droid;
 
 namespace FodboldApp.Droid
 {
@@ -30,6 +31,7 @@ namespace FodboldApp.Droid
             window.SetStatusBarColor(Android.Graphics.Color.Rgb(251, 67, 60));
             LoadApplication(new App());
             TintedImageRenderer.Init();
+            CachedImageRenderer.Init(enableFastRenderer: true);
         }
     }
 }

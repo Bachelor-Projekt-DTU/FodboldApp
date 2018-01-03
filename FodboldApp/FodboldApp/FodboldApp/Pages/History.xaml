@@ -3,6 +3,103 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.History">
     <ContentPage.Content>
-        
+
+        <StackLayout>
+            <Label Text="Historik" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
+           HorizontalOptions="Center"/>
+
+            <Grid VerticalOptions="FillAndExpand" ColumnSpacing="5" RowSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!--===============================================================-->
+                <!--First element in scrollable grid-->
+                <!--Implement a user control for the players instead of coding the same several times-->
+                <Grid x:Name="grid_Element0" Grid.Row="0" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="tidligere_spillere.png" Grid.Row="0"/>
+                </Grid>
+                <Label Text="Tidligere spillere" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center"/>
+                
+                <!--===============================================================-->
+
+                <!--Second element in scrollable grid-->
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="aarets_spiller.png" Grid.Row="0" HeightRequest="50"/>
+                </Grid>
+                <Label Text="Årets spiller" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Column="1" Margin="0,20,0,0"/> 
+                <!--===============================================================-->
+
+                <!--Third element in scrollable grid-->
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="tidligere_kampe.png" Grid.Row="0"/>
+                </Grid>
+                <Label Text="Tidligere kampe" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center"/>
+                <!--===============================================================-->
+
+                <!--Fourth element in scrollable grid-->
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="historisk_placering.png" Grid.Row="0"/>
+                </Grid>
+                <Label Text="Historisk placering" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center"/>
+                <!--===============================================================-->
+
+                <!--Fifth element in scrollable grid-->
+                <Grid Grid.Row="2" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="mangekampe.png" Grid.Row="0"/>
+                </Grid>
+                <Label Text="Over 100 kmape" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center"/>
+                <!--===============================================================-->
+
+                <!--Sixth element in scrollable grid-->
+                <Grid Grid.Row="2" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="mangemaal.png" MinimumHeightRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                </Grid>
+                <Label Text="Over 50 mål" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center"/>
+                <!--===============================================================-->
+
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

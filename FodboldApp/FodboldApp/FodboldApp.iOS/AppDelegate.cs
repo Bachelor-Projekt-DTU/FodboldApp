@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FFImageLoading.Forms.Touch;
 using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
 using Plugin.CrossPlatformTintedImage.iOS;
@@ -35,6 +35,7 @@ namespace FodboldApp.iOS
             }
             LoadApplication(new App());
             TintedImageRenderer.Init();
+            CachedImageRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }

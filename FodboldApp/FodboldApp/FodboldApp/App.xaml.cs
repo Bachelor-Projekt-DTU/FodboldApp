@@ -15,7 +15,7 @@ namespace FodboldApp
         {
             InitializeComponent();
 
-            MainPage = new FrontPage();
+            MainPage = new NavigationPage(new FrontPage()) { BarBackgroundColor = Color.FromHex("#005A31")  };
         }
 
         protected override void OnStart()

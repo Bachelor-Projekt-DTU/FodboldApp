@@ -4,6 +4,7 @@ using FodboldApp.Data;
 using System.Net;
 using System.IO;
 using System;
+using FodboldApp.Pages;
 
 namespace FodboldApp
 {
@@ -24,8 +25,11 @@ namespace FodboldApp
             grid_Element0.GestureRecognizers.Add(tapEvent);
 
 
+            async
             void Players_Tapped(object sender, EventArgs e)
             {
+            await ((App) App.Current).MainPage.Navigation.PushAsync(new Player_Description ());
+   
                 Console.WriteLine("Players_Tapped");
             }
         }

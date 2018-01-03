@@ -15,6 +15,9 @@
                 <Setter Property="WidthRequest" Value="200" />
                 <Setter Property="TextColor" Value="#8791a8" />
             </Style>
+            <Style TargetType = "NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#FB433C"/>
+            </Style>
 
             <Color x:Key="textColor">#243f73</Color>
             <Color x:Key="backgroundColor">#f0f0f0</Color>
