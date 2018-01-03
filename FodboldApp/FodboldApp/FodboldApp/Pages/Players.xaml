@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+		     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="FodboldApp.Players">
     
     <ContentPage.Content>
@@ -32,8 +34,15 @@
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="nyheder.png" Grid.Row="0"/>
                         
+                        <!--<Image Source="nyheder.png" Grid.Row="0"/>-->
+                        <ff:CachedImage Source = "icon.png" Grid.Row="0">
+                            <ff:CachedImage.Transformations>
+                                <fftransformations:CornersTransformation 
+                                    CornersTransformType="TopLeftRounded, TopRightRounded, BottomLeftRounded, BottomRightRounded"          
+                                    BottomLeftCornerSize="80" BottomRightCornerSize="80" TopLeftCornerSize="80" TopRightCornerSize="80" />
+                            </ff:CachedImage.Transformations>
+                        </ff:CachedImage>
                         <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
                         <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
                         <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>

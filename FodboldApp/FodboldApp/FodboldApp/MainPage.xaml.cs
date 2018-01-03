@@ -65,7 +65,7 @@ namespace FodboldApp
           
             ResetIconTint();
 
-            NavigationPage.SetHasNavigationBar(this, false);
+            //NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

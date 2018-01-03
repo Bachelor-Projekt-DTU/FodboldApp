@@ -40,6 +40,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml.cs">
       <DependentUpon>Matches.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Player_Description.xaml.cs">
+      <DependentUpon>Player_Description.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml.cs">
       <DependentUpon>Tournament.xaml</DependentUpon>
     </Compile>
@@ -51,6 +55,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Player_Description.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

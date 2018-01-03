@@ -125,6 +125,12 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>1.8.1</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations">
+      <Version>2.3.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +177,60 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\nyheder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\historisk_placering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\historisk_placering%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\historisk_placering%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mangemaal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mangemaal%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mangemaal%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mangekampe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mangekampe%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mangekampe%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tidligere_kampe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tidligere_kampe%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tidligere_kampe%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tidligere_spillere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tidligere_spillere%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tidligere_spillere%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aarets_spiller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aarets_spiller%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aarets_spiller%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\FodboldApp\FodboldApp.projitems" Label="Shared" />
