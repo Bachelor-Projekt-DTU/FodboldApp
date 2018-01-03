@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FodboldApp.Pages.NewsPage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical"
+                    VerticalOptions="FillAndExpand">
+            <StackLayout  Padding="0, 0, 0, 0"
+                          Margin="0, 0, 0, 0"
+                          Spacing="0"
+                          BackgroundColor="#ffffff">
+                <Label Text="U23 kommet godt fra start"
+                       TextColor="#e11e2c"
+                       FontSize="36"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="StartAndExpand" />
+                <Label Text="10. august 2017"
+                       TextColor="#b9b8b8"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Start"/>
+                <Label Text="Nyt fra U23"
+                       FontSize="32"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Start"/>
+                <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"/>
+                <Label Text="{Binding newsText}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

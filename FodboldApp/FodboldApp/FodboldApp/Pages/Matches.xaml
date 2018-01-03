@@ -1,12 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              x:Class="FodboldApp.Matches">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Vertical"
+                        VerticalOptions="FillAndExpand">
+            <StackLayout Padding="0, 0, 0, 0"
+                     Margin="0, 0, 0, 0"
+                     Spacing="0"
+                     BackgroundColor="#ffffff">
+
+                <Label Text="NÆSTE KAMP"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#f0f0f0"
+                   Margin="0, 0, 0, 15"/>
+                <Label Text="Skovshoved - Boldklubben FREM"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+                <Label Text="12. august 2017 15:00"
+                   TextColor="#e11e2c"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+                <Label Text="Skovshoved IP"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+                <Label Text="2. Division Pulje 1&#x0a;"
+                   TextColor="#b9b8b8"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+                <Label Text="SENESTE RESULTATER"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   BackgroundColor="#f0f0f0"
+                   HeightRequest="38"/>
+                <Label Text="BK FREM  -  Hillerød"
+                   TextColor="#e11e2c"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"
+                   Margin="0, 0, 0, 0"/>
+                <Label Text="2 - 2"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="80"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+                <Label Text="KAMPENS SPILLER"
+                   TextColor="{StaticResource textColor}"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+                <controls:CircleImage Source="http://bkfrem.dk/images/hill_2.jpg" Aspect="AspectFill" WidthRequest="250" HeightRequest="250"/>
+                <Label Text="LÆS MERE"
+                   TextColor="#bbbbbb"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

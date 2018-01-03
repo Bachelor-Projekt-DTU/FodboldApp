@@ -4,8 +4,8 @@
              x:Class="FodboldApp.MainPage"
              BackgroundColor="#F0F0F0"
              Title="TEST"
-                ControlTemplate="{StaticResource MainPageTemplate}"
-                          xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
+             ControlTemplate="{StaticResource MainPageTemplate}"
+             xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
 
 
     <Grid ColumnSpacing="0" RowSpacing="0" >

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,13 @@ namespace FodboldApp
 		public News ()
 		{
 			InitializeComponent ();
-		}
-	}
+        }
+
+        async void News_Tapped(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("WE ON IT");
+
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(new NewsPage());
+        }
+    }
 }

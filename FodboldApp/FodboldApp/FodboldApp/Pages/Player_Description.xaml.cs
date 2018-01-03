@@ -15,6 +15,8 @@ namespace FodboldApp.Pages
 		public Player_Description ()
 		{
 			InitializeComponent ();
+
+            NavigationPage.SetHasNavigationBar(this, false);
 		}
 	}
 }

@@ -36,7 +36,7 @@
                         <BoxView Color="White" Grid.Column="0" Grid.RowSpan="3"/>
                         
                         <!--<Image Source="nyheder.png" Grid.Row="0"/>-->
-                        <ff:CachedImage Source = "icon.png" Grid.Row="0">
+                        <ff:CachedImage Source = "http://www.bkfrem.dk/images/spillere/01_marco_brylov.jpg" Grid.Row="0">
                             <ff:CachedImage.Transformations>
                                 <fftransformations:CornersTransformation 
                                     CornersTransformType="TopLeftRounded, TopRightRounded, BottomLeftRounded, BottomRightRounded"          
@@ -57,7 +57,7 @@
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Image Source="http://www.bkfrem.dk/images/spillere/01_marco_brylov.jpg" Grid.Row="0"/>
                         <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
                         <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
                         <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
@@ -72,7 +72,7 @@
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="nyheder.png" Grid.Row="0"/>
+                        <Image Source="http://www.bkfrem.dk/images/spillere/01_marco_brylov.jpg" Grid.Row="0"/>
                         <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
                         <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
                         <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
