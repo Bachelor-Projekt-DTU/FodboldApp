@@ -44,6 +44,7 @@ namespace FodboldApp
                 Text = "KAMPE",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             }, 1, 0);
             itemGrid.Children.Add(new Label()
@@ -52,6 +53,7 @@ namespace FodboldApp
                 Text = "MÅL",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             }, 2, 0);
             itemGrid.Children.Add(new Label()
@@ -60,6 +62,7 @@ namespace FodboldApp
                 Text = "ASSIST",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             }, 3, 0);
             itemGrid.Children.Add(new Label()
@@ -68,6 +71,7 @@ namespace FodboldApp
                 Text = "MVP",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             }, 4, 0);
             itemGrid.Children.Add(new Label()
@@ -76,6 +80,7 @@ namespace FodboldApp
                 Text = "CLEAN SHEET",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             }, 5, 0);
 

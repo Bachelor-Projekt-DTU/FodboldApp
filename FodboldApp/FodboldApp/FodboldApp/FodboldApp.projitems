@@ -17,6 +17,7 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\History.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\NewsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -44,6 +45,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\History.xaml.cs">
       <DependentUpon>History.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NewsPage.xaml.cs">
+      <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
