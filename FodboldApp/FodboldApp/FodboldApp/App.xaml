@@ -2,6 +2,7 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.App">
+    
     <Application.Resources>
 
         <!-- Application resource dictionary -->
@@ -15,6 +16,11 @@
                 <Setter Property="WidthRequest" Value="200" />
                 <Setter Property="TextColor" Value="#8791a8" />
             </Style>
+
+            <Style TargetType = "NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#FB433C"/>
+            </Style>
+                
             
 
             <Color x:Key="textColor">#243f73</Color>

@@ -40,5 +40,18 @@ namespace FodboldApp
             App.Navigation = nav;
             Application.Current.MainPage = nav;
         }
+
+        Label previousLabel;
+        private async void OnItemSelected(object sender, EventArgs e)
+        {
+            try
+            {
+                var entity = ((Label)sender);
+                if(previousLabel != null) previousLabel.BackgroundColor = Color.White;
+                entity.BackgroundColor = Color.Red;
+                previousLabel = entity;
+        }
+            catch { }
+   }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,7 +41,7 @@ namespace FodboldApp
 
         public async void Login(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(new Login());
         }
     }
 }
