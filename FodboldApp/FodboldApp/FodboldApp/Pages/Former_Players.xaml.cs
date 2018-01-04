@@ -17,6 +17,8 @@ namespace FodboldApp.Pages
 		{
             InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             var items = PlayersData.Players;
             var itemGrid = new Grid { RowSpacing = 0, ColumnSpacing = 0 };
 
@@ -38,7 +40,8 @@ namespace FodboldApp.Pages
                 Text = "NAVN",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalTextAlignment = TextAlignment.Center
+                VerticalTextAlignment = TextAlignment.Center,
+                HorizontalTextAlignment = TextAlignment.Center
             }, 0, 0);
             itemGrid.Children.Add(new Label()
             {
@@ -46,7 +49,8 @@ namespace FodboldApp.Pages
                 Text = "POSITION",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalTextAlignment = TextAlignment.Center
+                VerticalTextAlignment = TextAlignment.Center,
+                HorizontalTextAlignment = TextAlignment.Center
             }, 1, 0);
          
             for (int i = 0; i < items.Count; i++)

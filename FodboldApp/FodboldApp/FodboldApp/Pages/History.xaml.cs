@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.Pages;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
@@ -10,20 +11,12 @@ namespace FodboldApp
         public History()
         {
             InitializeComponent();
+        }
+        async void FormerPlayers_Tapped(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            //Add tap handler to grid_Element0:
-            TapGestureRecognizer tapEvent = new TapGestureRecognizer();
-
-            //Connect event handler (Players_Tapped) to TapGestureRecognizer:
-            tapEvent.Tapped += Button_Tapped;
-
-            //Add TapGestureRecognizer to grid_Element0:
-            grid_Element0.GestureRecognizers.Add(tapEvent);
-
-            void Button_Tapped(object sender, EventArgs e)
-            {
-                Console.WriteLine("History button tapped");
-            }
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(new Former_Players());
         }
     }
 }
