@@ -64,6 +64,7 @@ namespace FodboldApp.Pages
                     BackgroundColor = GetColor(i),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
+                    HeightRequest = 50,
                     VerticalTextAlignment = TextAlignment.Center
                 }, 0, j);
                 itemGrid.Children.Add(new Label()
@@ -73,6 +74,7 @@ namespace FodboldApp.Pages
                     BackgroundColor = GetColor(i),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
+                    HeightRequest = 50,
                     VerticalTextAlignment = TextAlignment.Center
                 }, 1, j);
             }
