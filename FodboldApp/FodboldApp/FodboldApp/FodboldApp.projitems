@@ -25,6 +25,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Clubs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\PlayersData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Former_Players.xaml.cs">
+      <DependentUpon>Former_Players.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\FrontPage.xaml.cs">
       <DependentUpon>FrontPage.xaml</DependentUpon>
     </Compile>
@@ -56,6 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Player_Description.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Former_Players.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
