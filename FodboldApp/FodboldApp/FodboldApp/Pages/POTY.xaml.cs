@@ -1,20 +1,20 @@
 ﻿using FodboldApp.Colorization;
-using FodboldApp.Data;
+using System.Linq;
 using Xamarin.Forms;
+using FodboldApp.Data;
 using Xamarin.Forms.Xaml;
 
 namespace FodboldApp.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Former_Players : ContentPage
+	public partial class POTY : ContentPage
 	{
-		public Former_Players ()
+		public POTY ()
 		{
-            InitializeComponent();
-
+			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
 
-            var items = PlayersData.Players;
+            var items = POTYsData.Players;
             var itemGrid = new Grid { RowSpacing = 0, ColumnSpacing = 0 };
 
             // defining the number of rows according to the number of items
@@ -32,7 +32,7 @@ namespace FodboldApp.Pages
             itemGrid.Children.Add(new Label()
             {
                 BackgroundColor = ColoringLogic.GetColor(0),
-                Text = "NAVN",
+                Text = "ÅR",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalTextAlignment = TextAlignment.Center,
@@ -41,20 +41,20 @@ namespace FodboldApp.Pages
             itemGrid.Children.Add(new Label()
             {
                 BackgroundColor = ColoringLogic.GetColor(0),
-                Text = "POSITION",
+                Text = "NAVN",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalTextAlignment = TextAlignment.Center,
                 HorizontalTextAlignment = TextAlignment.Center
             }, 1, 0);
-         
+
             for (int i = 0; i < items.Count; i++)
             {
                 int j = i + 1;
 
                 itemGrid.Children.Add(new Label()
                 {
-                    Text = items[i].Name,
+                    Text = items[i].Year,
                     TextColor = Color.FromHex("#182a5c"),
                     BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -64,7 +64,7 @@ namespace FodboldApp.Pages
                 }, 0, j);
                 itemGrid.Children.Add(new Label()
                 {
-                    Text = items[i].Position,
+                    Text = items[i].Name,
                     TextColor = Color.FromHex("#182a5c"),
                     BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,

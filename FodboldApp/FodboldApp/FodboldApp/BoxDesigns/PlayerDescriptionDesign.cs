@@ -29,7 +29,7 @@ namespace FodboldApp.BoxDesigns
             {
                 player.Name,
                 "Trøjeponsor: " + player.Sponsor,
-                "Postion: " + player.Posistion,
+                "Postion: " + player.Position,
                 "Højde: " + player.Height,
                 "Vægt: " + player.Weight,
                 "Fødselsdato: " + player.Birthday,

@@ -15,7 +15,7 @@ namespace FodboldApp
 
             // Sætter data i listviewet
 
-            clubList.ItemsSource = Clubs.ClubList;
+            clubList.ItemsSource = ClubsData.ClubList;
 
             // Sætter farven til linjen mellem items i listviewt
             clubList.SeparatorColor = Color.Black;
