@@ -23,7 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Clubs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Clubs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\PlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Former_Players.xaml.cs">
       <DependentUpon>Former_Players.xaml</DependentUpon>
@@ -79,5 +79,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SVG\backbutton.svg" />
   </ItemGroup>
 </Project>

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.App">
-    
+             x:Class="FodboldApp.App"             
+             xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
+
     <Application.Resources>
 
         <!-- Application resource dictionary -->
@@ -20,8 +21,6 @@
             <Style TargetType = "NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="#FB433C"/>
             </Style>
-                
-            
 
             <Color x:Key="textColor">#243f73</Color>
             <Color x:Key="backgroundColor">#f0f0f0</Color>
@@ -46,10 +45,16 @@
                         <StackLayout.Padding>
                             <OnPlatform x:TypeArguments="Thickness"
                             iOS="10, 10, 10, 10"
-                            Android="10, 10, 10, 10"
-                            WinPhone="10, 10, 10, 10" />
+                            Android="10, 10, 10, 10"/>
                         </StackLayout.Padding>
-                        <!-- My header content to make my app the prettiest. -->
+                        
+                        <!-- Header content -->
+                        <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackButtonPressed"/>
+                        </StackLayout.GestureRecognizers>
+                        </controls:TintedImage>
+                        
                         <SearchBar x:Name="search"
                                    Placeholder="Søg"
                                    PlaceholderColor="#d0d0d0"

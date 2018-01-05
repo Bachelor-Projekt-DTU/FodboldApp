@@ -65,6 +65,8 @@ namespace FodboldApp
           
             ResetIconTint();
 
+            News_Tapped(news, new EventArgs ());
+
             NavigationPage.SetHasNavigationBar(this, false);
         }
     }
