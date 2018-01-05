@@ -5,9 +5,14 @@
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Name}"
+                   TextColor="{StaticResource textColor}"
+                   HorizontalOptions="CenterAndExpand" BackgroundColor="#f0f0f0"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" VerticalOptions="FillAndExpand"/>
+                <Grid x:Name="statGrid"/>
+            </StackLayout>
+            <Grid x:Name="descriptionGrid"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

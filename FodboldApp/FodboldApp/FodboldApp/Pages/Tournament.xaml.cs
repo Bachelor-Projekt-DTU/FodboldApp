@@ -1,4 +1,5 @@
-﻿using FodboldApp.Data;
+﻿using FodboldApp.Colorization;
+using FodboldApp.Data;
 using ImageCircle.Forms.Plugin.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,13 @@ namespace FodboldApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Tournament : ContentPage
 	{
-		public Tournament ()
+        public Tournament()
         {
             var items = PlayersData.Players;
             var itemGrid = new Grid { RowSpacing = 0, ColumnSpacing = 0 };
 
             // defining the number of rows according to the number of items
-            for (int i = 0; i < items.Count+1; i++)
+            for (int i = 0; i < items.Count + 1; i++)
             {
                 itemGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
@@ -33,14 +34,14 @@ namespace FodboldApp
 
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalTextAlignment = TextAlignment.Center
             }, 0, 0);
 
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "KAMPE",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -49,7 +50,7 @@ namespace FodboldApp
             }, 1, 0);
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "MÅL",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -58,7 +59,7 @@ namespace FodboldApp
             }, 2, 0);
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "ASSIST",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -67,7 +68,7 @@ namespace FodboldApp
             }, 3, 0);
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "MVP",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -76,7 +77,7 @@ namespace FodboldApp
             }, 4, 0);
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "CLEAN SHEET",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -93,15 +94,15 @@ namespace FodboldApp
                     HeightRequest = 60,
                     //WidthRequest = 50,
                     Aspect = Aspect.AspectFill,
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand
                 }, 0, j);
-                
+
                 itemGrid.Children.Add(new Label()
                 {
                     Text = items[i].Matches.ToString(),
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
@@ -110,7 +111,7 @@ namespace FodboldApp
                 {
                     Text = items[i].Goals.ToString(),
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
@@ -119,7 +120,7 @@ namespace FodboldApp
                 {
                     Text = items[i].Assists.ToString(),
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
@@ -128,7 +129,7 @@ namespace FodboldApp
                 {
                     Text = items[i].MVP.ToString(),
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
@@ -137,7 +138,7 @@ namespace FodboldApp
                 {
                     Text = items[i].Clean_Sheet.ToString(),
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
@@ -150,12 +151,6 @@ namespace FodboldApp
 
             pageLayout.Children.Add(itemGrid);
 
-        }
-
-        private Color GetColor(int i)
-        {
-            if (i % 2 == 0) return Color.FromHex("#f0f0f0");
-            return Color.FromHex("#ffffff");
         }
 
        /* private Image CropImage()

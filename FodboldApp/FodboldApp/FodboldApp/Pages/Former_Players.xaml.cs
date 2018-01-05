@@ -1,4 +1,5 @@
-﻿using FodboldApp.Data;
+﻿using FodboldApp.Colorization;
+using FodboldApp.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace FodboldApp.Pages
 
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "NAVN",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -45,7 +46,7 @@ namespace FodboldApp.Pages
             }, 0, 0);
             itemGrid.Children.Add(new Label()
             {
-                BackgroundColor = Color.FromHex("#ffffff"),
+                BackgroundColor = ColoringLogic.GetColor(0),
                 Text = "POSITION",
                 TextColor = Color.FromHex("182a5c"),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -61,7 +62,7 @@ namespace FodboldApp.Pages
                 {
                     Text = items[i].Name,
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     HeightRequest = 50,
@@ -71,7 +72,7 @@ namespace FodboldApp.Pages
                 {
                     Text = items[i].Posistion,
                     TextColor = Color.FromHex("#182a5c"),
-                    BackgroundColor = GetColor(i),
+                    BackgroundColor = ColoringLogic.GetColor(j),
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     HorizontalTextAlignment = TextAlignment.Center,
                     HeightRequest = 50,
@@ -79,12 +80,6 @@ namespace FodboldApp.Pages
                 }, 1, j);
             }
             pageLayout.Children.Add(itemGrid);
-        }
-
-        private Color GetColor(int i)
-        {
-            if (i % 2 == 0) return Color.FromHex("#f0f0f0");
-            return Color.FromHex("#ffffff");
         }
     }
 }
