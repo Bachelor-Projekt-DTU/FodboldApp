@@ -31,7 +31,7 @@ namespace FodboldApp.BoxDesigns
                 player.ImageURL,
                 player.Name,
                 "Trøjeponsor: " + player.Sponsor,
-                "Postion: " + player.Posistion,
+                "Postion: " + player.Position,
                 "Højde: " + player.Height,
                 "Vægt: " + player.Weight,
                 "Fødselsdato: " + player.Birthday,

@@ -23,10 +23,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Clubs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\PlayersData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\POTYsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Former_Players.xaml.cs">
       <DependentUpon>Former_Players.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -54,6 +55,10 @@
       <DependentUpon>Player_Description.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\POTY.xaml.cs">
+      <DependentUpon>POTY.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml.cs">
       <DependentUpon>Tournament.xaml</DependentUpon>
     </Compile>
@@ -78,6 +83,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SVG\backbutton.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\POTY.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
