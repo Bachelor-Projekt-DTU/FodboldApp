@@ -7,6 +7,7 @@ namespace FodboldApp.BoxDesigns
 {
     class PlayerDescriptionDesign
     {
+        string ImageURL { get; set; }
         string Name { get; set; }
         string Sponsor { get; set; }
         string Position { get; set; }
@@ -27,6 +28,7 @@ namespace FodboldApp.BoxDesigns
 
             List<string> playerDescription = new List<string>()
             {
+                player.ImageURL,
                 player.Name,
                 "Trøjeponsor: " + player.Sponsor,
                 "Postion: " + player.Posistion,

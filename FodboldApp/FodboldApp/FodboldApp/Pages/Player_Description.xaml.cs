@@ -12,20 +12,20 @@ using Xamarin.Forms.Xaml;
 
 namespace FodboldApp.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Player_Description : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Player_Description : ContentPage
+    {
         static PlayersData Player = PlayersData.Players[9];
         List<string> design = PlayerDescriptionDesign.GetDesign(Player);
-        
+
         private int StatsRows = 10;
-        private int DescriptionRows = 10;
+        private int DescriptionRows = 2;
         public string Name { get; }
 
-        public Player_Description ()
-		{
+        public Player_Description()
+        {
             Name = design[0];
-            InitializeComponent ();
+            InitializeComponent();
             BindingContext = this;
 
             NavigationPage.SetHasNavigationBar(this, false);
@@ -39,18 +39,29 @@ namespace FodboldApp.Pages
                 descriptionGrid.RowDefinitions.Add(new RowDefinition());
             }
 
+            int j = 0;
             for (int i = 0; i < StatsRows; i++)
             {
-                int j = i + 1;
+                j++;
                 statGrid.Children.Add(new Label
                 {
                     Text = design[j],
-                    HeightRequest = 60,
                     //WidthRequest = 50,
                     BackgroundColor = ColoringLogic.GetColor(i),
                     HorizontalOptions = LayoutOptions.FillAndExpand
                 }, 0, i);
             }
+            for (int i = 0; i < DescriptionRows; i++)
+            {
+                j++;
+                descriptionGrid.Children.Add(new Label
+                {
+                    Text = design[j],
+                    //WidthRequest = 50,
+                    BackgroundColor = ColoringLogic.GetColor(i),
+                    HorizontalOptions = LayoutOptions.FillAndExpand
+                }, 0, i);
             }
         }
+    }
 }
