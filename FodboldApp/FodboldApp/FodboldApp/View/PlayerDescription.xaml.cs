@@ -1,19 +1,14 @@
 ﻿using FodboldApp.BoxDesigns;
 using FodboldApp.Colorization;
 using FodboldApp.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FodboldApp.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Player_Description : ContentPage
+    public partial class PlayerDescription : ContentPage
     {
         static PlayersData Player = PlayersData.Players[9];
         List<string> design = PlayerDescriptionDesign.GetDesign(Player);
@@ -22,7 +17,7 @@ namespace FodboldApp.Pages
         private int DescriptionRows = 2;
         public string Name { get; }
 
-        public Player_Description()
+        public PlayerDescription()
         {
             Name = design[0];
             InitializeComponent();

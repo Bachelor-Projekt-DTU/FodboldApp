@@ -6,9 +6,9 @@ using Xamarin.Forms.Xaml;
 namespace FodboldApp.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Former_Players : ContentPage
+	public partial class FormerPlayers : ContentPage
 	{
-		public Former_Players ()
+		public FormerPlayers ()
 		{
             InitializeComponent();
 
