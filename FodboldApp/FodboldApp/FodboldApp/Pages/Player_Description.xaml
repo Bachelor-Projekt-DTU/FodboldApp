@@ -4,15 +4,41 @@
              x:Class="FodboldApp.Pages.Player_Description"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Name}"
-                   TextColor="{StaticResource textColor}"
-                   HorizontalOptions="CenterAndExpand" BackgroundColor="#f0f0f0"/>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" VerticalOptions="FillAndExpand"/>
-                <Grid x:Name="statGrid"/>
+        <ScrollView>
+            <StackLayout Padding="0, 0, 0, 0"
+                         Margin="0, 0, 0, 0"
+                         Spacing="0"
+                         HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding Name}"
+                       TextColor="{StaticResource textColor}"
+                       FontSize="32"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="#f0f0f0"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       HeightRequest="60"/>
+                <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Aspect="AspectFit" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"/>
+                    <Grid x:Name="statGrid" VerticalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" Grid.Column="1" Grid.Row="0"/>
+                </Grid>
+                <Grid x:Name="descriptionGrid" ColumnSpacing="0" RowSpacing="0"/>
+                <Label Text="BESKRIVELSE"
+                       TextColor="{StaticResource textColor}"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="#f0f0f0"
+/>
+                <Label Text="{Binding Description}"
+                       TextColor="{StaticResource textColor}"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="#ffffff"/>
             </StackLayout>
-            <Grid x:Name="descriptionGrid"/>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -21,10 +21,12 @@ namespace FodboldApp.Pages
         private int StatsRows = 10;
         private int DescriptionRows = 2;
         public string Name { get; }
+        public string Description { get; }
 
         public Player_Description()
         {
-            Name = design[0];
+            Name = design[1];
+            Description = design[design.Count - 1];
             InitializeComponent();
             BindingContext = this;
 
@@ -39,16 +41,17 @@ namespace FodboldApp.Pages
                 descriptionGrid.RowDefinitions.Add(new RowDefinition());
             }
 
-            int j = 0;
+            int j = 1;
             for (int i = 0; i < StatsRows; i++)
             {
                 j++;
                 statGrid.Children.Add(new Label
                 {
                     Text = design[j],
+                    FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                     //WidthRequest = 50,
                     BackgroundColor = ColoringLogic.GetColor(i),
-                    HorizontalOptions = LayoutOptions.FillAndExpand
+                    //HorizontalOptions = LayoutOptions.FillAndExpand
                 }, 0, i);
             }
             for (int i = 0; i < DescriptionRows; i++)
