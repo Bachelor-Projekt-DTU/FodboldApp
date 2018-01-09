@@ -15,11 +15,12 @@ namespace FodboldApp.Pages
 
         private int StatsRows = 10;
         private int DescriptionRows = 2;
+        public string ImageURL { get; }
         public string Name { get; }
         public string Description { get; }
-
         public PlayerDescription()
         {
+            ImageURL = design[0];
             Name = design[1];
             Description = design[design.Count - 1];
             InitializeComponent();
@@ -40,26 +41,74 @@ namespace FodboldApp.Pages
             for (int i = 0; i < StatsRows; i++)
             {
                 j++;
+                statGrid.Children.Add(new Label()
+                {
+                    BackgroundColor = ColoringLogic.GetColor(i),
+                    WidthRequest = 5,
+                    VerticalOptions= LayoutOptions.FillAndExpand,
+                    HorizontalOptions = LayoutOptions.Start
+                }, 0, i);
                 statGrid.Children.Add(new Label
                 {
                     Text = design[j],
-                    FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                    FontSize = 1.2 * Device.GetNamedSize(NamedSize.Small, typeof(Label)),
                     //WidthRequest = 50,
+                    HorizontalOptions=LayoutOptions.FillAndExpand,
                     BackgroundColor = ColoringLogic.GetColor(i),
                     //HorizontalOptions = LayoutOptions.FillAndExpand
-                }, 0, i);
+                }, 1, i);
             }
-            for (int i = 0; i < DescriptionRows; i++)
+
+            j++;
+            descriptionGrid.Children.Add(new Label()
             {
-                j++;
-                descriptionGrid.Children.Add(new Label
-                {
-                    Text = design[j],
-                    //WidthRequest = 50,
-                    BackgroundColor = ColoringLogic.GetColor(i),
-                    HorizontalOptions = LayoutOptions.FillAndExpand
-                }, 0, i);
-            }
+                BackgroundColor = ColoringLogic.GetColor(0),
+                WidthRequest = 5,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.Start
+            }, 0, 0);
+            descriptionGrid.Children.Add(new Label()
+            {
+                BackgroundColor = ColoringLogic.GetColor(0),
+                WidthRequest = 5,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.Start
+            }, 2, 0);
+            descriptionGrid.Children.Add(new Label
+            {
+                Text = design[j],
+                FontSize = 1.2 * Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                //WidthRequest = 50,
+                BackgroundColor = ColoringLogic.GetColor(0),
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                //HeightRequest = (1.5 * Device.GetNamedSize(NamedSize.Medium, typeof(Label)))
+            }, 1, 0);
+
+            descriptionGrid.Children.Add(new Label()
+            {
+                BackgroundColor = ColoringLogic.GetColor(1),
+                WidthRequest = 5,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.Start
+            }, 0, 1);
+            descriptionGrid.Children.Add(new Label()
+            {
+                BackgroundColor = ColoringLogic.GetColor(1),
+                WidthRequest = 5,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.Start
+            }, 2, 1);
+            j++;
+            descriptionGrid.Children.Add(new Label
+            {
+                Text = design[j],
+                FontSize = 1.2 * Device.GetNamedSize(NamedSize.Small, typeof(Label)),
+                //WidthRequest = 50,
+                BackgroundColor = ColoringLogic.GetColor(1),
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                //HeightRequest = (3 * Device.GetNamedSize(NamedSize.Medium, typeof(Label)))
+            }, 1, 1);
+
         }
     }
 }
