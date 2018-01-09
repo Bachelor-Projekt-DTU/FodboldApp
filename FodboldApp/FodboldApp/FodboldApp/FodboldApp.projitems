@@ -23,14 +23,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ClubsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\HistoricalStandingsData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\OverFiftyGoalsData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\OverHundredGames.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\PlayersData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\POTYsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGames.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PlayersData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\POTYsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
       <DependentUpon>FormerPlayers.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -125,9 +126,5 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
   </ItemGroup>
 </Project>
