@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FodboldApp.Pages.HistoricalStandings"
+             ControlTemplate="{StaticResource MainPageTemplate}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="HISTORISK PLACERING"
+                 HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   TextColor="{StaticResource textColor}"
+                   BackgroundColor="#f0f0f0"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding StadingsLabelText, Mode=TwoWay}" HorizontalOptions="StartAndExpand" FontSize="Large"/>
+                <Image Source="icon.png" HorizontalOptions="End"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnStackLayout_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout x:Name="standingsStackLayout" IsVisible="False">
+                <ListView x:Name="standingsList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label Text="{Binding TournamentName}" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnItemSelected"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

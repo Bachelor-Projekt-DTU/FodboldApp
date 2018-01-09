@@ -10,14 +10,14 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\FrontPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\FrontPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\News.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Players.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\History.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\NewsPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\News.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Players.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Matches.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Tournament.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\History.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -26,96 +26,108 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\HistoricalStandingsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\OverFiftyGoalsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\OverHundredGames.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\PlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\POTYsData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Former_Players.xaml.cs">
-      <DependentUpon>Former_Players.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
+      <DependentUpon>FormerPlayers.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\FrontPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\FrontPage.xaml.cs">
       <DependentUpon>FrontPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\HistoricalStandings.xaml.cs">
+      <DependentUpon>HistoricalStandings.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\News.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\News.xaml.cs">
       <DependentUpon>News.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\OverFiftyGoals.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\OverFiftyGoals.xaml.cs">
       <DependentUpon>OverFiftyGoals.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\OverHundredGames.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\OverHundredGames.xaml.cs">
       <DependentUpon>OverHundredGames.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Players.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Players.xaml.cs">
       <DependentUpon>Players.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Matches.xaml.cs">
       <DependentUpon>Matches.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Player_Description.xaml.cs">
-      <DependentUpon>Player_Description.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\PlayerDescription.xaml.cs">
+      <DependentUpon>PlayerDescription.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\POTY.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\POTY.xaml.cs">
       <DependentUpon>POTY.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Tournament.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Tournament.xaml.cs">
       <DependentUpon>Tournament.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\History.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\History.xaml.cs">
       <DependentUpon>History.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\NewsPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Player_Description.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\PlayerDescription.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Former_Players.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Login.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Resources\SVG\backbutton.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\POTY.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\POTY.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\OverFiftyGoals.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\OverFiftyGoals.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\OverHundredGames.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\OverHundredGames.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\HistoricalStandings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
   </ItemGroup>
 </Project>

@@ -14,7 +14,7 @@ namespace FodboldApp
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            await ((App)Application.Current).MainPage.Navigation.PushAsync(new Former_Players());
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(new FormerPlayers());
         }
         async void POTY_Tapped(object sender, EventArgs e)
         {
@@ -34,6 +34,12 @@ namespace FodboldApp
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
             await ((App)Application.Current).MainPage.Navigation.PushAsync(new OverHundredGames());
+        }
+        async void HistoricalStandings_Tapped(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("WE ON IT");
+
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(new HistoricalStandings());
         }
     }
 }
