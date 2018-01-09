@@ -22,7 +22,6 @@ namespace FodboldApp.Pages
             NavigationPage.SetHasNavigationBar(this, false);
             this.BindingContext = this;
 
-
             // putting data in the listview
 
             standingsList.ItemsSource = HistoricalStandingsData.HistoricalStandingsDataList;

@@ -4,15 +4,69 @@
              x:Class="FodboldApp.Pages.PlayerDescription"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Name}"
-                   TextColor="{StaticResource textColor}"
-                   HorizontalOptions="CenterAndExpand" BackgroundColor="#f0f0f0"/>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" VerticalOptions="FillAndExpand"/>
-                <Grid x:Name="statGrid"/>
+        <ScrollView>
+            <StackLayout Padding="0, 0, 0, 0"
+                         Margin="0, 0, 0, 0"
+                         Spacing="0"
+                         HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding Name}"
+                       TextColor="{StaticResource textColor}"
+                       FontSize="32"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="#f0f0f0"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       HeightRequest="60"/>
+                <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="{Binding ImageURL}" AnchorX="0" Aspect="AspectFill" VerticalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"/>
+                    <Grid x:Name="statGrid" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" Grid.Column="1" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="descriptionGrid" ColumnSpacing="0" RowSpacing="0" VerticalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Label Text="BESKRIVELSE"
+                       TextColor="{StaticResource textColor}"
+                       FontSize="24"
+                       HeightRequest="46"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       BackgroundColor="#ffffff"/>
+                <Grid ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalOptions="FillAndExpand"
+                           BackgroundColor="#f0f0f0"
+                           Grid.Column="0"/>
+                    <Label Text="{Binding Description}"
+                       TextColor="{StaticResource textColor}"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="#f0f0f0"
+                           Grid.Column="1"/>
+                    <Label HorizontalOptions="FillAndExpand"
+                           BackgroundColor="#f0f0f0"
+                           Grid.Column="2"/>
+                </Grid>
             </StackLayout>
-            <Grid x:Name="descriptionGrid"/>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
