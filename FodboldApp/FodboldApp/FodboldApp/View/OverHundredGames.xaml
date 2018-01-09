@@ -5,13 +5,16 @@
              ControlTemplate="{StaticResource MainPageTemplate}">
     
     <ContentPage.Content>
-        <StackLayout x:Name="pageLayout">
-            <Label Text="OVER 100 KAMPE"
+        <ScrollView>
+            <StackLayout x:Name="pageLayout">
+                <Label Text="OVER 100 KAMPE"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    FontSize="Large"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
-        </StackLayout>
+                <Grid x:Name="grid"  RowSpacing = "0" ColumnSpacing = "0"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

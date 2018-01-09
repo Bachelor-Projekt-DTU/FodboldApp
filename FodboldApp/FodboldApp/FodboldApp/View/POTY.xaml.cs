@@ -15,7 +15,7 @@ namespace FodboldApp.Pages
             NavigationPage.SetHasNavigationBar(this, false);
 
             var items = POTYsData.Players;
-            var itemGrid = new Grid { RowSpacing = 0, ColumnSpacing = 0 };
+            var itemGrid = grid;
 
             // defining the number of rows according to the number of items
             for (int i = 0; i < items.Count + 1; i++)
