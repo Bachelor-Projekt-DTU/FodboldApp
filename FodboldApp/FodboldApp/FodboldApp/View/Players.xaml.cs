@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using FodboldApp.Data;
+using FodboldApp.Model;
 using System.Net;
 using System.IO;
 using System;

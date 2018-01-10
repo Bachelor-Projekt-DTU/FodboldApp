@@ -1,7 +1,7 @@
 ﻿using FodboldApp.Colorization;
 using System.Linq;
 using Xamarin.Forms;
-using FodboldApp.Data;
+using FodboldApp.Model;
 using Xamarin.Forms.Xaml;
 
 namespace FodboldApp.Pages

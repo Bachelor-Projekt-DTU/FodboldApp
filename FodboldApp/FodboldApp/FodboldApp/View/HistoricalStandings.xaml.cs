@@ -1,4 +1,4 @@
-﻿using FodboldApp.Data;
+﻿using FodboldApp.Model;
 using FodboldApp.ViewModel;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,6 @@
 ﻿using FodboldApp.BoxDesigns;
 using FodboldApp.Colorization;
-using FodboldApp.Data;
+using FodboldApp.Model;
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

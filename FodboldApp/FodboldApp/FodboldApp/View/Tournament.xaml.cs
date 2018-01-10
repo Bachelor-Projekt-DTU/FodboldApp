@@ -1,27 +1,27 @@
 ﻿using FodboldApp.Colorization;
-using FodboldApp.Data;
+using FodboldApp.Model;
+using FodboldApp.ViewModel;
 using ImageCircle.Forms.Plugin.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FodboldApp
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Tournament : ContentPage
 	{
+        PlayerVM vm = new PlayerVM();
+
         public Tournament()
         {
-            var items = PlayersData.Players;
-            var itemGrid = grid;
+            var items = vm.PlayerList;
+            items.RemoveAt(items.Count - 1);
+
+            InitializeComponent();
 
             // defining the number of rows according to the number of items
-            for (int i = 0; i < items.Count + 1; i++)
+            for (int i = 0; i < items.Count-1 + 1; i++)
             {
                 itemGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
@@ -144,10 +144,6 @@ namespace FodboldApp
                     VerticalTextAlignment = TextAlignment.Center
                 }, 5, j);
             }
-
-
-
-            InitializeComponent();
 
             pageLayout.Children.Add(itemGrid);
 

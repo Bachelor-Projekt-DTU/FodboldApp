@@ -5,15 +5,15 @@ using Xamarin.Forms;
 
 namespace FodboldApp.Stack
 {
-    class Stack
+    class CustomStack
     {
-        NavigationPage NewsContent;
-        NavigationPage PlayerContent;
-        NavigationPage MatchContent;
-        NavigationPage TournamentContent;
-        NavigationPage HistoryContent;
+        public NavigationPage NewsContent;
+        public NavigationPage PlayerContent;
+        public NavigationPage MatchContent;
+        public NavigationPage TournamentContent;
+        public NavigationPage HistoryContent;
 
-        public Stack()
+        public CustomStack()
         {
             NewsContent = new NavigationPage(new News());
             PlayerContent = new NavigationPage(new Players());

@@ -11,7 +11,7 @@
                    FontSize="Large"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
-                <Grid x:Name="grid"  RowSpacing = "0" ColumnSpacing = "0"/>
+                <Grid x:Name="itemGrid"  RowSpacing = "0" ColumnSpacing = "0"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
