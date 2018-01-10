@@ -1,4 +1,5 @@
 ﻿using FodboldApp.Data;
+using FodboldApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,19 +17,12 @@ namespace FodboldApp.Pages
     {
         public string StadingsLabelText { get; set; } = "HEJSA";
 
+
         public HistoricalStandings()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            this.BindingContext = this;
-
-
-            // putting data in the listview
-
-            standingsList.ItemsSource = HistoricalStandingsData.HistoricalStandingsDataList;
-
-            // seperator color
-            standingsList.SeparatorColor = Color.Black;
+            BindingContext = new HistoricalStandingVM();
 
             // Reducing listview to remove empty space : HeightRequest = (#items * itemHeight) +(Standard height + #items)
             standingsList.HeightRequest = (5 * standingsList.RowHeight) + (10 * 22.5);

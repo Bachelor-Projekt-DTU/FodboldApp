@@ -21,7 +21,7 @@
             </StackLayout>
 
             <StackLayout x:Name="standingsStackLayout" IsVisible="False">
-                <ListView x:Name="standingsList">
+                <ListView x:Name="standingsList" SeparatorColor="Black" ItemsSource="{Binding standingsListSource}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

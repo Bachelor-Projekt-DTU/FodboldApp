@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
@@ -12,13 +13,7 @@ namespace FodboldApp
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
-
-            // Sætter data i listviewet
-
-            clubList.ItemsSource = ClubsData.ClubList;
-
-            // Sætter farven til linjen mellem items i listviewt
-            clubList.SeparatorColor = Color.Black;
+            BindingContext = new ClubVM();
 
             // Listviewet skal reduceres for at fjerne tomrum: HeightRequest = (#items * itemHeight) +(Standardhøjde + #items)
             clubList.HeightRequest = (5 * clubList.RowHeight) + (10 * 22.5);
