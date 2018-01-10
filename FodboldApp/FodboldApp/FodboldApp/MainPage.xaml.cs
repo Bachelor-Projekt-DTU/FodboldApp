@@ -1,4 +1,5 @@
-﻿using Plugin.CrossPlatformTintedImage.Abstractions;
+﻿using FodboldApp.ViewModel;
+using Plugin.CrossPlatformTintedImage.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,7 +63,9 @@ namespace FodboldApp
         public MainPage()
         {
             InitializeComponent();
-          
+
+            BindingContext = new MainViewModel(PlaceHolder);
+
             ResetIconTint();
 
             News_Tapped(news, new EventArgs ());

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FodboldApp.Data
+namespace FodboldApp.Model
 {
     class HistoricalStandingsData
     {

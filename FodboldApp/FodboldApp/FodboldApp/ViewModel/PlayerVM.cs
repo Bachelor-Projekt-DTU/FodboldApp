@@ -1,4 +1,4 @@
-﻿using FodboldApp.Data;
+﻿using FodboldApp.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +20,15 @@ namespace FodboldApp.ViewModel
         }
         public PlayerVM()
         {
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/01_marco_brylov.jpg", Name = "A. Bentzon", Position = "Innerwing", Matches = 3, Goals = 2, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/02_mikkel_andersson.jpg", Name = "Aage Albrecht", Position = "Angriber", Matches = 3, Goals = 1, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/03_casper_andersen.jpg", Name = "Aage Rasmussen", Position = "Højre back", Matches = 3, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/04_frederik_kragh.jpg", Name = "Adda Djeziri", Position = "Forsvar", Matches = 2, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/05_christian_stokholm.jpg", Name = "Alexander Back", Position = "Forsvar", Matches = 1, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/06_kristian_geertsen.jpg", Name = "Ali Sbeihi", Position = "Angriber", Matches = 3, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Name = "Allan Jensen", Position = "Målmand", Matches = 3, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/08_hamid_khalidan.jpg", Name = "Anders Bøje", Position = "Midtbane", Matches = 3, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
+            Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/09_daniel_pedersen.jpg", Name = "Anders Sundstrup", Position = "Angriber", Matches = 3, Goals = 0, Assists = 0, MVP = 0, Clean_Sheet = 0 });
             Players.Add(new PlayersData() { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg", Sponsor = "Carlsberg", Position = "Forsvar/Midtbane",
                 Height = 187, Weight = 87, Birthday = "22-02-1992", Matches = 107, Wins = 48, Draws = 25, Losses = 34, Goals = 5,
@@ -41,6 +50,14 @@ namespace FodboldApp.ViewModel
                 "Jammerbugt FC.\n\nDesværre kom Andreas forkert ind i en tackling i kampen i Valby mod Hvidovre den 2.september 2017 og blev udskiftet i det 53.minut.Det viste sig han " +
                 "havde fået revet både forreste korsbånd og inderste ledbånd over i højre knæ, hvilket sandsynligvis kræver mindst 1 års genoptræning.\n\nVi ønsker Andreas held og lykke og " +
                 "håber snart at se ham på banen igen."});
+        }
+
+        public List<PlayersData> PlayerList
+        {
+            get
+            {
+                return Players;
+            }
         }
     }
 }

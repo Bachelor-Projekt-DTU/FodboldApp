@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using FodboldApp.Colorization;
-using FodboldApp.Data;
+using FodboldApp.Model;
 
 
 using Xamarin.Forms;
