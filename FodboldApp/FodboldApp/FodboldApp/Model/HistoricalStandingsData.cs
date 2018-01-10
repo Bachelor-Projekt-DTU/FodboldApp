@@ -17,6 +17,6 @@ namespace FodboldApp.Data
             //    new HistoricalStandingsData { TournamentName = "Kriseturneringen – kreds 3" },
             //    new HistoricalStandingsData { TournamentName = "LANDSFODBOLDTURNERINGEN" },
             //    new HistoricalStandingsData { TournamentName = "DANMARKSTURNERINGEN – 1. Division"}
-            //};s
+            //};
     }
 }
