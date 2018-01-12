@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
 		     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-    x:Class="FodboldApp.Players">
+             x:Class="FodboldApp.Players"
+             ControlTemplate="{StaticResource MainPageTemplate}">
     
     <ContentPage.Content>
 
@@ -11,132 +12,130 @@
             <Label Text="1. HOLDET" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
            HorizontalOptions="Center"/>
 
-            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-                <Grid VerticalOptions="Start" ColumnSpacing="5" RowSpacing="5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
 
-                    <!--===============================================================-->
-                    <!--First element in scrollable grid-->
-                    <!--Implement a user control for the players instead of coding the same several times-->
-                    <Grid Grid.Row="0" Grid.Column="0">
-                        <Grid.GestureRecognizers>
-                            <TapGestureRecognizer
+            <Grid VerticalOptions="Start" ColumnSpacing="5" RowSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!--===============================================================-->
+                <!--First element in scrollable grid-->
+                <!--Implement a user control for the players instead of coding the same several times-->
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
                                 Tapped="Players_Tapped"
                                 NumberOfTapsRequired="1"/>
-                        </Grid.GestureRecognizers>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
 
-                        <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
-                            <!--ff:CachedImage Source = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0">
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
+                    <!--ff:CachedImage Source = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0">
                             <ff:CachedImage.Transformations>
                                 <fftransformations:CornersTransformation 
                                     CornersTransformType="TopLeftRounded, TopRightRounded, BottomLeftRounded, BottomRightRounded"          
                                     BottomLeftCornerSize="80" BottomRightCornerSize="80" TopLeftCornerSize="80" TopRightCornerSize="80" />
                             </ff:CachedImage.Transformations>
                         </-->
-                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
-                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
-                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
-                    </Grid>
-                    <!--===============================================================-->
-                    
-                    <!--Second element in scrollable grid-->
-                    <Grid Grid.Row="0" Grid.Column="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
-                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
-                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
-                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
-                    </Grid>
-                    <!--===============================================================-->
-                    
-                    <!--Third element in scrollable grid-->
-                    <Grid Grid.Row="1" Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
-                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
-                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
-                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
-                    </Grid>
-                    <!--===============================================================-->
-
-                    <!--Fourth element in scrollable grid-->
-                    <Grid Grid.Row="1" Grid.Column="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
-                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
-                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
-                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
-                    </Grid>
-                    <!--===============================================================-->
-
-                    <!--Fifth element in scrollable grid-->
-                    <Grid Grid.Row="2" Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
-                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
-                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
-                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
-                    </Grid>
-                    <!--===============================================================-->
-                    
-                    <!--Sixth element in scrollable grid-->
-                    <Grid Grid.Row="2" Grid.Column="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
-                        <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
-                        <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
-                        <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
-                        <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
-                    </Grid>
-                    <!--===============================================================-->
-
+                    <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                    <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                    <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
                 </Grid>
-            </ScrollView>
+                <!--===============================================================-->
 
+                <!--Second element in scrollable grid-->
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
+                    <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                    <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                    <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                </Grid>
+                <!--===============================================================-->
+
+                <!--Third element in scrollable grid-->
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
+                    <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                    <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                    <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                </Grid>
+                <!--===============================================================-->
+
+                <!--Fourth element in scrollable grid-->
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
+                    <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                    <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                    <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                </Grid>
+                <!--===============================================================-->
+
+                <!--Fifth element in scrollable grid-->
+                <Grid Grid.Row="2" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
+                    <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                    <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                    <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                </Grid>
+                <!--===============================================================-->
+
+                <!--Sixth element in scrollable grid-->
+                <Grid Grid.Row="2" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <BoxView Color="White" Grid.Column="0" Grid.RowSpan="4"/>
+                    <Image Source="http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg" Grid.Row="0" HeightRequest="200"/>
+                    <Label Text="Andreas Theil Lundberg" FontSize="11" Grid.Row="1" HorizontalOptions="Center" TextColor="#FB433C" Margin="0, 0, 0, -5"/>
+                    <Label Text="Forsvar/midtbane" FontSize="6" Grid.Row="2" HorizontalOptions="Center" TextColor="#243F73" Margin="0, 0, 0, 10"/>
+                    <Label Text="Læs mere" FontSize="11" Grid.Row="3" HorizontalOptions="Center" TextColor="#17CC24"/>
+                </Grid>
+                <!--===============================================================-->
+
+            </Grid>
         </StackLayout>
 
     </ContentPage.Content>

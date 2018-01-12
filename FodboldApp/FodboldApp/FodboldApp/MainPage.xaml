@@ -8,58 +8,5 @@
              xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
 
 
-    <Grid ColumnSpacing="0" RowSpacing="0" >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="1"/>
-            <RowDefinition Height="44"/>
-        </Grid.RowDefinitions>
-        <ContentView x:Name="PlaceHolder" Grid.Row="0"/>
-        <BoxView Grid.Row="1"/>
-
-        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <StackLayout x:Name="news" Spacing="0" Grid.Column="0" BackgroundColor="White">
-                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30"/>
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="News_Tapped"/>
-                </StackLayout.GestureRecognizers>
-            </StackLayout>
-
-            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White">
-                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30"/>
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Players_Tapped"/>
-                </StackLayout.GestureRecognizers>
-            </StackLayout>
-
-            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White">
-                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30"/>
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Matches_Tapped"/>
-                </StackLayout.GestureRecognizers>
-            </StackLayout>
-
-            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White">
-                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30"/>
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Tournament_Tapped"/>
-                </StackLayout.GestureRecognizers>
-            </StackLayout>
-
-            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White">
-                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30"/>
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="History_Tapped"/>
-                </StackLayout.GestureRecognizers>
-            </StackLayout>
-        </Grid>
-    </Grid>
+    
 </ContentPage>

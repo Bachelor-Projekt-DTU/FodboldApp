@@ -1,6 +1,7 @@
 ﻿using FodboldApp.BoxDesigns;
 using FodboldApp.Colorization;
 using FodboldApp.Model;
+using FodboldApp.ViewModel;
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,7 +11,7 @@ namespace FodboldApp.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlayerDescription : ContentPage
     {
-        static PlayersData Player = PlayersData.Players[9];
+        static PlayersData Player = PlayerVM.Instance.PlayerList[9];
         List<string> design = PlayerDescriptionDesign.GetDesign(Player);
 
         private int StatsRows = 10;

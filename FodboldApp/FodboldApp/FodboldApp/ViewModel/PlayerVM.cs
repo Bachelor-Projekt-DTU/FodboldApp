@@ -8,6 +8,8 @@ namespace FodboldApp.ViewModel
 {
     class PlayerVM: PlayersData, INotifyPropertyChanged
     {
+        public static PlayerVM Instance = new PlayerVM();
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {

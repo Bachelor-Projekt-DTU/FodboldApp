@@ -11,11 +11,9 @@ namespace FodboldApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Tournament : ContentPage
 	{
-        PlayerVM vm = new PlayerVM();
-
         public Tournament()
         {
-            var items = vm.PlayerList;
+            var items = PlayerVM.Instance.PlayerList;
             items.RemoveAt(items.Count - 1);
 
             InitializeComponent();

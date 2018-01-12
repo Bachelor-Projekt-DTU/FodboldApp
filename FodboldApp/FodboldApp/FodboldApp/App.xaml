@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.App"             
              xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
+    <!--BindingContext="FodboldApp.ViewModel:HeaderViewModel"-->
 
     <Application.Resources>
 
@@ -31,6 +32,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="48"/>
                     </Grid.RowDefinitions>
 
                     <!-- Begin Header -->
@@ -80,10 +82,67 @@
 
                     <!-- Begin Content -->
                     <ContentView Grid.Column="0" Grid.Row="1">
-                        <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                        <ScrollView>
+                            <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                        </ScrollView>
                     </ContentView>
                     <!-- End Content -->
-        </Grid>
+
+                    <Grid ColumnSpacing="0" RowSpacing="0" Grid.Column="0" Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="2"/>
+                            <RowDefinition Height="43"/>
+                        </Grid.RowDefinitions>
+                        <ContentView x:Name="PlaceHolder" Grid.Row="0"/>
+                        <BoxView Grid.Row="1" BackgroundColor="#f0f0f0"/>
+
+                        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout x:Name="news" Spacing="0" Grid.Column="0" BackgroundColor="White">
+                                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.NewsIconColor}"/>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="NewsTapped"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White">
+                                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.PlayerIconColor}"/>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PlayersTapped"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White">
+                                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.MatchIconColor}"/>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="MatchesTapped"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White">
+                                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.TournamentIconColor}"/>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TournamentTapped"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White">
+                                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.HistoryIconColor}"/>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="HistoryTapped"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </Grid>
         </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
