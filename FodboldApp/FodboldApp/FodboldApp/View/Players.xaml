@@ -4,7 +4,8 @@
              x:Class="FodboldApp.Players"
              xmlns:usercontrol="clr-namespace:FodboldApp.View.UserControl"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
-             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.BindingContext>
         <viewmodels:PlayerVM />
     </ContentPage.BindingContext>

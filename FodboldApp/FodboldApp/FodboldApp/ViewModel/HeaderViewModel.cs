@@ -1,28 +1,94 @@
-﻿using FodboldApp.Pages;
-using FodboldApp.Stack;
-using Plugin.CrossPlatformTintedImage.Abstractions;
+﻿using FodboldApp.Stack;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.Windows.Input;
+using System.ComponentModel;
 using Xamarin.Forms;
 
 
 namespace FodboldApp.ViewModel
 {
-    class HeaderViewModel
+    class HeaderViewModel : INotifyPropertyChanged
     {
         Color SelectedColor = Color.FromHex("#315baa");
         Color UnSelectedColor = Color.FromHex("#545454");
 
-        //public static ICommand TournamentTapped { get; private set; }
 
-        public Color NewsIconColor { get; private set; }
-        public Color PlayerIconColor { get; private set; }
-        public Color MatchIconColor { get; private set; }
-        public Color TournamentIconColor { get; private set; }
-        public Color HistoryIconColor { get; private set; }
+        private Color _newsIconColor;
+        private Color _playerIconColor;
+        private Color _matchIconColor;
+        private Color _tournamentIconColor;
+        private Color _historyIconColor;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string name)
+        {
+            var handler = PropertyChanged;
+
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(name));
+            }
+        }
+
+        public Color NewsIconColor
+        {
+            get
+            {
+                return _newsIconColor;
+            }
+            private set
+            {
+                _newsIconColor = value;
+                OnPropertyChanged(nameof(NewsIconColor));
+            }
+        }
+        public Color PlayerIconColor
+        {
+            get
+            {
+                return _playerIconColor;
+            }
+            private set
+            {
+                _playerIconColor = value;
+                OnPropertyChanged(nameof(NewsIconColor));
+            }
+        }
+        public Color MatchIconColor
+        {
+            get
+            {
+                return _matchIconColor;
+            }
+            private set
+            {
+                _matchIconColor = value;
+                OnPropertyChanged(nameof(NewsIconColor));
+            }
+        }
+        public Color TournamentIconColor
+        {
+            get
+            {
+                return _tournamentIconColor;
+            }
+            private set
+            {
+                _tournamentIconColor = value;
+                OnPropertyChanged(nameof(NewsIconColor));
+            }
+        }
+        public Color HistoryIconColor
+        {
+            get
+            {
+                return _historyIconColor;
+            }
+            private set
+            {
+                _historyIconColor = value;
+                OnPropertyChanged(nameof(NewsIconColor));
+            }
+        }
 
         public CustomStack stack;
 
@@ -35,19 +101,21 @@ namespace FodboldApp.ViewModel
             MatchIconColor = UnSelectedColor;
             TournamentIconColor = UnSelectedColor;
             HistoryIconColor = UnSelectedColor;
+        }
 
-            //Application.Current.MainPage = CustomStack.Instance.TournamentContent;
-
-            //TournamentTapped = new Command(() =>
-            //{
-            //    TournamentIconColor = SelectedColor;
-            //    Console.WriteLine("HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEY STAPLE GUN");
-            //    //Application.Current.MainPage = CustomStack.Instance.TournamentContent;
-            //});
+        private void ResetTint()
+        {
+            NewsIconColor = UnSelectedColor;
+            PlayerIconColor = UnSelectedColor;
+            MatchIconColor = UnSelectedColor;
+            TournamentIconColor = UnSelectedColor;
+            HistoryIconColor = UnSelectedColor;
         }
 
         public async void NewsTap()
         {
+            ResetTint();
+            NewsIconColor = SelectedColor;
             if (Application.Current.MainPage.Navigation.NavigationStack[0] is News)
             {
                 await stack.NewsContent.Navigation.PopToRootAsync();
@@ -74,6 +142,8 @@ namespace FodboldApp.ViewModel
 
         public async void PlayerTap()
         {
+            ResetTint();
+            PlayerIconColor = SelectedColor;
             if (Application.Current.MainPage.Navigation.NavigationStack[0] is Players)
             {
                 await stack.PlayerContent.Navigation.PopToRootAsync();
@@ -100,6 +170,8 @@ namespace FodboldApp.ViewModel
 
         public async void MatchTap()
         {
+            ResetTint();
+            MatchIconColor = SelectedColor;
             if (Application.Current.MainPage.Navigation.NavigationStack[0] is Matches)
             {
                 await stack.MatchContent.Navigation.PopToRootAsync();
@@ -126,6 +198,8 @@ namespace FodboldApp.ViewModel
 
         public async void TournamentTap()
         {
+            ResetTint();
+            TournamentIconColor = SelectedColor;
             if (Application.Current.MainPage.Navigation.NavigationStack[0] is Tournament)
             {
                 await stack.TournamentContent.Navigation.PopToRootAsync();
@@ -151,6 +225,8 @@ namespace FodboldApp.ViewModel
 
         public async void HistoryTap()
         {
+            ResetTint();
+            HistoryIconColor = SelectedColor;
             if (Application.Current.MainPage.Navigation.NavigationStack[0] is History)
             {
                 await stack.HistoryContent.Navigation.PopToRootAsync();

@@ -1,18 +1,18 @@
-﻿using FodboldApp.Pages;
-using FodboldApp.Stack;
-using FodboldApp.ViewModel;
+﻿using FodboldApp.Stack;
+using FodboldApp.View;
 using System;
 using Xamarin.Forms;
 
 namespace FodboldApp
 {
-	partial class History : ContentPage
+    partial class History : ContentPage
 	{
         //NavigationPage NavigationStack = CustomStack.Instance.HistoryContent;
 
         public History()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
         async void FormerPlayers_Tapped(object sender, EventArgs e)
         {

@@ -14,6 +14,7 @@ namespace FodboldApp
 		public Matches ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 	}
 }

@@ -1,22 +1,19 @@
-﻿using FodboldApp.Pages;
-using FodboldApp.Stack;
+﻿using FodboldApp.Stack;
+using FodboldApp.View;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FodboldApp
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class News : ContentPage
 	{
 		public News ()
 		{
 			InitializeComponent ();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         async void News_Tapped(object sender, EventArgs e)

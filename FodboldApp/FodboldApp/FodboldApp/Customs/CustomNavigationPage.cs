@@ -9,7 +9,7 @@ namespace FodboldApp.Customs
     {
         public CustomNavigationPage(Page page) : base(page)
         {
-
+            
         }
     }
 }

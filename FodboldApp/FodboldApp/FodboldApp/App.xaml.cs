@@ -1,7 +1,5 @@
 ﻿using DLToolkit.Forms.Controls;
 using FodboldApp.View;
-using FodboldApp.Pages;
-using FodboldApp.Stack;
 using FodboldApp.ViewModel;
 using System;
 
@@ -22,6 +20,8 @@ namespace FodboldApp
             MainPage = new NavigationPage(new FrontPage());
 
             vm = new HeaderViewModel();
+
+            NavigationPage.SetHasNavigationBar(this, false);
 
             BindingContext = vm;
         }
