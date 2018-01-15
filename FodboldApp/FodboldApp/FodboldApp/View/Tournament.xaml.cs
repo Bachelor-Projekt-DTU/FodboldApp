@@ -15,6 +15,8 @@ namespace FodboldApp
 
         public Tournament()
         {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             //var items = vm.PlayerListSource;
             //items.RemoveAt(items.Count - 1);
 

@@ -6,7 +6,8 @@
     <ContentPage.Content>
         <StackLayout x:Name="pageLayout">
             <Label Text="RESULTATER"
-                   HorizontalOptions="CenterAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
                    FontSize="Large"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>

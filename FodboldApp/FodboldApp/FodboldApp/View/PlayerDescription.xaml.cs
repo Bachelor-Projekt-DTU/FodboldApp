@@ -16,6 +16,7 @@ namespace FodboldApp.View
         public PlayerDescription()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             //List<string> design = PlayerDescriptionDesign.GetDesign(Player);
 
             //ImageURL = design[0];

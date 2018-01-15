@@ -21,6 +21,8 @@ namespace FodboldApp
 
             vm = new HeaderViewModel();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             BindingContext = vm;
         }
         protected override void OnStart()
