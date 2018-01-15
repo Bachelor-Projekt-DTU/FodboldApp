@@ -1,7 +1,5 @@
 ﻿using DLToolkit.Forms.Controls;
 using FodboldApp.View;
-using FodboldApp.Pages;
-using FodboldApp.Stack;
 using FodboldApp.ViewModel;
 using System;
 

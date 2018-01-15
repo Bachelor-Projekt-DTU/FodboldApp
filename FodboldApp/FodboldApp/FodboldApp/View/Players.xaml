@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.Players"
+             x:Class="FodboldApp.View.Players"
              xmlns:usercontrol="clr-namespace:FodboldApp.View.UserControl"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
@@ -15,7 +15,7 @@
            HorizontalOptions="Center"/>
             
             <flv:FlowListView x:Name="flowListView" FlowColumnCount="2" SeparatorVisibility="None" HasUnevenRows="True" 
-			FlowItemsSource="{Binding PlayerListSource}" ItemTapped="Players_Tapped">
+			FlowItemsSource="{Binding PlayerListSource}" FlowItemTappedCommand="{Binding ShowPlayerDescriptionCommand}">
 
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>

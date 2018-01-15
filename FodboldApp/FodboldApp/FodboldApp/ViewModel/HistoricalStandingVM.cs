@@ -25,7 +25,28 @@ namespace FodboldApp.ViewModel
         private static ObservableCollection<HistoricalStandingsData> HistoricalStandingsDataList = new ObservableCollection<HistoricalStandingsData>();
         private static ObservableCollection<HistoricalStandingsData> HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingsData>();
         public ICommand HideStackLayoutCommand { get; private set; }
-        public string _arrowImage { get; set; } = "down_arrow.png";
+        public bool _showStackLayout { get; set; } = false;
+        public bool ShowStackLayout
+        {
+            get
+            {
+                return _showStackLayout;
+            }
+            set
+            {
+                _showStackLayout = value;
+                OnPropertyChanged(nameof(ShowStackLayout));
+            }
+        }
+
+        public Color TableColor
+        {
+            get
+            {
+                return Colorization.ColoringLogic.AppPrimary;
+            }
+        }
+        private string _arrowImage { get; set; } = "down_arrow.png";
         public string ArrowImage {
             get
             {
@@ -60,7 +81,10 @@ namespace FodboldApp.ViewModel
             {
                 ArrowImage = "up_arrow.png";
             }
-            else { ArrowImage = "down_arrow.png"; }
+            else
+            {
+                ArrowImage = "down_arrow.png";
+            }
         }
 
         public string tournamentLabelName { get; set; } = "Vælg en turnering";
@@ -91,6 +115,7 @@ namespace FodboldApp.ViewModel
 
                     if (_selectedItem != null)
                         _selectedItem.Selected = true;
+                        ShowStackLayout = true;
 
                     TournamentLabelName = _selectedItem.TournamentName;
 
@@ -111,6 +136,18 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(StandingsListSource));
             }
         }
+        public ObservableCollection<HistoricalStandingsData> StandingsListSourceContent
+        {
+            get
+            {
+                return HistoricalStandingsListContent;
+            }
+            set
+            {
+                HistoricalStandingsListContent = value;
+                OnPropertyChanged(nameof(StandingsListSourceContent));
+            }
+        }
 
         private void SetupHistoricalStandingsDataList()
         {
@@ -123,10 +160,11 @@ namespace FodboldApp.ViewModel
         }
         private void SetupHistoricalStandingsListContent()
         {
-            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Standing = "6-3-0", Point = "15" });
-            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Standing = "6-3-0", Point = "15" });
-            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Standing = "6-3-0", Point = "15" });
-            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Standing = "6-3-0", Point = "15" });
+            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            HistoricalStandingsListContent.Add(new HistoricalStandingsData { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
         }
 
         public HistoricalStandingVM()

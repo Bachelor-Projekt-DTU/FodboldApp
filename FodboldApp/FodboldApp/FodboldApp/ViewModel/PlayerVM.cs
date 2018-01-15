@@ -1,10 +1,13 @@
 ﻿using FodboldApp.Model;
+using FodboldApp.Stack;
+using FodboldApp.View;
 using FodboldApp.View.UserControl;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
@@ -12,14 +15,7 @@ namespace FodboldApp.ViewModel
     class PlayerVM: PlayersData
     {
         private static List<PlayersData> Players = new List<PlayersData>();
-
-        private int StatsRows = 10;
-        private int DescriptionRows = 2;
-
-        public PlayerVM()
-        {
-          SetupPlayer();  
-        }
+        public ICommand ShowPlayerDescriptionCommand { get; private set; }
 
         public List<PlayersData> PlayerListSource
         {
@@ -48,6 +44,18 @@ namespace FodboldApp.ViewModel
                 Name = "Andreas Theil Lundberg 3",
                 Position = "Forsvar/Midtbane"
             });
+        }
+        void OnTapped()
+        {
+            CustomStack.Instance.PlayerContent.Navigation.PushAsync(new PlayerDescription());
+            App.Current.MainPage.Navigation.PushAsync(new PlayerDescription());
+            Console.WriteLine("Hej");
+        }
+
+        public PlayerVM()
+        {
+            SetupPlayer();
+            ShowPlayerDescriptionCommand = new Command(OnTapped);
         }
     }
 }

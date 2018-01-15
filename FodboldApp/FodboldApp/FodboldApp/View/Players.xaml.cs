@@ -7,7 +7,7 @@ using System;
 using FodboldApp.View;
 using FodboldApp.ViewModel;
 
-namespace FodboldApp
+namespace FodboldApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Players : ContentPage
@@ -16,12 +16,6 @@ namespace FodboldApp
         {
             InitializeComponent();
             BindingContext = new PlayerVM();
-        }
-        async void Players_Tapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new PlayerDescription());
-
-            Console.WriteLine("Players_Tapped");
         }
     }
 }

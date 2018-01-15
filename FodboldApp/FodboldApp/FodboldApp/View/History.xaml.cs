@@ -12,7 +12,6 @@ namespace FodboldApp
         public History()
         {
             InitializeComponent();
-            historicalStandingVM = new HistoricalStandingVM();
         }
         async void FormerPlayers_Tapped(object sender, EventArgs e)
         {
@@ -43,7 +42,6 @@ namespace FodboldApp
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            ((App)Application.Current).MainPage.BindingContext = historicalStandingVM;
             await ((App)Application.Current).MainPage.Navigation.PushAsync(new HistoricalStandings());
         }
     }
