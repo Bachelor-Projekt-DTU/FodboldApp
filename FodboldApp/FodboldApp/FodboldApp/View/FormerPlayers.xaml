@@ -4,16 +4,14 @@
              x:Class="FodboldApp.View.FormerPlayers"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout x:Name="pageLayout">
-                <Label Text="TIDLIGERE SPILLERE"
+        <StackLayout x:Name="pageLayout">
+            <Label Text="TIDLIGERE SPILLERE"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    FontSize="Large"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
-                <Grid x:Name="grid"  RowSpacing = "0" ColumnSpacing = "0"/>
-            </StackLayout>
-        </ScrollView>
+            <Grid x:Name="grid"  RowSpacing = "0" ColumnSpacing = "0"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

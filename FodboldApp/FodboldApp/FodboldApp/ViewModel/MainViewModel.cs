@@ -8,17 +8,31 @@ namespace FodboldApp.ViewModel
 {
     class MainViewModel
     {
-        public CustomStack stack;
-        public ContentPage CurrentPage;
-        public ContentView MainPageContent;
-        
+        public static CustomStack stack = CustomStack.Instance;
+        public static ContentPage CurrentPage;
+        public static ContentView MainPageContent;
+
+        Color SelectedColor = Color.FromHex("#315baa");
+        Color UnSelectedColor = Color.FromHex("#545454");
+
+        public Color NewsIconColor { get; } = Color.FromHex("#315baa");
+        public Color PlayerIconColor { get; }
+        public Color MatchIconColor { get; }
+        public Color TournamentIconColor { get; }
+        public Color HistoryIconColor { get; }
+
         public MainViewModel(ContentView mainPage)
         {
-            stack = new CustomStack();
-            this.MainPageContent = mainPage;
+            NewsIconColor = SelectedColor;
+            PlayerIconColor = UnSelectedColor;
+            MatchIconColor = UnSelectedColor;
+            TournamentIconColor = UnSelectedColor;
+            HistoryIconColor = UnSelectedColor;
+            MainPageContent = mainPage;
+
         }
 
-        public void ButtonPressPage(int i)
+        public static void ButtonPressPage(int i)
         {
             switch(i)
             {
@@ -41,7 +55,7 @@ namespace FodboldApp.ViewModel
             ChangePage();
         }
 
-        public void ChangePage()
+        public static void ChangePage()
         {
             MainPageContent.Content = CurrentPage.Content;
         }

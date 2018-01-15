@@ -1,4 +1,5 @@
-﻿using FodboldApp.ViewModel;
+﻿using FodboldApp.Stack;
+using FodboldApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -23,13 +24,13 @@ namespace FodboldApp
 
         private void OnBtnClick(object sender, EventArgs e)
         {
-            NavigationPage nav = new NavigationPage(new MainPage());
-            App.Navigation = nav;
-            Application.Current.MainPage = nav;
+            //NavigationPage nav = new NavigationPage(new MainPage());
+            //App.stack = nav;
+            Application.Current.MainPage = new NavigationPage(new News());
         }
 
         Label previousLabel;
-        private async void OnItemSelected(object sender, EventArgs e)
+        private void OnItemSelected(object sender, EventArgs e)
         {
             var entity = ((Label)sender);
             if (previousLabel != null) previousLabel.BackgroundColor = Color.White;
