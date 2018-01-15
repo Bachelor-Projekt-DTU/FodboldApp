@@ -22,33 +22,37 @@ namespace FodboldApp
 
             //await NavigationStack.PushAsync(new FormerPlayers());
 
+            await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new FormerPlayers());
             await Navigation.PushAsync(new FormerPlayers());
-            MainViewModel.ButtonPressPage(4);
         }
         async void POTY_Tapped(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            await ((App)Application.Current).MainPage.Navigation.PushAsync(new POTY());
+            await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new POTY());
+            await Navigation.PushAsync(new POTY());
         }
         async void OverFiftyGoals_Tapped(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            await ((App)Application.Current).MainPage.Navigation.PushAsync(new OverFiftyGoals());
+            await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new FormerPlayers());
+            await Navigation.PushAsync(new OverFiftyGoals());
         }
 
         async void OverHundredGames_Tapped(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            await ((App)Application.Current).MainPage.Navigation.PushAsync(new OverHundredGames());
+            await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new OverHundredGames());
+            await Navigation.PushAsync(new OverHundredGames());
         }
         async void HistoricalStandings_Tapped(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            await ((App)Application.Current).MainPage.Navigation.PushAsync(new HistoricalStandings());
+            await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new HistoricalStandings());
+            await Navigation.PushAsync(new HistoricalStandings());
         }
     }
 }

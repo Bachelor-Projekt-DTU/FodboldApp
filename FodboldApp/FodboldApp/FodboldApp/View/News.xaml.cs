@@ -1,4 +1,5 @@
 ﻿using FodboldApp.Pages;
+using FodboldApp.Stack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,8 @@ namespace FodboldApp
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
-            await ((App)Application.Current).MainPage.Navigation.PushAsync(new NewsPage());
+            await CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage());
+            await Navigation.PushAsync(new NewsPage());
         }
     }
 }

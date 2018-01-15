@@ -5,6 +5,7 @@ using System.Net;
 using System.IO;
 using System;
 using FodboldApp.Pages;
+using FodboldApp.Stack;
 
 namespace FodboldApp
 {
@@ -18,7 +19,8 @@ namespace FodboldApp
 
         async void Players_Tapped(object sender, EventArgs e)
         {
-            await ((App)App.Current).MainPage.Navigation.PushAsync(new PlayerDescription());
+            await CustomStack.Instance.PlayerContent.Navigation.PushAsync(new PlayerDescription());
+            await Navigation.PushAsync(new PlayerDescription());
 
             Console.WriteLine("Players_Tapped");
         }

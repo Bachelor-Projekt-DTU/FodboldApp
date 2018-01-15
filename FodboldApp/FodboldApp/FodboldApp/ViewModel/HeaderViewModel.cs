@@ -1,4 +1,5 @@
-﻿using FodboldApp.Stack;
+﻿using FodboldApp.Pages;
+using FodboldApp.Stack;
 using Plugin.CrossPlatformTintedImage.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace FodboldApp.ViewModel
         Color SelectedColor = Color.FromHex("#315baa");
         Color UnSelectedColor = Color.FromHex("#545454");
 
-        public static ICommand TournamentTapped { get; private set; }
+        //public static ICommand TournamentTapped { get; private set; }
 
         public Color NewsIconColor { get; private set; }
         public Color PlayerIconColor { get; private set; }
@@ -37,71 +38,140 @@ namespace FodboldApp.ViewModel
 
             //Application.Current.MainPage = CustomStack.Instance.TournamentContent;
 
-            TournamentTapped = new Command(() =>
-            {
-                TournamentIconColor = SelectedColor;
-                Console.WriteLine("HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEY STAPLE GUN");
-                //Application.Current.MainPage = CustomStack.Instance.TournamentContent;
-            });
+            //TournamentTapped = new Command(() =>
+            //{
+            //    TournamentIconColor = SelectedColor;
+            //    Console.WriteLine("HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEY STAPLE GUN");
+            //    //Application.Current.MainPage = CustomStack.Instance.TournamentContent;
+            //});
         }
 
         public async void NewsTap()
         {
-            if (Application.Current.MainPage == stack.NewsContent)
+            if (Application.Current.MainPage.Navigation.NavigationStack[0] is News)
             {
+                await stack.NewsContent.Navigation.PopToRootAsync();
                 await Application.Current.MainPage.Navigation.PopToRootAsync();
             }
             else
             {
-                Application.Current.MainPage = stack.NewsContent;
+                int stackSize = stack.NewsContent.Navigation.NavigationStack.Count;
+                Console.WriteLine(stackSize);
+                var page = Application.Current.MainPage;
+                for(int i = 0; i < stackSize; i++)
+                {
+                    page.Navigation.InsertPageBefore(stack.NewsContent.Navigation.NavigationStack[i], page.Navigation.NavigationStack[i]);
+                }
+                
+                while(page.Navigation.NavigationStack.Count > stackSize)
+                {
+                    Console.WriteLine(stackSize);
+                    await page.Navigation.PopAsync();
+                }
+                
             }
         }
 
         public async void PlayerTap()
         {
-            if (Application.Current.MainPage == stack.PlayerContent)
+            if (Application.Current.MainPage.Navigation.NavigationStack[0] is Players)
             {
+                await stack.PlayerContent.Navigation.PopToRootAsync();
                 await Application.Current.MainPage.Navigation.PopToRootAsync();
             }
             else
             {
-                Application.Current.MainPage = stack.PlayerContent;
+                int stackSize = stack.PlayerContent.Navigation.NavigationStack.Count;
+                Console.WriteLine(stackSize);
+                var page = Application.Current.MainPage;
+                for (int i = 0; i < stackSize; i++)
+                {
+                    page.Navigation.InsertPageBefore(stack.PlayerContent.Navigation.NavigationStack[i], page.Navigation.NavigationStack[i]);
+                }
+
+                while (page.Navigation.NavigationStack.Count > stackSize)
+                {
+                    Console.WriteLine(stackSize);
+                    await page.Navigation.PopAsync();
+                }
+
             }
         }
 
         public async void MatchTap()
         {
-            if (Application.Current.MainPage == stack.MatchContent)
+            if (Application.Current.MainPage.Navigation.NavigationStack[0] is Matches)
             {
+                await stack.MatchContent.Navigation.PopToRootAsync();
                 await Application.Current.MainPage.Navigation.PopToRootAsync();
             }
             else
             {
-                Application.Current.MainPage = stack.MatchContent;
+                int stackSize = stack.MatchContent.Navigation.NavigationStack.Count;
+                Console.WriteLine(stackSize);
+                var page = Application.Current.MainPage;
+                for (int i = 0; i < stackSize; i++)
+                {
+                    page.Navigation.InsertPageBefore(stack.MatchContent.Navigation.NavigationStack[i], page.Navigation.NavigationStack[i]);
+                }
+
+                while (page.Navigation.NavigationStack.Count > stackSize)
+                {
+                    Console.WriteLine(stackSize);
+                    await page.Navigation.PopAsync();
+                }
+
             }
         }
 
         public async void TournamentTap()
         {
-            if (Application.Current.MainPage == stack.TournamentContent)
+            if (Application.Current.MainPage.Navigation.NavigationStack[0] is Tournament)
             {
+                await stack.TournamentContent.Navigation.PopToRootAsync();
                 await Application.Current.MainPage.Navigation.PopToRootAsync();
             }
             else
             {
-                Application.Current.MainPage = stack.TournamentContent;
+                int stackSize = stack.TournamentContent.Navigation.NavigationStack.Count;
+                Console.WriteLine(stackSize);
+                var page = Application.Current.MainPage;
+                for (int i = 0; i < stackSize; i++)
+                {
+                    page.Navigation.InsertPageBefore(stack.TournamentContent.Navigation.NavigationStack[i], page.Navigation.NavigationStack[i]);
+                }
+
+                while (page.Navigation.NavigationStack.Count > stackSize)
+                {
+                    Console.WriteLine(stackSize);
+                    await page.Navigation.PopAsync();
+                }
             }
         }
 
         public async void HistoryTap()
         {
-            if (Application.Current.MainPage == stack.HistoryContent)
+            if (Application.Current.MainPage.Navigation.NavigationStack[0] is History)
             {
+                await stack.HistoryContent.Navigation.PopToRootAsync();
                 await Application.Current.MainPage.Navigation.PopToRootAsync();
             }
             else
             {
-                Application.Current.MainPage = stack.HistoryContent;
+                int stackSize = stack.HistoryContent.Navigation.NavigationStack.Count;
+                Console.WriteLine(stackSize);
+                var page = Application.Current.MainPage;
+                for (int i = 0; i < stackSize; i++)
+                {
+                    page.Navigation.InsertPageBefore(stack.HistoryContent.Navigation.NavigationStack[i], page.Navigation.NavigationStack[i]);
+                }
+
+                while (page.Navigation.NavigationStack.Count > stackSize)
+                {
+                    Console.WriteLine(stackSize);
+                    await page.Navigation.PopAsync();
+                }
+
             }
         }
     }

@@ -23,6 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomNavigationPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
@@ -31,7 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGames.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\POTYsData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Stack\CustomStack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomStack.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewModel.cs" />
