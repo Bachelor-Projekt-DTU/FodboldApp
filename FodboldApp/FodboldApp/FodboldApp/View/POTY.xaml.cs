@@ -4,7 +4,7 @@ using Xamarin.Forms;
 using FodboldApp.Model;
 using Xamarin.Forms.Xaml;
 
-namespace FodboldApp.Pages
+namespace FodboldApp.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class POTY : ContentPage

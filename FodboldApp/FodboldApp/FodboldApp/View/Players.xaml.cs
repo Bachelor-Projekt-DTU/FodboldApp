@@ -4,7 +4,8 @@ using FodboldApp.Model;
 using System.Net;
 using System.IO;
 using System;
-using FodboldApp.Pages;
+using FodboldApp.View;
+using FodboldApp.ViewModel;
 
 namespace FodboldApp
 {
@@ -14,11 +15,11 @@ namespace FodboldApp
         public Players()
         {
             InitializeComponent();
+            BindingContext = new PlayerVM();
         }
-
         async void Players_Tapped(object sender, EventArgs e)
         {
-            await ((App)App.Current).MainPage.Navigation.PushAsync(new PlayerDescription());
+            await Navigation.PushAsync(new PlayerDescription());
 
             Console.WriteLine("Players_Tapped");
         }

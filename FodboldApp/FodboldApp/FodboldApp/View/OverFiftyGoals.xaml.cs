@@ -6,7 +6,7 @@ using FodboldApp.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FodboldApp.Pages
+namespace FodboldApp.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OverFiftyGoals : ContentPage

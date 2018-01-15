@@ -1,4 +1,4 @@
-﻿using FodboldApp.Pages;
+﻿using FodboldApp.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;

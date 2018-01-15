@@ -1,4 +1,5 @@
-﻿using FodboldApp.Pages;
+﻿using FodboldApp.View;
+using FodboldApp.ViewModel;
 using System;
 using Xamarin.Forms;
 
@@ -6,9 +7,12 @@ namespace FodboldApp
 {
 	public partial class History : ContentPage
 	{
+        HistoricalStandingVM historicalStandingVM;
+
         public History()
         {
             InitializeComponent();
+            historicalStandingVM = new HistoricalStandingVM();
         }
         async void FormerPlayers_Tapped(object sender, EventArgs e)
         {
@@ -39,6 +43,7 @@ namespace FodboldApp
         {
             System.Diagnostics.Debug.WriteLine("WE ON IT");
 
+            ((App)Application.Current).MainPage.BindingContext = historicalStandingVM;
             await ((App)Application.Current).MainPage.Navigation.PushAsync(new HistoricalStandings());
         }
     }

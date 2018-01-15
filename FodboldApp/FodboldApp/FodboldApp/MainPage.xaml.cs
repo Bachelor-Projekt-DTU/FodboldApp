@@ -11,6 +11,8 @@ namespace FodboldApp
 {
     public partial class MainPage : ContentPage
     {
+        PlayerVM playerVM;
+
         void ResetIconTint()
         {
             tintedImage_News.TintColor = Color.FromRgb(84,84,84);
@@ -31,6 +33,7 @@ namespace FodboldApp
         void Players_Tapped(object sender, EventArgs e)
         {
             ResetIconTint();
+            BindingContext = playerVM;
             var page = new Players();
             PlaceHolder.Content = page.Content;
             tintedImage_Players.TintColor = Color.FromRgb(49, 91, 170);
@@ -71,6 +74,8 @@ namespace FodboldApp
             News_Tapped(news, new EventArgs ());
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            playerVM = new PlayerVM();
         }
     }
 }

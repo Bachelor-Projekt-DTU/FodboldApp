@@ -1,4 +1,5 @@
-﻿using FodboldApp.Pages;
+﻿using DLToolkit.Forms.Controls;
+using FodboldApp.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,10 @@ namespace FodboldApp
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new FrontPage());
-        }
+            FlowListView.Init();
 
+        }
         protected override void OnStart()
         {
             // Handle when your app starts
