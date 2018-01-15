@@ -10,37 +10,20 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FodboldApp.Pages
+namespace FodboldApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HistoricalStandings : ContentPage, INotifyPropertyChanged
+    public partial class HistoricalStandings : ContentPage
     {
-        public string StadingsLabelText { get; set; } = "HEJSA";
-
 
         public HistoricalStandings()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = new HistoricalStandingVM();
-
+            Console.WriteLine("Fejlen " + ((App)Application.Current).MainPage.BindingContext.ToString());
             // Reducing listview to remove empty space : HeightRequest = (#items * itemHeight) +(Standard height + #items)
             standingsList.HeightRequest = (5 * standingsList.RowHeight) + (10 * 22.5);
-        }
-
-        private void OnStackLayout_Tapped(object sender, EventArgs e)
-        {
-            standingsStackLayout.IsVisible = !standingsStackLayout.IsVisible;
-        }
-
-        Label previousLabel;
-        private void OnItemSelected(object sender, EventArgs e)
-        {
-            var entity = ((Label)sender);
-            if (previousLabel != null) previousLabel.BackgroundColor = Color.White;
-            entity.BackgroundColor = Color.Red;
-            previousLabel = entity;
-            StadingsLabelText = entity.Text;
-        }
+        }       
     }
 }

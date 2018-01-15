@@ -1,4 +1,6 @@
-﻿using FodboldApp.Pages;
+﻿using DLToolkit.Forms.Controls;
+using FodboldApp.View;
+using FodboldApp.Pages;
 using FodboldApp.Stack;
 using FodboldApp.ViewModel;
 using System;
@@ -14,6 +16,8 @@ namespace FodboldApp
         public App()
         {
             InitializeComponent();
+            FlowListView.Init();
+
 
             MainPage = new NavigationPage(new FrontPage());
 
@@ -21,7 +25,6 @@ namespace FodboldApp
 
             BindingContext = vm;
         }
-
         protected override void OnStart()
         {
             // Handle when your app starts

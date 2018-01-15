@@ -1,8 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.Pages.HistoricalStandings"
+             x:Class="FodboldApp.View.HistoricalStandings"
+             xmlns:local="clr-namespace:FodboldApp.View.Interface" 
              ControlTemplate="{StaticResource MainPageTemplate}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:SelectedItemColorConverter x:Key="colorConvert"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
 
     <ContentPage.Content>
         <StackLayout>
@@ -13,23 +21,22 @@
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Label Text="{Binding StadingsLabelText, Mode=TwoWay}" HorizontalOptions="StartAndExpand" FontSize="Large"/>
-                <Image Source="icon.png" HorizontalOptions="End"/>
+                <Label Text="{Binding TournamentLabelName}" HorizontalOptions="StartAndExpand" FontSize="Large" TextColor="{StaticResource textColor}"/>
+                <Image Source="{Binding ArrowImage}" HorizontalOptions="End"/>
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnStackLayout_Tapped"/>
+                    <TapGestureRecognizer Command="{Binding HideStackLayoutCommand}"/>
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
-            <StackLayout x:Name="standingsStackLayout" IsVisible="False">
-                <ListView x:Name="standingsList" SeparatorColor="Black" ItemsSource="{Binding standingsListSource}">
+            <StackLayout x:Name="standingsStackLayout">
+                <ListView x:Name="standingsList" IsVisible="{Binding ShowListView}" SeparatorColor="Black" ItemsSource="{Binding StandingsListSource}" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Label Text="{Binding TournamentName}" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnItemSelected"/>
-                                    </Label.GestureRecognizers>
-                                </Label>
+                                <Label x:Name="TournamentNameLabel" Text="{Binding TournamentName}" 
+                                       TextColor="{StaticResource textColor}" HorizontalTextAlignment="Center" 
+                                       VerticalTextAlignment="Center" 
+                                       BackgroundColor="{Binding Selected, Converter={StaticResource colorConvert}}"/>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>

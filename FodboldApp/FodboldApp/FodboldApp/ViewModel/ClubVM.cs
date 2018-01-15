@@ -5,18 +5,9 @@ using System.Text;
 
 namespace FodboldApp.ViewModel
 {
-    class ClubVM : ClubsData, INotifyPropertyChanged
+    class ClubVM : ClubsData
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string name)
-        {
-            var handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
-        }
+        public static List<ClubsData> ClubList = new List<ClubsData>();
 
         public ClubVM ()
         {
@@ -28,7 +19,7 @@ namespace FodboldApp.ViewModel
 
      }
 
-        public List<ClubsData> clubListSource
+        public List<ClubsData> ClubListSource
         {
             get
             {
