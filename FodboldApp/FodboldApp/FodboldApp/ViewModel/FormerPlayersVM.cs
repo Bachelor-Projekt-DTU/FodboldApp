@@ -25,7 +25,7 @@ namespace FodboldApp.ViewModel
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
         private ObservableCollection<FormerPlayersData> _playersList { get; set; } = new ObservableCollection<FormerPlayersData>();
-        public ObservableCollection<FormerPlayersData> PlayerList
+        public ObservableCollection<FormerPlayersData> PlayersList
         {
             get
             {
@@ -34,7 +34,7 @@ namespace FodboldApp.ViewModel
             set
             {
                 _playersList = value;
-                OnPropertyChanged(nameof(PlayerList));
+                OnPropertyChanged(nameof(PlayersList));
             }
         }
         private void SetupPlayerList()

@@ -1,12 +1,8 @@
-﻿using FodboldApp.Colorization;
-using FodboldApp.Model;
-using FodboldApp.ViewModel;
-using ImageCircle.Forms.Plugin.Abstractions;
-
+﻿using FodboldApp.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FodboldApp
+namespace FodboldApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Tournament : ContentPage
@@ -16,6 +12,7 @@ namespace FodboldApp
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            BindingContext = new TournamentVM();
             //var items = vm.PlayerListSource;
             //items.RemoveAt(items.Count - 1);
 

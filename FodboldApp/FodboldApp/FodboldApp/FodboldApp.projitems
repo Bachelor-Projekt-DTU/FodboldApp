@@ -30,10 +30,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGames.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGamesData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\POTYsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomStack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TournamentsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderViewModel.cs" />
@@ -45,6 +46,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TournamentVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
       <DependentUpon>FormerPlayers.xaml</DependentUpon>
       <SubType>Code</SubType>

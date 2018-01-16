@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
 
@@ -7,24 +8,22 @@ namespace FodboldApp.ViewModel
 {
     class ClubVM : ClubsData
     {
-        public static List<ClubsData> ClubList = new List<ClubsData>();
-
-        public ClubVM ()
-        {
-        ClubList.Add(new ClubsData { ClubName = "BK Frem" });
-        ClubList.Add(new ClubsData { ClubName = "Klub 2" });
-        ClubList.Add(new ClubsData { ClubName = "Klub 3" });
-        ClubList.Add(new ClubsData { ClubName = "Klub 4" });
-        ClubList.Add(new ClubsData { ClubName = "Klub 5" });
-
-     }
-
-        public List<ClubsData> ClubListSource
+        public static ObservableCollection<ClubsData> _clubListSource = new ObservableCollection<ClubsData>();
+        public ObservableCollection<ClubsData> ClubListSource
         {
             get
             {
-                return ClubList;
+                return _clubListSource;
             }
         }
+
+        public ClubVM ()
+        {
+        _clubListSource.Add(new ClubsData { ClubName = "BK Frem" });
+        _clubListSource.Add(new ClubsData { ClubName = "Klub 2" });
+        _clubListSource.Add(new ClubsData { ClubName = "Klub 3" });
+        _clubListSource.Add(new ClubsData { ClubName = "Klub 4" });
+        _clubListSource.Add(new ClubsData { ClubName = "Klub 5" });
+        }  
     }
 }
