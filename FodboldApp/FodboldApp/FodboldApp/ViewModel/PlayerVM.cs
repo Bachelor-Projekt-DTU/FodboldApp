@@ -1,12 +1,8 @@
 ﻿using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
-using FodboldApp.View.UserControl;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -14,31 +10,31 @@ namespace FodboldApp.ViewModel
 {
     class PlayerVM: PlayersData
     {
-        private static List<PlayersData> Players = new List<PlayersData>();
-        public ICommand ShowPlayerDescriptionCommand { get; private set; }
+        public ICommand PlayerDescriptionCommand { get; private set; }
 
-        public List<PlayersData> PlayerListSource
+        private static ObservableCollection<PlayersData> _playerListSource { get; set; } = new ObservableCollection<PlayersData>();
+
+        public ObservableCollection<PlayersData> PlayerListSource
         {
             get
             {
-                return Players;
+                return _playerListSource;
             }
         }
 
         public void SetupPlayer()
         {
-            Players.Clear();
-            Players.Add(new PlayersData {
+            _playerListSource.Add(new PlayersData {
                 ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg",
                 Position = "Forsvar/Midtbane"});
-            Players.Add(new PlayersData
+            _playerListSource.Add(new PlayersData
             {
                 ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg 2",
                 Position = "Forsvar/Midtbane"
             });
-            Players.Add(new PlayersData
+            _playerListSource.Add(new PlayersData
             {
                 ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg 3",
@@ -55,7 +51,7 @@ namespace FodboldApp.ViewModel
         public PlayerVM()
         {
             SetupPlayer();
-            ShowPlayerDescriptionCommand = new Command(OnTapped);
+            PlayerDescriptionCommand = new Command(OnTapped);
         }
     }
 }

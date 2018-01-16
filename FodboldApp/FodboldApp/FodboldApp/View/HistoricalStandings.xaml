@@ -31,7 +31,7 @@
 
             <StackLayout>
                 <ListView x:Name="standingsList" IsVisible="{Binding ShowListView}" 
-                          SeparatorColor="Black" ItemsSource="{Binding StandingsListSource}" 
+                          SeparatorColor="Black" ItemsSource="{Binding HistoricalStandingsDataList}" 
                           SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -73,7 +73,7 @@
                     </Grid>
                     <BoxView BackgroundColor="Black" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
                     <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
-			   FlowItemsSource="{Binding StandingsListSourceContent}">
+			   FlowItemsSource="{Binding HistoricalStandingsListContent}">
                         <flv:FlowListView.FlowColumnTemplate>
                             <DataTemplate>
                                 <Grid ColumnSpacing="0">

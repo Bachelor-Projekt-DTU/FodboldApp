@@ -2,16 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.FormerPlayers"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
         <StackLayout x:Name="pageLayout">
             <Label Text="TIDLIGERE SPILLERE"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
                    FontSize="Large"
+                   HeightRequest="60"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
-            <Grid x:Name="grid"  RowSpacing = "0" ColumnSpacing = "0    "/>
+
+            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
+			   FlowItemsSource="{Binding PlayerList}">
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <Grid ColumnSpacing="0">
+                            <Label Text="{Binding Player}" HeightRequest="50" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                        </Grid>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

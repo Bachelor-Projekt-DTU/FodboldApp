@@ -1,4 +1,5 @@
 ﻿using FodboldApp.Customs;
+using FodboldApp.View;
 using Xamarin.Forms;
 
 namespace FodboldApp.Stack
