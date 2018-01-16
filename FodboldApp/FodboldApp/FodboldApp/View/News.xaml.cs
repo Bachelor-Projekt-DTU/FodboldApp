@@ -16,12 +16,6 @@ namespace FodboldApp
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        async void News_Tapped(object sender, EventArgs e)
-        {
-            System.Diagnostics.Debug.WriteLine("WE ON IT");
-
-            await CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage());
-            await Navigation.PushAsync(new NewsPage());
-        }
+        
     }
 }

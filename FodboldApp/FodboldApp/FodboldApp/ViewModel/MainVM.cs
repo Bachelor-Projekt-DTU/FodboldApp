@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class MainViewModel
+    class MainVM
     {
         public static CustomStack stack = CustomStack.Instance;
         public static ContentPage CurrentPage;
@@ -21,7 +21,7 @@ namespace FodboldApp.ViewModel
         public Color TournamentIconColor { get; }
         public Color HistoryIconColor { get; }
 
-        public MainViewModel(ContentView mainPage)
+        public MainVM(ContentView mainPage)
         {
             NewsIconColor = SelectedColor;
             PlayerIconColor = UnSelectedColor;

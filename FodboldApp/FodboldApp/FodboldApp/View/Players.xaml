@@ -7,14 +7,17 @@
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.BindingContext>
-        <viewmodels:PlayerVM />
+        <viewmodels:PlayerVM/>
     </ContentPage.BindingContext>
 
-    <ContentPage.Content>
+    <ContentPage.Content>   
         <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:PlayerVM/>
+            </StackLayout.BindingContext>
             <Label Text="1. HOLDET" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
            HorizontalOptions="Center"/>
-            
+
             <flv:FlowListView x:Name="flowListView" FlowColumnCount="2" SeparatorVisibility="None" HasUnevenRows="True" 
 			FlowItemsSource="{Binding PlayerListSource}" ItemTapped="Players_Tapped">
 

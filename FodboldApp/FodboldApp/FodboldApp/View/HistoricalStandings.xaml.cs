@@ -15,6 +15,11 @@ namespace FodboldApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HistoricalStandings : ContentPage
     {
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
 
         public HistoricalStandings()
         {

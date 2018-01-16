@@ -18,14 +18,13 @@ namespace FodboldApp
         {
             InitializeComponent();
 
-            //new MainViewModel(PlaceHolder);
-            BindingContext = this;
+            HeaderVM vm = new HeaderVM();
 
-            //ResetIconTint();
-
-            //News_Tapped(news, new EventArgs ());
+            vm.SetContent(pageContent);
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            vm.NewsTap();
         }
     }
 }

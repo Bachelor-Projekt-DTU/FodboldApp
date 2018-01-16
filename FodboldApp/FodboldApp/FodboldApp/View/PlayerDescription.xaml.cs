@@ -11,7 +11,13 @@ namespace FodboldApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlayerDescription : ContentPage
     {
-        static PlayerVM Player = new PlayerVM(); 
+        static PlayerVM Player = new PlayerVM();
+
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
 
         public PlayerDescription()
         {

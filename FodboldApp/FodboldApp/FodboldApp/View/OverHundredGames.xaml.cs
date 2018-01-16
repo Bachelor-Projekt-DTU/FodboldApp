@@ -1,5 +1,6 @@
 ﻿using FodboldApp.Colorization;
 using FodboldApp.Model;
+using FodboldApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,13 @@ namespace FodboldApp.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OverHundredGames : ContentPage
 	{
-		public OverHundredGames ()
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
+
+        public OverHundredGames ()
 		{
             NavigationPage.SetHasNavigationBar(this, false);
 

@@ -11,7 +11,7 @@ namespace FodboldApp.ViewModel
 {
     class PlayerVM: PlayersData
     {
-        private static List<PlayersData> Players = new List<PlayersData>();
+        private ObservableCollection<PlayersData> Players = new ObservableCollection<PlayersData>();
 
         private int StatsRows = 10;
         private int DescriptionRows = 2;
@@ -21,7 +21,7 @@ namespace FodboldApp.ViewModel
           SetupPlayer();  
         }
 
-        public List<PlayersData> PlayerListSource
+        public ObservableCollection<PlayersData> PlayerListSource
         {
             get
             {

@@ -1,5 +1,6 @@
 ﻿using FodboldApp.Stack;
 using FodboldApp.View;
+using FodboldApp.ViewModel;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,6 +14,7 @@ namespace FodboldApp
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            BindingContext = new PlayerVM();
         }
 
         async void Players_Tapped(object sender, EventArgs e)
