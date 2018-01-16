@@ -27,7 +27,7 @@ namespace FodboldApp
         {
             //NavigationPage nav = new NavigationPage(new MainPage());
             //App.stack = nav;
-            Application.Current.MainPage = new CustomNavigationPage(new News());
+            Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
 
         Label previousLabel;

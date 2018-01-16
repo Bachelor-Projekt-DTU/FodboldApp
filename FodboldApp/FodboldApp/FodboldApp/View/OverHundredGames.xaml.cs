@@ -15,9 +15,14 @@ namespace FodboldApp.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OverHundredGames : ContentPage
 	{
-        public OverHundredGames()
+        protected override bool OnBackButtonPressed()
         {
-            InitializeComponent();
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
+
+        public OverHundredGames ()
+		{
             NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = new OverHundredGamesVM();
         }

@@ -9,7 +9,13 @@ namespace FodboldApp.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class FormerPlayers : ContentPage
 	{
-		public FormerPlayers ()
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
+
+        public FormerPlayers ()
 		{
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);

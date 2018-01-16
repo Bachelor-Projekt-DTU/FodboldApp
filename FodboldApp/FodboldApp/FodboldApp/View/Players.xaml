@@ -7,7 +7,7 @@
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.BindingContext>
-        <viewmodels:PlayerVM />
+        <viewmodels:PlayerVM/>
     </ContentPage.BindingContext>
 
     <ContentPage.Content>

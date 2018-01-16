@@ -10,7 +10,13 @@ namespace FodboldApp.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OverFiftyGoals : ContentPage
 	{
-		public OverFiftyGoals ()
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
+
+        public OverFiftyGoals ()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);

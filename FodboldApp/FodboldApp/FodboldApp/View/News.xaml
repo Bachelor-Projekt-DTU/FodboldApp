@@ -1,45 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.News"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
-        <StackLayout Padding="0, 0, 0, 0"
+        <StackLayout x:Name="stack"
+            Padding="0, 0, 0, 0"
                          Margin="0, 0, 0, 0"
                          Spacing="0"
                          BackgroundColor="#f0f0f0">
-
-                <Label Text="NÆSTE KAMP"
+            <StackLayout.BindingContext>
+                <viewmodels:NewsVM/>
+            </StackLayout.BindingContext>
+            <Label Text="{Binding TestText}"
                    TextColor="{StaticResource textColor}"                   FontSize="Large"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#f0f0f0"
                    Margin="0, 0, 0, 15"/>
-                <Label Text="Skovshoved - Boldklubben FREM"
+            <Label Text="Skovshoved - Boldklubben FREM"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"
                    FontAttributes="Bold"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-                <Label Text="12. august 2017 15:00"
+            <Label Text="12. august 2017 15:00"
                    TextColor="#e11e2c"
                    FontSize="Large"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-                <Label Text="Skovshoved IP"
+            <Label Text="Skovshoved IP"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-                <Label Text="2. Division Pulje 1&#x0a;"
+            <Label Text="2. Division Pulje 1&#x0a;"
                    TextColor="#b9b8b8"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-                <Label Text="NYHEDER"
+            <Label Text="NYHEDER"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"
                    HorizontalOptions="FillAndExpand"
@@ -47,34 +51,38 @@
                    VerticalTextAlignment="Center"
                    BackgroundColor="#f0f0f0"
                    HeightRequest="38"/>
-                <Label Text="U23 kommet godt fra start"
+            <Label Text="U23 kommet godt fra start"
                        TextColor="#e11e2c"
                        FontSize="Large"
                        FontAttributes="Bold"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-                <Label Text="10. august 2017"
+            <Label Text="10. august 2017"
                        TextColor="#b9b8b8"
                        FontSize="Micro"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-                <Label Text="Siden 20 juli har Boldklubben FREMs nye setup været igang. Truppen begynder at tage form, og skarpheden til træning og i kamp viser en klar positiv tendens."
+            <Label Text="Siden 20 juli har Boldklubben FREMs nye setup været igang. Truppen begynder at tage form, og skarpheden til træning og i kamp viser en klar positiv tendens."
                        FontSize="Default"
                        FontAttributes="Bold"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-                <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"
+            <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"
                        HorizontalOptions="StartAndExpand">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="News_Tapped"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BindingContext.NewsCommand, Source={x:Reference stack}">
+                        <TapGestureRecognizer.BindingContext>
+                            <viewmodels:NewsVM/>
+                        </TapGestureRecognizer.BindingContext>
+                        <TapGestureRecognizer.Command>NewsCommand</TapGestureRecognizer.Command>
+                    </TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
 
-                <Label Text="Exit i pokalen"
+            <Label Text="Exit i pokalen"
                        TextColor="#e11e2c"
                        FontSize="Large"
                        FontAttributes="Bold"
@@ -82,22 +90,22 @@
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"
                        Margin="0, 20, 0, 0"/>
-                <Label Text="8. august 2017"
+            <Label Text="8. august 2017"
                        TextColor="#b9b8b8"
                        FontSize="Micro"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-                <Label Text="1 runde blev endestationen. Et feststemt stadion i Hvidovre med flotte 1.126 tilskuere på lægterne blev vidne til et opgør, hvor hjemmeholdet straks fra start trykkede på for at få et hurtigt..."
+            <Label Text="1 runde blev endestationen. Et feststemt stadion i Hvidovre med flotte 1.126 tilskuere på lægterne blev vidne til et opgør, hvor hjemmeholdet straks fra start trykkede på for at få et hurtigt..."
                        FontSize="Default"
                        FontAttributes="Bold"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-                <Image Source="http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg"
+            <Image Source="http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg"
                        HorizontalOptions="StartAndExpand">
-                    
-                </Image>
-            </StackLayout>
+
+            </Image>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

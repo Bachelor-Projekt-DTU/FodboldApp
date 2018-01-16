@@ -10,7 +10,13 @@ namespace FodboldApp.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class POTY : ContentPage
 	{
-		public POTY ()
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
+
+        public POTY ()
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);

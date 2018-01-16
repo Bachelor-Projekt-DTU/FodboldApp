@@ -1,4 +1,7 @@
-﻿using Xamarin.Forms;
+﻿using FodboldApp.Stack;
+using FodboldApp.View;
+using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FodboldApp.View

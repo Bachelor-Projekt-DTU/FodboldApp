@@ -6,7 +6,5 @@
              Title="TEST"
              ControlTemplate="{StaticResource MainPageTemplate}"
              xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
-
-
-    
+    <ContentView x:Name="pageContent" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
 </ContentPage>
