@@ -23,7 +23,7 @@ namespace FodboldApp.Model
         public string Standing { get; set; }
         public string Games { get; set; }
         public string Record { get; set; }
-        public string Point { get; set; }
+        public string Points { get; set; }
         public string TournamentLabelName { get; set; }
         public bool _selected { get; set; } = false;
         public bool Selected

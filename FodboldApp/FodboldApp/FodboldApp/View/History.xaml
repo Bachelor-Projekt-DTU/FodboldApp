@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.History"
+             x:Class="FodboldApp.View.History"
              ControlTemplate="{StaticResource MainPageTemplate}">
     <ContentPage.Content>
 
@@ -22,7 +22,6 @@
 
                 <!--===============================================================-->
                 <!--First element in grid-->
-                <!--Implement a user control for the players instead of coding the same several times-->
                 <Grid Grid.Row="0" Grid.Column="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="75*" />
@@ -30,9 +29,9 @@
                     </Grid.RowDefinitions>
                     <BoxView Color="White" Grid.Column="0" Grid.RowSpan="1"/>
                     <Image Source="tidligere_spillere.png" Grid.Row="0"/>
-                    <Label Text="Tidligere spillere" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="Tidligere spillere" FontSize="Medium" TextColor="{StaticResource textColor}" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="FormerPlayers_Tapped"/>
+                        <TapGestureRecognizer Command="{Binding FormerPlayersCommand}"/>
                     </Grid.GestureRecognizers>
                 </Grid>
 
@@ -46,9 +45,9 @@
                     </Grid.RowDefinitions>
                     <BoxView Color="White" Grid.Column="0" Grid.RowSpan="1"/>
                     <Image Source="aarets_spiller.png" Grid.Row="0"/>
-                    <Label Text="Årets spiller" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="Årets spiller" FontSize="Medium" TextColor="{StaticResource textColor}" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="POTY_Tapped" />
+                        <TapGestureRecognizer Command="{Binding POTYCommand}"/>
                     </Grid.GestureRecognizers>
                 </Grid>
                 <!--===============================================================-->
@@ -61,7 +60,7 @@
                     </Grid.RowDefinitions>
                     <BoxView Color="White" Grid.Column="0" Grid.RowSpan="1"/>
                     <Image Source="tidligere_kampe.png" Grid.Row="0"/>
-                    <Label Text="Tidligere kampe" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="Tidligere kampe" FontSize="Medium" TextColor="{StaticResource textColor}" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
                 </Grid>
                 <!--===============================================================-->
 
@@ -73,9 +72,9 @@
                     </Grid.RowDefinitions>
                     <BoxView Color="White" Grid.Column="0" Grid.RowSpan="1"/>
                     <Image Source="historisk_placering.png" Grid.Row="0"/>
-                    <Label Text="Historisk placering" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="Historisk placering" FontSize="Medium" TextColor="{StaticResource textColor}" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="HistoricalStandings_Tapped" />
+                        <TapGestureRecognizer Command="{Binding HistoricalStandingsCommand}"/>
                     </Grid.GestureRecognizers>
                 </Grid>
                 <!--===============================================================-->
@@ -88,9 +87,9 @@
                     </Grid.RowDefinitions>
                     <BoxView Color="White" Grid.Column="0" Grid.RowSpan="1"/>
                     <Image Source="mangekampe.png" Grid.Row="0"/>
-                    <Label Text="Over 100 kampe" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="Over 100 kampe" FontSize="Medium" TextColor="{StaticResource textColor}" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OverHundredGames_Tapped" />
+                        <TapGestureRecognizer Command="{Binding OverHundredGamesCommand}"/>
                     </Grid.GestureRecognizers>
                 </Grid>
                 <!--===============================================================-->
@@ -103,9 +102,9 @@
                     </Grid.RowDefinitions>
                     <BoxView Color="White" Grid.Column="0" Grid.RowSpan="1"/>
                     <Image Source="mangemaal.png" Grid.Row="0"/>
-                    <Label Text="Over 50 mål" FontSize="Medium" TextColor="#243F73" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="Over 50 mål" FontSize="Medium" TextColor="{StaticResource textColor}" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" VerticalOptions="Start"/>
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OverFiftyGoals_Tapped" />
+                        <TapGestureRecognizer Command="{Binding OverFiftyGoalsCommand}"/>
                     </Grid.GestureRecognizers>
                 </Grid>
                 <!--===============================================================-->

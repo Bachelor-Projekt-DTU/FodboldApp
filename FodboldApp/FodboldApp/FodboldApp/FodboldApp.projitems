@@ -27,6 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGames.cs" />
@@ -35,11 +36,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomStack.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomNavigationPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NavigationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverHundredGamesVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
       <DependentUpon>FormerPlayers.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,10 +100,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\UserControl\PlayerUC.xaml.cs">
-      <DependentUpon>PlayerUC.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\PlayerDescription.xaml">
@@ -136,12 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\HistoricalStandings.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\UserControl\PlayerUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

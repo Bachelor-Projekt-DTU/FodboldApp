@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.HistoricalStandings"
              xmlns:local="clr-namespace:FodboldApp.View.Interface" 
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              ControlTemplate="{StaticResource MainPageTemplate}">
 
     <ContentPage.Resources>
@@ -28,12 +29,14 @@
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
-            <StackLayout x:Name="standingsStackLayout">
-                <ListView x:Name="standingsList" IsVisible="{Binding ShowListView}" SeparatorColor="Black" ItemsSource="{Binding StandingsListSource}" SelectedItem="{Binding SelectedItem}">
+            <StackLayout>
+                <ListView x:Name="standingsList" IsVisible="{Binding ShowListView}" 
+                          SeparatorColor="Black" ItemsSource="{Binding HistoricalStandingsDataList}" 
+                          SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Label x:Name="TournamentNameLabel" Text="{Binding TournamentName}" 
+                                <Label Text="{Binding TournamentName}" 
                                        TextColor="{StaticResource textColor}" HorizontalTextAlignment="Center" 
                                        VerticalTextAlignment="Center" 
                                        BackgroundColor="{Binding Selected, Converter={StaticResource colorConvert}}"/>
@@ -41,6 +44,64 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <StackLayout IsVisible="{Binding ShowStackLayout}" Spacing="0">
+                    <Label Text="{Binding TournamentLabelName}" 
+                                       TextColor="White" HorizontalTextAlignment="Center" 
+                                       VerticalTextAlignment="Center" 
+                                       BackgroundColor="{Binding TableColor}" Margin="0,50,0,0" FontSize="Large"/>
+                    <Grid ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.25"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.25"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.25"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.25"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="ÅR" Grid.Column="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                        <Label Text="PLACERING" Grid.Column="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                        <Label Text="KAMPE" Grid.Column="4" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                        <Label Text="V-U-T" Grid.Column="6" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                        <Label Text="POINT" Grid.Column="8" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView BackgroundColor="Black" Grid.Column="1" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                        <BoxView BackgroundColor="Black" Grid.Column="3" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                        <BoxView BackgroundColor="Black" Grid.Column="5" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                        <BoxView BackgroundColor="Black" Grid.Column="7" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                    </Grid>
+                    <BoxView BackgroundColor="Black" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                    <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
+			   FlowItemsSource="{Binding HistoricalStandingsListContent}">
+                        <flv:FlowListView.FlowColumnTemplate>
+                            <DataTemplate>
+                                <Grid ColumnSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="0.25"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="0.25"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="0.25"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="0.25"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Year}" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                                    <Label Text="{Binding Standing}" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                                    <Label Text="{Binding Games}" Grid.Column="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                                    <Label Text="{Binding Record}" Grid.Column="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                                    <Label Text="{Binding Points}" Grid.Column="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                                    <BoxView BackgroundColor="Black" Grid.Column="1" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                                    <BoxView BackgroundColor="Black" Grid.Column="3" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                                    <BoxView BackgroundColor="Black" Grid.Column="5" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                                    <BoxView BackgroundColor="Black" Grid.Column="7" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+                                </Grid>
+                            </DataTemplate>
+                        </flv:FlowListView.FlowColumnTemplate>
+                    </flv:FlowListView>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

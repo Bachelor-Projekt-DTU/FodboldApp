@@ -7,9 +7,9 @@ namespace FodboldApp.Colorization
 {
     class ColoringLogic
     {
-        private static Color AppPrimary = Color.FromHex("#fb433c");
-        private static Color AppSecondary= Color.FromHex("#315baa");
-        private static Color AppText = Color.FromHex("#243f73");
+        public static Color AppPrimary { get; set; } = Color.FromHex("#fb433c");
+        public static Color AppSecondary { get; set; } = Color.FromHex("#315baa");
+        public static Color AppText { get; set; } = Color.FromHex("#243f73");
 
         private static Color ListPrimary = Color.FromHex("#ffffff");
         private static Color ListSecondary = Color.FromHex("#f0f0f0");

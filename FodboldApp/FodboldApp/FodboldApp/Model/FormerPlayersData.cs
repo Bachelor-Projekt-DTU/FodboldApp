@@ -4,9 +4,8 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class POTYsData
+    class FormerPlayersData
     {
-        public string Name { get; set; }
-        public string Year { get; set; }
+        public string Player { get; set; }
     }
 }

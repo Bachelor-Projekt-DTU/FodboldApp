@@ -7,7 +7,6 @@ namespace FodboldApp.Model
 {
     class PlayersData
     {
-        public static readonly int ATTRIBUTE_COUNT = 6;
         public string ImageURL { get; set; }
         public string Sponsor { get; set; }
         public int Height { get; set; }
@@ -16,7 +15,7 @@ namespace FodboldApp.Model
         public int Matches { get; set; }
         public int Wins { get; set; }
         public int Draws { get; set; }
-        public int Losses    { get; set; }
+        public int Losses { get; set; }
         public int Goals { get; set; }
         public int Assists { get; set; }
         public int MVP { get; set; }
@@ -26,11 +25,5 @@ namespace FodboldApp.Model
         public string Debut { get; set; }
         public string Former_Clubs { get; set; }
         public string Description { get; set; }
-
-        public static int Attributes => Attributes2;
-
-        public static int Attributes1 => Attributes2;
-
-        public static int Attributes2 => ATTRIBUTE_COUNT;
     }
 }
