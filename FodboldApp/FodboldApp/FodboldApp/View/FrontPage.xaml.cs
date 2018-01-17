@@ -20,24 +20,6 @@ namespace FodboldApp
 
             // Listviewet skal reduceres for at fjerne tomrum: HeightRequest = (#items * itemHeight) +(Standardhøjde + #items)
             clubList.HeightRequest = (5 * clubList.RowHeight) + (10 * 22.5);
-
-            continueBtn.Clicked += OnBtnClick;
-        }
-
-        private void OnBtnClick(object sender, EventArgs e)
-        {
-            //NavigationPage nav = new NavigationPage(new MainPage());
-            //App.stack = nav;
-            Application.Current.MainPage = new CustomNavigationPage(new MatchPage());
-        }
-
-        Label previousLabel;
-        private void OnItemSelected(object sender, EventArgs e)
-        {
-            var entity = ((Label)sender);
-            if (previousLabel != null) previousLabel.BackgroundColor = Color.White;
-            entity.BackgroundColor = Color.Red;
-            previousLabel = entity;
         }
     }
 }

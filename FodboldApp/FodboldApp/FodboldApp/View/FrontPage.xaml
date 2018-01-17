@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FodboldApp"
              BackgroundImage="frontpage_background.png"
+             xmlns:local="clr-namespace:FodboldApp.View.Interface" 
              x:Class="FodboldApp.FrontPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:SelectedItemColorConverter x:Key="colorConvert"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
@@ -21,20 +27,21 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Label Text="{Binding ClubName}" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnItemSelected"/>
-                                    </Label.GestureRecognizers>
-                                </Label>
+                                <Label Text="{Binding ClubName}" 
+                                       TextColor="Black" 
+                                       HorizontalTextAlignment="Center" 
+                                       VerticalTextAlignment="Center"
+                                       BackgroundColor="{Binding Selected, Converter={StaticResource colorConvert}}"/>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </Grid>
 
-            <Button x:Name="continueBtn" Text="Næste"
+            <Button Text="Næste"
                 HorizontalOptions="Center"
-                VerticalOptions="Center" />
+                VerticalOptions="Center"
+                    Command="{Binding ContinueCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 
