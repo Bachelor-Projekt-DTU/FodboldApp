@@ -15,7 +15,7 @@
                    BackgroundColor="#f0f0f0"/>
 
             <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
-			   FlowItemsSource="{Binding PlayerList}">
+			   FlowItemsSource="{Binding PlayersList}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
                         <Grid ColumnSpacing="0">

@@ -32,10 +32,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsPageData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGames.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGamesData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\POTYsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomStack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TournamentsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomNavigationPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TournamentVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
       <DependentUpon>FormerPlayers.xaml</DependentUpon>
       <SubType>Code</SubType>
