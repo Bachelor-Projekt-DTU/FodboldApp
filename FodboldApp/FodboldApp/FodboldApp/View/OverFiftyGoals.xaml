@@ -2,10 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.OverFiftyGoals"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
 
     <ContentPage.Content>
         <StackLayout Spacing="0">
+            <StackLayout.BindingContext>
+                <viewmodels:OverFiftyGoalsVM/>
+            </StackLayout.BindingContext>
             <Label Text="OVER 50 MÅL"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"

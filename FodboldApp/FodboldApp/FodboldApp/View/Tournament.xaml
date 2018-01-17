@@ -2,10 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.Tournament"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
     <ContentPage.Content>
         <StackLayout Spacing="0">
+            <!--<StackLayout.BindingContext>
+                <viewmodels:/>
+            </StackLayout.BindingContext>-->
             <Label Text="RESULTATER"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"

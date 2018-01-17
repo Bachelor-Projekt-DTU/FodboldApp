@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.HistoricalStandings"
              xmlns:local="clr-namespace:FodboldApp.View.Interface" 
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
 
     <ContentPage.Resources>
@@ -14,6 +15,9 @@
 
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:HistoricalStandingVM/>
+            </StackLayout.BindingContext>
             <Label Text="HISTORISK PLACERING"
                  HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
