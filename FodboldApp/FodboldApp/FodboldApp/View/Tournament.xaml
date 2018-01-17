@@ -15,9 +15,9 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="0">
-            <!--<StackLayout.BindingContext>
-                <viewmodels:/>
-            </StackLayout.BindingContext>-->
+            <StackLayout.BindingContext>
+                <viewmodels:TournamentVM/>
+            </StackLayout.BindingContext>
             <Label Text="RESULTATER"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
@@ -26,7 +26,7 @@
                    VerticalTextAlignment="Center"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
-            <Grid ColumnSpacing="0">
+            <Grid ColumnSpacing="0" HeightRequest="50">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
