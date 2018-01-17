@@ -16,11 +16,13 @@
 
 
             <Label Text="{Binding TestText}"
-                   TextColor="{StaticResource textColor}"                   FontSize="Large"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
-                   BackgroundColor="#f0f0f0"
-                   Margin="0, 0, 0, 15"/>
+                   FontSize="Large"
+                   HeightRequest="60"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource textColor}"
+                   BackgroundColor="#F0F0F0"/>
             <Label Text="Skovshoved - Boldklubben FREM"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"

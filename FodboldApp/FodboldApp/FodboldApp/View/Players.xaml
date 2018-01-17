@@ -10,8 +10,14 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="0">
-            <Label Text="1. HOLDET" TextColor="{StaticResource textColor}" HeightRequest="60" VerticalTextAlignment="Center" FontSize="Large" 
-           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="#F0F0F0"/>
+            <Label Text="1. HOLDET" HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   HeightRequest="60"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource textColor}"
+                   BackgroundColor="#F0F0F0"/>
+            
             <StackLayout.BindingContext>
                 <viewmodels:PlayerVM/>
             </StackLayout.BindingContext>

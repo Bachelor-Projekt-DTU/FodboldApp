@@ -9,8 +9,12 @@
             <StackLayout.BindingContext>
                 <viewmodels:HistoryVM/>
             </StackLayout.BindingContext>
-            <Label Text="HISTORIK" TextColor="#243F73" FontSize="Large" VerticalOptions="Center" 
-           HorizontalOptions="Center"/>
+            <Label Text="HISTORIK"  HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   HeightRequest="60"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource textColor}"/>
 
             <Grid VerticalOptions="FillAndExpand" RowSpacing="2" ColumnSpacing="5">
                 <Grid.RowDefinitions>
