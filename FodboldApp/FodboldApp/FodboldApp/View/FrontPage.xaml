@@ -23,7 +23,9 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <ListView x:Name="clubList" ItemsSource="{Binding ClubListSource}" BackgroundColor="White" SeparatorColor="Black" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1">
+                <ListView x:Name="clubList" ItemsSource="{Binding ClubListSource}" 
+                          BackgroundColor="White" SeparatorColor="Black" HorizontalOptions="Center" 
+                          Grid.Row="0" Grid.Column="1" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

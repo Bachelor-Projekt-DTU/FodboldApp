@@ -47,14 +47,14 @@ namespace FodboldApp.ViewModel
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
 
-        public ClubVM ()
+        public ClubVM()
         {
-        _clubListSource.Add(new ClubsData { ClubName = "BK Frem" });
-        _clubListSource.Add(new ClubsData { ClubName = "Klub 2" });
-        _clubListSource.Add(new ClubsData { ClubName = "Klub 3" });
-        _clubListSource.Add(new ClubsData { ClubName = "Klub 4" });
-        _clubListSource.Add(new ClubsData { ClubName = "Klub 5" });
+            _clubListSource.Add(new ClubsData { ClubName = "BK Frem" });
+            _clubListSource.Add(new ClubsData { ClubName = "Klub 2" });
+            _clubListSource.Add(new ClubsData { ClubName = "Klub 3" });
+            _clubListSource.Add(new ClubsData { ClubName = "Klub 4" });
+            _clubListSource.Add(new ClubsData { ClubName = "Klub 5" });
             ContinueCommand = new Command(OnTapped);
-        }  
+        }
     }
 }
