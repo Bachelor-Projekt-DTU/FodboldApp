@@ -36,16 +36,17 @@ namespace FodboldApp.ViewModel
         }
         private void SetupPlayerList()
         {
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590" });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590" });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590" });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590" });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590" });
+            int index = 0;
+            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
         }
         void Player_OnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription());
-            App.Current.MainPage.Navigation.PushAsync(new PlayerDescription());
+            HeaderVM.UpdateContent();
         }
         public OverHundredGamesVM()
         {

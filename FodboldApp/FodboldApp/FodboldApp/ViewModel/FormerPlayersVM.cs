@@ -39,11 +39,12 @@ namespace FodboldApp.ViewModel
         }
         private void SetupPlayerList()
         {
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing" });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing" });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing" });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing" });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing" });
+            int index = 0;
+            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
         }
         void Player_OnTapped()
         {

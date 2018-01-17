@@ -12,5 +12,6 @@ namespace FodboldApp.Model
         public string Assist { get; set; }
         public string MVP { get; set; }
         public string Clean_Sheet { get; set; }
+        public int Index { get; set; }
     }
 }

@@ -28,11 +28,12 @@ namespace FodboldApp.ViewModel
         }
         private void SetupPlayerList()
         {
-            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0" });
-            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0" });
-            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0" });
-            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0" });
-            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0" });
+            int index = 0;
+            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0", Index = index++ });
+            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0", Index = index++ });
+            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0", Index = index++ });
+            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0", Index = index++ });
+            _playersList.Add(new TournamentsData { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0", Index = index++ });
         }
         
         public TournamentVM()

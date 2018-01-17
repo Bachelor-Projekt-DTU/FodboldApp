@@ -67,6 +67,7 @@
       <DependentUpon>HistoricalStandings.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ListColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\SelectedItemColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
