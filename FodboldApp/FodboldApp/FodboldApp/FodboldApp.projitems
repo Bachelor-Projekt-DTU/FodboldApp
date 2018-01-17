@@ -27,6 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\EventData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsData.cs" />
@@ -39,6 +40,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NavigationViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverHundredGamesVM.cs" />
@@ -63,9 +65,15 @@
       <DependentUpon>HistoricalStandings.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ImageAlignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\SelectedItemColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\TeamAlignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\MatchPage.xaml.cs">
+      <DependentUpon>MatchPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\News.xaml.cs">
@@ -141,6 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\HistoricalStandings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\MatchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

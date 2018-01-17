@@ -1,5 +1,6 @@
 ﻿using FodboldApp.Customs;
 using FodboldApp.Stack;
+using FodboldApp.View;
 using FodboldApp.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace FodboldApp
         {
             //NavigationPage nav = new NavigationPage(new MainPage());
             //App.stack = nav;
-            Application.Current.MainPage = new CustomNavigationPage(new MainPage());
+            Application.Current.MainPage = new CustomNavigationPage(new MatchPage());
         }
 
         Label previousLabel;

@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace FodboldApp.View
 {
-    public partial class Matches : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class MatchPage : ContentPage
 	{
-		public Matches ()
+		public MatchPage ()
 		{
 			InitializeComponent ();
-            NavigationPage.SetHasNavigationBar(this, false);
-        }
+		}
 	}
 }

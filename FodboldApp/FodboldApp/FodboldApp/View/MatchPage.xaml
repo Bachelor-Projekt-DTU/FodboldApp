@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             xmlns:local="clr-namespace:FodboldApp.View.Interface" 
+             xmlns:viewModel ="clr-namespace:FodboldApp.ViewModel"
+             x:Class="FodboldApp.View.MatchPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:TeamAlignmentConverter x:Key="teamConverter"/>
+            <local:ImageAlignmentConverter x:Key="imageConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewModel:MatchPageVM/>
+            </StackLayout.BindingContext>
+            <StackLayout>
+                <Grid HeightRequest="180" BackgroundColor="White" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="0.8*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding Teams}" FontSize="26" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Row="0"/>
+                    <Image Source="notificationsbell.png" Margin="25,10,0,0" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"/>
+                    <Label Text="{Binding Score}" FontSize="80" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="1"/>
+                    <Label Text="Live" FontSize="24" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="2"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" 
+                                  SeparatorVisibility="None" HasUnevenRows="True" 
+                                  FlowItemsSource="{Binding EventList}">
+                    <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate>
+                            <Grid ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="0.25"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding PlayerName}" Grid.Column="{Binding Team}" VerticalOptions="Center" 
+                                       HorizontalOptions="FillAndExpand" 
+                                       HorizontalTextAlignment="{Binding Team, Converter={StaticResource teamConverter}}"/>
+                                <Image Source="{Binding ImageURL}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" HeightRequest="50" Aspect="AspectFit" VerticalOptions="Center"/>
+                                <BoxView BackgroundColor="Black" Grid.Column="2" WidthRequest="2" VerticalOptions="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

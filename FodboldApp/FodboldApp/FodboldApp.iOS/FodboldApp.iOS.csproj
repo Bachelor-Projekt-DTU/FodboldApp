@@ -300,6 +300,15 @@
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\notificationsbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\notificationsbell%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\notificationsbell%403x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\FodboldApp\FodboldApp.projitems" Label="Shared" />
 </Project>
