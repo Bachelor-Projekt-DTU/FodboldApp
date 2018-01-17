@@ -2,11 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.Tournament"
+             xmlns:local="clr-namespace:FodboldApp.View.Interface"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-             ControlTemplate="{StaticResource MainPageTemplate}">
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ListColorConverter x:Key="colorConvert"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout Spacing="0">
+            <!--<StackLayout.BindingContext>
+                <viewmodels:/>
+            </StackLayout.BindingContext>-->
             <Label Text="RESULTATER"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
@@ -44,12 +55,12 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <controls:CircleImage Source="{Binding ImageURL}" Aspect="AspectFill" Grid.Column="0" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="White"/>
-                            <Label Text="{Binding Goals}" HeightRequest="50" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
-                            <Label Text="{Binding Games}" FontSize="Medium" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
-                            <Label Text="{Binding Assist}" FontSize="Medium" Grid.Column="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
-                            <Label Text="{Binding MVP}" FontSize="Medium" Grid.Column="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
-                            <Label Text="{Binding Clean_Sheet}" FontSize="Medium" Grid.Column="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                            <controls:CircleImage Source="{Binding ImageURL}" Aspect="AspectFill" Grid.Column="0" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Goals}" HeightRequest="50" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Games}" FontSize="Medium" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Assist}" FontSize="Medium" Grid.Column="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding MVP}" FontSize="Medium" Grid.Column="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Clean_Sheet}" FontSize="Medium" Grid.Column="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                         </Grid>
                     </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>

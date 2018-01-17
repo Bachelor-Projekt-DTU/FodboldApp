@@ -39,11 +39,12 @@ namespace FodboldApp.ViewModel
         }
         private void SetupPlayerList()
         {
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" });
+            int index = 0;
+            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" , Index = index++ });
+            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
         }
         void Player_OnTapped()
         {

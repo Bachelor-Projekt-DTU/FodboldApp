@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
-             x:Class="FodboldApp.News"
-             ControlTemplate="{StaticResource MainPageTemplate}">
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="FodboldApp.News">
     <ContentPage.Content>
         <StackLayout x:Name="stack"
             Padding="0, 0, 0, 0"
@@ -13,6 +13,8 @@
             <StackLayout.BindingContext>
                 <viewmodels:NewsVM/>
             </StackLayout.BindingContext>
+
+
             <Label Text="{Binding TestText}"
                    TextColor="{StaticResource textColor}"                   FontSize="Large"
                    HorizontalOptions="FillAndExpand"
@@ -51,38 +53,40 @@
                    VerticalTextAlignment="Center"
                    BackgroundColor="#f0f0f0"
                    HeightRequest="38"/>
-            <Label Text="U23 kommet godt fra start"
+
+            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding NewsCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
+			   FlowItemsSource="{Binding NewsList}" VerticalOptions="Start">
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="0" VerticalOptions="Start">
+                            <Label Text="{Binding Title}"
                        TextColor="#e11e2c"
                        FontSize="Large"
                        FontAttributes="Bold"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-            <Label Text="10. august 2017"
+                            <Label Text="{Binding Date}"
                        TextColor="#b9b8b8"
                        FontSize="Micro"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-            <Label Text="Siden 20 juli har Boldklubben FREMs nye setup været igang. Truppen begynder at tage form, og skarpheden til træning og i kamp viser en klar positiv tendens."
+                            <Label Text="{Binding Resume}"
                        FontSize="Default"
                        FontAttributes="Bold"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-            <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"
-                       HorizontalOptions="StartAndExpand">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding BindingContext.NewsCommand, Source={x:Reference stack}">
-                        <TapGestureRecognizer.BindingContext>
-                            <viewmodels:NewsVM/>
-                        </TapGestureRecognizer.BindingContext>
-                        <TapGestureRecognizer.Command>NewsCommand</TapGestureRecognizer.Command>
-                    </TapGestureRecognizer>
-                </Image.GestureRecognizers>
-            </Image>
+                            <Image Source="{Binding ImageURL}" Aspect="AspectFill" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
 
-            <Label Text="Exit i pokalen"
+
+
+            <!--<Label Text="Exit i pokalen"
                        TextColor="#e11e2c"
                        FontSize="Large"
                        FontAttributes="Bold"
@@ -105,7 +109,7 @@
             <Image Source="http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg"
                        HorizontalOptions="StartAndExpand">
 
-            </Image>
+            </Image>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

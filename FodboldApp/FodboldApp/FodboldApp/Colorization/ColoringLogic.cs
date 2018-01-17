@@ -24,8 +24,8 @@ namespace FodboldApp.Colorization
 
         public static Color GetColor(int i)
         {
-            if (i % 2 == 0) return ListPrimary;
-            return ListSecondary;
+            if (i % 2 == 0) return ListSecondary;
+            return ListPrimary;
         }
     }
 }

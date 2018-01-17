@@ -9,5 +9,6 @@ namespace FodboldApp.Model
         public string Name { get; set; }
         public string Period { get; set; }
         public string Games { get; set; }
+        public int Index { get; set; }
     }
 }

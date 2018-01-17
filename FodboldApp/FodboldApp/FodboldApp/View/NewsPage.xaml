@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.View.NewsPage"
-             ControlTemplate="{StaticResource MainPageTemplate}">
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             x:Class="FodboldApp.View.NewsPage">
     <ContentPage.Content>
         <StackLayout  Padding="0, 0, 0, 0"
                           Margin="0, 0, 0, 0"
                           Spacing="0"
                           BackgroundColor="#ffffff">
+            <StackLayout.BindingContext>
+                <viewmodels:NewsPageVM/>
+            </StackLayout.BindingContext>
             <Label Text="U23 kommet godt fra start"
                        TextColor="#e11e2c"
                        FontSize="36"

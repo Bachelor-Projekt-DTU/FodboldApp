@@ -18,13 +18,10 @@ namespace FodboldApp
         {
             InitializeComponent();
 
-            HeaderVM vm = new HeaderVM();
-
-            vm.SetContent(pageContent);
+            HeaderVM.SetContent(pageContent);
+            ViewModelLocator.HeaderVM.NewsTap();
 
             NavigationPage.SetHasNavigationBar(this, false);
-
-            vm.NewsTap();
         }
     }
 }

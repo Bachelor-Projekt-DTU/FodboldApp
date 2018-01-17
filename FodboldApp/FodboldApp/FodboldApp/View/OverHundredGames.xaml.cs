@@ -23,8 +23,7 @@ namespace FodboldApp.View
 
         public OverHundredGames ()
 		{
-            NavigationPage.SetHasNavigationBar(this, false);
-            BindingContext = new OverHundredGamesVM();
+            InitializeComponent();
         }
     }
 }

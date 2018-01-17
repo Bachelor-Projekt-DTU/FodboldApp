@@ -2,11 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.POTY"
-             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-             ControlTemplate="{StaticResource MainPageTemplate}">
-    
+             xmlns:local="clr-namespace:FodboldApp.View.Interface"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ListColorConverter x:Key="colorConvert"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout Spacing="0">
+            <StackLayout.BindingContext>
+                <viewmodels:POTYVM/>
+            </StackLayout.BindingContext>
             <Label Text="ÅRETS SPILLER"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
@@ -15,7 +25,7 @@
                    HeightRequest="60"
                    TextColor="{StaticResource textColor}"
                    BackgroundColor="#f0f0f0"/>
-            
+
             <Grid ColumnSpacing="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -24,8 +34,7 @@
                 <Label Text="ÅR" Grid.Column="0" HeightRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
                 <Label Text="NAVN" Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
             </Grid>
-            <BoxView Color="Black" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
-            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
+            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
 			   FlowItemsSource="{Binding PlayersList}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
@@ -34,8 +43,8 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Year}" HeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
-                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
+                            <Label Text="{Binding Year}" HeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                         </Grid>
                     </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>

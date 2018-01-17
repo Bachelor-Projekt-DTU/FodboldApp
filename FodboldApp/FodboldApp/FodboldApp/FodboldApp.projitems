@@ -30,6 +30,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\EventData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NewsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NewsPageData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGamesData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PlayersData.cs" />
@@ -42,6 +44,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NavigationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverHundredGamesVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderVM.cs" />
@@ -50,6 +53,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TournamentVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
       <DependentUpon>FormerPlayers.xaml</DependentUpon>
@@ -65,6 +69,7 @@
       <DependentUpon>HistoricalStandings.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ListColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ImageAlignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\SelectedItemColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\TeamAlignmentConverter.cs" />

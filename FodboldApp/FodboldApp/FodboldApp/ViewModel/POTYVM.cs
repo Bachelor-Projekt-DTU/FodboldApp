@@ -36,11 +36,12 @@ namespace FodboldApp.ViewModel
         }
         private void SetupPlayerList()
         {
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees" });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees" });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees" });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees" });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees" });
+            int index = 0;
+            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
         }
         void Player_OnTapped()
         {
