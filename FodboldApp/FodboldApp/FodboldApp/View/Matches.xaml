@@ -71,7 +71,11 @@
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-            <controls:CircleImage Source="http://bkfrem.dk/images/hill_2.jpg" Aspect="AspectFill" WidthRequest="250" HeightRequest="250"/>
+            <controls:CircleImage Source="http://bkfrem.dk/images/hill_2.jpg" Aspect="AspectFill" WidthRequest="250" HeightRequest="250">
+                <controls:CircleImage.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapMatch"/>
+                </controls:CircleImage.GestureRecognizers>
+            </controls:CircleImage>
             <Label Text="LÆS MERE"
                    TextColor="#bbbbbb"
                    HorizontalOptions="FillAndExpand"

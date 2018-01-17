@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FodboldApp.Stack;
+using FodboldApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,12 @@ namespace FodboldApp.View
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        public void TapMatch(object sender, EventArgs args)
+        {
+            CustomStack.Instance.MatchContent.Navigation.PushAsync(new MatchPage());
+            HeaderVM.UpdateContent();
         }
 	}
 }
