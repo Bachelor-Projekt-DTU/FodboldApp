@@ -18,16 +18,16 @@ namespace FodboldApp
         public App()
         {
             InitializeComponent();
-            FlowListView.Init();
 
+            vm = ViewModelLocator.HeaderVM;
+
+            BindingContext = vm;
+
+            FlowListView.Init();
 
             MainPage = new NavigationPage(new FrontPage());
 
-            vm = new HeaderVM();
-
             NavigationPage.SetHasNavigationBar(this, false);
-
-            BindingContext = vm;
         }
         protected override void OnStart()
         {
@@ -52,32 +52,6 @@ namespace FodboldApp
         public async void Login(object sender, EventArgs e)
         {
             await ((App)Current).MainPage.Navigation.PushAsync(new Login());
-        }
-
-
-        void NewsTapped(object sender, EventArgs e)
-        {
-            vm.NewsTap();
-        }
-
-        void PlayersTapped(object sender, EventArgs e)
-        {
-            vm.PlayerTap();
-        }
-
-        void MatchesTapped(object sender, EventArgs e)
-        {
-            vm.MatchTap();
-        }
-
-        void TournamentTapped(object sender, EventArgs e)
-        {
-            vm.TournamentTap();
-        }
-
-        void HistoryTapped(object sender, EventArgs e)
-        {
-            vm.HistoryTap();
         }
     }
 }

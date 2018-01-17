@@ -89,10 +89,11 @@
                     </ContentView>
                     <!-- End Content -->
 
-                    <Grid ColumnSpacing="0" RowSpacing="0" Grid.Column="0" Grid.Row="2">
-                        <Grid.BindingContext>
-                            <viewmodels:HeaderVM/>
-                        </Grid.BindingContext>
+                    <Grid ColumnSpacing="0" RowSpacing="0" Grid.Column="0" Grid.Row="2" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
+                        <!--<Grid.BindingContext>
+                            <x:Static/>
+                            <viewmodels:ViewModelLocator.HeaderVM/>
+                        </Grid.BindingContext>-->
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="2"/>
@@ -111,37 +112,37 @@
                             </Grid.ColumnDefinitions>
 
                             <StackLayout x:Name="news" Spacing="0" Grid.Column="0" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.NewsIconColor}"/>
+                                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30" TintColor="{Binding NewsIconColor}"/>
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="NewsTapped"/>
+                                    <TapGestureRecognizer Command="{Binding NewsTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                             <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.PlayerIconColor}"/>
+                                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30" TintColor="{Binding PlayerIconColor}"/>
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="PlayersTapped"/>
+                                    <TapGestureRecognizer Command="{Binding PlayersTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                             <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.MatchIconColor}"/>
+                                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30" TintColor="{Binding MatchIconColor}"/>
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="MatchesTapped"/>
+                                    <TapGestureRecognizer Command="{Binding MatchesTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                             <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.TournamentIconColor}"/>
+                                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30" TintColor="{Binding TournamentIconColor}"/>
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TournamentTapped"/>
+                                    <TapGestureRecognizer Command="{Binding TournamentTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                             <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30" TintColor="{TemplateBinding Parent.BindingContext.HistoryIconColor}"/>
+                                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30" TintColor="{Binding HistoryIconColor}"/>
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="HistoryTapped"/>
+                                    <TapGestureRecognizer Command="{Binding HistoryTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
                         </Grid>

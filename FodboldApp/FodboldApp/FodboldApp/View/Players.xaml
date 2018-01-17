@@ -2,18 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.Players"
-             xmlns:usercontrol="clr-namespace:FodboldApp.View.UserControl"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
-             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-             ControlTemplate="{StaticResource MainPageTemplate}">
-    <ContentPage.BindingContext>
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
+    <!--<ContentPage.BindingContext>
         <viewmodels:PlayerVM/>
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
 
     <ContentPage.Content>
         <StackLayout Spacing="0">
             <Label Text="1. HOLDET" TextColor="{StaticResource textColor}" HeightRequest="60" VerticalTextAlignment="Center" FontSize="Large" 
            HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" BackgroundColor="#F0F0F0"/>
+            <StackLayout.BindingContext>
+                <viewmodels:PlayerVM/>
+            </StackLayout.BindingContext>
 
             <flv:FlowListView x:Name="flowListView" FlowColumnCount="2" SeparatorVisibility="None" HasUnevenRows="True" 
 			FlowItemsSource="{Binding PlayerListSource}" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" BackgroundColor="#F0f0f0">

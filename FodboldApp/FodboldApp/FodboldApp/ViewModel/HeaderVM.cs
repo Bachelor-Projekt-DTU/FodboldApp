@@ -1,6 +1,7 @@
 ﻿using FodboldApp.Stack;
 using System;
 using System.ComponentModel;
+using System.Windows.Input;
 using Xamarin.Forms;
 using static FodboldApp.Model.Categories;
 
@@ -11,6 +12,11 @@ namespace FodboldApp.ViewModel
         Color SelectedColor = Color.FromHex("#315baa");
         Color UnSelectedColor = Color.FromHex("#545454");
 
+        public ICommand NewsTapped { get; private set; }
+        public ICommand PlayersTapped { get; private set; }
+        public ICommand MatchesTapped { get; private set; }
+        public ICommand TournamentTapped { get; private set; }
+        public ICommand HistoryTapped { get; private set; }
 
         private Color _newsIconColor;
         private Color _playerIconColor;
@@ -32,7 +38,7 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public void SetContent(ContentView content)
+        public static void SetContent(ContentView content)
         {
             contentPage = content;
         }
@@ -103,8 +109,13 @@ namespace FodboldApp.ViewModel
         public HeaderVM()
         {
             stack = CustomStack.Instance;
-
             ResetTint();
+            
+            NewsTapped = new Command(NewsTap);
+            PlayersTapped = new Command(PlayerTap);
+            MatchesTapped = new Command(MatchTap);
+            TournamentTapped = new Command(TournamentTap);
+            HistoryTapped = new Command(HistoryTap);
         }
 
         private void ResetTint()
@@ -196,32 +207,31 @@ namespace FodboldApp.ViewModel
                     contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
                     break;
             }
+            Console.WriteLine("TYPE: " + currentCategory);
         }
 
         public static async void BackButtonPressed()
         {
-            Type type = Application.Current.MainPage.Navigation.NavigationStack[0].GetType();
-            if (type == typeof(News))
+            Console.WriteLine("back it up");
+            switch(currentCategory)
             {
-                await stack.NewsContent.Navigation.PopAsync();
+                case CategoryType.NewsType:
+                    await stack.NewsContent.Navigation.PopAsync();
+                    break;
+                case CategoryType.PlayerType:
+                    await stack.PlayerContent.Navigation.PopAsync();
+                    break;
+                case CategoryType.MatchType:
+                    await stack.MatchContent.Navigation.PopAsync();
+                    break;
+                case CategoryType.TournamentType:
+                    await stack.TournamentContent.Navigation.PopAsync();
+                    break;
+                case CategoryType.HistoryType:
+                    await stack.HistoryContent.Navigation.PopAsync();
+                    break;
             }
-            else if (type == typeof(Players))
-            {
-                await stack.PlayerContent.Navigation.PopAsync();
-            }
-            else if (type == typeof(Matches))
-            {
-                await stack.MatchContent.Navigation.PopAsync();
-            }
-            else if (type == typeof(Tournament))
-            {
-                await stack.TournamentContent.Navigation.PopAsync();
-            }
-            else if (type == typeof(History))
-            {
-                await stack.HistoryContent.Navigation.PopAsync();
-            }
-            await Application.Current.MainPage.Navigation.PopAsync();
+            UpdateContent();
         }
     }
 }

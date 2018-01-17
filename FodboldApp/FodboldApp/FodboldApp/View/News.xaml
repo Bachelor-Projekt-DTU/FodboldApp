@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
-             x:Class="FodboldApp.News"
-             ControlTemplate="{StaticResource MainPageTemplate}">
+             x:Class="FodboldApp.News">
     <ContentPage.Content>
         <StackLayout x:Name="stack"
             Padding="0, 0, 0, 0"
@@ -73,12 +72,7 @@
             <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"
                        HorizontalOptions="StartAndExpand">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding BindingContext.NewsCommand, Source={x:Reference stack}">
-                        <TapGestureRecognizer.BindingContext>
-                            <viewmodels:NewsVM/>
-                        </TapGestureRecognizer.BindingContext>
-                        <TapGestureRecognizer.Command>NewsCommand</TapGestureRecognizer.Command>
-                    </TapGestureRecognizer>
+                    <TapGestureRecognizer Command="{Binding NewsCommand}"/>
                 </Image.GestureRecognizers>
             </Image>
 
