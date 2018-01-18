@@ -27,6 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\CommentsData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\EventData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayersData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingsData.cs" />

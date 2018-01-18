@@ -14,12 +14,18 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout.BindingContext>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="180"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.BindingContext>
                 <viewModel:MatchPageVM/>
-            </StackLayout.BindingContext>
-            <StackLayout>
-                <Grid HeightRequest="180" BackgroundColor="White" RowSpacing="0">
+            </Grid.BindingContext>
+
+                <Grid BackgroundColor="White" RowSpacing="0" Grid.Row="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.5*" />
                         <RowDefinition Height="2*" />
@@ -30,31 +36,31 @@
                     <Label Text="{Binding Score}" FontSize="80" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="1"/>
                     <Label Text="Live" FontSize="24" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="2"/>
                 </Grid>
-            </StackLayout>
-            <StackLayout>
-                <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" 
+            
+                <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" Grid.Row="1"
                                   SeparatorVisibility="None" HasUnevenRows="True" 
-                                  FlowItemsSource="{Binding EventList}">
+                                  FlowItemsSource="{Binding EventList}" BackgroundColor="White" >
                     <flv:FlowListView.FlowColumnTemplate>
                         <DataTemplate>
                             <Grid ColumnSpacing="0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="0.5*"/>
-                                    <ColumnDefinition Width="0.25"/>
+                                    <ColumnDefinition Width="0.005*"/>
                                     <ColumnDefinition Width="0.5*"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding PlayerName}" Grid.Column="{Binding Team}" VerticalOptions="Center" 
                                        HorizontalOptions="FillAndExpand" 
                                        HorizontalTextAlignment="{Binding Team, Converter={StaticResource teamConverter}}"/>
-                                <Image Source="{Binding ImageURL}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" HeightRequest="50" Aspect="AspectFit" VerticalOptions="Center"/>
-                                <BoxView BackgroundColor="Black" Grid.Column="2" WidthRequest="2" VerticalOptions="Center"/>
+                                <Image Source="{Binding ImageURL}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" Aspect="AspectFill" VerticalOptions="Center"/>
+                                <BoxView BackgroundColor="Black" Grid.Column="2" HeightRequest="20" VerticalOptions="Center"/>
                             </Grid>
                         </DataTemplate>
                     </flv:FlowListView.FlowColumnTemplate>
                 </flv:FlowListView>
-            </StackLayout>
-        </StackLayout>
+                
+                <Button Text="Læse og/eller skriv en kommentar" Grid.Row="2"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
