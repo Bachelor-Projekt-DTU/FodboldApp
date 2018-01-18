@@ -12,17 +12,17 @@
                 <StackLayout.BindingContext>
                     <viewmodels:NewsPageVM/>
                 </StackLayout.BindingContext>
-                <Label Text="U23 kommet godt fra start"
+                <Label Text="{Binding Title}"
                        TextColor="#e11e2c"
                        FontSize="36"
                        VerticalOptions="CenterAndExpand" 
                        HorizontalOptions="StartAndExpand" />
-                <Label Text="10. august 2017"
+                <Label Text="{Binding DateTime}"
                        TextColor="#b9b8b8"
                        FontSize="Micro"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"/>
-                <Label Text="Nyt fra U23"
+                <Label Text="{Binding SmallText}"
                        FontSize="32"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"/>

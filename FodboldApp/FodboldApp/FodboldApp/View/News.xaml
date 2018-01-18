@@ -57,10 +57,10 @@
                    HeightRequest="38"/>
 
             <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding NewsCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
-			   FlowItemsSource="{Binding NewsList}" VerticalOptions="StartAndExpand">
+			   FlowItemsSource="{Binding NewsList}" VerticalOptions="FillAndExpand">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
-                        <StackLayout Spacing="0" VerticalOptions="Start">
+                        <StackLayout Spacing="0" >
                             <Label Text="{Binding Title}"
                        TextColor="#e11e2c"
                        FontSize="Large"
@@ -80,38 +80,11 @@
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"
                        BackgroundColor="#ffffff"/>
-                            <Image Source="{Binding ImageURL}" Aspect="AspectFill" HorizontalOptions="FillAndExpand" />
+                            <Image Source="{Binding ImageURL}" Aspect="AspectFill" HeightRequest="200"/>
                         </StackLayout>
                     </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>
             </flv:FlowListView>
-
-
-
-            <!--<Label Text="Exit i pokalen"
-                       TextColor="#e11e2c"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Start"
-                       BackgroundColor="#ffffff"
-                       Margin="0, 20, 0, 0"/>
-            <Label Text="8. august 2017"
-                       TextColor="#b9b8b8"
-                       FontSize="Micro"
-                       HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Start"
-                       BackgroundColor="#ffffff"/>
-            <Label Text="1 runde blev endestationen. Et feststemt stadion i Hvidovre med flotte 1.126 tilskuere på lægterne blev vidne til et opgør, hvor hjemmeholdet straks fra start trykkede på for at få et hurtigt..."
-                       FontSize="Default"
-                       FontAttributes="Bold"
-                       HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Start"
-                       BackgroundColor="#ffffff"/>
-            <Image Source="http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg"
-                       HorizontalOptions="StartAndExpand">
-
-            </Image>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

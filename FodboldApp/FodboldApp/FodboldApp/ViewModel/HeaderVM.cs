@@ -208,12 +208,10 @@ namespace FodboldApp.ViewModel
                     contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
                     break;
             }
-            Console.WriteLine("TYPE: " + currentCategory);
         }
 
         public static async void BackButtonPressed()
         {
-            Console.WriteLine("back it up");
             switch(currentCategory)
             {
                 case CategoryType.NewsType:
