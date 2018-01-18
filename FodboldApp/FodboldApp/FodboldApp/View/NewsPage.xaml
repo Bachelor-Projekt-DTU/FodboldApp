@@ -4,29 +4,31 @@
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.NewsPage">
     <ContentPage.Content>
-        <StackLayout  Padding="0, 0, 0, 0"
+        <ScrollView>
+            <StackLayout  Padding="0, 0, 0, 0"
                           Margin="0, 0, 0, 0"
                           Spacing="0"
                           BackgroundColor="#ffffff">
-            <StackLayout.BindingContext>
-                <viewmodels:NewsPageVM/>
-            </StackLayout.BindingContext>
-            <Label Text="U23 kommet godt fra start"
+                <StackLayout.BindingContext>
+                    <viewmodels:NewsPageVM/>
+                </StackLayout.BindingContext>
+                <Label Text="U23 kommet godt fra start"
                        TextColor="#e11e2c"
                        FontSize="36"
                        VerticalOptions="CenterAndExpand" 
                        HorizontalOptions="StartAndExpand" />
-            <Label Text="10. august 2017"
+                <Label Text="10. august 2017"
                        TextColor="#b9b8b8"
                        FontSize="Micro"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"/>
-            <Label Text="Nyt fra U23"
+                <Label Text="Nyt fra U23"
                        FontSize="32"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"/>
-            <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"/>
-            <Label Text="{Binding NewsText}"/>
-        </StackLayout>
+                <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"/>
+                <Label Text="{Binding NewsText}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
