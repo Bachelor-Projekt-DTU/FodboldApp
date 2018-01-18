@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:usercontrols="clr-namespace:FodboldApp.View.UserControl"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.Matches">
@@ -13,39 +14,9 @@
                 <viewmodels:MatchesVM/>
             </StackLayout.BindingContext>-->
 
-            <Label Text="NÆSTE KAMP"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   FontSize="Large"
-                   HeightRequest="60"
-                   VerticalTextAlignment="Center"
-                   TextColor="{StaticResource textColor}"
-                   BackgroundColor="#F0F0F0"/>
-            <Label Text="Skovshoved - Boldklubben FREM"
-                   TextColor="{StaticResource textColor}"
-                   FontSize="Large"
-                   FontAttributes="Bold"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="12. august 2017 15:00"
-                   TextColor="#e11e2c"
-                   FontSize="Large"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="Skovshoved IP"
-                   TextColor="{StaticResource textColor}"
-                   FontSize="Large"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="2. Division Pulje 1&#x0a;"
-                   TextColor="#b9b8b8"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="SENESTE RESULTATER"
+            <usercontrols:MatchHeaderUC BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
+
+                <Label Text="SENESTE RESULTATER"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"
                    HorizontalOptions="FillAndExpand"

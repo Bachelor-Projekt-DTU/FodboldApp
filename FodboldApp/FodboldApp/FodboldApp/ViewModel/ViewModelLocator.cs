@@ -7,5 +7,6 @@ namespace FodboldApp.ViewModel
     static class ViewModelLocator
     {
         public static HeaderVM HeaderVM { get; } = new HeaderVM();
+        public static MatchHeaderVM MatchHeaderVM { get; } = new MatchHeaderVM();
     }
 }

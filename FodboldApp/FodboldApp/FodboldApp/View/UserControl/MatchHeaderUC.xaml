@@ -1,12 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FodboldApp.View.Interface"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.UserControl.MatchHeaderUC">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</Grid>
+
+    <StackLayout.Resources>
+        <ResourceDictionary>
+            <local:BooleanReverser x:Key="booleanReverser"/>
+        </ResourceDictionary>
+    </StackLayout.Resources>
+    <!--<ResourceDictionary>
+        <local:BooleanReverser x:Key="booleanReverser"/>
+    </ResourceDictionary>-->
+
+    <StackLayout IsVisible="{Binding Live,  Converter={StaticResource booleanReverser}}">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <local:BooleanReverser x:Key="booleanReverser"/>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <StackLayout.BindingContext>
+            <viewmodels:MatchHeaderVM/>
+        </StackLayout.BindingContext>
+        <Label Text="NÆSTE KAMP"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   HeightRequest="60"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource textColor}"
+                   BackgroundColor="#F0F0F0"/>
+        <Label Text="{Binding Teams}"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+        <Label Text="{Binding DateTime}"
+                   TextColor="#e11e2c"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+        <Label Text="{Binding Location}"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+        <Label Text="{Binding Division}"
+                   TextColor="#b9b8b8"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+    </StackLayout>
+    <StackLayout IsVisible="{Binding Live}">
+        <StackLayout.BindingContext>
+            <viewmodels:MatchHeaderVM/>
+        </StackLayout.BindingContext>
+        <Label Text="NÆSTE KAMP"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   HeightRequest="60"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource textColor}"
+                   BackgroundColor="#F0F0F0"/>
+        <Label Text="{Binding Teams}"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+        <Label Text="{Binding DateTime}"
+                   TextColor="#e11e2c"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+        <Label Text="{Binding Location}"
+                   TextColor="{StaticResource textColor}"
+                   FontSize="Large"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+        <Label Text="{Binding Division}"
+                   TextColor="#b9b8b8"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#ffffff"/>
+    </StackLayout>
+</StackLayout>

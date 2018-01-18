@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace FodboldApp.View.UserControl
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MatchHeaderUC : ContentPage
+	public partial class MatchHeaderUC : StackLayout
 	{
 		public MatchHeaderUC ()
 		{

@@ -42,7 +42,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchHeaderVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchPageVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NavigationViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
@@ -69,6 +71,7 @@
       <DependentUpon>HistoricalStandings.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\BooleanReverser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ListColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ImageAlignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Interface\SelectedItemColorConverter.cs" />
