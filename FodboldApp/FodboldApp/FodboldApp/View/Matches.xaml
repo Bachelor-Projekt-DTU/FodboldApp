@@ -14,7 +14,7 @@
                 <viewmodels:MatchesVM/>
             </StackLayout.BindingContext>-->
 
-            <usercontrols:MatchHeaderUC BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
+            <usercontrols:MatchHeaderUC/>
 
                 <Label Text="SENESTE RESULTATER"
                    TextColor="{StaticResource textColor}"
