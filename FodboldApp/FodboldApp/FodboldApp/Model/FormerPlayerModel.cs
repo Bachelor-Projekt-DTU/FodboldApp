@@ -4,7 +4,9 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class NewsPageData
+    class FormerPlayerModel
     {
+        public string Player { get; set; }
+        public int Index { get; set; }
     }
 }

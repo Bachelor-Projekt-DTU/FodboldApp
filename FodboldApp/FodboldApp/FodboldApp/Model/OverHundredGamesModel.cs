@@ -4,10 +4,11 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class POTYsData
+    class OverHundredGamesModel
     {
         public string Name { get; set; }
-        public string Year { get; set; }
+        public string Period { get; set; }
+        public string Games { get; set; }
         public int Index { get; set; }
     }
 }

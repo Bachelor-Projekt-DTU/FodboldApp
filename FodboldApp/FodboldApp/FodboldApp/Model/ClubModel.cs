@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
-using Xamarin.Forms;
+﻿using System.ComponentModel;
 
-namespace FodboldApp.Model
+namespace FodboldApp
 {
-    class HistoricalStandingsData: INotifyPropertyChanged
+    class ClubModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
@@ -18,13 +14,8 @@ namespace FodboldApp.Model
                 handler(this, new PropertyChangedEventArgs(name));
             }
         }
-        public string TournamentName { get; set; }
-        public string Year { get; set; }
-        public string Standing { get; set; }
-        public string Games { get; set; }
-        public string Record { get; set; }
-        public string Points { get; set; }
-        public string TournamentLabelName { get; set; }
+
+        public string ClubName { get; set; }
         public bool _selected { get; set; } = false;
         public bool Selected
         {

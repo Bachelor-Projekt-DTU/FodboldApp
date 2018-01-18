@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class OverHundredGamesData
-    {
+    class OverFiftyGoalsModel
+    {    
         public string Name { get; set; }
         public string Period { get; set; }
-        public string Games { get; set; }
+        public string Goals_Games { get; set; }
         public int Index { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace FodboldApp.Model
 {
-    class CommentsData
+    class CommentModel
     {
         public string ImageURL { get; set; }
         public string UserName { get; set; }

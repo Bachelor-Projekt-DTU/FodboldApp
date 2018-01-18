@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class EventData
+    class EventModel
     {
         public string ImageURL { get; set; }
         public string PlayerName { get; set; }

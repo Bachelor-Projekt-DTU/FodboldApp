@@ -21,8 +21,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<OverHundredGamesData> _playersList { get; set; } = new ObservableCollection<OverHundredGamesData>();
-        public ObservableCollection<OverHundredGamesData> PlayersList
+        private ObservableCollection<OverHundredGamesModel> _playersList { get; set; } = new ObservableCollection<OverHundredGamesModel>();
+        public ObservableCollection<OverHundredGamesModel> PlayersList
         {
             get
             {
@@ -37,11 +37,11 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-            _playersList.Add(new OverHundredGamesData { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            _playersList.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
         }
         void Player_OnTapped()
         {

@@ -23,7 +23,7 @@ namespace FodboldApp.BoxDesigns
         string FormerClubs { get; set; }
         string Description { get; set; }
 
-        public static List<string> GetDesign(PlayersData player)
+        public static List<string> GetDesign(PlayerModel player)
         {
 
             List<string> playerDescription = new List<string>()

@@ -24,8 +24,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<OverFiftyGoalsData> _playersList { get; set; } = new ObservableCollection<OverFiftyGoalsData>();
-        public ObservableCollection<OverFiftyGoalsData> PlayersList
+        private ObservableCollection<OverFiftyGoalsModel> _playersList { get; set; } = new ObservableCollection<OverFiftyGoalsModel>();
+        public ObservableCollection<OverFiftyGoalsModel> PlayersList
         {
             get
             {
@@ -40,11 +40,11 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" , Index = index++ });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
-            _playersList.Add(new OverFiftyGoalsData { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" , Index = index++ });
+            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
         }
         void Player_OnTapped()
         {

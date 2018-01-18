@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.Model
 {
-    class PlayersData
+    class PlayerModel
     {
         public string ImageURL { get; set; }
         public string Sponsor { get; set; }

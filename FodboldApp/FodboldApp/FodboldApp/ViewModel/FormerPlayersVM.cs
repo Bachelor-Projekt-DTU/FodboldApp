@@ -24,8 +24,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<FormerPlayersData> _playersList { get; set; } = new ObservableCollection<FormerPlayersData>();
-        public ObservableCollection<FormerPlayersData> PlayersList
+        private ObservableCollection<FormerPlayerModel> _playersList { get; set; } = new ObservableCollection<FormerPlayerModel>();
+        public ObservableCollection<FormerPlayerModel> PlayersList
         {
             get
             {
@@ -40,11 +40,11 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayersData { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
         }
         void Player_OnTapped()
         {

@@ -8,13 +8,13 @@ using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class PlayerVM: PlayersData
+    class PlayerVM: PlayerModel
     {
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private static ObservableCollection<PlayersData> _playerListSource { get; set; } = new ObservableCollection<PlayersData>();
+        private static ObservableCollection<PlayerModel> _playerListSource { get; set; } = new ObservableCollection<PlayerModel>();
 
-        public ObservableCollection<PlayersData> PlayerListSource
+        public ObservableCollection<PlayerModel> PlayerListSource
         {
             get
             {
@@ -24,17 +24,17 @@ namespace FodboldApp.ViewModel
 
         public void SetupPlayer()
         {
-            _playerListSource.Add(new PlayersData {
+            _playerListSource.Add(new PlayerModel {
                 ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg",
                 Position = "Forsvar/Midtbane"});
-            _playerListSource.Add(new PlayersData
+            _playerListSource.Add(new PlayerModel
             {
                 ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg 2",
                 Position = "Forsvar/Midtbane"
             });
-            _playerListSource.Add(new PlayersData
+            _playerListSource.Add(new PlayerModel
             {
                 ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
                 Name = "Andreas Theil Lundberg 3",

@@ -10,11 +10,11 @@ using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class ClubVM : ClubsData
+    class ClubVM : ClubModel
     {
         public ICommand ContinueCommand { get; set; }
-        public static ObservableCollection<ClubsData> _clubListSource = new ObservableCollection<ClubsData>();
-        public ObservableCollection<ClubsData> ClubListSource
+        public static ObservableCollection<ClubModel> _clubListSource = new ObservableCollection<ClubModel>();
+        public ObservableCollection<ClubModel> ClubListSource
         {
             get
             {
@@ -22,8 +22,8 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public ClubsData _selectedItem { get; set; }
-        public ClubsData SelectedItem
+        public ClubModel _selectedItem { get; set; }
+        public ClubModel SelectedItem
         {
             get { return _selectedItem; }
             set
@@ -49,11 +49,11 @@ namespace FodboldApp.ViewModel
 
         public ClubVM()
         {
-            _clubListSource.Add(new ClubsData { ClubName = "BK Frem" });
-            _clubListSource.Add(new ClubsData { ClubName = "Klub 2" });
-            _clubListSource.Add(new ClubsData { ClubName = "Klub 3" });
-            _clubListSource.Add(new ClubsData { ClubName = "Klub 4" });
-            _clubListSource.Add(new ClubsData { ClubName = "Klub 5" });
+            _clubListSource.Add(new ClubModel { ClubName = "BK Frem" });
+            _clubListSource.Add(new ClubModel { ClubName = "Klub 2" });
+            _clubListSource.Add(new ClubModel { ClubName = "Klub 3" });
+            _clubListSource.Add(new ClubModel { ClubName = "Klub 4" });
+            _clubListSource.Add(new ClubModel { ClubName = "Klub 5" });
             ContinueCommand = new Command(OnTapped);
         }
     }

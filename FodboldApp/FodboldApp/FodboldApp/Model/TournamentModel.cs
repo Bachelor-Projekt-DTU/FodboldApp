@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class TournamentsData
+    class TournamentModel
     {
         public string ImageURL { get; set; }
         public string Goals { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class NewsData
+    class NewsModel
     {
         public string Title { get; set; }
         public string Date { get; set; }

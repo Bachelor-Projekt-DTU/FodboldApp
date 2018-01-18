@@ -21,8 +21,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<POTYsData> _playersList { get; set; } = new ObservableCollection<POTYsData>();
-        public ObservableCollection<POTYsData> PlayersList
+        private ObservableCollection<POTYModel> _playersList { get; set; } = new ObservableCollection<POTYModel>();
+        public ObservableCollection<POTYModel> PlayersList
         {
             get
             {
@@ -37,11 +37,11 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYsData { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
         }
         void Player_OnTapped()
         {
