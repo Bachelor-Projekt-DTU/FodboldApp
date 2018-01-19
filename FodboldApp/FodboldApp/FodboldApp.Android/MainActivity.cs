@@ -9,6 +9,7 @@ using Android.OS;
 using Plugin.CrossPlatformTintedImage.Android;
 using ImageCircle.Forms.Plugin.Droid;
 using FFImageLoading.Forms.Droid;
+using CarouselView.FormsPlugin.Android;
 
 namespace FodboldApp.Droid
 {
@@ -31,6 +32,7 @@ namespace FodboldApp.Droid
             window.SetStatusBarColor(Android.Graphics.Color.Rgb(251, 67, 60));
             LoadApplication(new App());
             TintedImageRenderer.Init();
+            CarouselViewRenderer.Init();
             CachedImageRenderer.Init(enableFastRenderer: true);
         }
     }

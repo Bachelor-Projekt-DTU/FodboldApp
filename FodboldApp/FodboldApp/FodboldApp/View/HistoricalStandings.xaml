@@ -52,7 +52,7 @@
                                        TextColor="White" HorizontalTextAlignment="Center" 
                                        VerticalTextAlignment="Center" 
                                        BackgroundColor="{Binding TableColor}" Margin="0,50,0,0" FontSize="Large"/>
-                    <Grid ColumnSpacing="0">
+                    <Grid ColumnSpacing="0" HeightRequest="65">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="0.25"/>

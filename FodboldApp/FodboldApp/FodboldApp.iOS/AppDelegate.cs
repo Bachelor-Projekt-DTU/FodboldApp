@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CarouselView.FormsPlugin.iOS;
 using FFImageLoading.Forms.Touch;
 using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
@@ -36,6 +37,8 @@ namespace FodboldApp.iOS
             LoadApplication(new App());
             TintedImageRenderer.Init();
             CachedImageRenderer.Init();
+            CarouselViewRenderer.Init();
+
 
             return base.FinishedLaunching(app, options);
         }

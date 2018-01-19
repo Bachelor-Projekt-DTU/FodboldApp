@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              xmlns:local="clr-namespace:FodboldApp.View.Interface" 
+xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
              xmlns:viewModel ="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.MatchPage">
 
@@ -10,20 +11,21 @@
         <ResourceDictionary>
             <local:TeamAlignmentConverter x:Key="teamConverter"/>
             <local:ImageAlignmentConverter x:Key="imageConverter"/>
+            <local:BooleanReverser x:Key="booleanReverser"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid VerticalOptions="FillAndExpand">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="180"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
-            
-            <Grid.BindingContext>
-                <viewModel:MatchPageVM/>
-            </Grid.BindingContext>
+        <StackLayout VerticalOptions="FillAndExpand" Spacing="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.BindingContext>
+                    <viewModel:MatchPageVM/>
+                </Grid.BindingContext>
 
                 <Grid BackgroundColor="White" RowSpacing="0" Grid.Row="0">
                     <Grid.RowDefinitions>
@@ -36,31 +38,73 @@
                     <Label Text="{Binding Score}" FontSize="80" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="1"/>
                     <Label Text="Live" FontSize="24" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="2"/>
                 </Grid>
-            
-                <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" Grid.Row="1"
-                                  SeparatorVisibility="None" HasUnevenRows="True" 
-                                  FlowItemsSource="{Binding EventList}" BackgroundColor="White" >
-                    <flv:FlowListView.FlowColumnTemplate>
+
+
+            </Grid>
+            <Grid RowSpacing="0" VerticalOptions="FillAndExpand">
+                <Grid.BindingContext>
+                    <viewModel:MatchPageVM/>
+                </Grid.BindingContext>
+                <cv:CarouselView ItemsSource="{Binding CollectionList}">
+                    <cv:CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <Grid ColumnSpacing="0">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="0.5*"/>
-                                    <ColumnDefinition Width="0.005*"/>
-                                    <ColumnDefinition Width="0.5*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding PlayerName}" Grid.Column="{Binding Team}" VerticalOptions="Center" 
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" Grid.Row="0"
+                                  SeparatorVisibility="None" HasUnevenRows="True"  IsVisible="{Binding ListSwitch}"
+                                  FlowItemsSource="{Binding CollectionList}" BackgroundColor="White" >
+                                    <flv:FlowListView.FlowColumnTemplate>
+                                        <DataTemplate>
+                                            <Grid ColumnSpacing="0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="0.5*"/>
+                                                    <ColumnDefinition Width="0.005*"/>
+                                                    <ColumnDefinition Width="0.5*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding PlayerName}" Grid.Column="{Binding Team}" VerticalOptions="Center" 
                                        HorizontalOptions="FillAndExpand" 
                                        HorizontalTextAlignment="{Binding Team, Converter={StaticResource teamConverter}}"/>
-                                <Image Source="{Binding ImageURL}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" Aspect="AspectFill" VerticalOptions="Center"/>
-                                <BoxView BackgroundColor="Black" Grid.Column="2" HeightRequest="20" VerticalOptions="Center"/>
+                                                <Image Source="{Binding ImageURL}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" Aspect="AspectFill" VerticalOptions="Center"/>
+                                                <BoxView BackgroundColor="Black" Grid.Column="2" HeightRequest="20" VerticalOptions="Center"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </flv:FlowListView.FlowColumnTemplate>
+                                </flv:FlowListView>
+
+                                <flv:FlowListView x:Name="flowListView2" FlowColumnCount="1" BackgroundColor="White"
+                                  HasUnevenRows="True" HeightRequest="180" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" Grid.Row="0"
+                                  FlowItemsSource="{Binding CollectionList}" SeparatorVisibility="Default" SeparatorColor="Black">
+                                    <flv:FlowListView.FlowColumnTemplate>
+                                        <DataTemplate>
+                                            <Grid RowSpacing="5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2.5*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Image Source="{Binding ImageURL}" HorizontalOptions="Start" 
+                                       Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Margin="0,10,0,0" VerticalOptions="Start"/>
+                                                <Label Text="{Binding UserName}" Grid.Row="0" Grid.Column="1" VerticalOptions="Start" 
+                                       HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="0,10,0,5" />
+                                                <Label Text="{Binding UserComment}" Grid.Row="1" Grid.Column="0" VerticalOptions="Start" 
+                                       HorizontalOptions="StartAndExpand" FontSize="Medium" HorizontalTextAlignment="Start" Grid.ColumnSpan="2" Margin="0,0,0,10" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </flv:FlowListView.FlowColumnTemplate>
+                                </flv:FlowListView>
                             </Grid>
                         </DataTemplate>
-                    </flv:FlowListView.FlowColumnTemplate>
-                </flv:FlowListView>
-                
-                <Button Text="Læse og/eller skriv en kommentar" Grid.Row="2"/>
-        </Grid>
+                    </cv:CarouselView.ItemTemplate>
+                </cv:CarouselView>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
