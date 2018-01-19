@@ -65,15 +65,15 @@
                                    TextColor="#d0d0d0"
                                    VerticalOptions="Center"
                                    BackgroundColor="#e43932"
-                                   HorizontalOptions="FillAndExpand"
+                                   HorizontalOptions="Fill"
                                    Margin="0, 0, 10, 0"
                                    MinimumWidthRequest="30"/>
                         <Label Text="LOG IND"
                                TextColor="#d0d0d0"
-                               HorizontalOptions="End"
-                               MinimumWidthRequest="50"
+                               WidthRequest="60"
+                               HorizontalOptions="StartAndExpand"
                                VerticalTextAlignment="Center"
-                           Margin="10, 0, 10, 0 ">
+                           Margin="10, 0, 0, 0 ">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Login"/>
                         </Label.GestureRecognizers>
