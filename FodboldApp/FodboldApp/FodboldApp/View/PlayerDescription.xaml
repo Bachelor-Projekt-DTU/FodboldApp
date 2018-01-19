@@ -9,9 +9,9 @@
                          Margin="0, 0, 0, 0"
                          Spacing="0"
                          HorizontalOptions="FillAndExpand">
-                <!--<StackLayout.BindingContext>
-                <viewmodels:/>
-            </StackLayout.BindingContext>-->
+                <StackLayout.BindingContext>
+                    <viewmodels:PlayerDescriptionVM/>
+                </StackLayout.BindingContext>
                 <Label Text="{Binding Name}"
                        TextColor="{StaticResource textColor}"
                        FontSize="32"
@@ -32,8 +32,51 @@
                     <Grid x:Name="statGrid" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" Grid.Column="1" Grid.Row="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="5"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="1.5*"/>
                         </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                        </Grid.RowDefinitions>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="Trøjesponsor:" FontSize="14.2" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="{Binding Sponsor}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0"/>
+                        <Label Text="Position: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1"/>
+                        <Label Text="{Binding Position}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0"/>
+                        <Label Text="Højde: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"/>
+                        <Label Text="{Binding Height}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="3" Grid.Column="0"/>
+                        <Label Text="Vægt: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="3" Grid.Column="1"/>
+                        <Label Text="{Binding Weight}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="3" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.Column="0"/>
+                        <Label Text="Født: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.Column="1"/>
+                        <Label Text="{Binding Birthday}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="0"/>
+                        <Label Text="Kampe: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="1"/>
+                        <Label Text="{Binding Matches}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="6" Grid.Column="0"/>
+                        <Label Text="Vundne: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="6" Grid.Column="1"/>
+                        <Label Text="{Binding Wins}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="6" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="7" Grid.Column="0"/>
+                        <Label Text="Uafgjort: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="7" Grid.Column="1"/>
+                        <Label Text="{Binding Draws}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="7" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="8" Grid.Column="0"/>
+                        <Label Text="Tabt: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="8" Grid.Column="1"/>
+                        <Label Text="{Binding Losses}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="8" Grid.Column="2"/>
+                        <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="9" Grid.Column="0"/>
+                        <Label Text="Mål: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="9" Grid.Column="1"/>
+                        <Label Text="{Binding Goals}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="9" Grid.Column="2"/>
                     </Grid>
                 </Grid>
                 <Grid x:Name="descriptionGrid" ColumnSpacing="0" RowSpacing="0" VerticalOptions="FillAndExpand">
@@ -42,11 +85,21 @@
                         <ColumnDefinition/>
                         <ColumnDefinition Width="5"/>
                     </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0"/>
+                    <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="{Binding Debut}" BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
+                    <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0"/>
+                    <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="2"/>
+                    <Label Text="{Binding FormerClubs}" BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1"/>
                 </Grid>
                 <Label Text="BESKRIVELSE"
                        TextColor="{StaticResource textColor}"
-                       FontSize="24"
-                       HeightRequest="46"
+                       FontSize="22"
+                       HeightRequest="40"
                        HorizontalOptions="FillAndExpand"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"
