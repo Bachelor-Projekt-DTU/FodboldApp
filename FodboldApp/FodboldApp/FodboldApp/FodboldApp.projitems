@@ -25,12 +25,12 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Categories.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoxDesigns\PlayerDescriptionDesign.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\CommentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\EventModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayerModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsPageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ObservableCollectionsModel.cs" />
@@ -46,7 +46,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchHeaderVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchPageVM.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchesVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NavigationViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
@@ -54,6 +54,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerDescriptionVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />

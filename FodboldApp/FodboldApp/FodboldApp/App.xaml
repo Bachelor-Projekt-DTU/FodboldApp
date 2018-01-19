@@ -37,7 +37,7 @@
                     </Grid.RowDefinitions>
 
                     <!-- Begin Header -->
-                    <StackLayout 
+                    <!--<StackLayout 
                         Orientation="Horizontal"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
@@ -49,16 +49,22 @@
                             <OnPlatform x:TypeArguments="Thickness"
                             iOS="10, 10, 10, 10"
                             Android="10, 10, 10, 10"/>
-                        </StackLayout.Padding>
-                        
-                        <!-- Header content -->
-                        <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0">
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnBackButtonPressed"/>
-                        </StackLayout.GestureRecognizers>
-                        </controls:TintedImage>
-                        
-                        <SearchBar x:Name="search"
+                        </StackLayout.Padding>-->
+
+                    <Grid HorizontalOptions="FillAndExpand" BackgroundColor="#fb433c" Padding="0, 10, 0, 10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="70"/>
+                            </Grid.ColumnDefinitions>
+                            <!-- Header content -->
+                            <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnBackButtonPressed"/>
+                                </StackLayout.GestureRecognizers>
+                            </controls:TintedImage>
+
+                            <SearchBar x:Name="search"
                                    Placeholder="Søg"
                                    PlaceholderColor="#d0d0d0"
                                    CancelButtonColor="#d0d0d0"
@@ -67,18 +73,21 @@
                                    BackgroundColor="#e43932"
                                    HorizontalOptions="FillAndExpand"
                                    Margin="0, 0, 10, 0"
-                                   MinimumWidthRequest="30"/>
-                        <Label Text="LOG IND"
+                                   MinimumWidthRequest="30"
+                                       Grid.Column="1"/>
+                            <Label Text="LOG IND"
                                TextColor="#d0d0d0"
-                               HorizontalOptions="End"
-                               MinimumWidthRequest="50"
+                               WidthRequest="60"
+                               HorizontalOptions="FillAndExpand"
                                VerticalTextAlignment="Center"
-                           Margin="10, 0, 10, 0 ">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Login"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-                    </StackLayout>
+                           Margin="10, 0, 0, 0 "
+                                   Grid.Column="2">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Login"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+                    <!--</StackLayout>-->
                     <!-- End Header -->
 
                     <!-- Begin Content -->

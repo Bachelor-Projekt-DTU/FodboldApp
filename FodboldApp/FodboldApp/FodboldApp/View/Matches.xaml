@@ -4,19 +4,20 @@
              xmlns:usercontrols="clr-namespace:FodboldApp.View.UserControl"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="FodboldApp.View.Matches">
     <ContentPage.Content>
         <StackLayout Padding="0, 0, 0, 0"
                      Margin="0, 0, 0, 0"
                      Spacing="0"
                      BackgroundColor="#ffffff">
-            <!--<StackLayout.BindingContext>
+            <StackLayout.BindingContext>
                 <viewmodels:MatchesVM/>
-            </StackLayout.BindingContext>-->
+            </StackLayout.BindingContext>
 
-            <usercontrols:MatchHeaderUC BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
+            <usercontrols:MatchHeaderUC/>
 
-                <Label Text="SENESTE RESULTATER"
+            <Label Text="SENESTE RESULTATER"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"
                    HorizontalOptions="FillAndExpand"
@@ -24,7 +25,15 @@
                    VerticalTextAlignment="Center"
                    BackgroundColor="#f0f0f0"
                    HeightRequest="38"/>
-            <Label Text="BK FREM  -  Hillerød"
+            
+            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding NewsCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" SeparatorColor="Black"
+			   FlowItemsSource="{Binding MatchList}" VerticalOptions="FillAndExpand">
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="0"
+                                     BackgroundColor="#ffffff">
+                            
+                            <Label Text="{Binding Teams}"
                    TextColor="#e11e2c"
                    FontSize="28"
                    FontAttributes="Bold"
@@ -32,28 +41,32 @@
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"
                    Margin="0, 0, 0, 0"/>
-            <Label Text="2 - 2"
+                            <Label Text="{Binding Score}"
                    TextColor="{StaticResource textColor}"
                    FontSize="80"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-            <Label Text="KAMPENS SPILLER"
+                            <Label Text="KAMPENS SPILLER"
                    TextColor="{StaticResource textColor}"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-            <controls:CircleImage Source="http://bkfrem.dk/images/hill_2.jpg" Aspect="AspectFill" WidthRequest="250" HeightRequest="250">
-                <controls:CircleImage.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapMatch"/>
-                </controls:CircleImage.GestureRecognizers>
-            </controls:CircleImage>
-            <Label Text="LÆS MERE"
+                            <controls:CircleImage Source="{Binding ImageURL}" Aspect="AspectFill" WidthRequest="250" HeightRequest="250">
+                                <controls:CircleImage.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapMatch"/>
+                                </controls:CircleImage.GestureRecognizers>
+                            </controls:CircleImage>
+                            <Label Text="LÆS MERE"
                    TextColor="#bbbbbb"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="20" BackgroundColor="#f0f0f0"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

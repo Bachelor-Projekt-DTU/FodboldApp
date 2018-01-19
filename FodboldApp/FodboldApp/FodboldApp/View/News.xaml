@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             xmlns:usercontrols="clr-namespace:FodboldApp.View.UserControl"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="FodboldApp.News">
     <ContentPage.Content>
@@ -9,44 +10,13 @@
             Padding="0, 0, 0, 0"
                          Margin="0, 0, 0, 0"
                          Spacing="0"
-                         BackgroundColor="#f0f0f0">
+                         BackgroundColor="#ffffff">
             <StackLayout.BindingContext>
                 <viewmodels:NewsVM/>
             </StackLayout.BindingContext>
 
+            <usercontrols:MatchHeaderUC BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
 
-            <Label Text="{Binding TestText}"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   FontSize="Large"
-                   HeightRequest="60"
-                   VerticalTextAlignment="Center"
-                   TextColor="{StaticResource textColor}"
-                   BackgroundColor="#F0F0F0"/>
-            <Label Text="Skovshoved - Boldklubben FREM"
-                   TextColor="{StaticResource textColor}"
-                   FontSize="Large"
-                   FontAttributes="Bold"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="12. august 2017 15:00"
-                   TextColor="#e11e2c"
-                   FontSize="Large"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="Skovshoved IP"
-                   TextColor="{StaticResource textColor}"
-                   FontSize="Large"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
-            <Label Text="2. Division Pulje 1&#x0a;"
-                   TextColor="#b9b8b8"
-                   HorizontalOptions="FillAndExpand"
-                   HorizontalTextAlignment="Center"
-                   BackgroundColor="#ffffff"/>
             <Label Text="NYHEDER"
                    TextColor="{StaticResource textColor}"
                    FontSize="Large"
