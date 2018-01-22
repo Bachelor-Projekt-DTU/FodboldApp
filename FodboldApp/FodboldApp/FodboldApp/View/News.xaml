@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
-             xmlns:usercontrols="clr-namespace:FodboldApp.View.UserControl"
+             xmlns:xamltemp="clr-namespace:FodboldApp.View.XamlTemplate"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="FodboldApp.News">
     <ContentPage.Content>
@@ -15,7 +15,7 @@
                 <viewmodels:NewsVM/>
             </StackLayout.BindingContext>
 
-            <usercontrols:MatchHeaderUC BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
+            <xamltemp:MatchHeaderTemplate BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
 
             <Label Text="NYHEDER"
                    TextColor="{StaticResource textColor}"

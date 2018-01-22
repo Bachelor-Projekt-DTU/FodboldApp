@@ -74,11 +74,11 @@
       <DependentUpon>HistoricalStandings.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\BooleanReverser.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ListColorConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\ImageAlignmentConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\SelectedItemColorConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\Interface\TeamAlignmentConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\BooleanReverser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ListColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ImageAlignmentConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\SelectedItemColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\TeamAlignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -121,8 +121,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\UserControl\MatchHeaderUC.xaml.cs">
-      <DependentUpon>MatchHeaderUC.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\XamlTemplate\MatchHeaderTemplate.xaml.cs">
+      <DependentUpon>MatchHeaderTemplate.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -175,7 +175,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\UserControl\MatchHeaderUC.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\XamlTemplate\MatchHeaderTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

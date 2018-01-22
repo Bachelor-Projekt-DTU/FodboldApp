@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.POTY"
-             xmlns:local="clr-namespace:FodboldApp.View.Interface"
+             xmlns:local="clr-namespace:FodboldApp.View.Converter"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
 
