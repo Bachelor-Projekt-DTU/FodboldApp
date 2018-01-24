@@ -1,6 +1,7 @@
 ﻿using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +14,8 @@ namespace FodboldApp.ViewModel
 {
     class OverFiftyGoalsVM: INotifyPropertyChanged
     {
+        Realm _realm;
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
@@ -24,8 +27,9 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<OverFiftyGoalsModel> _playersList { get; set; } = new ObservableCollection<OverFiftyGoalsModel>();
-        public ObservableCollection<OverFiftyGoalsModel> PlayersList
+
+        private IEnumerable<OverFiftyGoalsModel> _playersList { get; set; } = new ObservableCollection<OverFiftyGoalsModel>();
+        public IEnumerable<OverFiftyGoalsModel> PlayersList
         {
             get
             {
@@ -40,11 +44,15 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297" , Index = index++ });
-            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
-            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
-            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
-            _playersList.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            _realm.Write(() =>
+            {
+                _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+                _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+                _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+                _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+                _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
+            });
+            _playersList = _realm.All<OverFiftyGoalsModel>();
         }
         void Player_OnTapped()
         {
@@ -53,6 +61,7 @@ namespace FodboldApp.ViewModel
         }
         public OverFiftyGoalsVM()
         {
+            _realm = Realm.GetInstance();
             SetupPlayerList();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }

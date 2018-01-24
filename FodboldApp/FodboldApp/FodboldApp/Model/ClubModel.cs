@@ -1,19 +1,20 @@
-﻿using System.ComponentModel;
+﻿using Realms;
+using System.ComponentModel;
 
 namespace FodboldApp
 {
-    class ClubModel : INotifyPropertyChanged
+    class ClubModel : RealmObject, INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string name)
-        {
-            var handler = PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
+        //protected virtual void OnPropertyChanged(string name)
+        //{
+        //    var handler = PropertyChanged;
 
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
-        }
+        //    if (handler != null)
+        //    {
+        //        handler(this, new PropertyChangedEventArgs(name));
+        //    }
+        //}
 
         public string ClubName { get; set; }
         public bool _selected { get; set; } = false;

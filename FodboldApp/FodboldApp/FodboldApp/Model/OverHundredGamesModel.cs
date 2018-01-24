@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FodboldApp.Model
 {
-    class OverHundredGamesModel
+    class OverHundredGamesModel : RealmObject
     {
         public string Name { get; set; }
         public string Period { get; set; }

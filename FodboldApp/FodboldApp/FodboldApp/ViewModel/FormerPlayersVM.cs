@@ -1,6 +1,7 @@
 ﻿using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +14,8 @@ namespace FodboldApp.ViewModel
 {
     class FormerPlayersVM: INotifyPropertyChanged
     {
+        Realm _realm;
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
@@ -24,8 +27,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<FormerPlayerModel> _playersList { get; set; } = new ObservableCollection<FormerPlayerModel>();
-        public ObservableCollection<FormerPlayerModel> PlayersList
+        private IEnumerable<FormerPlayerModel> _playersList { get; set; } = new ObservableCollection<FormerPlayerModel>();
+        public IEnumerable<FormerPlayerModel> PlayersList
         {
             get
             {
@@ -40,11 +43,15 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
-            _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            _realm.Write(() =>
+            {
+                _realm.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+                _realm.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+                _realm.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+                _realm.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+                _realm.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
+            });
+            _playersList = _realm.All<FormerPlayerModel>();
         }
         void Player_OnTapped()
         {
@@ -53,6 +60,7 @@ namespace FodboldApp.ViewModel
         }
         public FormerPlayersVM()
         {
+            _realm = Realm.GetInstance();
             SetupPlayerList();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }

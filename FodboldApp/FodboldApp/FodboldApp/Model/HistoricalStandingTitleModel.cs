@@ -5,9 +5,8 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class FormerPlayerModel : RealmObject
+    class HistoricalStandingTitleModel : RealmObject
     {
-        public string Player { get; set; }
-        public int Index { get; set; }
+        public string Title { get; set; }
     }
 }

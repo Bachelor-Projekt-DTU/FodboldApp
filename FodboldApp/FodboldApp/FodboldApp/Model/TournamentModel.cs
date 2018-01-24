@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FodboldApp.Model
 {
-    class TournamentModel
+    class TournamentModel : RealmObject
     {
         public string ImageURL { get; set; }
         public string Goals { get; set; }

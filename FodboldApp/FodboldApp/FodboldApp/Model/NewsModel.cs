@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FodboldApp.Model
 {
-    class NewsModel
+    class NewsModel : RealmObject
     {
         public string Title { get; set; }
         public string Date { get; set; }

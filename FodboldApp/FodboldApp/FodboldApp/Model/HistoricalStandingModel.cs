@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -6,18 +7,18 @@ using Xamarin.Forms;
 
 namespace FodboldApp.Model
 {
-    class HistoricalStandingModel : INotifyPropertyChanged
+    class HistoricalStandingModel : RealmObject, INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string name)
-        {
-            var handler = PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
+        //protected virtual void OnPropertyChanged(string name)
+        //{
+        //    var handler = PropertyChanged;
 
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
-        }
+        //    if (handler != null)
+        //    {
+        //        handler(this, new PropertyChangedEventArgs(name));
+        //    }
+        //}
         public string TournamentName { get; set; }
         public string Year { get; set; }
         public string Standing { get; set; }

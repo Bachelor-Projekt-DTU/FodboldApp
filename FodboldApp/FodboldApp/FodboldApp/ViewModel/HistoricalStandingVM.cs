@@ -1,5 +1,7 @@
 ﻿using FodboldApp.Model;
+using Realms;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
@@ -7,8 +9,10 @@ using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class HistoricalStandingVM : HistoricalStandingModel , INotifyPropertyChanged
+    class HistoricalStandingVM : INotifyPropertyChanged
     {
+        Realm _realm;
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
@@ -20,8 +24,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand HideStackLayoutCommand { get; private set; }
-        private ObservableCollection<HistoricalStandingModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingModel >();
-        public ObservableCollection<HistoricalStandingModel > HistoricalStandingsDataList
+        private IEnumerable<HistoricalStandingTitleModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel >();
+        public IEnumerable<HistoricalStandingTitleModel > HistoricalStandingsDataList
         {
             get
             {
@@ -33,8 +37,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsDataList));
             }
         }
-        private ObservableCollection<HistoricalStandingModel > _historicalStandingsListContent { get; set; } = new ObservableCollection<HistoricalStandingModel >();
-        public ObservableCollection<HistoricalStandingModel > HistoricalStandingsListContent
+        private IEnumerable<HistoricalStandingModel > _historicalStandingsListContent { get; set; } = new ObservableCollection<HistoricalStandingModel >();
+        public IEnumerable<HistoricalStandingModel > HistoricalStandingsListContent
         {
             get
             {
@@ -146,23 +150,32 @@ namespace FodboldApp.ViewModel
         }
         private void SetupHistoricalStandingsDataList()
         {
-            _historicalStandingsDataList.Add(new HistoricalStandingModel  { TournamentName = "LANDSFODBOLDTURNERINGEN" });
-            _historicalStandingsDataList.Add(new HistoricalStandingModel  { TournamentName = "MESTERSKABSSERIEN" });
-            _historicalStandingsDataList.Add(new HistoricalStandingModel  { TournamentName = "Kriseturneringen – kreds 3" });
-            _historicalStandingsDataList.Add(new HistoricalStandingModel  { TournamentName = "DANMARKSTURNERINGEN – 1. Division" });
-            _historicalStandingsDataList.Add(new HistoricalStandingModel  { TournamentName = "DANMARKSTURNERINGEN – 2. Division" });
+            _realm.Write(() =>
+            {
+                _realm.Add(new HistoricalStandingTitleModel { Title = "LANDSFODBOLDTURNERINGEN" });
+                _realm.Add(new HistoricalStandingTitleModel { Title = "MESTERSKABSSERIEN" });
+                _realm.Add(new HistoricalStandingTitleModel { Title = "Kriseturneringen – kreds 3" });
+                _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 1. Division" });
+                _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 2. Division" });
+            });
+            _historicalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
         }
         private void SetupHistoricalStandingsListContent()
         {
-            _historicalStandingsListContent.Add(new HistoricalStandingModel  { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-            _historicalStandingsListContent.Add(new HistoricalStandingModel  { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-            _historicalStandingsListContent.Add(new HistoricalStandingModel  { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-            _historicalStandingsListContent.Add(new HistoricalStandingModel  { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-            _historicalStandingsListContent.Add(new HistoricalStandingModel  { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            _realm.Write(() =>
+            {
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            });
+            _historicalStandingsListContent = _realm.All<HistoricalStandingModel>();
         }
 
         public HistoricalStandingVM()
         {
+            _realm = Realm.GetInstance();
             SetupHistoricalStandingsDataList();
             SetupHistoricalStandingsListContent();
             HideStackLayoutCommand = new Command(OnTapped);
