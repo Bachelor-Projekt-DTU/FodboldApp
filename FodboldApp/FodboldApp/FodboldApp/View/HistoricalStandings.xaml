@@ -39,7 +39,7 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Label Text="{Binding TournamentName}" 
+                                <Label Text="{Binding Title}" 
                                        TextColor="{StaticResource textColor}" HorizontalTextAlignment="Center" 
                                        VerticalTextAlignment="Center" 
                                        BackgroundColor="{Binding Selected, Converter={StaticResource colorConvert}}"/>

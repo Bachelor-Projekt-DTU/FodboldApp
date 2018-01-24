@@ -37,8 +37,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsDataList));
             }
         }
-        private IEnumerable<HistoricalStandingModel > _historicalStandingsListContent { get; set; } = new ObservableCollection<HistoricalStandingModel >();
-        public IEnumerable<HistoricalStandingModel > HistoricalStandingsListContent
+        private IEnumerable<HistoricalStandingModel> _historicalStandingsListContent { get; set; } = new ObservableCollection<HistoricalStandingModel >();
+        public IEnumerable<HistoricalStandingModel> HistoricalStandingsListContent
         {
             get
             {
@@ -102,7 +102,7 @@ namespace FodboldApp.ViewModel
         {
             ShowListView = !_showListView;
             Console.WriteLine("Trykket");
-            if (_showListView == true)
+            if (_showListView)
             {
                 ArrowImage = "up_arrow.png";
             }
@@ -125,26 +125,29 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public HistoricalStandingModel  _selectedItem { get; set; }
-        public HistoricalStandingModel  SelectedItem
+        public HistoricalStandingTitleModel  _selectedItem { get; set; }
+        public HistoricalStandingTitleModel  SelectedItem
         {
             get { return _selectedItem; }
             set
             {
                 if (_selectedItem != value)
-                { 
-                    if(_selectedItem != null)
-                        _selectedItem.Selected = false;
+                {
+                    _realm.Write(() =>
+                    {
+                        if (_selectedItem != null)
+                            _selectedItem.Selected = false;
 
-                    _selectedItem = value;
+                        _selectedItem = value;
 
-                    if (_selectedItem != null)
-                        _selectedItem.Selected = true;
+                        if (_selectedItem != null)
+                            _selectedItem.Selected = true;
                         ShowStackLayout = true;
 
-                    TournamentLabelName = _selectedItem.TournamentName;
+                        TournamentLabelName = _selectedItem.Title;
 
-                    OnPropertyChanged(nameof(SelectedItem));
+                        OnPropertyChanged(nameof(SelectedItem));
+                    });
                 }
             }
         }
@@ -157,27 +160,31 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new HistoricalStandingTitleModel { Title = "Kriseturneringen – kreds 3" });
                 _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 1. Division" });
                 _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 2. Division" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
             });
+
             _historicalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
+            _historicalStandingsListContent = _realm.All<HistoricalStandingModel>();
         }
+
         private void SetupHistoricalStandingsListContent()
         {
-            _realm.Write(() =>
-            {
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-            });
+           
+
             _historicalStandingsListContent = _realm.All<HistoricalStandingModel>();
         }
 
         public HistoricalStandingVM()
         {
             _realm = Realm.GetInstance();
+            
             SetupHistoricalStandingsDataList();
-            SetupHistoricalStandingsListContent();
+           // SetupHistoricalStandingsListContent();
+            
             HideStackLayoutCommand = new Command(OnTapped);
         }
     }

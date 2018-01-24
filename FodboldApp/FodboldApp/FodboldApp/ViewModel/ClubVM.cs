@@ -44,15 +44,18 @@ namespace FodboldApp.ViewModel
             {
                 if (_selectedItem != value)
                 {
-                    if (_selectedItem != null)
-                        _selectedItem.Selected = false;
+                    _realm.Write(() =>
+                    {
+                        if (_selectedItem != null)
+                            _selectedItem.Selected = false;
 
-                    _selectedItem = value;
+                        _selectedItem = value;
 
-                    if (_selectedItem != null)
-                        _selectedItem.Selected = true;
+                        if (_selectedItem != null)
+                            _selectedItem.Selected = true;
 
-                    OnPropertyChanged(nameof(SelectedItem));
+                        OnPropertyChanged(nameof(SelectedItem));
+                    });
                 }
             }
         }

@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace FodboldApp
 {
-    class ClubModel : RealmObject, INotifyPropertyChanged
+    class ClubModel : RealmObject
     {
         //public event PropertyChangedEventHandler PropertyChanged;
         //protected virtual void OnPropertyChanged(string name)
@@ -27,7 +27,7 @@ namespace FodboldApp
             set
             {
                 _selected = value;
-                OnPropertyChanged(nameof(Selected));
+                RaisePropertyChanged(nameof(Selected));
             }
         }
     }
