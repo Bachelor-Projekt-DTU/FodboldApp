@@ -1,23 +1,22 @@
-﻿using FodboldApp.Colorization;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace FodboldApp.View.Interface
+namespace FodboldApp.View.Converter
 {
-    class ListColorConverter : IValueConverter
+    class BooleanReverser : IValueConverter
     {
 
         #region IValueConverter implementation
 
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (value is int)
+            if (value is bool)
             {
-                return ColoringLogic.GetColor((int)value);
+                    return !(bool)value;
             }
-            return Color.White;
+            return true;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundImage="frontpage_background.png"
-             xmlns:local="clr-namespace:FodboldApp.View.Interface" 
+             xmlns:local="clr-namespace:FodboldApp.View.Converter" 
              x:Class="FodboldApp.FrontPage">
 
     <ContentPage.Resources>

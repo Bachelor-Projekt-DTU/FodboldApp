@@ -1,9 +1,9 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace FodboldApp.View.Interface
+namespace FodboldApp.View.Converter
 {
-    class ImageAlignmentConverter : IValueConverter
+    class TeamAlignmentConverter : IValueConverter
     {
 
         #region IValueConverter implementation
@@ -13,9 +13,9 @@ namespace FodboldApp.View.Interface
             if (value is int)
             {
                 if ((int)value == 0)
-                    return 1;
+                    return TextAlignment.End;
             }
-            return 3;
+            return TextAlignment.Start;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

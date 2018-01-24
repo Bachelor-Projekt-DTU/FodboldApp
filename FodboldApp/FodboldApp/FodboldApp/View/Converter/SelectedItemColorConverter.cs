@@ -1,21 +1,23 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace FodboldApp.View.Interface
+namespace FodboldApp.View.Converter
 {
-    class TeamAlignmentConverter : IValueConverter
+    public class SelectedItemColorConverter : IValueConverter
     {
 
         #region IValueConverter implementation
 
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (value is int)
+            if (value is bool)
             {
-                if ((int)value == 0)
-                    return TextAlignment.End;
+                if ((Boolean)value)
+                    return Color.Red;
+                else
+                    return Color.White;
             }
-            return TextAlignment.Start;
+            return Color.White;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

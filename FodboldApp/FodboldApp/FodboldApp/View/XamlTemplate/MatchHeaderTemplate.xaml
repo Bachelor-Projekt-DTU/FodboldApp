@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FodboldApp.View.Interface"
+             xmlns:local="clr-namespace:FodboldApp.View.Converter"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
-             x:Class="FodboldApp.View.UserControl.MatchHeaderUC">
+             x:Class="FodboldApp.View.XamlTemplate.MatchHeaderTemplate">
 
     <StackLayout.Resources>
         <ResourceDictionary>

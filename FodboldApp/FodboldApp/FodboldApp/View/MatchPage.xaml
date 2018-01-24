@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-             xmlns:local="clr-namespace:FodboldApp.View.Interface" 
+             xmlns:local="clr-namespace:FodboldApp.View.Converter" 
 xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
              xmlns:viewModel ="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.MatchPage">
