@@ -18,12 +18,14 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Tournament.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\History.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Chat.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Categories.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ChatModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Colorization\ColoringLogic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\CommentModel.cs" />
@@ -42,6 +44,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomStack.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\TournamentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomNavigationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ChatVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
@@ -61,6 +64,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TournamentVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ChatLayoutConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\TextAllignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormerPlayers.xaml.cs">
       <DependentUpon>FormerPlayers.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -168,6 +173,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Chat.xaml.cs">
+      <DependentUpon>Chat.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\MatchPage.xaml">

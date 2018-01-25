@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FodboldApp.View.Chat"
+             xmlns:local="clr-namespace:FodboldApp.View.Converter"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             xmlns:abstractions="clr-namespace:RoundedBoxView.Forms.Plugin.Abstractions;assembly=RoundedBoxView.Forms.Plugin.Abstractions"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ChatLayoutConverter x:Key="layoutConvert"/>
+            <local:TextAllignmentConverter x:Key="textAllignmentConvert"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:ChatVM/>
+            </StackLayout.BindingContext>
+            <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" 
+			   FlowItemsSource="{Binding ChatList}">
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <Grid Margin="10, 10, 10, 10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            <abstractions:RoundedBoxView BackgroundColor="Blue" CornerRadius="10" Grid.Column="{Binding Admin, Converter={StaticResource layoutConvert}}"/>
+                            <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="{Binding Admin, Converter={StaticResource textAllignmentConvert}}" Margin="10, 10, 10, 10" Grid.Column="{Binding Admin, Converter={StaticResource layoutConvert}}"/>
+                            <Image Source="icon" IsVisible="{Binding Admin}" Grid.Column="2"/>
+                        </Grid>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

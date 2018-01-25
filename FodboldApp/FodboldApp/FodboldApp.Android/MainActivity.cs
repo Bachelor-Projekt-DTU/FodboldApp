@@ -11,6 +11,7 @@ using ImageCircle.Forms.Plugin.Droid;
 using FFImageLoading.Forms.Droid;
 using CarouselView.FormsPlugin.Android;
 using Realms;
+using RoundedBoxView.Forms.Plugin.Droid;
 
 namespace FodboldApp.Droid
 {
@@ -36,6 +37,7 @@ namespace FodboldApp.Droid
             LoadApplication(new App());
             TintedImageRenderer.Init();
             CarouselViewRenderer.Init();
+            RoundedBoxViewRenderer.Init();
             CachedImageRenderer.Init(enableFastRenderer: true);
         }
     }

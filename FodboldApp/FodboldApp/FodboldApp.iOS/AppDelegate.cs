@@ -7,6 +7,7 @@ using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
 using Plugin.CrossPlatformTintedImage.iOS;
 using UIKit;
+using RoundedBoxView.Forms.Plugin.Droid;
 
 namespace FodboldApp.iOS
 {
@@ -37,6 +38,7 @@ namespace FodboldApp.iOS
             LoadApplication(new App());
             TintedImageRenderer.Init();
             CachedImageRenderer.Init();
+            RoundedBoxViewRenderer.Init();
             CarouselViewRenderer.Init();
 
 

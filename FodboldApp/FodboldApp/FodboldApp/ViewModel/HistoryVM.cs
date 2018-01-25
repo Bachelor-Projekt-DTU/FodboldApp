@@ -27,6 +27,7 @@ namespace FodboldApp.ViewModel
         public ICommand OverFiftyGoalsCommand { get; private set; }
         public ICommand OverHundredGamesCommand { get; private set; }
         public ICommand HistoricalStandingsCommand { get; private set; }
+        public ICommand TempCommand { get; private set; }
 
         void FormerPlayers_OnTapped()
         {
@@ -54,6 +55,12 @@ namespace FodboldApp.ViewModel
             HeaderVM.UpdateContent();
         }
 
+        void Temp_OnTapped()
+        {
+            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new Chat());
+            HeaderVM.UpdateContent();
+        }
+
         public HistoryVM()
         {
             FormerPlayersCommand = new Command(FormerPlayers_OnTapped);
@@ -61,6 +68,7 @@ namespace FodboldApp.ViewModel
             OverFiftyGoalsCommand = new Command(OverFiftyGoals_OnTapped);
             OverHundredGamesCommand = new Command(OverHundredGanes_OnTapped);
             HistoricalStandingsCommand = new Command(HistoricalStandings_OnTapped);
+            TempCommand = new Command(Temp_OnTapped);
         }
     }
 }
