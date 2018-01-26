@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              xmlns:local="clr-namespace:FodboldApp.View.Converter" 
-xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              xmlns:viewModel ="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.MatchPage">
 
@@ -45,8 +45,8 @@ xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
                 <Grid.BindingContext>
                     <viewModel:MatchPageVM/>
                 </Grid.BindingContext>
-                <cv:CarouselView ItemsSource="{Binding CollectionList}">
-                    <cv:CarouselView.ItemTemplate>
+                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}">
+                    <cv:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <Grid.RowDefinitions>
@@ -127,8 +127,8 @@ xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
                                 </Grid>
                             </Grid>
                         </DataTemplate>
-                    </cv:CarouselView.ItemTemplate>
-                </cv:CarouselView>
+                    </cv:CarouselViewControl.ItemTemplate>
+                </cv:CarouselViewControl>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

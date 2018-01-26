@@ -43,7 +43,7 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        private bool _labelIsVisible { get; set; } = true;
+        private bool _labelIsVisible { get; set; }
         public bool LabelIsVisible
         {
             get
@@ -67,16 +67,11 @@ namespace FodboldApp.ViewModel
             set
             {
                 _userComment = value;
-                if (_userComment.Length > 0)
-                {
-                    LabelIsVisible = false;
+                
+                    LabelIsVisible = true;
                     Console.WriteLine("why u not working "+LabelIsVisible);
                     Console.WriteLine("teksten "+UserComment);           
-                }
-                else
-                {
-                    LabelIsVisible = true;
-                }
+                
                 OnPropertyChanged(nameof(UserComment));
             }
         }
