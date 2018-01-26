@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
@@ -16,8 +17,8 @@ namespace FodboldApp.Model
                 handler(this, new PropertyChangedEventArgs(name));
             }
         }
-        private ObservableCollection<Object> _collectionList { get; set; }
-        public ObservableCollection<Object> CollectionList {
+        private IEnumerable<Object> _collectionList { get; set; }
+        public IEnumerable<Object> CollectionList {
             get
             {
                 return _collectionList;
