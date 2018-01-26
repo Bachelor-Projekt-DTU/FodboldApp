@@ -1,4 +1,4 @@
-﻿using FodboldApp.Colorization;
+﻿using FodboldApp.Globals;
 using System.Linq;
 using Xamarin.Forms;
 using FodboldApp.Model;

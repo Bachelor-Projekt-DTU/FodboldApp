@@ -18,6 +18,8 @@ namespace FodboldApp.ViewModel
         public ICommand MatchesTapped { get; private set; }
         public ICommand TournamentTapped { get; private set; }
         public ICommand HistoryTapped { get; private set; }
+        public ICommand LoginCommand { get; private set; }
+        public ICommand BackButtonTapped { get; private set; }
 
         private Color _newsIconColor;
         private Color _playerIconColor;
@@ -117,6 +119,8 @@ namespace FodboldApp.ViewModel
             MatchesTapped = new Command(MatchTap);
             TournamentTapped = new Command(TournamentTap);
             HistoryTapped = new Command(HistoryTap);
+            LoginCommand = new Command(Login);
+            BackButtonTapped = new Command(BackButtonPressed);
         }
 
         private void ResetTint()
@@ -126,6 +130,11 @@ namespace FodboldApp.ViewModel
             MatchIconColor = UnSelectedColor;
             TournamentIconColor = UnSelectedColor;
             HistoryIconColor = UnSelectedColor;
+        }
+
+        public async void Login(object sender, EventArgs e)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new Login());
         }
 
         public async void NewsTap()

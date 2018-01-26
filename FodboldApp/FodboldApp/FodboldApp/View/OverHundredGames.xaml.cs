@@ -1,4 +1,4 @@
-﻿using FodboldApp.Colorization;
+﻿using FodboldApp.Globals;
 using FodboldApp.Model;
 using FodboldApp.ViewModel;
 using System;

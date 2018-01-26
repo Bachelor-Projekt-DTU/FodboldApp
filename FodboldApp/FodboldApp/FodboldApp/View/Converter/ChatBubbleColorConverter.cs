@@ -1,23 +1,23 @@
-﻿using FodboldApp.Globals;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
-    class ListColorConverter : IValueConverter
+    class ChatBubbleColorConverter : IValueConverter
     {
 
         #region IValueConverter implementation
 
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (value is int)
+            if (value is bool)
             {
-                return ColoringLogic.GetColor((int)value);
+                if ((bool)value)
+                    return Globals.ColoringLogic.AppPrimary;
             }
-            return Color.White;
+            return Globals.ColoringLogic.AppSecondary;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

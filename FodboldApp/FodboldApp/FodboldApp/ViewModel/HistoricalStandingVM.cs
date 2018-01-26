@@ -68,7 +68,7 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                return Colorization.ColoringLogic.AppPrimary;
+                return Globals.ColoringLogic.AppPrimary;
             }
         }
         private string _arrowImage { get; set; } = "down_arrow.png";

@@ -55,7 +55,7 @@ namespace FodboldApp.ViewModel
             get
 
             {
-                return Colorization.ColoringLogic.GetColor(rowIndex++ /3);
+                return Globals.ColoringLogic.GetColor(rowIndex++ /3);
             }
         }
     }
