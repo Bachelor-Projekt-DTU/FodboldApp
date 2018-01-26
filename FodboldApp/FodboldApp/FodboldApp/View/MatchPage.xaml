@@ -4,7 +4,7 @@
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              xmlns:local="clr-namespace:FodboldApp.View.Converter" 
 xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
-             xmlns:viewModel ="clr-namespace:FodboldApp.ViewModel"
+             xmlns:viewmodels ="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.MatchPage">
 
     <ContentPage.Resources>
@@ -16,16 +16,12 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand" Spacing="5">
+        <StackLayout VerticalOptions="FillAndExpand" Spacing="5" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="180"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-
-                <Grid.BindingContext>
-                    <viewModel:MatchPageVM/>
-                </Grid.BindingContext>
 
                 <Grid BackgroundColor="White" RowSpacing="0" Grid.Row="0">
                     <Grid.RowDefinitions>
@@ -42,9 +38,6 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
 
             </Grid>
             <Grid RowSpacing="0" VerticalOptions="FillAndExpand">
-                <Grid.BindingContext>
-                    <viewModel:MatchPageVM/>
-                </Grid.BindingContext>
                 <cv:CarouselViewControl ItemsSource="{Binding CollectionList}">
                     <cv:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
@@ -107,21 +100,14 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                                     </flv:FlowListView>
                                     <Grid Grid.Row="1" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}">
                                         <Editor Text="{Binding UserComment, Mode=TwoWay}"
-                                                HorizontalOptions="FillAndExpand">
-                                            <Editor.BindingContext>
-                                                <viewModel:MatchPageVM/>
-                                            </Editor.BindingContext>
+                                                HorizontalOptions="FillAndExpand"
+                                                BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
                                         </Editor>
                                         <Label Text="Skriv en kommentar" 
-                                                HorizontalOptions="StartAndExpand" IsVisible="{Binding LabelIsVisible}" InputTransparent="True">
-                                            <Label.BindingContext>
-                                                <viewModel:MatchPageVM/>
-                                            </Label.BindingContext>
+                                               HorizontalOptions="StartAndExpand" IsVisible="{Binding LabelIsVisible}" InputTransparent="True"
+                                               BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
                                         </Label>
-                                        <Button Text="Send" HorizontalOptions="End" Command="{Binding SendCommentCommand}" VerticalOptions="Center">
-                                            <Button.BindingContext>
-                                                <viewModel:MatchPageVM/>
-                                            </Button.BindingContext>
+                                        <Button Text="Send" HorizontalOptions="End" Command="{Binding SendCommentCommand}" VerticalOptions="Center" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
                                         </Button>
                                     </Grid>
                                 </Grid>
