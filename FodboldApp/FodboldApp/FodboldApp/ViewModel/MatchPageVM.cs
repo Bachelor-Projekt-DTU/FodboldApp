@@ -1,6 +1,7 @@
 ﻿using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
@@ -22,6 +23,9 @@ namespace FodboldApp.ViewModel
         }
 
         public string Date { get; private set; }
+        public string Teams { get; private set; }
+        public ICommand SendCommentCommand { get; set; }
+
         private string _score { get; set; }
         public string Score {
             get
@@ -34,7 +38,44 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(Score));
             }
         }
-        public string Teams { get; private set; }
+
+        private bool _labelIsVisible { get; set; } = true;
+        public bool LabelIsVisible
+        {
+            get
+            {
+                return _labelIsVisible;
+            }
+            set
+            {
+                _labelIsVisible = value;
+                OnPropertyChanged(nameof(LabelIsVisible));
+            }
+        }
+
+        private string _userComment { get; set; }
+        public string UserComment
+        {
+            get
+            {
+                return _userComment;
+            }
+            set
+            {
+                _userComment = value;
+                if (_userComment.Length > 0)
+                {
+                    LabelIsVisible = false;
+                    Console.WriteLine("why u not working "+LabelIsVisible);
+                    Console.WriteLine("teksten "+UserComment);           
+                }
+                else
+                {
+                    LabelIsVisible = true;
+                }
+                OnPropertyChanged(nameof(UserComment));
+            }
+        }
 
         private ObservableCollection<ObservableCollectionsModel> _collectionList { get; set; } = new ObservableCollection<ObservableCollectionsModel>();
         public ObservableCollection<ObservableCollectionsModel> CollectionList
@@ -78,6 +119,15 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        void OnSendTapped()
+        {
+            CommentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = _userComment, UserName = "Peter Petersen" });
+            foreach (CommentModel Comment in CollectionList[1].CollectionList)
+            {
+                Console.WriteLine(Comment.UserComment);
+            }
+        }
+
         public MatchPageVM()
         {
             _eventList.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
@@ -92,13 +142,10 @@ namespace FodboldApp.ViewModel
             _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Virkelig godt skudt ind!", UserName = "Peter Petersen" });
             _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Mååål", UserName = "Hans Hansen" });
             _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            _commentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
             _collectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
             _collectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+
+            SendCommentCommand = new Command(OnSendTapped);
         }
     }
 }

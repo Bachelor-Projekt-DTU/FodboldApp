@@ -4,8 +4,13 @@
              x:Class="FodboldApp.View.Login">
     <ContentPage.Content>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Image Source="facebook_icon.png" HorizontalOptions="Start" VerticalOptions="Center"/>
-            <Image Source="google_plus_icon" HorizontalOptions="End" VerticalOptions="Center"/>
+            <Image Source="facebook_icon.png" HorizontalOptions="Start" VerticalOptions="Center">
+            </Image>
+            <Image Source="google_plus_icon" HorizontalOptions="End" VerticalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GooglePlusLoginCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

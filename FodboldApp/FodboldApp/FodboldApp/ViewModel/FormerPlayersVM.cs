@@ -46,7 +46,7 @@ namespace FodboldApp.ViewModel
             _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
             _playersList.Add(new FormerPlayerModel { Player = "A. Bentzon - Højre Innerwing", Index = index++ });
         }
-        void Player_OnTapped()
+        void PlayerOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription());
             App.Current.MainPage.Navigation.PushAsync(new PlayerDescription());
@@ -54,7 +54,7 @@ namespace FodboldApp.ViewModel
         public FormerPlayersVM()
         {
             SetupPlayerList();
-            PlayerDescriptionCommand = new Command(Player_OnTapped);
+            PlayerDescriptionCommand = new Command(PlayerOnTapped);
         }
     }
 }

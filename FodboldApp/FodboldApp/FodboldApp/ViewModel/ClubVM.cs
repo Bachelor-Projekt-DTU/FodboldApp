@@ -42,7 +42,7 @@ namespace FodboldApp.ViewModel
                 }
             }
         }
-        void OnTapped()
+        void ContinueOnTapped()
         {
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
@@ -54,7 +54,7 @@ namespace FodboldApp.ViewModel
             _clubListSource.Add(new ClubModel { ClubName = "Klub 3" });
             _clubListSource.Add(new ClubModel { ClubName = "Klub 4" });
             _clubListSource.Add(new ClubModel { ClubName = "Klub 5" });
-            ContinueCommand = new Command(OnTapped);
+            ContinueCommand = new Command(ContinueOnTapped);
         }
     }
 }

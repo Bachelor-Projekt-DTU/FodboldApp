@@ -1,9 +1,8 @@
 ﻿using DLToolkit.Forms.Controls;
-using FodboldApp.Stack;
 using FodboldApp.View;
 using FodboldApp.ViewModel;
 using System;
-
+using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -52,6 +51,22 @@ namespace FodboldApp
         public async void Login(object sender, EventArgs e)
         {
             await ((App)Current).MainPage.Navigation.PushAsync(new Login());
+        }
+        public async void LoginOut(object sender, EventArgs e)
+        {
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                // Sign out from Google+ on iOS
+            }
+            else if (Device.RuntimePlatform == Device.Android)
+            {
+                var result = await DependencyService.Get<IGoogleLogin>().SignOut();
+                if (result.IsSuccess)
+                {
+                    Console.WriteLine("Logget ud");
+                    ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
+                }
+            }
         }
     }
 }

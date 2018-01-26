@@ -94,7 +94,7 @@ namespace FodboldApp.ViewModel
             }
         }
         
-        void OnTapped()
+        void HideStackLayoutOnTapped()
         {
             ShowListView = !_showListView;
             Console.WriteLine("Trykket");
@@ -165,7 +165,7 @@ namespace FodboldApp.ViewModel
         {
             SetupHistoricalStandingsDataList();
             SetupHistoricalStandingsListContent();
-            HideStackLayoutCommand = new Command(OnTapped);
+            HideStackLayoutCommand = new Command(HideStackLayoutOnTapped);
         }
     }
 }

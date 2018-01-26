@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,10 @@ namespace FodboldApp.View
 	{
 		public Login ()
 		{
-			InitializeComponent ();
-		}
+            BindingContext = new LoginVM();
+            InitializeComponent();
+
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Colorization.ColoringLogic.AppPrimary;
+        }
 	}
 }

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "274704195206",
+    "project_id": "firebase-fodboldapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274704195206:android:ef109930ee88aa28",
+        "android_client_info": {
+          "package_name": "com.companyname.FodboldApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274704195206-lkoqg3qtihel0vuor9k3nd7moevu3alc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.companyname.FodboldApp",
+            "certificate_hash": "cb0ee939c69c5902e97b47f681a333ce39cecf1e"
+          }
+        },
+        {
+          "client_id": "274704195206-080a5nbp19cpc6frnmv25a5asdglls00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS_Q3JX1Xyj2cJO3SWza4cieaBWpenhK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

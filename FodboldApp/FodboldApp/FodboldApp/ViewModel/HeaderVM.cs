@@ -44,6 +44,20 @@ namespace FodboldApp.ViewModel
             contentPage = content;
         }
 
+        public bool _isUserLoggedIn { get; set; }
+        public bool IsUserLoggedIn
+        {
+            get
+            {
+                return _isUserLoggedIn;
+            }
+            set
+            {
+                _isUserLoggedIn = value;
+                OnPropertyChanged(nameof(IsUserLoggedIn));
+            }
+        }
+
         public Color NewsIconColor
         {
             get

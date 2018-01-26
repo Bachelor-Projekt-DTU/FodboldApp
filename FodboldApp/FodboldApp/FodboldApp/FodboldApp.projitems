@@ -44,6 +44,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LoginVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchHeaderVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchesVM.cs" />
