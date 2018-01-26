@@ -45,7 +45,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                 <Grid.BindingContext>
                     <viewModel:MatchPageVM/>
                 </Grid.BindingContext>
-                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}">
+                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}" ShowArrows="True">
                     <cv:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <Grid>
