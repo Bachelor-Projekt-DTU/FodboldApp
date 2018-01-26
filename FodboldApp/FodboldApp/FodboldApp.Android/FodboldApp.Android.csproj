@@ -18,6 +18,10 @@
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\Hadi\AppData\Local\Xamarin\Mono for Android\Keystore\fodboldapp\fodboldapp.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>bachelor</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>FodboldApp</AndroidSigningKeyAlias>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +70,9 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>2.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Xamarians.GoogleLogin">
+      <Version>1.0.3</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.RoundedBoxView">
       <Version>1.0.0.7</Version>
     </PackageReference>
@@ -96,6 +103,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>

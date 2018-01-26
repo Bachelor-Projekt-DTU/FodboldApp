@@ -29,27 +29,27 @@ namespace FodboldApp.ViewModel
         public ICommand HistoricalStandingsCommand { get; private set; }
         public ICommand TempCommand { get; private set; }
 
-        void FormerPlayers_OnTapped()
+        void FormerPlayersOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new FormerPlayers());
             HeaderVM.UpdateContent();
         }
-        void POTY_OnTapped()
+        void POTYOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new POTY());
             HeaderVM.UpdateContent();
         }
-        void OverFiftyGoals_OnTapped()
+        void OverFiftyGoalsOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new OverFiftyGoals());
             HeaderVM.UpdateContent();
         }
-        void OverHundredGanes_OnTapped()
+        void OverHundredGanesOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new OverHundredGames());
             HeaderVM.UpdateContent();
         }
-        void HistoricalStandings_OnTapped()
+        void HistoricalStandingsOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new HistoricalStandings());
             HeaderVM.UpdateContent();
@@ -63,11 +63,11 @@ namespace FodboldApp.ViewModel
 
         public HistoryVM()
         {
-            FormerPlayersCommand = new Command(FormerPlayers_OnTapped);
-            POTYCommand = new Command(POTY_OnTapped);
-            OverFiftyGoalsCommand = new Command(OverFiftyGoals_OnTapped);
-            OverHundredGamesCommand = new Command(OverHundredGanes_OnTapped);
-            HistoricalStandingsCommand = new Command(HistoricalStandings_OnTapped);
+            FormerPlayersCommand = new Command(FormerPlayersOnTapped);
+            POTYCommand = new Command(POTYOnTapped);
+            OverFiftyGoalsCommand = new Command(OverFiftyGoalsOnTapped);
+            OverHundredGamesCommand = new Command(OverHundredGanesOnTapped);
+            HistoricalStandingsCommand = new Command(HistoricalStandingsOnTapped);
             TempCommand = new Command(Temp_OnTapped);
         }
     }

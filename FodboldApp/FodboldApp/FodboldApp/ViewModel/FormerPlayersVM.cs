@@ -53,7 +53,7 @@ namespace FodboldApp.ViewModel
             });
             _playersList = _realm.All<FormerPlayerModel>();
         }
-        void Player_OnTapped()
+        void PlayerOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription());
             App.Current.MainPage.Navigation.PushAsync(new PlayerDescription());
@@ -62,7 +62,7 @@ namespace FodboldApp.ViewModel
         {
             _realm = Realm.GetInstance();
             SetupPlayerList();
-            PlayerDescriptionCommand = new Command(Player_OnTapped);
+            PlayerDescriptionCommand = new Command(PlayerOnTapped);
         }
     }
 }

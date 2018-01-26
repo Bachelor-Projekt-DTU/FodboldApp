@@ -3,6 +3,7 @@ using FodboldApp.Stack;
 using FodboldApp.View;
 using Realms;
 using System.Collections.Generic;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
@@ -26,6 +27,9 @@ namespace FodboldApp.ViewModel
         }
 
         public string Date { get; private set; }
+        public string Teams { get; private set; }
+        public ICommand SendCommentCommand { get; set; }
+
         private string _score { get; set; }
         public string Score {
             get
@@ -38,7 +42,44 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(Score));
             }
         }
-        public string Teams { get; private set; }
+
+        private bool _labelIsVisible { get; set; } = true;
+        public bool LabelIsVisible
+        {
+            get
+            {
+                return _labelIsVisible;
+            }
+            set
+            {
+                _labelIsVisible = value;
+                OnPropertyChanged(nameof(LabelIsVisible));
+            }
+        }
+
+        private string _userComment { get; set; }
+        public string UserComment
+        {
+            get
+            {
+                return _userComment;
+            }
+            set
+            {
+                _userComment = value;
+                if (_userComment.Length > 0)
+                {
+                    LabelIsVisible = false;
+                    Console.WriteLine("why u not working "+LabelIsVisible);
+                    Console.WriteLine("teksten "+UserComment);           
+                }
+                else
+                {
+                    LabelIsVisible = true;
+                }
+                OnPropertyChanged(nameof(UserComment));
+            }
+        }
 
         private ObservableCollection<ObservableCollectionsModel> _collectionList { get; set; } = new ObservableCollection<ObservableCollectionsModel>();
         public ObservableCollection<ObservableCollectionsModel> CollectionList
@@ -82,6 +123,15 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        void OnSendTapped()
+        {
+            CommentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = _userComment, UserName = "Peter Petersen" });
+            foreach (CommentModel Comment in CollectionList[1].CollectionList)
+            {
+                Console.WriteLine(Comment.UserComment);
+            }
+        }
+
         public MatchPageVM()
         {
             _realm = Realm.GetInstance();
@@ -112,6 +162,8 @@ namespace FodboldApp.ViewModel
             _commentList = _realm.All<CommentModel>();
             _collectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
             _collectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+
+            SendCommentCommand = new Command(OnSendTapped);
         }
     }
 }

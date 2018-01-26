@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FodboldApp.App"             
+             x:Class="FodboldApp.App"  
+             xmlns:converter="clr-namespace:FodboldApp.View.Converter" 
              xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel">
     <!--BindingContext="FodboldApp.ViewModel:HeaderViewModel"-->
@@ -19,13 +20,12 @@
                 <Setter Property="WidthRequest" Value="200" />
                 <Setter Property="TextColor" Value="#8791a8" />
             </Style>
-
-            <Style TargetType = "NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="#FB433C"/>
-            </Style>
-
+      
+            
             <Color x:Key="textColor">#243f73</Color>
             <Color x:Key="backgroundColor">#f0f0f0</Color>
+
+            <converter:BooleanReverser x:Key="booleanReverser"/>
 
             <ControlTemplate x:Key="MainPageTemplate">
 
@@ -51,7 +51,7 @@
                             Android="10, 10, 10, 10"/>
                         </StackLayout.Padding>-->
 
-                    <Grid HorizontalOptions="FillAndExpand" BackgroundColor="#fb433c" Padding="0, 10, 0, 10">
+                    <Grid HorizontalOptions="FillAndExpand" BackgroundColor="#fb433c" Padding="0, 10, 0, 10" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="40"/>
                                 <ColumnDefinition Width="*"/>
@@ -78,6 +78,7 @@
                             <Label Text="LOG IND"
                                TextColor="#d0d0d0"
                                WidthRequest="60"
+                               IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
                                HorizontalOptions="FillAndExpand"
                                VerticalTextAlignment="Center"
                            Margin="10, 0, 0, 0 "
@@ -86,7 +87,19 @@
                                     <TapGestureRecognizer Command="{Binding LoginCommand}"/>
                                 </Label.GestureRecognizers>
                             </Label>
-                        </Grid>
+                        <Label Text="LOG UD"
+                               TextColor="#d0d0d0"
+                               WidthRequest="60"
+                               IsVisible="{Binding IsUserLoggedIn}"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalTextAlignment="Center"
+                           Margin="10, 0, 0, 0 "
+                                   Grid.Column="2">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoginOut"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
                     <!--</StackLayout>-->
                     <!-- End Header -->
 
