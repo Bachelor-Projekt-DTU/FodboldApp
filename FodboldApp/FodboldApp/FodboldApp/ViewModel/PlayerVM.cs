@@ -1,20 +1,24 @@
 ﻿using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
+using Realms;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class PlayerVM: PlayerModel
+    class PlayerVM
     {
+        Realm _realm;
+
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private static ObservableCollection<PlayerModel> _playerListSource { get; set; } = new ObservableCollection<PlayerModel>();
+        private IEnumerable<PlayerModel> _playerListSource { get; set; } = new ObservableCollection<PlayerModel>();
 
-        public ObservableCollection<PlayerModel> PlayerListSource
+        public IEnumerable<PlayerModel> PlayerListSource
         {
             get
             {
@@ -24,22 +28,28 @@ namespace FodboldApp.ViewModel
 
         public void SetupPlayer()
         {
-            _playerListSource.Add(new PlayerModel {
-                ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-                Name = "Andreas Theil Lundberg",
-                Position = "Forsvar/Midtbane"});
-            _playerListSource.Add(new PlayerModel
+            _realm.Write(() =>
             {
-                ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-                Name = "Andreas Theil Lundberg 2",
-                Position = "Forsvar/Midtbane"
+                _realm.Add(new PlayerModel
+                {
+                    ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
+                    Name = "Andreas Theil Lundberg",
+                    Position = "Forsvar/Midtbane"
+                });
+                _realm.Add(new PlayerModel
+                {
+                    ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
+                    Name = "Andreas Theil Lundberg 2",
+                    Position = "Forsvar/Midtbane"
+                });
+                _realm.Add(new PlayerModel
+                {
+                    ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
+                    Name = "Andreas Theil Lundberg 3",
+                    Position = "Forsvar/Midtbane"
+                });
             });
-            _playerListSource.Add(new PlayerModel
-            {
-                ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-                Name = "Andreas Theil Lundberg 3",
-                Position = "Forsvar/Midtbane"
-            });
+            _playerListSource = _realm.All<PlayerModel>();
         }
         void OnTapped()
         {
@@ -49,6 +59,7 @@ namespace FodboldApp.ViewModel
 
         public PlayerVM()
         {
+            _realm = Realm.GetInstance();
             SetupPlayer();
             PlayerDescriptionCommand = new Command(OnTapped);
         }

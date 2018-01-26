@@ -1,6 +1,8 @@
 ﻿using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
+using Realms;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
@@ -10,6 +12,8 @@ namespace FodboldApp.ViewModel
 {
     class POTYVM : INotifyPropertyChanged
     {
+        Realm _realm;
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
@@ -21,8 +25,8 @@ namespace FodboldApp.ViewModel
             }
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<POTYModel> _playersList { get; set; } = new ObservableCollection<POTYModel>();
-        public ObservableCollection<POTYModel> PlayersList
+        private IEnumerable<POTYModel> _playersList { get; set; } = new ObservableCollection<POTYModel>();
+        public IEnumerable<POTYModel> PlayersList
         {
             get
             {
@@ -37,11 +41,15 @@ namespace FodboldApp.ViewModel
         private void SetupPlayerList()
         {
             int index = 0;
-            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-            _playersList.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            _realm.Write(() =>
+            {
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            });
+            _playersList = _realm.All<POTYModel>();
         }
         void Player_OnTapped()
         {
@@ -50,6 +58,7 @@ namespace FodboldApp.ViewModel
         }
         public POTYVM()
         {
+            _realm = Realm.GetInstance();
             SetupPlayerList();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }

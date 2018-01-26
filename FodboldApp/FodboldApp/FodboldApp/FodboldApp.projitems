@@ -30,6 +30,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\EventModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayerModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingTitleModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsPageModel.cs" />

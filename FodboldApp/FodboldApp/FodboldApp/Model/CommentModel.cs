@@ -1,6 +1,8 @@
-﻿namespace FodboldApp.Model
+﻿using Realms;
+
+namespace FodboldApp.Model
 {
-    class CommentModel
+    class CommentModel : RealmObject
     {
         public string ImageURL { get; set; }
         public string UserName { get; set; }

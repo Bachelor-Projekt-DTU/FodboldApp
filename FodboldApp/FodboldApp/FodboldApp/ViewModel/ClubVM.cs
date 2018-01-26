@@ -1,5 +1,6 @@
 ﻿using FodboldApp.Customs;
 using FodboldApp.View;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,11 +11,24 @@ using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class ClubVM : ClubModel
+    class ClubVM : INotifyPropertyChanged
     {
+        Realm _realm;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string name)
+        {
+            var handler = PropertyChanged;
+
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(name));
+            }
+        }
+
         public ICommand ContinueCommand { get; set; }
-        public static ObservableCollection<ClubModel> _clubListSource = new ObservableCollection<ClubModel>();
-        public ObservableCollection<ClubModel> ClubListSource
+        public static IEnumerable<ClubModel> _clubListSource = new ObservableCollection<ClubModel>();
+        public IEnumerable<ClubModel> ClubListSource
         {
             get
             {
@@ -30,31 +44,39 @@ namespace FodboldApp.ViewModel
             {
                 if (_selectedItem != value)
                 {
-                    if (_selectedItem != null)
-                        _selectedItem.Selected = false;
+                    _realm.Write(() =>
+                    {
+                        if (_selectedItem != null)
+                            _selectedItem.Selected = false;
 
-                    _selectedItem = value;
+                        _selectedItem = value;
 
-                    if (_selectedItem != null)
-                        _selectedItem.Selected = true;
+                        if (_selectedItem != null)
+                            _selectedItem.Selected = true;
 
-                    OnPropertyChanged(nameof(SelectedItem));
+                        OnPropertyChanged(nameof(SelectedItem));
+                    });
                 }
             }
         }
-        void ContinueOnTapped()
+        void OnTapped()
         {
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
 
         public ClubVM()
         {
-            _clubListSource.Add(new ClubModel { ClubName = "BK Frem" });
-            _clubListSource.Add(new ClubModel { ClubName = "Klub 2" });
-            _clubListSource.Add(new ClubModel { ClubName = "Klub 3" });
-            _clubListSource.Add(new ClubModel { ClubName = "Klub 4" });
-            _clubListSource.Add(new ClubModel { ClubName = "Klub 5" });
-            ContinueCommand = new Command(ContinueOnTapped);
+            _realm = Realm.GetInstance();
+            _realm.Write(() =>
+            {
+                _realm.Add(new ClubModel { ClubName = "BK Frem" });
+                _realm.Add(new ClubModel { ClubName = "Klub 2" });
+                _realm.Add(new ClubModel { ClubName = "Klub 3" });
+                _realm.Add(new ClubModel { ClubName = "Klub 4" });
+                _realm.Add(new ClubModel { ClubName = "Klub 5" });
+            });
+            _clubListSource = _realm.All<ClubModel>();
+            ContinueCommand = new Command(OnTapped);
         }
     }
 }

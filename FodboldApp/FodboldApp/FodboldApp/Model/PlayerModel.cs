@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
 namespace FodboldApp.Model
 {
-    class PlayerModel
+    class PlayerModel : RealmObject
     {
         public string ImageURL { get; set; }
         public string Sponsor { get; set; }

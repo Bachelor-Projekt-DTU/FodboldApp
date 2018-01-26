@@ -1,6 +1,7 @@
 ﻿using DLToolkit.Forms.Controls;
 using FodboldApp.View;
 using FodboldApp.ViewModel;
+using Realms;
 using System;
 using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
@@ -13,9 +14,15 @@ namespace FodboldApp
     public partial class App : Application
     {
         HeaderVM vm;
+        Realm _realm = Realm.GetInstance();
 
         public App()
         {
+            _realm.Write(() =>
+            {
+                _realm.RemoveAll();
+            });
+
             InitializeComponent();
 
             vm = ViewModelLocator.HeaderVM;

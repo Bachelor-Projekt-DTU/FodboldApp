@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FodboldApp.Model
 {
-    class MatchModel
+    class MatchModel : RealmObject
     {
         public string Teams { get; set; }
         public string Score { get; set; }

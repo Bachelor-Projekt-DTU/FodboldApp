@@ -7,6 +7,7 @@ using Plugin.CrossPlatformTintedImage.Android;
 using ImageCircle.Forms.Plugin.Droid;
 using FFImageLoading.Forms.Droid;
 using CarouselView.FormsPlugin.Android;
+using Realms;
 
 namespace FodboldApp.Droid
 {
@@ -15,6 +16,8 @@ namespace FodboldApp.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+
+            Realm.GetInstance();
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
