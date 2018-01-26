@@ -146,7 +146,7 @@ namespace FodboldApp.ViewModel
             HistoryIconColor = UnSelectedColor;
         }
 
-        public async void Login(object sender, EventArgs e)
+        public async void Login()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new Login());
         }

@@ -125,7 +125,11 @@ namespace FodboldApp.ViewModel
 
         void OnSendTapped()
         {
-            CommentList.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = _userComment, UserName = "Peter Petersen" });
+            _realm.Write(() =>
+            {
+                _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = _userComment, UserName = "Peter Petersen" });
+            });
+            CommentList = _realm.All<CommentModel>();
             foreach (CommentModel Comment in CollectionList[1].CollectionList)
             {
                 Console.WriteLine(Comment.UserComment);

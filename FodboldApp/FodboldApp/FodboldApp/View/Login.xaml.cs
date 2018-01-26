@@ -18,7 +18,7 @@ namespace FodboldApp.View
             BindingContext = new LoginVM();
             InitializeComponent();
 
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Colorization.ColoringLogic.AppPrimary;
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Globals.ColoringLogic.AppPrimary;
         }
 	}
 }
