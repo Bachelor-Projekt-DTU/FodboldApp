@@ -38,7 +38,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
 
             </Grid>
             <Grid RowSpacing="0" VerticalOptions="FillAndExpand">
-                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}">
+                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}" ShowArrows="True">
                     <cv:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <Grid>
