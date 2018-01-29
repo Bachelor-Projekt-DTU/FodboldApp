@@ -6,18 +6,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:274704195206:android:ef109930ee88aa28",
+        "mobilesdk_app_id": "1:274704195206:android:3732f9d75a3db124",
         "android_client_info": {
-          "package_name": "com.companyname.FodboldApp"
+          "package_name": "com.fifium.FodboldApp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "274704195206-lkoqg3qtihel0vuor9k3nd7moevu3alc.apps.googleusercontent.com",
+          "client_id": "274704195206-lhp82rg3vo8fivj5do0amtrurjtjdv2a.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.companyname.FodboldApp",
-            "certificate_hash": "cb0ee939c69c5902e97b47f681a333ce39cecf1e"
+            "package_name": "com.fifium.FodboldApp",
+            "certificate_hash": "27175ddd4ecf9ad350595cecbc454dd5abb1fcdc"
           }
         },
         {
