@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.View;
+using System;
 using System.Windows.Input;
 using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
@@ -8,6 +9,7 @@ namespace FodboldApp.ViewModel
     class LoginVM
     {
         public ICommand GooglePlusLoginCommand { get; set; }
+        public ICommand FacebookLoginCommand { get; set; }
 
         async void GooglePlusOnTappedAsync()
         {
@@ -15,6 +17,7 @@ namespace FodboldApp.ViewModel
             if (result.IsSuccess)
             {
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
                 var username = result.Name;
                 Console.WriteLine("Brugernavn "+ username);
                 var userimage = result.Image;
@@ -23,9 +26,15 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        async void FacebookOnTapped()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new FacebookPage());
+        }
+
         public LoginVM()
         {
             GooglePlusLoginCommand = new Command(GooglePlusOnTappedAsync);
+            FacebookLoginCommand = new Command(FacebookOnTapped);
         }
     }
 }

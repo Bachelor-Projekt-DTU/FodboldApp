@@ -7,7 +7,7 @@ namespace FodboldApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
-	{
+	{   
 		public Login ()
 		{
             BindingContext = new LoginVM();

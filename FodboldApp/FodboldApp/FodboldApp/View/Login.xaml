@@ -3,8 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.View.Login">
     <ContentPage.Content>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <StackLayout x:Name="MainStackLayout" Orientation="Horizontal" HorizontalOptions="Center">
             <Image Source="facebook_icon.png" HorizontalOptions="Start" VerticalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding FacebookLoginCommand}"/>
+                </Image.GestureRecognizers>
             </Image>
             <Image Source="google_plus_icon" HorizontalOptions="End" VerticalOptions="Center">
                 <Image.GestureRecognizers>

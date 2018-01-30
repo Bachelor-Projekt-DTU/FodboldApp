@@ -59,6 +59,19 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(IsUserLoggedIn));
             }
         }
+        public enum LoginType {Facebook, Google };
+        private LoginType _typeOfLogin { get; set; }
+        public LoginType TypeOfLogin {
+            get
+            {
+                return _typeOfLogin;
+            }
+            set
+            {
+                _typeOfLogin = value;
+                OnPropertyChanged(nameof(TypeOfLogin));
+            }
+        }
 
         public Color NewsIconColor
         {
