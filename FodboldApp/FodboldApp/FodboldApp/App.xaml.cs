@@ -81,6 +81,7 @@ namespace FodboldApp
             }
             else if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Facebook)
             {
+                ViewModelLocator.FacebookLoginVM.FacebookProfile = null;
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
                 if (Device.RuntimePlatform == Device.iOS)
                 {
