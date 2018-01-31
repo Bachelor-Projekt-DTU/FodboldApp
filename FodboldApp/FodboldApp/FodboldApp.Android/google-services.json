@@ -1,7 +1,9 @@
 {
   "project_info": {
     "project_number": "274704195206",
-    "project_id": "firebase-fodboldapp"
+    "firebase_url": "https://fir-fodboldapp.firebaseio.com",
+    "project_id": "firebase-fodboldapp",
+    "storage_bucket": "firebase-fodboldapp.appspot.com"
   },
   "client": [
     {
@@ -17,7 +19,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.fifium.FodboldApp",
-            "certificate_hash": "27175ddd4ecf9ad350595cecbc454dd5abb1fcdc"
+            "certificate_hash": "35d3b0f2372a80813443a6d830aecc231c8c03b0"
           }
         },
         {

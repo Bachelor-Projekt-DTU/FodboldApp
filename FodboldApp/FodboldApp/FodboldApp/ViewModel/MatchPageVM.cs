@@ -31,7 +31,8 @@ namespace FodboldApp.ViewModel
         public ICommand SendCommentCommand { get; set; }
 
         private string _score { get; set; }
-        public string Score {
+        public string Score
+        {
             get
             {
                 return _score;
@@ -54,6 +55,14 @@ namespace FodboldApp.ViewModel
             {
                 _labelIsVisible = value;
                 OnPropertyChanged(nameof(LabelIsVisible));
+            }
+        }
+
+        public bool EditorIsVisible
+        {
+            get
+            {
+                return ViewModelLocator.HeaderVM.IsUserLoggedIn;
             }
         }
 
@@ -149,7 +158,7 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
             });
             _eventList = _realm.All<EventModel>();
-             Score = "2 - 2";
+            Score = "2 - 2";
             Teams = "BK FREM - Hillerød";
             _realm.Write(() =>
             {

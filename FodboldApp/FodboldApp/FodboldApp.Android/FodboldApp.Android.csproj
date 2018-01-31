@@ -18,7 +18,7 @@
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidKeyStore>true</AndroidKeyStore>
     <AndroidSigningKeyStore>C:\Users\Hadi\AppData\Local\Xamarin\Mono for Android\Keystore\fodboldapp\fodboldapp.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>bachelor</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>FodboldApp</AndroidSigningKeyAlias>
