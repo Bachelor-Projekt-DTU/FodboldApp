@@ -24,6 +24,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILogOut.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Categories.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ChatModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubModel.cs" />

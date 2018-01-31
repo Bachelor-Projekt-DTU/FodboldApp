@@ -5,7 +5,7 @@ using Google.SignIn;
 using ImageCircle.Forms.Plugin.iOS;
 using Plugin.CrossPlatformTintedImage.iOS;
 using UIKit;
-using RoundedBoxView.Forms.Plugin.Droid;
+using RoundedBoxView.Forms.Plugin.iOSUnified;
 
 namespace FodboldApp.iOS
 {

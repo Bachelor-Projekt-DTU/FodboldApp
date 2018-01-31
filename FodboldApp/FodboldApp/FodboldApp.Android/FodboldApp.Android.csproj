@@ -104,6 +104,7 @@
   <ItemGroup>
     <Compile Include="CustomRenderers\CustomNavigationRenderer.cs" />
     <Compile Include="CustomRenderers\CustomSearchBarRenderer.cs" />
+    <Compile Include="InterfaceImplementation\LogOutImpl.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
