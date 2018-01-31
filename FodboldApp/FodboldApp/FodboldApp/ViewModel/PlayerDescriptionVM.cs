@@ -27,10 +27,10 @@ namespace FodboldApp.ViewModel
 
         public PlayerDescriptionVM()
         {
-            setupDescription();
+            SetupDescription();
         }
 
-        private void setupDescription()
+        private void SetupDescription()
         {
             Number = "01";
             ImageURL = "http://www.bkfrem.dk/images/spillere/01_marco_brylov.jpg";

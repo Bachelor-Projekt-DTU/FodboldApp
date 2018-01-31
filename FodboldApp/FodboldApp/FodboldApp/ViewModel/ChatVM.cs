@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
@@ -15,15 +17,49 @@ namespace FodboldApp.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
-            var handler = PropertyChanged;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
 
-            if (handler != null)
+        public ICommand ChatCommand { get; private set; }
+
+        private bool _isChatRoomOpen { get; set; } = true;
+        public bool IsChatRoomOpen
+        {
+            get
             {
-                handler(this, new PropertyChangedEventArgs(name));
+                return _isChatRoomOpen;
+            }
+            set
+            {
+                _isChatRoomOpen = value;
+                OnPropertyChanged(nameof(IsChatRoomOpen));
+                OnPropertyChanged(nameof(IsEditorVisible));
             }
         }
 
-        private IEnumerable<ChatModel> _chatList { get; set; } = new ObservableCollection<ChatModel>();
+        public bool IsEditorVisible
+        {
+            get
+            {
+                return ViewModelLocator.HeaderVM.IsUserLoggedIn && _isChatRoomOpen;
+            }
+        }
+
+        private string _userChatMessage { get; set; }
+        public string UserChatMessage
+        {
+            get
+            {
+                return _userChatMessage;
+            }
+            set
+            {
+                _userChatMessage = value;
+                OnPropertyChanged(nameof(UserChatMessage));
+            }
+        }
+
+        private IEnumerable<ChatModel> _chatList { get; set; }
         public IEnumerable<ChatModel> ChatList
         {
             get
@@ -40,6 +76,9 @@ namespace FodboldApp.ViewModel
         public ChatVM()
         {
             _realm = Realm.GetInstance();
+
+            ChatCommand = new Command(ChatSend);
+
             _realm.Write(() =>
             {
                 _realm.Add(new ChatModel { Content = "Besked 1", Admin = false, MatchID = "1234" });
@@ -48,6 +87,14 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new ChatModel { Content = "Besked 4", Admin = false, MatchID = "1234" });
             });
             _chatList = _realm.All<ChatModel>();
+        }
+
+        public void ChatSend()
+        {
+            _realm.Write(() =>
+            {
+                _realm.Add(new ChatModel { Content = _userChatMessage, Admin = false, MatchID = "1234" });
+            });
         }
     }
 }
