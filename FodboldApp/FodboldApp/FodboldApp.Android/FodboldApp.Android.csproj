@@ -19,7 +19,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <AndroidKeyStore>true</AndroidKeyStore>
-    <AndroidSigningKeyStore>C:\Users\Hadi\AppData\Local\Xamarin\Mono for Android\Keystore\fodboldapp\fodboldapp.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>fodboldapp.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>bachelor</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>FodboldApp</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>bachelor</AndroidSigningKeyPass>
@@ -124,6 +124,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="fodboldapp.keystore" />
     <None Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
