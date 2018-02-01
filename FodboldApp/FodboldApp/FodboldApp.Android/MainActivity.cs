@@ -9,6 +9,9 @@ using FFImageLoading.Forms.Droid;
 using CarouselView.FormsPlugin.Android;
 using Realms;
 using RoundedBoxView.Forms.Plugin.Droid;
+using System;
+using Android.Gms.Common;
+using Android.Content;
 
 namespace FodboldApp.Droid
 {
@@ -36,6 +39,35 @@ namespace FodboldApp.Droid
             CarouselViewRenderer.Init();
             RoundedBoxViewRenderer.Init();
             CachedImageRenderer.Init(enableFastRenderer: true);
+
+            if (IsPlayServicesAvailable())
+            {
+                var intent = new Intent(this, typeof(RegistrationIntentService));
+                StartService(intent);
+            }
+        }
+
+        public bool IsPlayServicesAvailable()
+        {
+            Console.WriteLine("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEY");
+            int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
+            if (resultCode != ConnectionResult.Success)
+            {
+                if (GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
+                    Console.WriteLine("type 1 cancer");
+                //msgText.Text = GoogleApiAvailability.Instance.GetErrorString(resultCode);
+                else
+                {
+                    //msgText.Text = "Sorry, this device is not supported";
+                    Finish();
+                }
+                return false;
+            }
+            else
+            {
+                //msgText.Text = "Google Play Services is available.";
+                return true;
+            }
         }
     }
 }

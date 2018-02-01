@@ -54,7 +54,7 @@ namespace FodboldApp.ViewModel
         void Player_OnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription());
-            App.Current.MainPage.Navigation.PushAsync(new PlayerDescription());
+            HeaderVM.UpdateContent();
         }
         public POTYVM()
         {

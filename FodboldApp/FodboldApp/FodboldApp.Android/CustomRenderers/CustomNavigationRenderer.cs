@@ -6,11 +6,6 @@ namespace FodboldApp.Droid.CustomRenderers
 {
     class CustomNavigationRenderer : NavigationRenderer
     {
-        public CustomNavigationRenderer() : base()
-        {
-
-        }
-
         protected override Task<bool> OnPopViewAsync(Page page, bool animated)
         {
             return base.OnPopViewAsync(page, false);

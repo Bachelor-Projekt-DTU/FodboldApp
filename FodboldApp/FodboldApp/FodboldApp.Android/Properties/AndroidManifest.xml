@@ -7,5 +7,8 @@
   <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="com.fifium.FodboldApp.permission.C2D_MESSAGE" />
+    <permission android:name="com.fifium.FodboldApp.permission.C2D_MESSAGE" 
+                android:protectionLevel="signature" />
 	<application android:label="FodboldApp.Android"></application>
 </manifest>
