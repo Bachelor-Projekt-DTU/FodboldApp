@@ -1,4 +1,5 @@
-﻿using DLToolkit.Forms.Controls;
+﻿using Com.OneSignal;
+using DLToolkit.Forms.Controls;
 using FodboldApp.Interfaces;
 using FodboldApp.View;
 using FodboldApp.ViewModel;
@@ -22,6 +23,9 @@ namespace FodboldApp
             {
                 _realm.RemoveAll();
             });
+
+            OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
+                  .EndInit();
 
             InitializeComponent();
 

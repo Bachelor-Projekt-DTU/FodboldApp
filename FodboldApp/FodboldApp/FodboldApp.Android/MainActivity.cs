@@ -12,6 +12,7 @@ using RoundedBoxView.Forms.Plugin.Droid;
 using System;
 using Android.Gms.Common;
 using Android.Content;
+using Com.OneSignal;
 
 namespace FodboldApp.Droid
 {
@@ -39,6 +40,9 @@ namespace FodboldApp.Droid
             CarouselViewRenderer.Init();
             RoundedBoxViewRenderer.Init();
             CachedImageRenderer.Init(enableFastRenderer: true);
+
+            OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
+                  .EndInit();
 
             if (IsPlayServicesAvailable())
             {
