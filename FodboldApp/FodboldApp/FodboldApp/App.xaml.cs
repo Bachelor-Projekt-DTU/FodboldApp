@@ -4,7 +4,9 @@ using FodboldApp.Interfaces;
 using FodboldApp.View;
 using FodboldApp.ViewModel;
 using Realms;
+using Realms.Sync;
 using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,14 +17,11 @@ namespace FodboldApp
     public partial class App : Application
     {
         HeaderVM vm;
-        Realm _realm = Realm.GetInstance();
+        Realm _realm;
 
         public App()
         {
-            _realm.Write(() =>
-            {
-                _realm.RemoveAll();
-            });
+            MainPage = new NavigationPage(new FrontPage());
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
@@ -35,10 +34,35 @@ namespace FodboldApp
 
             FlowListView.Init();
 
-            MainPage = new NavigationPage(new FrontPage());
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        public async Task SetupRealmAsync()
+        {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data"));
+            _realm = Realm.GetInstance(config);
+
+            //await EmptyDB("chat");
+            //await EmptyDB("news");
+            //await EmptyDB("formerPlayers");
+            //await EmptyDB("matches");
+            //await EmptyDB("clubs");
+
+        }
+
+        public async Task EmptyDB(string folder)
+        {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/" + folder));
+            _realm = Realm.GetInstance(config);
+            //_realm.Write(() =>
+            //{
+            //    _realm.RemoveAll();
+            //});
+        }
+
         protected override void OnStart()
         {
             // Handle when your app starts

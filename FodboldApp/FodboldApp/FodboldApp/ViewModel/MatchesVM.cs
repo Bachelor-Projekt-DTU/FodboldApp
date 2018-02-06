@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Text;
 using FodboldApp.Model;
 using Realms;
+using Realms.Sync;
 
 namespace FodboldApp.ViewModel
 {
@@ -37,16 +38,23 @@ namespace FodboldApp.ViewModel
             }
         }
 
-
-        public MatchesVM()
+        public async void SetupRealm()
         {
-            _realm = Realm.GetInstance();
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
+            _realm = Realm.GetInstance(config);
             _realm.Write(() =>
             {
+                _realm.RemoveAll();
                 _realm.Add(new MatchModel { Teams = "BK FREM  -  Hillerød", Score = "2 - 2", ImageURL = "http://bkfrem.dk/images/hill_2.jpg" });
                 _realm.Add(new MatchModel { Teams = "BK FREM  -  Hillerød", Score = "2 - 2", ImageURL = "http://bkfrem.dk/images/hill_2.jpg" });
             });
-            _matchList = _realm.All<MatchModel>();
+            MatchList = _realm.All<MatchModel>();
+        }
+
+        public MatchesVM()
+        {
+            SetupRealm();
         }
     }
 }

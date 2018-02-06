@@ -1,5 +1,6 @@
 ﻿using FodboldApp.Model;
 using Realms;
+using Realms.Sync;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -75,18 +76,26 @@ namespace FodboldApp.ViewModel
 
         public ChatVM()
         {
-            _realm = Realm.GetInstance();
+            SetupRealm();
+        }
+
+        public async void SetupRealm()
+        {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/chat"));
+            _realm = Realm.GetInstance(config);
 
             ChatCommand = new Command(ChatSend);
 
             _realm.Write(() =>
             {
+                _realm.RemoveAll();
                 _realm.Add(new ChatModel { Content = "Besked 1", Admin = false, MatchID = "1234" });
                 _realm.Add(new ChatModel { Content = "looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong text", Admin = false, MatchID = "1234" });
                 _realm.Add(new ChatModel { Content = "Besked 3", Admin = true, MatchID = "1234" });
                 _realm.Add(new ChatModel { Content = "Besked 4", Admin = false, MatchID = "1234" });
             });
-            _chatList = _realm.All<ChatModel>();
+            ChatList = _realm.All<ChatModel>();
         }
 
         public void ChatSend()

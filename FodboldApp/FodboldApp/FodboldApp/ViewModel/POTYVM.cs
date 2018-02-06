@@ -2,6 +2,8 @@
 using FodboldApp.Stack;
 using FodboldApp.View;
 using Realms;
+using Realms.Sync;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -40,26 +42,33 @@ namespace FodboldApp.ViewModel
         }
         private void SetupPlayerList()
         {
-            int index = 0;
-            _realm.Write(() =>
-            {
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-            });
-            _playersList = _realm.All<POTYModel>();
         }
         void Player_OnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription());
             HeaderVM.UpdateContent();
         }
+
+        public async void SetupRealm()
+        {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/chat"));
+            _realm = Realm.GetInstance(config);
+            int index = 0;
+            _realm.Write(() =>
+            {
+                _realm.RemoveAll();
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            });
+            PlayersList = _realm.All<POTYModel>();
+        }
         public POTYVM()
         {
-            _realm = Realm.GetInstance();
-            SetupPlayerList();
+            SetupRealm();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }
     }
