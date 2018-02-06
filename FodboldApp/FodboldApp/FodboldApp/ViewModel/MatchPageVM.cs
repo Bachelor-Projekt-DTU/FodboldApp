@@ -58,14 +58,6 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public bool EditorIsVisible
-        {
-            get
-            {
-                return ViewModelLocator.HeaderVM.IsUserLoggedIn;
-            }
-        }
-
         private string _userComment { get; set; }
         public string UserComment
         {

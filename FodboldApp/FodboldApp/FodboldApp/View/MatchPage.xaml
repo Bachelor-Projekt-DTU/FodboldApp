@@ -99,7 +99,10 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                                         </flv:FlowListView.FlowColumnTemplate>
                                     </flv:FlowListView>
                                     <StackLayout Grid.Row="1" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" >
-                                        <Grid IsVisible="{Binding EditorIsVisible}" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
+                                        <Label Text="Log ind for at kommentere" IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
+                                               BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}"
+                                               HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+                                        <Grid IsVisible="{Binding IsUserLoggedIn}" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
                                             <Editor Text="{Binding UserComment, Mode=TwoWay}"
                                                 HorizontalOptions="FillAndExpand"
                                                 BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">

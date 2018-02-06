@@ -1,11 +1,8 @@
-﻿using System;
-using FodboldApp.Droid.InterfaceImplementation;
+﻿using FodboldApp.Droid.InterfaceImplementation;
 using FodboldApp.Interfaces;
 using FodboldApp.ViewModel;
 using Foundation;
 using Google.SignIn;
-using Xamarians.GoogleLogin.Interface;
-using Xamarin.Forms;
 
 [assembly: Xamarin.Forms.Dependency(typeof(LogOutImpl))]
 namespace FodboldApp.Droid.InterfaceImplementation

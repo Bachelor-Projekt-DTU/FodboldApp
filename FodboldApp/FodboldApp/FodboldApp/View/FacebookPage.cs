@@ -54,7 +54,6 @@ namespace FodboldApp.View
                 var at = url.Replace("https://www.facebook.com/connect/login_success.html#access_token=", "");
 
                 var accessToken = at.Remove(at.IndexOf("&expires_in="));
-                Console.WriteLine("heej " + accessToken);
                 return accessToken;
             }
 

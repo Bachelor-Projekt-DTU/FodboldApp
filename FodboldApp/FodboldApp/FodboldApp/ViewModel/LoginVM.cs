@@ -19,9 +19,11 @@ namespace FodboldApp.ViewModel
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
                 ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
                 var username = result.Name;
-                Console.WriteLine("Brugernavn "+ username);
+                Console.WriteLine("Brugernavn " + username);
                 var userimage = result.Image;
                 Console.WriteLine(userimage);
+                Application.Current.Properties["IsUserLoggedIn"] = true;
+                Application.Current.Properties["LoginType"] = "Google";
                 await Application.Current.MainPage.Navigation.PopAsync();
             }
         }

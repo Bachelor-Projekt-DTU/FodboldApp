@@ -6,7 +6,7 @@ using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
 using System;
-using System.Threading.Tasks;
+using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -34,6 +34,14 @@ namespace FodboldApp
 
             FlowListView.Init();
 
+            if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
+            {
+                if((string)Current.Properties["LoginType"] == "Google")
+                GooglePlusOnTappedAsync();
+            
+            }
+
+            MainPage = new NavigationPage(new FrontPage());
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
@@ -63,9 +71,23 @@ namespace FodboldApp
             //});
         }
 
+
+        async void GooglePlusOnTappedAsync()
+        {
+            var result = await DependencyService.Get<IGoogleLogin>().SignIn();
+            if (result.IsSuccess)
+            {
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
+                var username = result.Name;
+                Console.WriteLine("Brugernavn " + username);
+                var userimage = result.Image;
+                Console.WriteLine(userimage);
+            }
+        }
+
         protected override void OnStart()
         {
-            // Handle when your app starts
         }
 
         protected override void OnSleep()
@@ -90,6 +112,11 @@ namespace FodboldApp
         public async void LoginOut(object sender, EventArgs e)
         {
             ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
+            if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
+            {
+                Console.WriteLine("Hold ud");
+                Application.Current.Properties.Remove("IsUserLoggedIn");
+            }
 
             if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Google)
             {
