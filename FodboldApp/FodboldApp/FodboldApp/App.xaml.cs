@@ -6,6 +6,7 @@ using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
 using System;
+using System.Threading.Tasks;
 using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
