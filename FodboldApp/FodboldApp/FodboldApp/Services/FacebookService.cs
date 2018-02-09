@@ -2,24 +2,24 @@
 using FodboldApp.Model;
 using System.Net.Http;
 using Newtonsoft.Json;
-using System;
 
 namespace FodboldApp.Services
 {
     class FacebookService
     {
-        public async Task<UserModel> GetFacebookProfileAsync(string accessToken)
+        public async Task<string> GetNameAsync(string accessToken)
         {
-            var requestUrl =
-                "https://graph.facebook.com/v2.7/me/?fields=name,picture,website,link,devices,email&access_token="
-                + accessToken;
-
             var httpClient = new HttpClient();
-
-            var userJson = await httpClient.GetStringAsync(requestUrl);
-            var facebookProfile = JsonConvert.DeserializeObject<UserModel>(userJson);
-
-            return facebookProfile;
+            var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=name&access_token={accessToken}");
+            var temp = JsonConvert.DeserializeObject<UserModel>(json);
+            return temp.Name;
+        }
+        public async Task<Picture> GetPictureAsync(string accessToken)
+        {
+            var httpClient = new HttpClient();
+            var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=picture&access_token={accessToken}");
+            var temp = JsonConvert.DeserializeObject<FBUserModel>(json);
+            return temp.Picture;
         }
     }
 }

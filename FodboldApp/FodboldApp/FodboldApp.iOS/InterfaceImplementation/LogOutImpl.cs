@@ -11,7 +11,6 @@ namespace FodboldApp.Droid.InterfaceImplementation
     {
         public void LogOutFB()
         {
-            ViewModelLocator.FacebookLoginVM.FacebookProfile = null;
             NSHttpCookieStorage CookieStorage = NSHttpCookieStorage.SharedStorage;
 
             foreach (var cookie in CookieStorage.Cookies)

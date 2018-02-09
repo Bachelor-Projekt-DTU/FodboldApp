@@ -10,7 +10,7 @@ namespace FodboldApp.View
 	{   
 		public Login ()
 		{
-            BindingContext = new LoginVM();
+            BindingContext = ViewModelLocator.LoginVM;
             InitializeComponent();
 
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Globals.ColoringLogic.AppPrimary;

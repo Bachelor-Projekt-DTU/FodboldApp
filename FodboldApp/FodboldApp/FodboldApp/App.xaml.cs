@@ -1,11 +1,12 @@
 ﻿using Com.OneSignal;
 using DLToolkit.Forms.Controls;
+using FodboldApp.Globals;
 using FodboldApp.Interfaces;
+using FodboldApp.Model;
 using FodboldApp.View;
 using FodboldApp.ViewModel;
 using Realms;
 using System;
-using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -36,11 +37,13 @@ namespace FodboldApp
 
             FlowListView.Init();
 
-            if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
+            if (Current.Properties.ContainsKey("IsUserLoggedIn"))
             {
-                if((string)Current.Properties["LoginType"] == "Google")
-                GooglePlusOnTappedAsync();
-            
+                if ((string)Current.Properties["LoginType"] == "Google")
+                    GooglePlusAutoLogin();
+
+                else if ((string)Current.Properties["LoginType"] == "Facebook")
+                    FacebookAutoLogin();
             }
 
             MainPage = new NavigationPage(new FrontPage());
@@ -48,17 +51,26 @@ namespace FodboldApp
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        async void GooglePlusOnTappedAsync()
+        async void FacebookAutoLogin()
         {
-            var result = await DependencyService.Get<IGoogleLogin>().SignIn();
-            if (result.IsSuccess)
+            if (Current.Properties.ContainsKey("Token"))
             {
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
-                ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
-                var username = result.Name;
-                Console.WriteLine("Brugernavn " + username);
-                var userimage = result.Image;
-                Console.WriteLine(userimage);
+                CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
+                await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
+                await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken);
+            }
+        }
+
+        async void GooglePlusAutoLogin()
+        {
+            if (Current.Properties.ContainsKey("Token"))
+            {
+                Console.WriteLine((string)Current.Properties["Token"]);
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
+                await ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
+                await ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
             }
         }
 
@@ -85,22 +97,30 @@ namespace FodboldApp
         {
             await ((App)Current).MainPage.Navigation.PushAsync(new Login());
         }
-        public async void LoginOut(object sender, EventArgs e)
+        public void LogOut(object sender, EventArgs e)
         {
             ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
-            if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
+            if (Current.Properties.ContainsKey("IsUserLoggedIn"))
             {
-                Console.WriteLine("Hold ud");
-                Application.Current.Properties.Remove("IsUserLoggedIn");
+                Console.WriteLine("Logget af");
+                Current.Properties.Remove("IsUserLoggedIn");
             }
 
             if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Google)
             {
-                await DependencyService.Get<ILogOut>().LogOutGoogleAsync();
+                DependencyService.Get<ILogOut>().LogOutGoogle();
+                Current.Properties.Remove("Token");
+                GooglePlusSingleton.Instance.RemoveToken();
+                GooglePlusSingleton.Instance.ResetAuthentication();
+                CurrentUser.user = new UserModel();
             }
             else if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Facebook)
-            {           
-                DependencyService.Get<ILogOut>().LogOutFB();   
+            {
+                DependencyService.Get<ILogOut>().LogOutFB();
+                Current.Properties.Remove("Token");
+                FacebookSingleton.Instance.RemoveToken();
+                FacebookSingleton.Instance.ResetAuthentication();
+                CurrentUser.user = new UserModel();
             }
         }
     }

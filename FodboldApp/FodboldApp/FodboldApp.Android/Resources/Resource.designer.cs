@@ -2229,2174 +2229,17 @@ namespace FodboldApp.Droid
 			global::Com.ViewPagerIndicator.Resource.Styleable.CirclePageIndicator_vpiStrokeWidth = global::FodboldApp.Droid.Resource.Styleable.CirclePageIndicator_vpiStrokeWidth;
 			global::Com.ViewPagerIndicator.Resource.Styleable.ViewPagerIndicator = global::FodboldApp.Droid.Resource.Styleable.ViewPagerIndicator;
 			global::Com.ViewPagerIndicator.Resource.Styleable.ViewPagerIndicator_vpiCirclePageIndicatorStyle = global::FodboldApp.Droid.Resource.Styleable.ViewPagerIndicator_vpiCirclePageIndicatorStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_fade_in = global::FodboldApp.Droid.Resource.Animation.abc_fade_in;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_fade_out = global::FodboldApp.Droid.Resource.Animation.abc_fade_out;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::FodboldApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_popup_enter = global::FodboldApp.Droid.Resource.Animation.abc_popup_enter;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_popup_exit = global::FodboldApp.Droid.Resource.Animation.abc_popup_exit;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::FodboldApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_in_bottom = global::FodboldApp.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_in_top = global::FodboldApp.Droid.Resource.Animation.abc_slide_in_top;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_out_bottom = global::FodboldApp.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_out_top = global::FodboldApp.Droid.Resource.Animation.abc_slide_out_top;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::FodboldApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::FodboldApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_snackbar_in = global::FodboldApp.Droid.Resource.Animation.design_snackbar_in;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_snackbar_out = global::FodboldApp.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarians.GoogleLogin.Droid.Resource.Animator.design_appbar_state_list_animator = global::FodboldApp.Droid.Resource.Animator.design_appbar_state_list_animator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarDivider = global::FodboldApp.Droid.Resource.Attribute.actionBarDivider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarItemBackground = global::FodboldApp.Droid.Resource.Attribute.actionBarItemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarPopupTheme = global::FodboldApp.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarSize = global::FodboldApp.Droid.Resource.Attribute.actionBarSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarSplitStyle = global::FodboldApp.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarStyle = global::FodboldApp.Droid.Resource.Attribute.actionBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTabBarStyle = global::FodboldApp.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTabStyle = global::FodboldApp.Droid.Resource.Attribute.actionBarTabStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTabTextStyle = global::FodboldApp.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTheme = global::FodboldApp.Droid.Resource.Attribute.actionBarTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarWidgetTheme = global::FodboldApp.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionButtonStyle = global::FodboldApp.Droid.Resource.Attribute.actionButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionDropDownStyle = global::FodboldApp.Droid.Resource.Attribute.actionDropDownStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionLayout = global::FodboldApp.Droid.Resource.Attribute.actionLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionMenuTextAppearance = global::FodboldApp.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionMenuTextColor = global::FodboldApp.Droid.Resource.Attribute.actionMenuTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeBackground = global::FodboldApp.Droid.Resource.Attribute.actionModeBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::FodboldApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCloseDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCopyDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCutDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeFindDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModePasteDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModePopupWindowStyle = global::FodboldApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeShareDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeSplitBackground = global::FodboldApp.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeStyle = global::FodboldApp.Droid.Resource.Attribute.actionModeStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::FodboldApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionOverflowButtonStyle = global::FodboldApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionOverflowMenuStyle = global::FodboldApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionProviderClass = global::FodboldApp.Droid.Resource.Attribute.actionProviderClass;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionViewClass = global::FodboldApp.Droid.Resource.Attribute.actionViewClass;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.activityChooserViewStyle = global::FodboldApp.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::FodboldApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogCenterButtons = global::FodboldApp.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogStyle = global::FodboldApp.Droid.Resource.Attribute.alertDialogStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogTheme = global::FodboldApp.Droid.Resource.Attribute.alertDialogTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.allowStacking = global::FodboldApp.Droid.Resource.Attribute.allowStacking;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alpha = global::FodboldApp.Droid.Resource.Attribute.alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.arrowHeadLength = global::FodboldApp.Droid.Resource.Attribute.arrowHeadLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.arrowShaftLength = global::FodboldApp.Droid.Resource.Attribute.arrowShaftLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::FodboldApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.background = global::FodboldApp.Droid.Resource.Attribute.background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundSplit = global::FodboldApp.Droid.Resource.Attribute.backgroundSplit;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundStacked = global::FodboldApp.Droid.Resource.Attribute.backgroundStacked;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundTint = global::FodboldApp.Droid.Resource.Attribute.backgroundTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundTintMode = global::FodboldApp.Droid.Resource.Attribute.backgroundTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.barLength = global::FodboldApp.Droid.Resource.Attribute.barLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_autoHide = global::FodboldApp.Droid.Resource.Attribute.behavior_autoHide;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_hideable = global::FodboldApp.Droid.Resource.Attribute.behavior_hideable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_overlapTop = global::FodboldApp.Droid.Resource.Attribute.behavior_overlapTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_peekHeight = global::FodboldApp.Droid.Resource.Attribute.behavior_peekHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_skipCollapsed = global::FodboldApp.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.borderWidth = global::FodboldApp.Droid.Resource.Attribute.borderWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.borderlessButtonStyle = global::FodboldApp.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.bottomSheetDialogTheme = global::FodboldApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.bottomSheetStyle = global::FodboldApp.Droid.Resource.Attribute.bottomSheetStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarButtonStyle = global::FodboldApp.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::FodboldApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::FodboldApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::FodboldApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarStyle = global::FodboldApp.Droid.Resource.Attribute.buttonBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonGravity = global::FodboldApp.Droid.Resource.Attribute.buttonGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonPanelSideLayout = global::FodboldApp.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonSize = global::FodboldApp.Droid.Resource.Attribute.buttonSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonStyle = global::FodboldApp.Droid.Resource.Attribute.buttonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonStyleSmall = global::FodboldApp.Droid.Resource.Attribute.buttonStyleSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonTint = global::FodboldApp.Droid.Resource.Attribute.buttonTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonTintMode = global::FodboldApp.Droid.Resource.Attribute.buttonTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardBackgroundColor = global::FodboldApp.Droid.Resource.Attribute.cardBackgroundColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardCornerRadius = global::FodboldApp.Droid.Resource.Attribute.cardCornerRadius;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardElevation = global::FodboldApp.Droid.Resource.Attribute.cardElevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardMaxElevation = global::FodboldApp.Droid.Resource.Attribute.cardMaxElevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardPreventCornerOverlap = global::FodboldApp.Droid.Resource.Attribute.cardPreventCornerOverlap;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardUseCompatPadding = global::FodboldApp.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.checkboxStyle = global::FodboldApp.Droid.Resource.Attribute.checkboxStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.checkedTextViewStyle = global::FodboldApp.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.circleCrop = global::FodboldApp.Droid.Resource.Attribute.circleCrop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.closeIcon = global::FodboldApp.Droid.Resource.Attribute.closeIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.closeItemLayout = global::FodboldApp.Droid.Resource.Attribute.closeItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapseContentDescription = global::FodboldApp.Droid.Resource.Attribute.collapseContentDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapseIcon = global::FodboldApp.Droid.Resource.Attribute.collapseIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapsedTitleGravity = global::FodboldApp.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::FodboldApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.color = global::FodboldApp.Droid.Resource.Attribute.color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorAccent = global::FodboldApp.Droid.Resource.Attribute.colorAccent;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorBackgroundFloating = global::FodboldApp.Droid.Resource.Attribute.colorBackgroundFloating;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorButtonNormal = global::FodboldApp.Droid.Resource.Attribute.colorButtonNormal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorControlActivated = global::FodboldApp.Droid.Resource.Attribute.colorControlActivated;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorControlHighlight = global::FodboldApp.Droid.Resource.Attribute.colorControlHighlight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorControlNormal = global::FodboldApp.Droid.Resource.Attribute.colorControlNormal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorPrimary = global::FodboldApp.Droid.Resource.Attribute.colorPrimary;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorPrimaryDark = global::FodboldApp.Droid.Resource.Attribute.colorPrimaryDark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorScheme = global::FodboldApp.Droid.Resource.Attribute.colorScheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorSwitchThumbNormal = global::FodboldApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.commitIcon = global::FodboldApp.Droid.Resource.Attribute.commitIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetEnd = global::FodboldApp.Droid.Resource.Attribute.contentInsetEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetEndWithActions = global::FodboldApp.Droid.Resource.Attribute.contentInsetEndWithActions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetLeft = global::FodboldApp.Droid.Resource.Attribute.contentInsetLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetRight = global::FodboldApp.Droid.Resource.Attribute.contentInsetRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetStart = global::FodboldApp.Droid.Resource.Attribute.contentInsetStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::FodboldApp.Droid.Resource.Attribute.contentInsetStartWithNavigation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPadding = global::FodboldApp.Droid.Resource.Attribute.contentPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingBottom = global::FodboldApp.Droid.Resource.Attribute.contentPaddingBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingLeft = global::FodboldApp.Droid.Resource.Attribute.contentPaddingLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingRight = global::FodboldApp.Droid.Resource.Attribute.contentPaddingRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingTop = global::FodboldApp.Droid.Resource.Attribute.contentPaddingTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentScrim = global::FodboldApp.Droid.Resource.Attribute.contentScrim;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.controlBackground = global::FodboldApp.Droid.Resource.Attribute.controlBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterEnabled = global::FodboldApp.Droid.Resource.Attribute.counterEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterMaxLength = global::FodboldApp.Droid.Resource.Attribute.counterMaxLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterOverflowTextAppearance = global::FodboldApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterTextAppearance = global::FodboldApp.Droid.Resource.Attribute.counterTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.customNavigationLayout = global::FodboldApp.Droid.Resource.Attribute.customNavigationLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.defaultQueryHint = global::FodboldApp.Droid.Resource.Attribute.defaultQueryHint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dialogPreferredPadding = global::FodboldApp.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dialogTheme = global::FodboldApp.Droid.Resource.Attribute.dialogTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.displayOptions = global::FodboldApp.Droid.Resource.Attribute.displayOptions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.divider = global::FodboldApp.Droid.Resource.Attribute.divider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dividerHorizontal = global::FodboldApp.Droid.Resource.Attribute.dividerHorizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dividerPadding = global::FodboldApp.Droid.Resource.Attribute.dividerPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dividerVertical = global::FodboldApp.Droid.Resource.Attribute.dividerVertical;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.drawableSize = global::FodboldApp.Droid.Resource.Attribute.drawableSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.drawerArrowStyle = global::FodboldApp.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dropDownListViewStyle = global::FodboldApp.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::FodboldApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.editTextBackground = global::FodboldApp.Droid.Resource.Attribute.editTextBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.editTextColor = global::FodboldApp.Droid.Resource.Attribute.editTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.editTextStyle = global::FodboldApp.Droid.Resource.Attribute.editTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.elevation = global::FodboldApp.Droid.Resource.Attribute.elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.errorEnabled = global::FodboldApp.Droid.Resource.Attribute.errorEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.errorTextAppearance = global::FodboldApp.Droid.Resource.Attribute.errorTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::FodboldApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expanded = global::FodboldApp.Droid.Resource.Attribute.expanded;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleGravity = global::FodboldApp.Droid.Resource.Attribute.expandedTitleGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMargin = global::FodboldApp.Droid.Resource.Attribute.expandedTitleMargin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginBottom = global::FodboldApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginEnd = global::FodboldApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginStart = global::FodboldApp.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginTop = global::FodboldApp.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleTextAppearance = global::FodboldApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::FodboldApp.Droid.Resource.Attribute.externalRouteEnabledDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.fabSize = global::FodboldApp.Droid.Resource.Attribute.fabSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.foregroundInsidePadding = global::FodboldApp.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.gapBetweenBars = global::FodboldApp.Droid.Resource.Attribute.gapBetweenBars;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.goIcon = global::FodboldApp.Droid.Resource.Attribute.goIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.headerLayout = global::FodboldApp.Droid.Resource.Attribute.headerLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.height = global::FodboldApp.Droid.Resource.Attribute.height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hideOnContentScroll = global::FodboldApp.Droid.Resource.Attribute.hideOnContentScroll;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hintAnimationEnabled = global::FodboldApp.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hintEnabled = global::FodboldApp.Droid.Resource.Attribute.hintEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hintTextAppearance = global::FodboldApp.Droid.Resource.Attribute.hintTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.homeAsUpIndicator = global::FodboldApp.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.homeLayout = global::FodboldApp.Droid.Resource.Attribute.homeLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.icon = global::FodboldApp.Droid.Resource.Attribute.icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.iconifiedByDefault = global::FodboldApp.Droid.Resource.Attribute.iconifiedByDefault;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.imageAspectRatio = global::FodboldApp.Droid.Resource.Attribute.imageAspectRatio;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.imageAspectRatioAdjust = global::FodboldApp.Droid.Resource.Attribute.imageAspectRatioAdjust;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.imageButtonStyle = global::FodboldApp.Droid.Resource.Attribute.imageButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.indeterminateProgressStyle = global::FodboldApp.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.initialActivityCount = global::FodboldApp.Droid.Resource.Attribute.initialActivityCount;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.insetForeground = global::FodboldApp.Droid.Resource.Attribute.insetForeground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.isLightTheme = global::FodboldApp.Droid.Resource.Attribute.isLightTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemBackground = global::FodboldApp.Droid.Resource.Attribute.itemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemIconTint = global::FodboldApp.Droid.Resource.Attribute.itemIconTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemPadding = global::FodboldApp.Droid.Resource.Attribute.itemPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemTextAppearance = global::FodboldApp.Droid.Resource.Attribute.itemTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemTextColor = global::FodboldApp.Droid.Resource.Attribute.itemTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.keylines = global::FodboldApp.Droid.Resource.Attribute.keylines;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout = global::FodboldApp.Droid.Resource.Attribute.layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layoutManager = global::FodboldApp.Droid.Resource.Attribute.layoutManager;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_anchor = global::FodboldApp.Droid.Resource.Attribute.layout_anchor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_anchorGravity = global::FodboldApp.Droid.Resource.Attribute.layout_anchorGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_behavior = global::FodboldApp.Droid.Resource.Attribute.layout_behavior;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_collapseMode = global::FodboldApp.Droid.Resource.Attribute.layout_collapseMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::FodboldApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::FodboldApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_insetEdge = global::FodboldApp.Droid.Resource.Attribute.layout_insetEdge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_keyline = global::FodboldApp.Droid.Resource.Attribute.layout_keyline;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_scrollFlags = global::FodboldApp.Droid.Resource.Attribute.layout_scrollFlags;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_scrollInterpolator = global::FodboldApp.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::FodboldApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listDividerAlertDialog = global::FodboldApp.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listItemLayout = global::FodboldApp.Droid.Resource.Attribute.listItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listLayout = global::FodboldApp.Droid.Resource.Attribute.listLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listMenuViewStyle = global::FodboldApp.Droid.Resource.Attribute.listMenuViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPopupWindowStyle = global::FodboldApp.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemHeight = global::FodboldApp.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::FodboldApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::FodboldApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::FodboldApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::FodboldApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.logo = global::FodboldApp.Droid.Resource.Attribute.logo;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.logoDescription = global::FodboldApp.Droid.Resource.Attribute.logoDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.maxActionInlineWidth = global::FodboldApp.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.maxButtonHeight = global::FodboldApp.Droid.Resource.Attribute.maxButtonHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.measureWithLargestChild = global::FodboldApp.Droid.Resource.Attribute.measureWithLargestChild;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteButtonStyle = global::FodboldApp.Droid.Resource.Attribute.mediaRouteButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::FodboldApp.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteTheme = global::FodboldApp.Droid.Resource.Attribute.mediaRouteTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::FodboldApp.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.menu = global::FodboldApp.Droid.Resource.Attribute.menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.multiChoiceItemLayout = global::FodboldApp.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.navigationContentDescription = global::FodboldApp.Droid.Resource.Attribute.navigationContentDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.navigationIcon = global::FodboldApp.Droid.Resource.Attribute.navigationIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.navigationMode = global::FodboldApp.Droid.Resource.Attribute.navigationMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.overlapAnchor = global::FodboldApp.Droid.Resource.Attribute.overlapAnchor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingBottomNoButtons = global::FodboldApp.Droid.Resource.Attribute.paddingBottomNoButtons;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingEnd = global::FodboldApp.Droid.Resource.Attribute.paddingEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingStart = global::FodboldApp.Droid.Resource.Attribute.paddingStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingTopNoTitle = global::FodboldApp.Droid.Resource.Attribute.paddingTopNoTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.panelBackground = global::FodboldApp.Droid.Resource.Attribute.panelBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.panelMenuListTheme = global::FodboldApp.Droid.Resource.Attribute.panelMenuListTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.panelMenuListWidth = global::FodboldApp.Droid.Resource.Attribute.panelMenuListWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleContentDescription = global::FodboldApp.Droid.Resource.Attribute.passwordToggleContentDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleDrawable = global::FodboldApp.Droid.Resource.Attribute.passwordToggleDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleEnabled = global::FodboldApp.Droid.Resource.Attribute.passwordToggleEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleTint = global::FodboldApp.Droid.Resource.Attribute.passwordToggleTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleTintMode = global::FodboldApp.Droid.Resource.Attribute.passwordToggleTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.popupMenuStyle = global::FodboldApp.Droid.Resource.Attribute.popupMenuStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.popupTheme = global::FodboldApp.Droid.Resource.Attribute.popupTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.popupWindowStyle = global::FodboldApp.Droid.Resource.Attribute.popupWindowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.preserveIconSpacing = global::FodboldApp.Droid.Resource.Attribute.preserveIconSpacing;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.pressedTranslationZ = global::FodboldApp.Droid.Resource.Attribute.pressedTranslationZ;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.progressBarPadding = global::FodboldApp.Droid.Resource.Attribute.progressBarPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.progressBarStyle = global::FodboldApp.Droid.Resource.Attribute.progressBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.queryBackground = global::FodboldApp.Droid.Resource.Attribute.queryBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.queryHint = global::FodboldApp.Droid.Resource.Attribute.queryHint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.radioButtonStyle = global::FodboldApp.Droid.Resource.Attribute.radioButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.ratingBarStyle = global::FodboldApp.Droid.Resource.Attribute.ratingBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.ratingBarStyleIndicator = global::FodboldApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.ratingBarStyleSmall = global::FodboldApp.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.reverseLayout = global::FodboldApp.Droid.Resource.Attribute.reverseLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.rippleColor = global::FodboldApp.Droid.Resource.Attribute.rippleColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.scopeUris = global::FodboldApp.Droid.Resource.Attribute.scopeUris;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.scrimAnimationDuration = global::FodboldApp.Droid.Resource.Attribute.scrimAnimationDuration;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::FodboldApp.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.searchHintIcon = global::FodboldApp.Droid.Resource.Attribute.searchHintIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.searchIcon = global::FodboldApp.Droid.Resource.Attribute.searchIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.searchViewStyle = global::FodboldApp.Droid.Resource.Attribute.searchViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.seekBarStyle = global::FodboldApp.Droid.Resource.Attribute.seekBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.selectableItemBackground = global::FodboldApp.Droid.Resource.Attribute.selectableItemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::FodboldApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showAsAction = global::FodboldApp.Droid.Resource.Attribute.showAsAction;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showDividers = global::FodboldApp.Droid.Resource.Attribute.showDividers;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showText = global::FodboldApp.Droid.Resource.Attribute.showText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showTitle = global::FodboldApp.Droid.Resource.Attribute.showTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.singleChoiceItemLayout = global::FodboldApp.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spanCount = global::FodboldApp.Droid.Resource.Attribute.spanCount;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spinBars = global::FodboldApp.Droid.Resource.Attribute.spinBars;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::FodboldApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spinnerStyle = global::FodboldApp.Droid.Resource.Attribute.spinnerStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.splitTrack = global::FodboldApp.Droid.Resource.Attribute.splitTrack;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.srcCompat = global::FodboldApp.Droid.Resource.Attribute.srcCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.stackFromEnd = global::FodboldApp.Droid.Resource.Attribute.stackFromEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.state_above_anchor = global::FodboldApp.Droid.Resource.Attribute.state_above_anchor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.state_collapsed = global::FodboldApp.Droid.Resource.Attribute.state_collapsed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.state_collapsible = global::FodboldApp.Droid.Resource.Attribute.state_collapsible;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.statusBarBackground = global::FodboldApp.Droid.Resource.Attribute.statusBarBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.statusBarScrim = global::FodboldApp.Droid.Resource.Attribute.statusBarScrim;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subMenuArrow = global::FodboldApp.Droid.Resource.Attribute.subMenuArrow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.submitBackground = global::FodboldApp.Droid.Resource.Attribute.submitBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitle = global::FodboldApp.Droid.Resource.Attribute.subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitleTextAppearance = global::FodboldApp.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitleTextColor = global::FodboldApp.Droid.Resource.Attribute.subtitleTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitleTextStyle = global::FodboldApp.Droid.Resource.Attribute.subtitleTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.suggestionRowLayout = global::FodboldApp.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchMinWidth = global::FodboldApp.Droid.Resource.Attribute.switchMinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchPadding = global::FodboldApp.Droid.Resource.Attribute.switchPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchStyle = global::FodboldApp.Droid.Resource.Attribute.switchStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchTextAppearance = global::FodboldApp.Droid.Resource.Attribute.switchTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabBackground = global::FodboldApp.Droid.Resource.Attribute.tabBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabContentStart = global::FodboldApp.Droid.Resource.Attribute.tabContentStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabGravity = global::FodboldApp.Droid.Resource.Attribute.tabGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabIndicatorColor = global::FodboldApp.Droid.Resource.Attribute.tabIndicatorColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabIndicatorHeight = global::FodboldApp.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabMaxWidth = global::FodboldApp.Droid.Resource.Attribute.tabMaxWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabMinWidth = global::FodboldApp.Droid.Resource.Attribute.tabMinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabMode = global::FodboldApp.Droid.Resource.Attribute.tabMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPadding = global::FodboldApp.Droid.Resource.Attribute.tabPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingBottom = global::FodboldApp.Droid.Resource.Attribute.tabPaddingBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingEnd = global::FodboldApp.Droid.Resource.Attribute.tabPaddingEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingStart = global::FodboldApp.Droid.Resource.Attribute.tabPaddingStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingTop = global::FodboldApp.Droid.Resource.Attribute.tabPaddingTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabSelectedTextColor = global::FodboldApp.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabTextAppearance = global::FodboldApp.Droid.Resource.Attribute.tabTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabTextColor = global::FodboldApp.Droid.Resource.Attribute.tabTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAllCaps = global::FodboldApp.Droid.Resource.Attribute.textAllCaps;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::FodboldApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceListItem = global::FodboldApp.Droid.Resource.Attribute.textAppearanceListItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceListItemSmall = global::FodboldApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::FodboldApp.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::FodboldApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::FodboldApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::FodboldApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textColorAlertDialogListItem = global::FodboldApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textColorError = global::FodboldApp.Droid.Resource.Attribute.textColorError;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textColorSearchUrl = global::FodboldApp.Droid.Resource.Attribute.textColorSearchUrl;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.theme = global::FodboldApp.Droid.Resource.Attribute.theme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thickness = global::FodboldApp.Droid.Resource.Attribute.thickness;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thumbTextPadding = global::FodboldApp.Droid.Resource.Attribute.thumbTextPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thumbTint = global::FodboldApp.Droid.Resource.Attribute.thumbTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thumbTintMode = global::FodboldApp.Droid.Resource.Attribute.thumbTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tickMark = global::FodboldApp.Droid.Resource.Attribute.tickMark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tickMarkTint = global::FodboldApp.Droid.Resource.Attribute.tickMarkTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tickMarkTintMode = global::FodboldApp.Droid.Resource.Attribute.tickMarkTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.title = global::FodboldApp.Droid.Resource.Attribute.title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleEnabled = global::FodboldApp.Droid.Resource.Attribute.titleEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMargin = global::FodboldApp.Droid.Resource.Attribute.titleMargin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginBottom = global::FodboldApp.Droid.Resource.Attribute.titleMarginBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginEnd = global::FodboldApp.Droid.Resource.Attribute.titleMarginEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginStart = global::FodboldApp.Droid.Resource.Attribute.titleMarginStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginTop = global::FodboldApp.Droid.Resource.Attribute.titleMarginTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMargins = global::FodboldApp.Droid.Resource.Attribute.titleMargins;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleTextAppearance = global::FodboldApp.Droid.Resource.Attribute.titleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleTextColor = global::FodboldApp.Droid.Resource.Attribute.titleTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleTextStyle = global::FodboldApp.Droid.Resource.Attribute.titleTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.toolbarId = global::FodboldApp.Droid.Resource.Attribute.toolbarId;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::FodboldApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.toolbarStyle = global::FodboldApp.Droid.Resource.Attribute.toolbarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.track = global::FodboldApp.Droid.Resource.Attribute.track;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.trackTint = global::FodboldApp.Droid.Resource.Attribute.trackTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.trackTintMode = global::FodboldApp.Droid.Resource.Attribute.trackTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.useCompatPadding = global::FodboldApp.Droid.Resource.Attribute.useCompatPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.voiceIcon = global::FodboldApp.Droid.Resource.Attribute.voiceIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowActionBar = global::FodboldApp.Droid.Resource.Attribute.windowActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowActionBarOverlay = global::FodboldApp.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowActionModeOverlay = global::FodboldApp.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedHeightMajor = global::FodboldApp.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedHeightMinor = global::FodboldApp.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedWidthMajor = global::FodboldApp.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedWidthMinor = global::FodboldApp.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowMinWidthMajor = global::FodboldApp.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowMinWidthMinor = global::FodboldApp.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowNoTitle = global::FodboldApp.Droid.Resource.Attribute.windowNoTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::FodboldApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::FodboldApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::FodboldApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::FodboldApp.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::FodboldApp.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::FodboldApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::FodboldApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::FodboldApp.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_btn_colored_text_material = global::FodboldApp.Droid.Resource.Color.abc_btn_colored_text_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_color_highlight_material = global::FodboldApp.Droid.Resource.Color.abc_color_highlight_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_hint_foreground_material_dark = global::FodboldApp.Droid.Resource.Color.abc_hint_foreground_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_hint_foreground_material_light = global::FodboldApp.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_input_method_navigation_guard = global::FodboldApp.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::FodboldApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::FodboldApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_material_dark = global::FodboldApp.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_material_light = global::FodboldApp.Droid.Resource.Color.abc_primary_text_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text = global::FodboldApp.Droid.Resource.Color.abc_search_url_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text_normal = global::FodboldApp.Droid.Resource.Color.abc_search_url_text_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text_pressed = global::FodboldApp.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text_selected = global::FodboldApp.Droid.Resource.Color.abc_search_url_text_selected;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_secondary_text_material_dark = global::FodboldApp.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_secondary_text_material_light = global::FodboldApp.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_btn_checkable = global::FodboldApp.Droid.Resource.Color.abc_tint_btn_checkable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_default = global::FodboldApp.Droid.Resource.Color.abc_tint_default;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_edittext = global::FodboldApp.Droid.Resource.Color.abc_tint_edittext;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_seek_thumb = global::FodboldApp.Droid.Resource.Color.abc_tint_seek_thumb;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_spinner = global::FodboldApp.Droid.Resource.Color.abc_tint_spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_switch_track = global::FodboldApp.Droid.Resource.Color.abc_tint_switch_track;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.accent_material_dark = global::FodboldApp.Droid.Resource.Color.accent_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.accent_material_light = global::FodboldApp.Droid.Resource.Color.accent_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_floating_material_dark = global::FodboldApp.Droid.Resource.Color.background_floating_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_floating_material_light = global::FodboldApp.Droid.Resource.Color.background_floating_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_material_dark = global::FodboldApp.Droid.Resource.Color.background_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_material_light = global::FodboldApp.Droid.Resource.Color.background_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::FodboldApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_disabled_material_light = global::FodboldApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::FodboldApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_inverse_material_light = global::FodboldApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_material_dark = global::FodboldApp.Droid.Resource.Color.bright_foreground_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_material_light = global::FodboldApp.Droid.Resource.Color.bright_foreground_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.button_material_dark = global::FodboldApp.Droid.Resource.Color.button_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.button_material_light = global::FodboldApp.Droid.Resource.Color.button_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_dark_background = global::FodboldApp.Droid.Resource.Color.cardview_dark_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_light_background = global::FodboldApp.Droid.Resource.Color.cardview_light_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_shadow_end_color = global::FodboldApp.Droid.Resource.Color.cardview_shadow_end_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_shadow_start_color = global::FodboldApp.Droid.Resource.Color.cardview_shadow_start_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_default = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_dark_default;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_focused = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_dark_focused;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_default = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_light_default;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_disabled = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_light_disabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_focused = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_light_focused;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_pressed = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_text_light_pressed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_tint = global::FodboldApp.Droid.Resource.Color.common_google_signin_btn_tint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_bottom_navigation_shadow_color = global::FodboldApp.Droid.Resource.Color.design_bottom_navigation_shadow_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_error = global::FodboldApp.Droid.Resource.Color.design_error;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_shadow_end_color = global::FodboldApp.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_shadow_mid_color = global::FodboldApp.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_shadow_start_color = global::FodboldApp.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::FodboldApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::FodboldApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::FodboldApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::FodboldApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_snackbar_background_color = global::FodboldApp.Droid.Resource.Color.design_snackbar_background_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_tint_password_toggle = global::FodboldApp.Droid.Resource.Color.design_tint_password_toggle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::FodboldApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_disabled_material_light = global::FodboldApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_material_dark = global::FodboldApp.Droid.Resource.Color.dim_foreground_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_material_light = global::FodboldApp.Droid.Resource.Color.dim_foreground_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.foreground_material_dark = global::FodboldApp.Droid.Resource.Color.foreground_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.foreground_material_light = global::FodboldApp.Droid.Resource.Color.foreground_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.highlighted_text_material_dark = global::FodboldApp.Droid.Resource.Color.highlighted_text_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.highlighted_text_material_light = global::FodboldApp.Droid.Resource.Color.highlighted_text_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_blue_grey_800 = global::FodboldApp.Droid.Resource.Color.material_blue_grey_800;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_blue_grey_900 = global::FodboldApp.Droid.Resource.Color.material_blue_grey_900;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_blue_grey_950 = global::FodboldApp.Droid.Resource.Color.material_blue_grey_950;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_deep_teal_200 = global::FodboldApp.Droid.Resource.Color.material_deep_teal_200;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_deep_teal_500 = global::FodboldApp.Droid.Resource.Color.material_deep_teal_500;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_100 = global::FodboldApp.Droid.Resource.Color.material_grey_100;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_300 = global::FodboldApp.Droid.Resource.Color.material_grey_300;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_50 = global::FodboldApp.Droid.Resource.Color.material_grey_50;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_600 = global::FodboldApp.Droid.Resource.Color.material_grey_600;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_800 = global::FodboldApp.Droid.Resource.Color.material_grey_800;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_850 = global::FodboldApp.Droid.Resource.Color.material_grey_850;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_900 = global::FodboldApp.Droid.Resource.Color.material_grey_900;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.notification_action_color_filter = global::FodboldApp.Droid.Resource.Color.notification_action_color_filter;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.notification_icon_bg_color = global::FodboldApp.Droid.Resource.Color.notification_icon_bg_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.notification_material_background_media_default_color = global::FodboldApp.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_dark_material_dark = global::FodboldApp.Droid.Resource.Color.primary_dark_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_dark_material_light = global::FodboldApp.Droid.Resource.Color.primary_dark_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_material_dark = global::FodboldApp.Droid.Resource.Color.primary_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_material_light = global::FodboldApp.Droid.Resource.Color.primary_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_default_material_dark = global::FodboldApp.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_default_material_light = global::FodboldApp.Droid.Resource.Color.primary_text_default_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_disabled_material_dark = global::FodboldApp.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_disabled_material_light = global::FodboldApp.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.ripple_material_dark = global::FodboldApp.Droid.Resource.Color.ripple_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.ripple_material_light = global::FodboldApp.Droid.Resource.Color.ripple_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_default_material_dark = global::FodboldApp.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_default_material_light = global::FodboldApp.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_disabled_material_dark = global::FodboldApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_disabled_material_light = global::FodboldApp.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::FodboldApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_disabled_material_light = global::FodboldApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_material_dark = global::FodboldApp.Droid.Resource.Color.switch_thumb_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_material_light = global::FodboldApp.Droid.Resource.Color.switch_thumb_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_normal_material_dark = global::FodboldApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_normal_material_light = global::FodboldApp.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_elevation_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_button_min_height_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_button_min_width_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::FodboldApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::FodboldApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::FodboldApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::FodboldApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::FodboldApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::FodboldApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::FodboldApp.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::FodboldApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_control_corner_material = global::FodboldApp.Droid.Resource.Dimension.abc_control_corner_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_control_inset_material = global::FodboldApp.Droid.Resource.Dimension.abc_control_inset_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_control_padding_material = global::FodboldApp.Droid.Resource.Dimension.abc_control_padding_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_min_width_major = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_padding_material = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_title_divider_material = global::FodboldApp.Droid.Resource.Dimension.abc_dialog_title_divider_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::FodboldApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::FodboldApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::FodboldApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::FodboldApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::FodboldApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::FodboldApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::FodboldApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::FodboldApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_floating_window_z = global::FodboldApp.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::FodboldApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_panel_menu_list_width = global::FodboldApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_progress_bar_height_material = global::FodboldApp.Droid.Resource.Dimension.abc_progress_bar_height_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_search_view_preferred_height = global::FodboldApp.Droid.Resource.Dimension.abc_search_view_preferred_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_search_view_preferred_width = global::FodboldApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::FodboldApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::FodboldApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::FodboldApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_switch_padding = global::FodboldApp.Droid.Resource.Dimension.abc_switch_padding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_body_1_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_body_2_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_button_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_caption_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_1_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_2_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_3_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_4_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_headline_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_large_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_medium_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_menu_header_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_menu_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_small_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_subhead_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_title_material = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::FodboldApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::FodboldApp.Droid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.cardview_default_elevation = global::FodboldApp.Droid.Resource.Dimension.cardview_default_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.cardview_default_radius = global::FodboldApp.Droid.Resource.Dimension.cardview_default_radius;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_appbar_elevation = global::FodboldApp.Droid.Resource.Dimension.design_appbar_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_elevation = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_height = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_item_min_width = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_margin = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_margin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_shadow_height = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::FodboldApp.Droid.Resource.Dimension.design_bottom_navigation_text_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::FodboldApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::FodboldApp.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_border_width = global::FodboldApp.Droid.Resource.Dimension.design_fab_border_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_elevation = global::FodboldApp.Droid.Resource.Dimension.design_fab_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_image_size = global::FodboldApp.Droid.Resource.Dimension.design_fab_image_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_size_mini = global::FodboldApp.Droid.Resource.Dimension.design_fab_size_mini;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_size_normal = global::FodboldApp.Droid.Resource.Dimension.design_fab_size_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::FodboldApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_elevation = global::FodboldApp.Droid.Resource.Dimension.design_navigation_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_icon_padding = global::FodboldApp.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_icon_size = global::FodboldApp.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_max_width = global::FodboldApp.Droid.Resource.Dimension.design_navigation_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_padding_bottom = global::FodboldApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::FodboldApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_elevation = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_max_width = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_min_width = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_text_size = global::FodboldApp.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_max_width = global::FodboldApp.Droid.Resource.Dimension.design_tab_max_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::FodboldApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_text_size = global::FodboldApp.Droid.Resource.Dimension.design_tab_text_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_text_size_2line = global::FodboldApp.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.disabled_alpha_material_dark = global::FodboldApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.disabled_alpha_material_light = global::FodboldApp.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.highlight_alpha_material_colored = global::FodboldApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.highlight_alpha_material_dark = global::FodboldApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.highlight_alpha_material_light = global::FodboldApp.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_alpha_material_dark = global::FodboldApp.Droid.Resource.Dimension.hint_alpha_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_alpha_material_light = global::FodboldApp.Droid.Resource.Dimension.hint_alpha_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_pressed_alpha_material_dark = global::FodboldApp.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_pressed_alpha_material_light = global::FodboldApp.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::FodboldApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::FodboldApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::FodboldApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::FodboldApp.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::FodboldApp.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::FodboldApp.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::FodboldApp.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::FodboldApp.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::FodboldApp.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_action_icon_size = global::FodboldApp.Droid.Resource.Dimension.notification_action_icon_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_action_text_size = global::FodboldApp.Droid.Resource.Dimension.notification_action_text_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_big_circle_margin = global::FodboldApp.Droid.Resource.Dimension.notification_big_circle_margin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_content_margin_start = global::FodboldApp.Droid.Resource.Dimension.notification_content_margin_start;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_large_icon_height = global::FodboldApp.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_large_icon_width = global::FodboldApp.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_main_column_padding_top = global::FodboldApp.Droid.Resource.Dimension.notification_main_column_padding_top;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_media_narrow_margin = global::FodboldApp.Droid.Resource.Dimension.notification_media_narrow_margin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_right_icon_size = global::FodboldApp.Droid.Resource.Dimension.notification_right_icon_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_right_side_padding_top = global::FodboldApp.Droid.Resource.Dimension.notification_right_side_padding_top;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_small_icon_background_padding = global::FodboldApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_small_icon_size_as_large = global::FodboldApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_subtext_size = global::FodboldApp.Droid.Resource.Dimension.notification_subtext_size;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_top_pad = global::FodboldApp.Droid.Resource.Dimension.notification_top_pad;
-			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_top_pad_large_text = global::FodboldApp.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::FodboldApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_borderless_material = global::FodboldApp.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_check_material = global::FodboldApp.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::FodboldApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::FodboldApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_colored_material = global::FodboldApp.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::FodboldApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_radio_material = global::FodboldApp.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::FodboldApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::FodboldApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::FodboldApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::FodboldApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::FodboldApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_cab_background_top_material = global::FodboldApp.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_control_background_material = global::FodboldApp.Droid.Resource.Drawable.abc_control_background_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_dialog_material_background = global::FodboldApp.Droid.Resource.Drawable.abc_dialog_material_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_edit_text_material = global::FodboldApp.Droid.Resource.Drawable.abc_edit_text_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_ab_back_material = global::FodboldApp.Droid.Resource.Drawable.abc_ic_ab_back_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_clear_material = global::FodboldApp.Droid.Resource.Drawable.abc_ic_clear_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::FodboldApp.Droid.Resource.Drawable.abc_ic_go_search_api_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::FodboldApp.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_search_api_material = global::FodboldApp.Droid.Resource.Drawable.abc_ic_search_api_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::FodboldApp.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::FodboldApp.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_item_background_holo_dark = global::FodboldApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_item_background_holo_light = global::FodboldApp.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_focused_holo = global::FodboldApp.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_longpressed_holo = global::FodboldApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::FodboldApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::FodboldApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::FodboldApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::FodboldApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::FodboldApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::FodboldApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::FodboldApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_holo_light = global::FodboldApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::FodboldApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::FodboldApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::FodboldApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ratingbar_material = global::FodboldApp.Droid.Resource.Drawable.abc_ratingbar_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ratingbar_small_material = global::FodboldApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::FodboldApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::FodboldApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::FodboldApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::FodboldApp.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_seekbar_track_material = global::FodboldApp.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::FodboldApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_switch_thumb_material = global::FodboldApp.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_tab_indicator_material = global::FodboldApp.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_cursor_material = global::FodboldApp.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::FodboldApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::FodboldApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::FodboldApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::FodboldApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::FodboldApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::FodboldApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::FodboldApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_search_material = global::FodboldApp.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_vector_test = global::FodboldApp.Droid.Resource.Drawable.abc_vector_test;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password_1 = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password_1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password_2 = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password_2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password_3 = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password_3;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password = global::FodboldApp.Droid.Resource.Drawable.avd_show_password;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password_1 = global::FodboldApp.Droid.Resource.Drawable.avd_show_password_1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password_2 = global::FodboldApp.Droid.Resource.Drawable.avd_show_password_2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password_3 = global::FodboldApp.Droid.Resource.Drawable.avd_show_password_3;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_full_open_on_phone = global::FodboldApp.Droid.Resource.Drawable.common_full_open_on_phone;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_disabled = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_disabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal_background = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal_background = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_disabled = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_disabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal_background = global::FodboldApp.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::FodboldApp.Droid.Resource.Drawable.design_bottom_navigation_item_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_fab_background = global::FodboldApp.Droid.Resource.Drawable.design_fab_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_ic_visibility = global::FodboldApp.Droid.Resource.Drawable.design_ic_visibility;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_ic_visibility_off = global::FodboldApp.Droid.Resource.Drawable.design_ic_visibility_off;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_password_eye = global::FodboldApp.Droid.Resource.Drawable.design_password_eye;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_snackbar_background = global::FodboldApp.Droid.Resource.Drawable.design_snackbar_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.googleg_disabled_color_18 = global::FodboldApp.Droid.Resource.Drawable.googleg_disabled_color_18;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.googleg_standard_color_18 = global::FodboldApp.Droid.Resource.Drawable.googleg_standard_color_18;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_audiotrack_dark = global::FodboldApp.Droid.Resource.Drawable.ic_audiotrack_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_audiotrack_light = global::FodboldApp.Droid.Resource.Drawable.ic_audiotrack_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_dialog_close_dark = global::FodboldApp.Droid.Resource.Drawable.ic_dialog_close_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_dialog_close_light = global::FodboldApp.Droid.Resource.Drawable.ic_dialog_close_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_00 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_00;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_01 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_01;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_02 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_02;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_03 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_03;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_04 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_04;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_05 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_05;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_06 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_06;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_07 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_07;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_08 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_08;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_09 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_09;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_10 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_10;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_11 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_11;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_12 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_12;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_13 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_13;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_14 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_14;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_15 = global::FodboldApp.Droid.Resource.Drawable.ic_group_collapse_15;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_00 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_00;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_01 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_01;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_02 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_02;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_03 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_03;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_04 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_04;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_05 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_05;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_06 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_06;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_07 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_07;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_08 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_08;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_09 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_09;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_10 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_10;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_11 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_11;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_12 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_12;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_13 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_13;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_14 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_14;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_15 = global::FodboldApp.Droid.Resource.Drawable.ic_group_expand_15;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_pause_dark = global::FodboldApp.Droid.Resource.Drawable.ic_media_pause_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_pause_light = global::FodboldApp.Droid.Resource.Drawable.ic_media_pause_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_play_dark = global::FodboldApp.Droid.Resource.Drawable.ic_media_play_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_play_light = global::FodboldApp.Droid.Resource.Drawable.ic_media_play_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_disabled_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_grey = global::FodboldApp.Droid.Resource.Drawable.ic_mr_button_grey;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_medium_off_client = global::FodboldApp.Droid.Resource.Drawable.ic_plusone_medium_off_client;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_small_off_client = global::FodboldApp.Droid.Resource.Drawable.ic_plusone_small_off_client;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_standard_off_client = global::FodboldApp.Droid.Resource.Drawable.ic_plusone_standard_off_client;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_tall_off_client = global::FodboldApp.Droid.Resource.Drawable.ic_plusone_tall_off_client;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::FodboldApp.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::FodboldApp.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::FodboldApp.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::FodboldApp.Droid.Resource.Drawable.ic_vol_type_speaker_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::FodboldApp.Droid.Resource.Drawable.ic_vol_type_tv_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_tv_light = global::FodboldApp.Droid.Resource.Drawable.ic_vol_type_tv_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connected_dark = global::FodboldApp.Droid.Resource.Drawable.mr_button_connected_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connected_light = global::FodboldApp.Droid.Resource.Drawable.mr_button_connected_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connecting_dark = global::FodboldApp.Droid.Resource.Drawable.mr_button_connecting_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connecting_light = global::FodboldApp.Droid.Resource.Drawable.mr_button_connecting_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_dark = global::FodboldApp.Droid.Resource.Drawable.mr_button_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_light = global::FodboldApp.Droid.Resource.Drawable.mr_button_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_close_dark = global::FodboldApp.Droid.Resource.Drawable.mr_dialog_close_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_close_light = global::FodboldApp.Droid.Resource.Drawable.mr_dialog_close_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::FodboldApp.Droid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_material_background_light = global::FodboldApp.Droid.Resource.Drawable.mr_dialog_material_background_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_group_collapse = global::FodboldApp.Droid.Resource.Drawable.mr_group_collapse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_group_expand = global::FodboldApp.Droid.Resource.Drawable.mr_group_expand;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_pause_dark = global::FodboldApp.Droid.Resource.Drawable.mr_media_pause_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_pause_light = global::FodboldApp.Droid.Resource.Drawable.mr_media_pause_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_play_dark = global::FodboldApp.Droid.Resource.Drawable.mr_media_play_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_play_light = global::FodboldApp.Droid.Resource.Drawable.mr_media_play_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::FodboldApp.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::FodboldApp.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.navigation_empty_icon = global::FodboldApp.Droid.Resource.Drawable.navigation_empty_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_action_background = global::FodboldApp.Droid.Resource.Drawable.notification_action_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg = global::FodboldApp.Droid.Resource.Drawable.notification_bg;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_low = global::FodboldApp.Droid.Resource.Drawable.notification_bg_low;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_low_normal = global::FodboldApp.Droid.Resource.Drawable.notification_bg_low_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_low_pressed = global::FodboldApp.Droid.Resource.Drawable.notification_bg_low_pressed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_normal = global::FodboldApp.Droid.Resource.Drawable.notification_bg_normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_normal_pressed = global::FodboldApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_icon_background = global::FodboldApp.Droid.Resource.Drawable.notification_icon_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_template_icon_bg = global::FodboldApp.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_template_icon_low_bg = global::FodboldApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_tile_bg = global::FodboldApp.Droid.Resource.Drawable.notification_tile_bg;
-			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::FodboldApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action0 = global::FodboldApp.Droid.Resource.Id.action0;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar = global::FodboldApp.Droid.Resource.Id.action_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_activity_content = global::FodboldApp.Droid.Resource.Id.action_bar_activity_content;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_container = global::FodboldApp.Droid.Resource.Id.action_bar_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_root = global::FodboldApp.Droid.Resource.Id.action_bar_root;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_spinner = global::FodboldApp.Droid.Resource.Id.action_bar_spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_subtitle = global::FodboldApp.Droid.Resource.Id.action_bar_subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_title = global::FodboldApp.Droid.Resource.Id.action_bar_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_container = global::FodboldApp.Droid.Resource.Id.action_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_context_bar = global::FodboldApp.Droid.Resource.Id.action_context_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_divider = global::FodboldApp.Droid.Resource.Id.action_divider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_image = global::FodboldApp.Droid.Resource.Id.action_image;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_menu_divider = global::FodboldApp.Droid.Resource.Id.action_menu_divider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_menu_presenter = global::FodboldApp.Droid.Resource.Id.action_menu_presenter;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_mode_bar = global::FodboldApp.Droid.Resource.Id.action_mode_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_mode_bar_stub = global::FodboldApp.Droid.Resource.Id.action_mode_bar_stub;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_mode_close_button = global::FodboldApp.Droid.Resource.Id.action_mode_close_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_text = global::FodboldApp.Droid.Resource.Id.action_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.actions = global::FodboldApp.Droid.Resource.Id.actions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.activity_chooser_view_content = global::FodboldApp.Droid.Resource.Id.activity_chooser_view_content;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.add = global::FodboldApp.Droid.Resource.Id.add;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.adjust_height = global::FodboldApp.Droid.Resource.Id.adjust_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.adjust_width = global::FodboldApp.Droid.Resource.Id.adjust_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.alertTitle = global::FodboldApp.Droid.Resource.Id.alertTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.all = global::FodboldApp.Droid.Resource.Id.all;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.always = global::FodboldApp.Droid.Resource.Id.always;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.auto = global::FodboldApp.Droid.Resource.Id.auto;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.beginning = global::FodboldApp.Droid.Resource.Id.beginning;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.bottom = global::FodboldApp.Droid.Resource.Id.bottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.buttonPanel = global::FodboldApp.Droid.Resource.Id.buttonPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.cancel_action = global::FodboldApp.Droid.Resource.Id.cancel_action;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.center = global::FodboldApp.Droid.Resource.Id.center;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.center_horizontal = global::FodboldApp.Droid.Resource.Id.center_horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.center_vertical = global::FodboldApp.Droid.Resource.Id.center_vertical;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.checkbox = global::FodboldApp.Droid.Resource.Id.checkbox;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.chronometer = global::FodboldApp.Droid.Resource.Id.chronometer;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.clip_horizontal = global::FodboldApp.Droid.Resource.Id.clip_horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.clip_vertical = global::FodboldApp.Droid.Resource.Id.clip_vertical;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.collapseActionView = global::FodboldApp.Droid.Resource.Id.collapseActionView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.contentPanel = global::FodboldApp.Droid.Resource.Id.contentPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.custom = global::FodboldApp.Droid.Resource.Id.custom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.customPanel = global::FodboldApp.Droid.Resource.Id.customPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.dark = global::FodboldApp.Droid.Resource.Id.dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.decor_content_parent = global::FodboldApp.Droid.Resource.Id.decor_content_parent;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.default_activity_button = global::FodboldApp.Droid.Resource.Id.default_activity_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_bottom_sheet = global::FodboldApp.Droid.Resource.Id.design_bottom_sheet;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_menu_item_action_area = global::FodboldApp.Droid.Resource.Id.design_menu_item_action_area;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_menu_item_action_area_stub = global::FodboldApp.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_menu_item_text = global::FodboldApp.Droid.Resource.Id.design_menu_item_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_navigation_view = global::FodboldApp.Droid.Resource.Id.design_navigation_view;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.disableHome = global::FodboldApp.Droid.Resource.Id.disableHome;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.edit_query = global::FodboldApp.Droid.Resource.Id.edit_query;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.end = global::FodboldApp.Droid.Resource.Id.end;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.end_padder = global::FodboldApp.Droid.Resource.Id.end_padder;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.enterAlways = global::FodboldApp.Droid.Resource.Id.enterAlways;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.enterAlwaysCollapsed = global::FodboldApp.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.exitUntilCollapsed = global::FodboldApp.Droid.Resource.Id.exitUntilCollapsed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.expand_activities_button = global::FodboldApp.Droid.Resource.Id.expand_activities_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.expanded_menu = global::FodboldApp.Droid.Resource.Id.expanded_menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.fill = global::FodboldApp.Droid.Resource.Id.fill;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.fill_horizontal = global::FodboldApp.Droid.Resource.Id.fill_horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.fill_vertical = global::FodboldApp.Droid.Resource.Id.fill_vertical;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.@fixed = global::FodboldApp.Droid.Resource.Id.@fixed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.home = global::FodboldApp.Droid.Resource.Id.home;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.homeAsUp = global::FodboldApp.Droid.Resource.Id.homeAsUp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.icon = global::FodboldApp.Droid.Resource.Id.icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.icon_group = global::FodboldApp.Droid.Resource.Id.icon_group;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.icon_only = global::FodboldApp.Droid.Resource.Id.icon_only;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.ifRoom = global::FodboldApp.Droid.Resource.Id.ifRoom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.image = global::FodboldApp.Droid.Resource.Id.image;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.info = global::FodboldApp.Droid.Resource.Id.info;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.item_touch_helper_previous_elevation = global::FodboldApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.largeLabel = global::FodboldApp.Droid.Resource.Id.largeLabel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.left = global::FodboldApp.Droid.Resource.Id.left;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.light = global::FodboldApp.Droid.Resource.Id.light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.line1 = global::FodboldApp.Droid.Resource.Id.line1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.line3 = global::FodboldApp.Droid.Resource.Id.line3;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.listMode = global::FodboldApp.Droid.Resource.Id.listMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.list_item = global::FodboldApp.Droid.Resource.Id.list_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.masked = global::FodboldApp.Droid.Resource.Id.masked;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.media_actions = global::FodboldApp.Droid.Resource.Id.media_actions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.middle = global::FodboldApp.Droid.Resource.Id.middle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mini = global::FodboldApp.Droid.Resource.Id.mini;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_art = global::FodboldApp.Droid.Resource.Id.mr_art;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_list = global::FodboldApp.Droid.Resource.Id.mr_chooser_list;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_route_desc = global::FodboldApp.Droid.Resource.Id.mr_chooser_route_desc;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_route_icon = global::FodboldApp.Droid.Resource.Id.mr_chooser_route_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_route_name = global::FodboldApp.Droid.Resource.Id.mr_chooser_route_name;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_title = global::FodboldApp.Droid.Resource.Id.mr_chooser_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_close = global::FodboldApp.Droid.Resource.Id.mr_close;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_divider = global::FodboldApp.Droid.Resource.Id.mr_control_divider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_subtitle = global::FodboldApp.Droid.Resource.Id.mr_control_subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_title = global::FodboldApp.Droid.Resource.Id.mr_control_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_title_container = global::FodboldApp.Droid.Resource.Id.mr_control_title_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_custom_control = global::FodboldApp.Droid.Resource.Id.mr_custom_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_default_control = global::FodboldApp.Droid.Resource.Id.mr_default_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_dialog_area = global::FodboldApp.Droid.Resource.Id.mr_dialog_area;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_expandable_area = global::FodboldApp.Droid.Resource.Id.mr_expandable_area;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_group_expand_collapse = global::FodboldApp.Droid.Resource.Id.mr_group_expand_collapse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_media_main_control = global::FodboldApp.Droid.Resource.Id.mr_media_main_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_name = global::FodboldApp.Droid.Resource.Id.mr_name;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_playback_control = global::FodboldApp.Droid.Resource.Id.mr_playback_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_title_bar = global::FodboldApp.Droid.Resource.Id.mr_title_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_control = global::FodboldApp.Droid.Resource.Id.mr_volume_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_group_list = global::FodboldApp.Droid.Resource.Id.mr_volume_group_list;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_item_icon = global::FodboldApp.Droid.Resource.Id.mr_volume_item_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_slider = global::FodboldApp.Droid.Resource.Id.mr_volume_slider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.multiply = global::FodboldApp.Droid.Resource.Id.multiply;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.navigation_header_container = global::FodboldApp.Droid.Resource.Id.navigation_header_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.never = global::FodboldApp.Droid.Resource.Id.never;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.none = global::FodboldApp.Droid.Resource.Id.none;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.normal = global::FodboldApp.Droid.Resource.Id.normal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.notification_background = global::FodboldApp.Droid.Resource.Id.notification_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.notification_main_column = global::FodboldApp.Droid.Resource.Id.notification_main_column;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.notification_main_column_container = global::FodboldApp.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.parallax = global::FodboldApp.Droid.Resource.Id.parallax;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.parentPanel = global::FodboldApp.Droid.Resource.Id.parentPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.pin = global::FodboldApp.Droid.Resource.Id.pin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.progress_circular = global::FodboldApp.Droid.Resource.Id.progress_circular;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.progress_horizontal = global::FodboldApp.Droid.Resource.Id.progress_horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.radio = global::FodboldApp.Droid.Resource.Id.radio;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.right = global::FodboldApp.Droid.Resource.Id.right;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.right_icon = global::FodboldApp.Droid.Resource.Id.right_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.right_side = global::FodboldApp.Droid.Resource.Id.right_side;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.screen = global::FodboldApp.Droid.Resource.Id.screen;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.scroll = global::FodboldApp.Droid.Resource.Id.scroll;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollIndicatorDown = global::FodboldApp.Droid.Resource.Id.scrollIndicatorDown;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollIndicatorUp = global::FodboldApp.Droid.Resource.Id.scrollIndicatorUp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollView = global::FodboldApp.Droid.Resource.Id.scrollView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollable = global::FodboldApp.Droid.Resource.Id.scrollable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_badge = global::FodboldApp.Droid.Resource.Id.search_badge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_bar = global::FodboldApp.Droid.Resource.Id.search_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_button = global::FodboldApp.Droid.Resource.Id.search_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_close_btn = global::FodboldApp.Droid.Resource.Id.search_close_btn;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_edit_frame = global::FodboldApp.Droid.Resource.Id.search_edit_frame;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_go_btn = global::FodboldApp.Droid.Resource.Id.search_go_btn;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_mag_icon = global::FodboldApp.Droid.Resource.Id.search_mag_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_plate = global::FodboldApp.Droid.Resource.Id.search_plate;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_src_text = global::FodboldApp.Droid.Resource.Id.search_src_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_voice_btn = global::FodboldApp.Droid.Resource.Id.search_voice_btn;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.select_dialog_listview = global::FodboldApp.Droid.Resource.Id.select_dialog_listview;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.shortcut = global::FodboldApp.Droid.Resource.Id.shortcut;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.showCustom = global::FodboldApp.Droid.Resource.Id.showCustom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.showHome = global::FodboldApp.Droid.Resource.Id.showHome;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.showTitle = global::FodboldApp.Droid.Resource.Id.showTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.smallLabel = global::FodboldApp.Droid.Resource.Id.smallLabel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.snackbar_action = global::FodboldApp.Droid.Resource.Id.snackbar_action;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.snackbar_text = global::FodboldApp.Droid.Resource.Id.snackbar_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.snap = global::FodboldApp.Droid.Resource.Id.snap;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.spacer = global::FodboldApp.Droid.Resource.Id.spacer;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.split_action_bar = global::FodboldApp.Droid.Resource.Id.split_action_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.src_atop = global::FodboldApp.Droid.Resource.Id.src_atop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.src_in = global::FodboldApp.Droid.Resource.Id.src_in;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.src_over = global::FodboldApp.Droid.Resource.Id.src_over;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.standard = global::FodboldApp.Droid.Resource.Id.standard;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.start = global::FodboldApp.Droid.Resource.Id.start;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.status_bar_latest_event_content = global::FodboldApp.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.submenuarrow = global::FodboldApp.Droid.Resource.Id.submenuarrow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.submit_area = global::FodboldApp.Droid.Resource.Id.submit_area;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.tabMode = global::FodboldApp.Droid.Resource.Id.tabMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.text = global::FodboldApp.Droid.Resource.Id.text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.text2 = global::FodboldApp.Droid.Resource.Id.text2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.textSpacerNoButtons = global::FodboldApp.Droid.Resource.Id.textSpacerNoButtons;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.textSpacerNoTitle = global::FodboldApp.Droid.Resource.Id.textSpacerNoTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.text_input_password_toggle = global::FodboldApp.Droid.Resource.Id.text_input_password_toggle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.textinput_counter = global::FodboldApp.Droid.Resource.Id.textinput_counter;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.textinput_error = global::FodboldApp.Droid.Resource.Id.textinput_error;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.time = global::FodboldApp.Droid.Resource.Id.time;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.title = global::FodboldApp.Droid.Resource.Id.title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.titleDividerNoCustom = global::FodboldApp.Droid.Resource.Id.titleDividerNoCustom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.title_template = global::FodboldApp.Droid.Resource.Id.title_template;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.top = global::FodboldApp.Droid.Resource.Id.top;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.topPanel = global::FodboldApp.Droid.Resource.Id.topPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.touch_outside = global::FodboldApp.Droid.Resource.Id.touch_outside;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.transition_current_scene = global::FodboldApp.Droid.Resource.Id.transition_current_scene;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.transition_scene_layoutid_cache = global::FodboldApp.Droid.Resource.Id.transition_scene_layoutid_cache;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.up = global::FodboldApp.Droid.Resource.Id.up;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.useLogo = global::FodboldApp.Droid.Resource.Id.useLogo;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.view_offset_helper = global::FodboldApp.Droid.Resource.Id.view_offset_helper;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.visible = global::FodboldApp.Droid.Resource.Id.visible;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.volume_item_container = global::FodboldApp.Droid.Resource.Id.volume_item_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.wide = global::FodboldApp.Droid.Resource.Id.wide;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.withText = global::FodboldApp.Droid.Resource.Id.withText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Id.wrap_content = global::FodboldApp.Droid.Resource.Id.wrap_content;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.abc_config_activityDefaultDur = global::FodboldApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.abc_config_activityShortDur = global::FodboldApp.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::FodboldApp.Droid.Resource.Integer.app_bar_elevation_anim_duration;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.bottom_sheet_slide_duration = global::FodboldApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.cancel_button_image_alpha = global::FodboldApp.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.design_snackbar_text_max_lines = global::FodboldApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.google_play_services_version = global::FodboldApp.Droid.Resource.Integer.google_play_services_version;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.hide_password_duration = global::FodboldApp.Droid.Resource.Integer.hide_password_duration;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::FodboldApp.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::FodboldApp.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::FodboldApp.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.show_password_duration = global::FodboldApp.Droid.Resource.Integer.show_password_duration;
-			global::Xamarians.GoogleLogin.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::FodboldApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarians.GoogleLogin.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::FodboldApp.Droid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::Xamarians.GoogleLogin.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::FodboldApp.Droid.Resource.Interpolator.mr_linear_out_slow_in;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_bar_title_item = global::FodboldApp.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_bar_up_container = global::FodboldApp.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout = global::FodboldApp.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_menu_item_layout = global::FodboldApp.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_menu_layout = global::FodboldApp.Droid.Resource.Layout.abc_action_menu_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_mode_bar = global::FodboldApp.Droid.Resource.Layout.abc_action_mode_bar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_mode_close_item_material = global::FodboldApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_activity_chooser_view = global::FodboldApp.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::FodboldApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::FodboldApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_alert_dialog_material = global::FodboldApp.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_alert_dialog_title_material = global::FodboldApp.Droid.Resource.Layout.abc_alert_dialog_title_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_dialog_title_material = global::FodboldApp.Droid.Resource.Layout.abc_dialog_title_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_expanded_menu_layout = global::FodboldApp.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::FodboldApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_icon = global::FodboldApp.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_layout = global::FodboldApp.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_radio = global::FodboldApp.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::FodboldApp.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_popup_menu_item_layout = global::FodboldApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_content_include = global::FodboldApp.Droid.Resource.Layout.abc_screen_content_include;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_simple = global::FodboldApp.Droid.Resource.Layout.abc_screen_simple;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::FodboldApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_toolbar = global::FodboldApp.Droid.Resource.Layout.abc_screen_toolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::FodboldApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_search_view = global::FodboldApp.Droid.Resource.Layout.abc_search_view;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_select_dialog_material = global::FodboldApp.Droid.Resource.Layout.abc_select_dialog_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_bottom_navigation_item = global::FodboldApp.Droid.Resource.Layout.design_bottom_navigation_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_bottom_sheet_dialog = global::FodboldApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_snackbar = global::FodboldApp.Droid.Resource.Layout.design_layout_snackbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_snackbar_include = global::FodboldApp.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_tab_icon = global::FodboldApp.Droid.Resource.Layout.design_layout_tab_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_tab_text = global::FodboldApp.Droid.Resource.Layout.design_layout_tab_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_menu_item_action_area = global::FodboldApp.Droid.Resource.Layout.design_menu_item_action_area;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item = global::FodboldApp.Droid.Resource.Layout.design_navigation_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item_header = global::FodboldApp.Droid.Resource.Layout.design_navigation_item_header;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item_separator = global::FodboldApp.Droid.Resource.Layout.design_navigation_item_separator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item_subheader = global::FodboldApp.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_menu = global::FodboldApp.Droid.Resource.Layout.design_navigation_menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_menu_item = global::FodboldApp.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_text_input_password_icon = global::FodboldApp.Droid.Resource.Layout.design_text_input_password_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_chooser_dialog = global::FodboldApp.Droid.Resource.Layout.mr_chooser_dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_chooser_list_item = global::FodboldApp.Droid.Resource.Layout.mr_chooser_list_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_controller_material_dialog_b = global::FodboldApp.Droid.Resource.Layout.mr_controller_material_dialog_b;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_controller_volume_item = global::FodboldApp.Droid.Resource.Layout.mr_controller_volume_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_playback_control = global::FodboldApp.Droid.Resource.Layout.mr_playback_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_volume_control = global::FodboldApp.Droid.Resource.Layout.mr_volume_control;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_action = global::FodboldApp.Droid.Resource.Layout.notification_action;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_action_tombstone = global::FodboldApp.Droid.Resource.Layout.notification_action_tombstone;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_media_action = global::FodboldApp.Droid.Resource.Layout.notification_media_action;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_media_cancel_action = global::FodboldApp.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media = global::FodboldApp.Droid.Resource.Layout.notification_template_big_media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media_custom = global::FodboldApp.Droid.Resource.Layout.notification_template_big_media_custom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media_narrow = global::FodboldApp.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media_narrow_custom = global::FodboldApp.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_custom_big = global::FodboldApp.Droid.Resource.Layout.notification_template_custom_big;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_icon_group = global::FodboldApp.Droid.Resource.Layout.notification_template_icon_group;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_lines_media = global::FodboldApp.Droid.Resource.Layout.notification_template_lines_media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_media = global::FodboldApp.Droid.Resource.Layout.notification_template_media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_media_custom = global::FodboldApp.Droid.Resource.Layout.notification_template_media_custom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_part_chronometer = global::FodboldApp.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_part_time = global::FodboldApp.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.select_dialog_item_material = global::FodboldApp.Droid.Resource.Layout.select_dialog_item_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.select_dialog_multichoice_material = global::FodboldApp.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.select_dialog_singlechoice_material = global::FodboldApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::FodboldApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.ApplicationName = global::FodboldApp.Droid.Resource.String.ApplicationName;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.Hello = global::FodboldApp.Droid.Resource.String.Hello;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_bar_home_description = global::FodboldApp.Droid.Resource.String.abc_action_bar_home_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_bar_home_description_format = global::FodboldApp.Droid.Resource.String.abc_action_bar_home_description_format;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_bar_home_subtitle_description_format = global::FodboldApp.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_bar_up_description = global::FodboldApp.Droid.Resource.String.abc_action_bar_up_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_menu_overflow_description = global::FodboldApp.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_mode_done = global::FodboldApp.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_activity_chooser_view_see_all = global::FodboldApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_activitychooserview_choose_application = global::FodboldApp.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_capital_off = global::FodboldApp.Droid.Resource.String.abc_capital_off;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_capital_on = global::FodboldApp.Droid.Resource.String.abc_capital_on;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_body_1_material = global::FodboldApp.Droid.Resource.String.abc_font_family_body_1_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_body_2_material = global::FodboldApp.Droid.Resource.String.abc_font_family_body_2_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_button_material = global::FodboldApp.Droid.Resource.String.abc_font_family_button_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_caption_material = global::FodboldApp.Droid.Resource.String.abc_font_family_caption_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_1_material = global::FodboldApp.Droid.Resource.String.abc_font_family_display_1_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_2_material = global::FodboldApp.Droid.Resource.String.abc_font_family_display_2_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_3_material = global::FodboldApp.Droid.Resource.String.abc_font_family_display_3_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_4_material = global::FodboldApp.Droid.Resource.String.abc_font_family_display_4_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_headline_material = global::FodboldApp.Droid.Resource.String.abc_font_family_headline_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_menu_material = global::FodboldApp.Droid.Resource.String.abc_font_family_menu_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_subhead_material = global::FodboldApp.Droid.Resource.String.abc_font_family_subhead_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_title_material = global::FodboldApp.Droid.Resource.String.abc_font_family_title_material;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_search_hint = global::FodboldApp.Droid.Resource.String.abc_search_hint;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_clear = global::FodboldApp.Droid.Resource.String.abc_searchview_description_clear;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_query = global::FodboldApp.Droid.Resource.String.abc_searchview_description_query;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_search = global::FodboldApp.Droid.Resource.String.abc_searchview_description_search;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_submit = global::FodboldApp.Droid.Resource.String.abc_searchview_description_submit;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_voice = global::FodboldApp.Droid.Resource.String.abc_searchview_description_voice;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_shareactionprovider_share_with = global::FodboldApp.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::FodboldApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_toolbar_collapse_description = global::FodboldApp.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.appbar_scrolling_view_behavior = global::FodboldApp.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.bottom_sheet_behavior = global::FodboldApp.Droid.Resource.String.bottom_sheet_behavior;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.character_counter_pattern = global::FodboldApp.Droid.Resource.String.character_counter_pattern;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_enable_button = global::FodboldApp.Droid.Resource.String.common_google_play_services_enable_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_enable_text = global::FodboldApp.Droid.Resource.String.common_google_play_services_enable_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_enable_title = global::FodboldApp.Droid.Resource.String.common_google_play_services_enable_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_install_button = global::FodboldApp.Droid.Resource.String.common_google_play_services_install_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_install_text = global::FodboldApp.Droid.Resource.String.common_google_play_services_install_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_install_title = global::FodboldApp.Droid.Resource.String.common_google_play_services_install_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_notification_ticker = global::FodboldApp.Droid.Resource.String.common_google_play_services_notification_ticker;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_unknown_issue = global::FodboldApp.Droid.Resource.String.common_google_play_services_unknown_issue;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_unsupported_text = global::FodboldApp.Droid.Resource.String.common_google_play_services_unsupported_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_update_button = global::FodboldApp.Droid.Resource.String.common_google_play_services_update_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_update_text = global::FodboldApp.Droid.Resource.String.common_google_play_services_update_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_update_title = global::FodboldApp.Droid.Resource.String.common_google_play_services_update_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_updating_text = global::FodboldApp.Droid.Resource.String.common_google_play_services_updating_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_wear_update_text = global::FodboldApp.Droid.Resource.String.common_google_play_services_wear_update_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_open_on_phone = global::FodboldApp.Droid.Resource.String.common_open_on_phone;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_signin_button_text = global::FodboldApp.Droid.Resource.String.common_signin_button_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.common_signin_button_text_long = global::FodboldApp.Droid.Resource.String.common_signin_button_text_long;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_button_content_description = global::FodboldApp.Droid.Resource.String.mr_button_content_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_cast_button_connected = global::FodboldApp.Droid.Resource.String.mr_cast_button_connected;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_cast_button_connecting = global::FodboldApp.Droid.Resource.String.mr_cast_button_connecting;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_cast_button_disconnected = global::FodboldApp.Droid.Resource.String.mr_cast_button_disconnected;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_chooser_searching = global::FodboldApp.Droid.Resource.String.mr_chooser_searching;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_chooser_title = global::FodboldApp.Droid.Resource.String.mr_chooser_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_album_art = global::FodboldApp.Droid.Resource.String.mr_controller_album_art;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_casting_screen = global::FodboldApp.Droid.Resource.String.mr_controller_casting_screen;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_close_description = global::FodboldApp.Droid.Resource.String.mr_controller_close_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_collapse_group = global::FodboldApp.Droid.Resource.String.mr_controller_collapse_group;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_disconnect = global::FodboldApp.Droid.Resource.String.mr_controller_disconnect;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_expand_group = global::FodboldApp.Droid.Resource.String.mr_controller_expand_group;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_no_info_available = global::FodboldApp.Droid.Resource.String.mr_controller_no_info_available;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_no_media_selected = global::FodboldApp.Droid.Resource.String.mr_controller_no_media_selected;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_pause = global::FodboldApp.Droid.Resource.String.mr_controller_pause;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_play = global::FodboldApp.Droid.Resource.String.mr_controller_play;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_stop = global::FodboldApp.Droid.Resource.String.mr_controller_stop;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_volume_slider = global::FodboldApp.Droid.Resource.String.mr_controller_volume_slider;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_system_route_name = global::FodboldApp.Droid.Resource.String.mr_system_route_name;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_user_route_category_name = global::FodboldApp.Droid.Resource.String.mr_user_route_category_name;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.password_toggle_content_description = global::FodboldApp.Droid.Resource.String.password_toggle_content_description;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_eye = global::FodboldApp.Droid.Resource.String.path_password_eye;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_eye_mask_strike_through = global::FodboldApp.Droid.Resource.String.path_password_eye_mask_strike_through;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_eye_mask_visible = global::FodboldApp.Droid.Resource.String.path_password_eye_mask_visible;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_strike_through = global::FodboldApp.Droid.Resource.String.path_password_strike_through;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.search_menu_title = global::FodboldApp.Droid.Resource.String.search_menu_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.String.status_bar_notification_info_overflow = global::FodboldApp.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.AlertDialog_AppCompat = global::FodboldApp.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Animation_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::FodboldApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::FodboldApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::FodboldApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_CardView = global::FodboldApp.Droid.Resource.Style.Base_CardView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::FodboldApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::FodboldApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::FodboldApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::FodboldApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::FodboldApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::FodboldApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::FodboldApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::FodboldApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_Design_AppBarLayout = global::FodboldApp.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::FodboldApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.CardView = global::FodboldApp.Droid.Resource.Style.CardView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.CardView_Dark = global::FodboldApp.Droid.Resource.Style.CardView_Dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.CardView_Light = global::FodboldApp.Droid.Resource.Style.CardView_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_AppCompat = global::FodboldApp.Droid.Resource.Style.Platform_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::FodboldApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::FodboldApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V11_AppCompat = global::FodboldApp.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V14_AppCompat = global::FodboldApp.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Platform_V14_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V21_AppCompat = global::FodboldApp.Droid.Resource.Style.Platform_V21_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V21_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Platform_V21_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V25_AppCompat = global::FodboldApp.Droid.Resource.Style.Platform_V25_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V25_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Platform_V25_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::FodboldApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::FodboldApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::FodboldApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::FodboldApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::FodboldApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::FodboldApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Counter = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Error = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Hint = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Tab = global::FodboldApp.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::FodboldApp.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::FodboldApp.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::FodboldApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::FodboldApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::FodboldApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::FodboldApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design = global::FodboldApp.Droid.Resource.Style.Theme_Design;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::FodboldApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_Light = global::FodboldApp.Droid.Resource.Style.Theme_Design_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::FodboldApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::FodboldApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_NoActionBar = global::FodboldApp.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter = global::FodboldApp.Droid.Resource.Style.Theme_MediaRouter;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter_Light = global::FodboldApp.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::FodboldApp.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::FodboldApp.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::FodboldApp.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_EditText = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SearchView = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::FodboldApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_AppBarLayout = global::FodboldApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_BottomNavigationView = global::FodboldApp.Droid.Resource.Style.Widget_Design_BottomNavigationView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::FodboldApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::FodboldApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::FodboldApp.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::FodboldApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_NavigationView = global::FodboldApp.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::FodboldApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_Snackbar = global::FodboldApp.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_TabLayout = global::FodboldApp.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_TextInputLayout = global::FodboldApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::FodboldApp.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::FodboldApp.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar = global::FodboldApp.Droid.Resource.Styleable.ActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_background = global::FodboldApp.Droid.Resource.Styleable.ActionBar_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::FodboldApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::FodboldApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::FodboldApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::FodboldApp.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::FodboldApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::FodboldApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::FodboldApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::FodboldApp.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::FodboldApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_displayOptions = global::FodboldApp.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_divider = global::FodboldApp.Droid.Resource.Styleable.ActionBar_divider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_elevation = global::FodboldApp.Droid.Resource.Styleable.ActionBar_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_height = global::FodboldApp.Droid.Resource.Styleable.ActionBar_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::FodboldApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::FodboldApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_homeLayout = global::FodboldApp.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_icon = global::FodboldApp.Droid.Resource.Styleable.ActionBar_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::FodboldApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_itemPadding = global::FodboldApp.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_logo = global::FodboldApp.Droid.Resource.Styleable.ActionBar_logo;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_navigationMode = global::FodboldApp.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_popupTheme = global::FodboldApp.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::FodboldApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::FodboldApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_subtitle = global::FodboldApp.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::FodboldApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_title = global::FodboldApp.Droid.Resource.Styleable.ActionBar_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::FodboldApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBarLayout = global::FodboldApp.Droid.Resource.Styleable.ActionBarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::FodboldApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMenuItemView = global::FodboldApp.Droid.Resource.Styleable.ActionMenuItemView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::FodboldApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMenuView = global::FodboldApp.Droid.Resource.Styleable.ActionMenuView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode = global::FodboldApp.Droid.Resource.Styleable.ActionMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_background = global::FodboldApp.Droid.Resource.Styleable.ActionMode_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::FodboldApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::FodboldApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_height = global::FodboldApp.Droid.Resource.Styleable.ActionMode_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::FodboldApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::FodboldApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActivityChooserView = global::FodboldApp.Droid.Resource.Styleable.ActivityChooserView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::FodboldApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::FodboldApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog = global::FodboldApp.Droid.Resource.Styleable.AlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_android_layout = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_listLayout = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_showTitle = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_showTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::FodboldApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_android_background = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_elevation = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_expanded = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayoutStates = global::FodboldApp.Droid.Resource.Styleable.AppBarLayoutStates;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::FodboldApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::FodboldApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_Layout = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::FodboldApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatImageView = global::FodboldApp.Droid.Resource.Styleable.AppCompatImageView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatImageView_android_src = global::FodboldApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::FodboldApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar = global::FodboldApp.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::FodboldApp.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::FodboldApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::FodboldApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::FodboldApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextView = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::FodboldApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::FodboldApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView = global::FodboldApp.Droid.Resource.Styleable.BottomNavigationView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_elevation = global::FodboldApp.Droid.Resource.Styleable.BottomNavigationView_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_itemBackground = global::FodboldApp.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_itemIconTint = global::FodboldApp.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_itemTextColor = global::FodboldApp.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_menu = global::FodboldApp.Droid.Resource.Styleable.BottomNavigationView_menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::FodboldApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::FodboldApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::FodboldApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::FodboldApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ButtonBarLayout = global::FodboldApp.Droid.Resource.Styleable.ButtonBarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::FodboldApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView = global::FodboldApp.Droid.Resource.Styleable.CardView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_android_minHeight = global::FodboldApp.Droid.Resource.Styleable.CardView_android_minHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_android_minWidth = global::FodboldApp.Droid.Resource.Styleable.CardView_android_minWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::FodboldApp.Droid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardCornerRadius = global::FodboldApp.Droid.Resource.Styleable.CardView_cardCornerRadius;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardElevation = global::FodboldApp.Droid.Resource.Styleable.CardView_cardElevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardMaxElevation = global::FodboldApp.Droid.Resource.Styleable.CardView_cardMaxElevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::FodboldApp.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::FodboldApp.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPadding = global::FodboldApp.Droid.Resource.Styleable.CardView_contentPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::FodboldApp.Droid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::FodboldApp.Droid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingRight = global::FodboldApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingTop = global::FodboldApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::FodboldApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem = global::FodboldApp.Droid.Resource.Styleable.ColorStateListItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem_alpha = global::FodboldApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::FodboldApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem_android_color = global::FodboldApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton = global::FodboldApp.Droid.Resource.Styleable.CompoundButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton_android_button = global::FodboldApp.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton_buttonTint = global::FodboldApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::FodboldApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::FodboldApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme = global::FodboldApp.Droid.Resource.Styleable.DesignTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::FodboldApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::FodboldApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme_textColorError = global::FodboldApp.Droid.Resource.Styleable.DesignTheme_textColorError;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_color = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::FodboldApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_elevation = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::FodboldApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout = global::FodboldApp.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::FodboldApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::FodboldApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::FodboldApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::FodboldApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ListPopupWindow = global::FodboldApp.Droid.Resource.Styleable.ListPopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::FodboldApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::FodboldApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView = global::FodboldApp.Droid.Resource.Styleable.LoadingImageView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView_circleCrop = global::FodboldApp.Droid.Resource.Styleable.LoadingImageView_circleCrop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio = global::FodboldApp.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::FodboldApp.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton = global::FodboldApp.Droid.Resource.Styleable.MediaRouteButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::FodboldApp.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::FodboldApp.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::FodboldApp.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup = global::FodboldApp.Droid.Resource.Styleable.MenuGroup;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::FodboldApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_enabled = global::FodboldApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_id = global::FodboldApp.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::FodboldApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::FodboldApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_visible = global::FodboldApp.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem = global::FodboldApp.Droid.Resource.Styleable.MenuItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_actionLayout = global::FodboldApp.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::FodboldApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_actionViewClass = global::FodboldApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_checkable = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_checked = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_enabled = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_icon = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_id = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_id;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_onClick = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_title = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_visible = global::FodboldApp.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_showAsAction = global::FodboldApp.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView = global::FodboldApp.Droid.Resource.Styleable.MenuView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_headerBackground = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_itemBackground = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::FodboldApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::FodboldApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_subMenuArrow = global::FodboldApp.Droid.Resource.Styleable.MenuView_subMenuArrow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView = global::FodboldApp.Droid.Resource.Styleable.NavigationView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_android_background = global::FodboldApp.Droid.Resource.Styleable.NavigationView_android_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::FodboldApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::FodboldApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_elevation = global::FodboldApp.Droid.Resource.Styleable.NavigationView_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_headerLayout = global::FodboldApp.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemBackground = global::FodboldApp.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemIconTint = global::FodboldApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::FodboldApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemTextColor = global::FodboldApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_menu = global::FodboldApp.Droid.Resource.Styleable.NavigationView_menu;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow = global::FodboldApp.Droid.Resource.Styleable.PopupWindow;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::FodboldApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::FodboldApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::FodboldApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindowBackgroundState = global::FodboldApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::FodboldApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecycleListView = global::FodboldApp.Droid.Resource.Styleable.RecycleListView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::FodboldApp.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::FodboldApp.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView = global::FodboldApp.Droid.Resource.Styleable.RecyclerView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::FodboldApp.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_android_orientation = global::FodboldApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_layoutManager = global::FodboldApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::FodboldApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_spanCount = global::FodboldApp.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::FodboldApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::FodboldApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::FodboldApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::FodboldApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::FodboldApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView = global::FodboldApp.Droid.Resource.Styleable.SearchView;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_focusable = global::FodboldApp.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_imeOptions = global::FodboldApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_inputType = global::FodboldApp.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_maxWidth = global::FodboldApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_closeIcon = global::FodboldApp.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_commitIcon = global::FodboldApp.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::FodboldApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_goIcon = global::FodboldApp.Droid.Resource.Styleable.SearchView_goIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::FodboldApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_layout = global::FodboldApp.Droid.Resource.Styleable.SearchView_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_queryBackground = global::FodboldApp.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_queryHint = global::FodboldApp.Droid.Resource.Styleable.SearchView_queryHint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_searchHintIcon = global::FodboldApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_searchIcon = global::FodboldApp.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_submitBackground = global::FodboldApp.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::FodboldApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_voiceIcon = global::FodboldApp.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton = global::FodboldApp.Droid.Resource.Styleable.SignInButton;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton_buttonSize = global::FodboldApp.Droid.Resource.Styleable.SignInButton_buttonSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton_colorScheme = global::FodboldApp.Droid.Resource.Styleable.SignInButton_colorScheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton_scopeUris = global::FodboldApp.Droid.Resource.Styleable.SignInButton_scopeUris;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout = global::FodboldApp.Droid.Resource.Styleable.SnackbarLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::FodboldApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout_elevation = global::FodboldApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::FodboldApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner = global::FodboldApp.Droid.Resource.Styleable.Spinner;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::FodboldApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_entries = global::FodboldApp.Droid.Resource.Styleable.Spinner_android_entries;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_popupBackground = global::FodboldApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_prompt = global::FodboldApp.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_popupTheme = global::FodboldApp.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_showText = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_thumbTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_track = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_track;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_trackTint = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_trackTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::FodboldApp.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem = global::FodboldApp.Droid.Resource.Styleable.TabItem;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem_android_icon = global::FodboldApp.Droid.Resource.Styleable.TabItem_android_icon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem_android_layout = global::FodboldApp.Droid.Resource.Styleable.TabItem_android_layout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem_android_text = global::FodboldApp.Droid.Resource.Styleable.TabItem_android_text;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout = global::FodboldApp.Droid.Resource.Styleable.TabLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabBackground = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabContentStart = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabGravity = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabMode = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPadding = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabTextColor = global::FodboldApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance = global::FodboldApp.Droid.Resource.Styleable.TextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textColor = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textColorHint = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textSize = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_typeface = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::FodboldApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_android_hint = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::FodboldApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar = global::FodboldApp.Droid.Resource.Styleable.Toolbar;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_android_gravity = global::FodboldApp.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_android_minHeight = global::FodboldApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_buttonGravity = global::FodboldApp.Droid.Resource.Styleable.Toolbar_buttonGravity;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::FodboldApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_collapseIcon = global::FodboldApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::FodboldApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::FodboldApp.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::FodboldApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::FodboldApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::FodboldApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::FodboldApp.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_logo = global::FodboldApp.Droid.Resource.Styleable.Toolbar_logo;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_logoDescription = global::FodboldApp.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::FodboldApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::FodboldApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_navigationIcon = global::FodboldApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_popupTheme = global::FodboldApp.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_subtitle = global::FodboldApp.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::FodboldApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::FodboldApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_title = global::FodboldApp.Droid.Resource.Styleable.Toolbar_title;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMargin = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleMargin;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMargins = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleTextColor = global::FodboldApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View = global::FodboldApp.Droid.Resource.Styleable.View;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_android_focusable = global::FodboldApp.Droid.Resource.Styleable.View_android_focusable;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_android_theme = global::FodboldApp.Droid.Resource.Styleable.View_android_theme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_paddingEnd = global::FodboldApp.Droid.Resource.Styleable.View_paddingEnd;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_paddingStart = global::FodboldApp.Droid.Resource.Styleable.View_paddingStart;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_theme = global::FodboldApp.Droid.Resource.Styleable.View_theme;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper = global::FodboldApp.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::FodboldApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::FodboldApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::FodboldApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat = global::FodboldApp.Droid.Resource.Styleable.ViewStubCompat;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat_android_id = global::FodboldApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::FodboldApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::FodboldApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::PCLCrypto.Resource.String.ApplicationName = global::FodboldApp.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::FodboldApp.Droid.Resource.String.Hello;
+			global::Xamarin.Auth.Resource.Animation.slide_in_right = global::FodboldApp.Droid.Resource.Animation.slide_in_right;
+			global::Xamarin.Auth.Resource.Animation.slide_out_left = global::FodboldApp.Droid.Resource.Animation.slide_out_left;
+			global::Xamarin.Auth.Resource.Drawable.ic_arrow_back = global::FodboldApp.Droid.Resource.Drawable.ic_arrow_back;
+			global::Xamarin.Auth.Resource.Id.webview = global::FodboldApp.Droid.Resource.Id.webview;
+			global::Xamarin.Auth.Resource.Layout.activity_webview = global::FodboldApp.Droid.Resource.Layout.activity_webview;
+			global::Xamarin.Auth.Resource.String.ApplicationName = global::FodboldApp.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Auth.Resource.String.Hello = global::FodboldApp.Droid.Resource.String.Hello;
+			global::Xamarin.Auth.Resource.String.library_name = global::FodboldApp.Droid.Resource.String.library_name;
+			global::Xamarin.Auth.Resource.String.title_activity_webview = global::FodboldApp.Droid.Resource.String.title_activity_webview;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::FodboldApp.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -4446,10 +2289,16 @@ namespace FodboldApp.Droid
 			public const int design_snackbar_out = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int tooltip_enter = 2130968590;
+			public const int slide_in_right = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int tooltip_exit = 2130968591;
+			public const int slide_out_left = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int tooltip_enter = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int tooltip_exit = 2130968593;
 			
 			static Animation()
 			{
@@ -6830,26 +4679,26 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f020160
-			public const int avd_hide_password_1 = 2130837856;
-			
 			// aapt resource value: 0x7f020161
-			public const int avd_hide_password_2 = 2130837857;
+			public const int avd_hide_password_1 = 2130837857;
 			
 			// aapt resource value: 0x7f020162
-			public const int avd_hide_password_3 = 2130837858;
+			public const int avd_hide_password_2 = 2130837858;
+			
+			// aapt resource value: 0x7f020163
+			public const int avd_hide_password_3 = 2130837859;
 			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
 			
-			// aapt resource value: 0x7f020163
-			public const int avd_show_password_1 = 2130837859;
-			
 			// aapt resource value: 0x7f020164
-			public const int avd_show_password_2 = 2130837860;
+			public const int avd_show_password_1 = 2130837860;
 			
 			// aapt resource value: 0x7f020165
-			public const int avd_show_password_3 = 2130837861;
+			public const int avd_show_password_2 = 2130837861;
+			
+			// aapt resource value: 0x7f020166
+			public const int avd_show_password_3 = 2130837862;
 			
 			// aapt resource value: 0x7f020057
 			public const int backbutton = 2130837591;
@@ -6957,694 +4806,697 @@ namespace FodboldApp.Droid
 			public const int historisk_placering = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_audiotrack_dark = 2130837626;
+			public const int ic_arrow_back = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_audiotrack_light = 2130837627;
+			public const int ic_audiotrack_dark = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_dialog_close_dark = 2130837628;
+			public const int ic_audiotrack_light = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_dialog_close_light = 2130837629;
+			public const int ic_dialog_close_dark = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_collapse_00 = 2130837630;
+			public const int ic_dialog_close_light = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_collapse_01 = 2130837631;
+			public const int ic_group_collapse_00 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_collapse_02 = 2130837632;
+			public const int ic_group_collapse_01 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_collapse_03 = 2130837633;
+			public const int ic_group_collapse_02 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_collapse_04 = 2130837634;
+			public const int ic_group_collapse_03 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_collapse_05 = 2130837635;
+			public const int ic_group_collapse_04 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_collapse_06 = 2130837636;
+			public const int ic_group_collapse_05 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_collapse_07 = 2130837637;
+			public const int ic_group_collapse_06 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_collapse_08 = 2130837638;
+			public const int ic_group_collapse_07 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_group_collapse_09 = 2130837639;
+			public const int ic_group_collapse_08 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_group_collapse_10 = 2130837640;
+			public const int ic_group_collapse_09 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_group_collapse_11 = 2130837641;
+			public const int ic_group_collapse_10 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_group_collapse_12 = 2130837642;
+			public const int ic_group_collapse_11 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_group_collapse_13 = 2130837643;
+			public const int ic_group_collapse_12 = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_group_collapse_14 = 2130837644;
+			public const int ic_group_collapse_13 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_group_collapse_15 = 2130837645;
+			public const int ic_group_collapse_14 = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_group_expand_00 = 2130837646;
+			public const int ic_group_collapse_15 = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_group_expand_01 = 2130837647;
+			public const int ic_group_expand_00 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_group_expand_02 = 2130837648;
+			public const int ic_group_expand_01 = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_group_expand_03 = 2130837649;
+			public const int ic_group_expand_02 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_group_expand_04 = 2130837650;
+			public const int ic_group_expand_03 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_group_expand_05 = 2130837651;
+			public const int ic_group_expand_04 = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_group_expand_06 = 2130837652;
+			public const int ic_group_expand_05 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_group_expand_07 = 2130837653;
+			public const int ic_group_expand_06 = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_group_expand_08 = 2130837654;
+			public const int ic_group_expand_07 = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_group_expand_09 = 2130837655;
+			public const int ic_group_expand_08 = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_group_expand_10 = 2130837656;
+			public const int ic_group_expand_09 = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_group_expand_11 = 2130837657;
+			public const int ic_group_expand_10 = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_group_expand_12 = 2130837658;
+			public const int ic_group_expand_11 = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_group_expand_13 = 2130837659;
+			public const int ic_group_expand_12 = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_group_expand_14 = 2130837660;
+			public const int ic_group_expand_13 = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_group_expand_15 = 2130837661;
+			public const int ic_group_expand_14 = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_media_pause_dark = 2130837662;
+			public const int ic_group_expand_15 = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_media_pause_light = 2130837663;
+			public const int ic_media_pause_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_media_play_dark = 2130837664;
+			public const int ic_media_pause_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_media_play_light = 2130837665;
+			public const int ic_media_play_dark = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_media_stop_dark = 2130837666;
+			public const int ic_media_play_light = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_media_stop_light = 2130837667;
+			public const int ic_media_stop_dark = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_00_dark = 2130837668;
+			public const int ic_media_stop_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_00_light = 2130837669;
+			public const int ic_mr_button_connected_00_dark = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_01_dark = 2130837670;
+			public const int ic_mr_button_connected_00_light = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_01_light = 2130837671;
+			public const int ic_mr_button_connected_01_dark = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_02_dark = 2130837672;
+			public const int ic_mr_button_connected_01_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_02_light = 2130837673;
+			public const int ic_mr_button_connected_02_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_03_dark = 2130837674;
+			public const int ic_mr_button_connected_02_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_03_light = 2130837675;
+			public const int ic_mr_button_connected_03_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_04_dark = 2130837676;
+			public const int ic_mr_button_connected_03_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_04_light = 2130837677;
+			public const int ic_mr_button_connected_04_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_05_dark = 2130837678;
+			public const int ic_mr_button_connected_04_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_05_light = 2130837679;
+			public const int ic_mr_button_connected_05_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_06_dark = 2130837680;
+			public const int ic_mr_button_connected_05_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_06_light = 2130837681;
+			public const int ic_mr_button_connected_06_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_07_dark = 2130837682;
+			public const int ic_mr_button_connected_06_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_07_light = 2130837683;
+			public const int ic_mr_button_connected_07_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_08_dark = 2130837684;
+			public const int ic_mr_button_connected_07_light = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_08_light = 2130837685;
+			public const int ic_mr_button_connected_08_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_09_dark = 2130837686;
+			public const int ic_mr_button_connected_08_light = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_09_light = 2130837687;
+			public const int ic_mr_button_connected_09_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_10_dark = 2130837688;
+			public const int ic_mr_button_connected_09_light = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_10_light = 2130837689;
+			public const int ic_mr_button_connected_10_dark = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_11_dark = 2130837690;
+			public const int ic_mr_button_connected_10_light = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_11_light = 2130837691;
+			public const int ic_mr_button_connected_11_dark = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_12_dark = 2130837692;
+			public const int ic_mr_button_connected_11_light = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_12_light = 2130837693;
+			public const int ic_mr_button_connected_12_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_13_dark = 2130837694;
+			public const int ic_mr_button_connected_12_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_13_light = 2130837695;
+			public const int ic_mr_button_connected_13_dark = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_14_dark = 2130837696;
+			public const int ic_mr_button_connected_13_light = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_14_light = 2130837697;
+			public const int ic_mr_button_connected_14_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_15_dark = 2130837698;
+			public const int ic_mr_button_connected_14_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_15_light = 2130837699;
+			public const int ic_mr_button_connected_15_dark = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_16_dark = 2130837700;
+			public const int ic_mr_button_connected_15_light = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_16_light = 2130837701;
+			public const int ic_mr_button_connected_16_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_17_dark = 2130837702;
+			public const int ic_mr_button_connected_16_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_17_light = 2130837703;
+			public const int ic_mr_button_connected_17_dark = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_18_dark = 2130837704;
+			public const int ic_mr_button_connected_17_light = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_18_light = 2130837705;
+			public const int ic_mr_button_connected_18_dark = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connected_19_dark = 2130837706;
+			public const int ic_mr_button_connected_18_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connected_19_light = 2130837707;
+			public const int ic_mr_button_connected_19_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connected_20_dark = 2130837708;
+			public const int ic_mr_button_connected_19_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connected_20_light = 2130837709;
+			public const int ic_mr_button_connected_20_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connected_21_dark = 2130837710;
+			public const int ic_mr_button_connected_20_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connected_21_light = 2130837711;
+			public const int ic_mr_button_connected_21_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connected_22_dark = 2130837712;
+			public const int ic_mr_button_connected_21_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connected_22_light = 2130837713;
+			public const int ic_mr_button_connected_22_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connected_23_dark = 2130837714;
+			public const int ic_mr_button_connected_22_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connected_23_light = 2130837715;
+			public const int ic_mr_button_connected_23_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connected_24_dark = 2130837716;
+			public const int ic_mr_button_connected_23_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connected_24_light = 2130837717;
+			public const int ic_mr_button_connected_24_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connected_25_dark = 2130837718;
+			public const int ic_mr_button_connected_24_light = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connected_25_light = 2130837719;
+			public const int ic_mr_button_connected_25_dark = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connected_26_dark = 2130837720;
+			public const int ic_mr_button_connected_25_light = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connected_26_light = 2130837721;
+			public const int ic_mr_button_connected_26_dark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connected_27_dark = 2130837722;
+			public const int ic_mr_button_connected_26_light = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connected_27_light = 2130837723;
+			public const int ic_mr_button_connected_27_dark = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connected_28_dark = 2130837724;
+			public const int ic_mr_button_connected_27_light = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connected_28_light = 2130837725;
+			public const int ic_mr_button_connected_28_dark = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connected_29_dark = 2130837726;
+			public const int ic_mr_button_connected_28_light = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connected_29_light = 2130837727;
+			public const int ic_mr_button_connected_29_dark = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connected_30_dark = 2130837728;
+			public const int ic_mr_button_connected_29_light = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connected_30_light = 2130837729;
+			public const int ic_mr_button_connected_30_dark = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_00_dark = 2130837730;
+			public const int ic_mr_button_connected_30_light = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_00_light = 2130837731;
+			public const int ic_mr_button_connecting_00_dark = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_01_dark = 2130837732;
+			public const int ic_mr_button_connecting_00_light = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_01_light = 2130837733;
+			public const int ic_mr_button_connecting_01_dark = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_02_dark = 2130837734;
+			public const int ic_mr_button_connecting_01_light = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_02_light = 2130837735;
+			public const int ic_mr_button_connecting_02_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_03_dark = 2130837736;
+			public const int ic_mr_button_connecting_02_light = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_03_light = 2130837737;
+			public const int ic_mr_button_connecting_03_dark = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_04_dark = 2130837738;
+			public const int ic_mr_button_connecting_03_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_04_light = 2130837739;
+			public const int ic_mr_button_connecting_04_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_05_dark = 2130837740;
+			public const int ic_mr_button_connecting_04_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_05_light = 2130837741;
+			public const int ic_mr_button_connecting_05_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_06_dark = 2130837742;
+			public const int ic_mr_button_connecting_05_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_06_light = 2130837743;
+			public const int ic_mr_button_connecting_06_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_07_dark = 2130837744;
+			public const int ic_mr_button_connecting_06_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_07_light = 2130837745;
+			public const int ic_mr_button_connecting_07_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_08_dark = 2130837746;
+			public const int ic_mr_button_connecting_07_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_08_light = 2130837747;
+			public const int ic_mr_button_connecting_08_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_09_dark = 2130837748;
+			public const int ic_mr_button_connecting_08_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_09_light = 2130837749;
+			public const int ic_mr_button_connecting_09_dark = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_10_dark = 2130837750;
+			public const int ic_mr_button_connecting_09_light = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_10_light = 2130837751;
+			public const int ic_mr_button_connecting_10_dark = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_11_dark = 2130837752;
+			public const int ic_mr_button_connecting_10_light = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_11_light = 2130837753;
+			public const int ic_mr_button_connecting_11_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_12_dark = 2130837754;
+			public const int ic_mr_button_connecting_11_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_12_light = 2130837755;
+			public const int ic_mr_button_connecting_12_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_13_dark = 2130837756;
+			public const int ic_mr_button_connecting_12_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_13_light = 2130837757;
+			public const int ic_mr_button_connecting_13_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_14_dark = 2130837758;
+			public const int ic_mr_button_connecting_13_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_14_light = 2130837759;
+			public const int ic_mr_button_connecting_14_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_15_dark = 2130837760;
+			public const int ic_mr_button_connecting_14_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_15_light = 2130837761;
+			public const int ic_mr_button_connecting_15_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_16_dark = 2130837762;
+			public const int ic_mr_button_connecting_15_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_16_light = 2130837763;
+			public const int ic_mr_button_connecting_16_dark = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_17_dark = 2130837764;
+			public const int ic_mr_button_connecting_16_light = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_17_light = 2130837765;
+			public const int ic_mr_button_connecting_17_dark = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_18_dark = 2130837766;
+			public const int ic_mr_button_connecting_17_light = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_18_light = 2130837767;
+			public const int ic_mr_button_connecting_18_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_connecting_19_dark = 2130837768;
+			public const int ic_mr_button_connecting_18_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_connecting_19_light = 2130837769;
+			public const int ic_mr_button_connecting_19_dark = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_connecting_20_dark = 2130837770;
+			public const int ic_mr_button_connecting_19_light = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_connecting_20_light = 2130837771;
+			public const int ic_mr_button_connecting_20_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_connecting_21_dark = 2130837772;
+			public const int ic_mr_button_connecting_20_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_mr_button_connecting_21_light = 2130837773;
+			public const int ic_mr_button_connecting_21_dark = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_mr_button_connecting_22_dark = 2130837774;
+			public const int ic_mr_button_connecting_21_light = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_mr_button_connecting_22_light = 2130837775;
+			public const int ic_mr_button_connecting_22_dark = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_mr_button_connecting_23_dark = 2130837776;
+			public const int ic_mr_button_connecting_22_light = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_mr_button_connecting_23_light = 2130837777;
+			public const int ic_mr_button_connecting_23_dark = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_mr_button_connecting_24_dark = 2130837778;
+			public const int ic_mr_button_connecting_23_light = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_mr_button_connecting_24_light = 2130837779;
+			public const int ic_mr_button_connecting_24_dark = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_mr_button_connecting_25_dark = 2130837780;
+			public const int ic_mr_button_connecting_24_light = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_mr_button_connecting_25_light = 2130837781;
+			public const int ic_mr_button_connecting_25_dark = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_mr_button_connecting_26_dark = 2130837782;
+			public const int ic_mr_button_connecting_25_light = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_mr_button_connecting_26_light = 2130837783;
+			public const int ic_mr_button_connecting_26_dark = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_mr_button_connecting_27_dark = 2130837784;
+			public const int ic_mr_button_connecting_26_light = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_mr_button_connecting_27_light = 2130837785;
+			public const int ic_mr_button_connecting_27_dark = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_mr_button_connecting_28_dark = 2130837786;
+			public const int ic_mr_button_connecting_27_light = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int ic_mr_button_connecting_28_light = 2130837787;
+			public const int ic_mr_button_connecting_28_dark = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int ic_mr_button_connecting_29_dark = 2130837788;
+			public const int ic_mr_button_connecting_28_light = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int ic_mr_button_connecting_29_light = 2130837789;
+			public const int ic_mr_button_connecting_29_dark = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int ic_mr_button_connecting_30_dark = 2130837790;
+			public const int ic_mr_button_connecting_29_light = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int ic_mr_button_connecting_30_light = 2130837791;
+			public const int ic_mr_button_connecting_30_dark = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int ic_mr_button_disabled_dark = 2130837792;
+			public const int ic_mr_button_connecting_30_light = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int ic_mr_button_disabled_light = 2130837793;
+			public const int ic_mr_button_disabled_dark = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int ic_mr_button_disconnected_dark = 2130837794;
+			public const int ic_mr_button_disabled_light = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int ic_mr_button_disconnected_light = 2130837795;
+			public const int ic_mr_button_disconnected_dark = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int ic_mr_button_grey = 2130837796;
+			public const int ic_mr_button_disconnected_light = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int ic_os_notification_fallback_white_24dp = 2130837797;
+			public const int ic_mr_button_grey = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int ic_plusone_medium_off_client = 2130837798;
+			public const int ic_os_notification_fallback_white_24dp = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int ic_plusone_small_off_client = 2130837799;
+			public const int ic_plusone_medium_off_client = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int ic_plusone_standard_off_client = 2130837800;
+			public const int ic_plusone_small_off_client = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int ic_plusone_tall_off_client = 2130837801;
+			public const int ic_plusone_standard_off_client = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int ic_vol_type_speaker_dark = 2130837802;
+			public const int ic_plusone_tall_off_client = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int ic_vol_type_speaker_group_dark = 2130837803;
+			public const int ic_vol_type_speaker_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int ic_vol_type_speaker_group_light = 2130837804;
+			public const int ic_vol_type_speaker_group_dark = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int ic_vol_type_speaker_light = 2130837805;
+			public const int ic_vol_type_speaker_group_light = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int ic_vol_type_tv_dark = 2130837806;
+			public const int ic_vol_type_speaker_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int ic_vol_type_tv_light = 2130837807;
+			public const int ic_vol_type_tv_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int icon = 2130837808;
+			public const int ic_vol_type_tv_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mangekampe = 2130837809;
+			public const int icon = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mangemaal = 2130837810;
+			public const int mangekampe = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_button_connected_dark = 2130837811;
+			public const int mangemaal = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_button_connected_light = 2130837812;
+			public const int mr_button_connected_dark = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mr_button_connecting_dark = 2130837813;
+			public const int mr_button_connected_light = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int mr_button_connecting_light = 2130837814;
+			public const int mr_button_connecting_dark = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int mr_button_dark = 2130837815;
+			public const int mr_button_connecting_light = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int mr_button_light = 2130837816;
+			public const int mr_button_dark = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int mr_dialog_close_dark = 2130837817;
+			public const int mr_button_light = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int mr_dialog_close_light = 2130837818;
+			public const int mr_dialog_close_dark = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int mr_dialog_material_background_dark = 2130837819;
+			public const int mr_dialog_close_light = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int mr_dialog_material_background_light = 2130837820;
+			public const int mr_dialog_material_background_dark = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int mr_group_collapse = 2130837821;
+			public const int mr_dialog_material_background_light = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int mr_group_expand = 2130837822;
+			public const int mr_group_collapse = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int mr_media_pause_dark = 2130837823;
+			public const int mr_group_expand = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int mr_media_pause_light = 2130837824;
+			public const int mr_media_pause_dark = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int mr_media_play_dark = 2130837825;
+			public const int mr_media_pause_light = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int mr_media_play_light = 2130837826;
+			public const int mr_media_play_dark = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int mr_media_stop_dark = 2130837827;
+			public const int mr_media_play_light = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int mr_media_stop_light = 2130837828;
+			public const int mr_media_stop_dark = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int mr_vol_type_audiotrack_dark = 2130837829;
+			public const int mr_media_stop_light = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int mr_vol_type_audiotrack_light = 2130837830;
+			public const int mr_vol_type_audiotrack_dark = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int navigation_empty_icon = 2130837831;
+			public const int mr_vol_type_audiotrack_light = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int Next = 2130837832;
+			public const int navigation_empty_icon = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int notification_action_background = 2130837833;
+			public const int Next = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int notification_bg = 2130837834;
+			public const int notification_action_background = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int notification_bg_low = 2130837835;
+			public const int notification_bg = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int notification_bg_low_normal = 2130837836;
+			public const int notification_bg_low = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int notification_bg_low_pressed = 2130837837;
+			public const int notification_bg_low_normal = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int notification_bg_normal = 2130837838;
+			public const int notification_bg_low_pressed = 2130837838;
 			
 			// aapt resource value: 0x7f02014f
-			public const int notification_bg_normal_pressed = 2130837839;
+			public const int notification_bg_normal = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int notification_icon_background = 2130837840;
-			
-			// aapt resource value: 0x7f02015e
-			public const int notification_template_icon_bg = 2130837854;
-			
-			// aapt resource value: 0x7f02015f
-			public const int notification_template_icon_low_bg = 2130837855;
+			public const int notification_bg_normal_pressed = 2130837840;
 			
 			// aapt resource value: 0x7f020151
-			public const int notification_tile_bg = 2130837841;
+			public const int notification_icon_background = 2130837841;
+			
+			// aapt resource value: 0x7f02015f
+			public const int notification_template_icon_bg = 2130837855;
+			
+			// aapt resource value: 0x7f020160
+			public const int notification_template_icon_low_bg = 2130837856;
 			
 			// aapt resource value: 0x7f020152
-			public const int notificationsbell = 2130837842;
+			public const int notification_tile_bg = 2130837842;
 			
 			// aapt resource value: 0x7f020153
-			public const int notify_panel_notification_icon_bg = 2130837843;
+			public const int notificationsbell = 2130837843;
 			
 			// aapt resource value: 0x7f020154
-			public const int nyheder = 2130837844;
+			public const int notify_panel_notification_icon_bg = 2130837844;
 			
 			// aapt resource value: 0x7f020155
-			public const int Prev = 2130837845;
+			public const int nyheder = 2130837845;
 			
 			// aapt resource value: 0x7f020156
-			public const int statistik = 2130837846;
+			public const int Prev = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int tidligere_kampe = 2130837847;
+			public const int statistik = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int tidligere_spillere = 2130837848;
+			public const int tidligere_kampe = 2130837848;
 			
 			// aapt resource value: 0x7f020159
-			public const int tooltip_frame_dark = 2130837849;
+			public const int tidligere_spillere = 2130837849;
 			
 			// aapt resource value: 0x7f02015a
-			public const int tooltip_frame_light = 2130837850;
+			public const int tooltip_frame_dark = 2130837850;
 			
 			// aapt resource value: 0x7f02015b
-			public const int turnering = 2130837851;
+			public const int tooltip_frame_light = 2130837851;
 			
 			// aapt resource value: 0x7f02015c
-			public const int Up = 2130837852;
+			public const int turnering = 2130837852;
 			
 			// aapt resource value: 0x7f02015d
-			public const int up_arrow = 2130837853;
+			public const int Up = 2130837853;
+			
+			// aapt resource value: 0x7f02015e
+			public const int up_arrow = 2130837854;
 			
 			static Drawable()
 			{
@@ -7677,8 +5529,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c003e
 			public const int SYM = 2131492926;
 			
-			// aapt resource value: 0x7f0c00c4
-			public const int action0 = 2131493060;
+			// aapt resource value: 0x7f0c00c5
+			public const int action0 = 2131493061;
 			
 			// aapt resource value: 0x7f0c0084
 			public const int action_bar = 2131492996;
@@ -7701,17 +5553,17 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0062
 			public const int action_bar_title = 2131492962;
 			
-			// aapt resource value: 0x7f0c00c1
-			public const int action_container = 2131493057;
+			// aapt resource value: 0x7f0c00c2
+			public const int action_container = 2131493058;
 			
 			// aapt resource value: 0x7f0c0085
 			public const int action_context_bar = 2131492997;
 			
-			// aapt resource value: 0x7f0c00c8
-			public const int action_divider = 2131493064;
+			// aapt resource value: 0x7f0c00c9
+			public const int action_divider = 2131493065;
 			
-			// aapt resource value: 0x7f0c00c2
-			public const int action_image = 2131493058;
+			// aapt resource value: 0x7f0c00c3
+			public const int action_image = 2131493059;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -7728,11 +5580,11 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0064
 			public const int action_mode_close_button = 2131492964;
 			
-			// aapt resource value: 0x7f0c00c3
-			public const int action_text = 2131493059;
+			// aapt resource value: 0x7f0c00c4
+			public const int action_text = 2131493060;
 			
-			// aapt resource value: 0x7f0c00d1
-			public const int actions = 2131493073;
+			// aapt resource value: 0x7f0c00d2
+			public const int actions = 2131493074;
 			
 			// aapt resource value: 0x7f0c0065
 			public const int activity_chooser_view_content = 2131492965;
@@ -7773,8 +5625,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c006b
 			public const int buttonPanel = 2131492971;
 			
-			// aapt resource value: 0x7f0c00c5
-			public const int cancel_action = 2131493061;
+			// aapt resource value: 0x7f0c00c6
+			public const int cancel_action = 2131493062;
 			
 			// aapt resource value: 0x7f0c004b
 			public const int center = 2131492939;
@@ -7788,8 +5640,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c007b
 			public const int checkbox = 2131492987;
 			
-			// aapt resource value: 0x7f0c00cd
-			public const int chronometer = 2131493069;
+			// aapt resource value: 0x7f0c00ce
+			public const int chronometer = 2131493070;
 			
 			// aapt resource value: 0x7f0c0054
 			public const int clip_horizontal = 2131492948;
@@ -7800,14 +5652,14 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0040
 			public const int collapseActionView = 2131492928;
 			
-			// aapt resource value: 0x7f0c0095
-			public const int container = 2131493013;
+			// aapt resource value: 0x7f0c0096
+			public const int container = 2131493014;
 			
 			// aapt resource value: 0x7f0c006e
 			public const int contentPanel = 2131492974;
 			
-			// aapt resource value: 0x7f0c0096
-			public const int coordinator = 2131493014;
+			// aapt resource value: 0x7f0c0097
+			public const int coordinator = 2131493015;
 			
 			// aapt resource value: 0x7f0c0075
 			public const int custom = 2131492981;
@@ -7824,20 +5676,20 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0068
 			public const int default_activity_button = 2131492968;
 			
-			// aapt resource value: 0x7f0c0098
-			public const int design_bottom_sheet = 2131493016;
+			// aapt resource value: 0x7f0c0099
+			public const int design_bottom_sheet = 2131493017;
+			
+			// aapt resource value: 0x7f0c00a0
+			public const int design_menu_item_action_area = 2131493024;
 			
 			// aapt resource value: 0x7f0c009f
-			public const int design_menu_item_action_area = 2131493023;
+			public const int design_menu_item_action_area_stub = 2131493023;
 			
 			// aapt resource value: 0x7f0c009e
-			public const int design_menu_item_action_area_stub = 2131493022;
+			public const int design_menu_item_text = 2131493022;
 			
 			// aapt resource value: 0x7f0c009d
-			public const int design_menu_item_text = 2131493021;
-			
-			// aapt resource value: 0x7f0c009c
-			public const int design_navigation_view = 2131493020;
+			public const int design_navigation_view = 2131493021;
 			
 			// aapt resource value: 0x7f0c0028
 			public const int disableHome = 2131492904;
@@ -7848,8 +5700,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0037
 			public const int end = 2131492919;
 			
-			// aapt resource value: 0x7f0c00d3
-			public const int end_padder = 2131493075;
+			// aapt resource value: 0x7f0c00d4
+			public const int end_padder = 2131493076;
 			
 			// aapt resource value: 0x7f0c0046
 			public const int enterAlways = 2131492934;
@@ -7896,8 +5748,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c006a
 			public const int icon = 2131492970;
 			
-			// aapt resource value: 0x7f0c00d2
-			public const int icon_group = 2131493074;
+			// aapt resource value: 0x7f0c00d3
+			public const int icon_group = 2131493075;
 			
 			// aapt resource value: 0x7f0c001f
 			public const int icon_only = 2131492895;
@@ -7908,11 +5760,11 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0067
 			public const int image = 2131492967;
 			
-			// aapt resource value: 0x7f0c00a6
-			public const int indicator = 2131493030;
+			// aapt resource value: 0x7f0c00a7
+			public const int indicator = 2131493031;
 			
-			// aapt resource value: 0x7f0c00ce
-			public const int info = 2131493070;
+			// aapt resource value: 0x7f0c00cf
+			public const int info = 2131493071;
 			
 			// aapt resource value: 0x7f0c005f
 			public const int italic = 2131492959;
@@ -7920,8 +5772,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0000
 			public const int item_touch_helper_previous_elevation = 2131492864;
 			
-			// aapt resource value: 0x7f0c0094
-			public const int largeLabel = 2131493012;
+			// aapt resource value: 0x7f0c0095
+			public const int largeLabel = 2131493013;
 			
 			// aapt resource value: 0x7f0c004f
 			public const int left = 2131492943;
@@ -7941,14 +5793,14 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0069
 			public const int list_item = 2131492969;
 			
-			// aapt resource value: 0x7f0c00dd
-			public const int masked = 2131493085;
+			// aapt resource value: 0x7f0c00de
+			public const int masked = 2131493086;
 			
-			// aapt resource value: 0x7f0c00c7
-			public const int media_actions = 2131493063;
+			// aapt resource value: 0x7f0c00c8
+			public const int media_actions = 2131493064;
 			
-			// aapt resource value: 0x7f0c00db
-			public const int message = 2131493083;
+			// aapt resource value: 0x7f0c00dc
+			public const int message = 2131493084;
 			
 			// aapt resource value: 0x7f0c0038
 			public const int middle = 2131492920;
@@ -7956,95 +5808,95 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0059
 			public const int mini = 2131492953;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int mr_art = 2131493043;
-			
-			// aapt resource value: 0x7f0c00a8
-			public const int mr_chooser_list = 2131493032;
-			
-			// aapt resource value: 0x7f0c00ab
-			public const int mr_chooser_route_desc = 2131493035;
+			// aapt resource value: 0x7f0c00b4
+			public const int mr_art = 2131493044;
 			
 			// aapt resource value: 0x7f0c00a9
-			public const int mr_chooser_route_icon = 2131493033;
-			
-			// aapt resource value: 0x7f0c00aa
-			public const int mr_chooser_route_name = 2131493034;
-			
-			// aapt resource value: 0x7f0c00a7
-			public const int mr_chooser_title = 2131493031;
-			
-			// aapt resource value: 0x7f0c00b0
-			public const int mr_close = 2131493040;
-			
-			// aapt resource value: 0x7f0c00b6
-			public const int mr_control_divider = 2131493046;
-			
-			// aapt resource value: 0x7f0c00bc
-			public const int mr_control_playback_ctrl = 2131493052;
-			
-			// aapt resource value: 0x7f0c00bf
-			public const int mr_control_subtitle = 2131493055;
-			
-			// aapt resource value: 0x7f0c00be
-			public const int mr_control_title = 2131493054;
-			
-			// aapt resource value: 0x7f0c00bd
-			public const int mr_control_title_container = 2131493053;
-			
-			// aapt resource value: 0x7f0c00b1
-			public const int mr_custom_control = 2131493041;
-			
-			// aapt resource value: 0x7f0c00b2
-			public const int mr_default_control = 2131493042;
-			
-			// aapt resource value: 0x7f0c00ad
-			public const int mr_dialog_area = 2131493037;
+			public const int mr_chooser_list = 2131493033;
 			
 			// aapt resource value: 0x7f0c00ac
-			public const int mr_expandable_area = 2131493036;
+			public const int mr_chooser_route_desc = 2131493036;
 			
-			// aapt resource value: 0x7f0c00c0
-			public const int mr_group_expand_collapse = 2131493056;
+			// aapt resource value: 0x7f0c00aa
+			public const int mr_chooser_route_icon = 2131493034;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int mr_media_main_control = 2131493044;
+			// aapt resource value: 0x7f0c00ab
+			public const int mr_chooser_route_name = 2131493035;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int mr_name = 2131493039;
+			// aapt resource value: 0x7f0c00a8
+			public const int mr_chooser_title = 2131493032;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int mr_playback_control = 2131493045;
-			
-			// aapt resource value: 0x7f0c00ae
-			public const int mr_title_bar = 2131493038;
+			// aapt resource value: 0x7f0c00b1
+			public const int mr_close = 2131493041;
 			
 			// aapt resource value: 0x7f0c00b7
-			public const int mr_volume_control = 2131493047;
+			public const int mr_control_divider = 2131493047;
+			
+			// aapt resource value: 0x7f0c00bd
+			public const int mr_control_playback_ctrl = 2131493053;
+			
+			// aapt resource value: 0x7f0c00c0
+			public const int mr_control_subtitle = 2131493056;
+			
+			// aapt resource value: 0x7f0c00bf
+			public const int mr_control_title = 2131493055;
+			
+			// aapt resource value: 0x7f0c00be
+			public const int mr_control_title_container = 2131493054;
+			
+			// aapt resource value: 0x7f0c00b2
+			public const int mr_custom_control = 2131493042;
+			
+			// aapt resource value: 0x7f0c00b3
+			public const int mr_default_control = 2131493043;
+			
+			// aapt resource value: 0x7f0c00ae
+			public const int mr_dialog_area = 2131493038;
+			
+			// aapt resource value: 0x7f0c00ad
+			public const int mr_expandable_area = 2131493037;
+			
+			// aapt resource value: 0x7f0c00c1
+			public const int mr_group_expand_collapse = 2131493057;
+			
+			// aapt resource value: 0x7f0c00b5
+			public const int mr_media_main_control = 2131493045;
+			
+			// aapt resource value: 0x7f0c00b0
+			public const int mr_name = 2131493040;
+			
+			// aapt resource value: 0x7f0c00b6
+			public const int mr_playback_control = 2131493046;
+			
+			// aapt resource value: 0x7f0c00af
+			public const int mr_title_bar = 2131493039;
 			
 			// aapt resource value: 0x7f0c00b8
-			public const int mr_volume_group_list = 2131493048;
+			public const int mr_volume_control = 2131493048;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int mr_volume_item_icon = 2131493050;
+			// aapt resource value: 0x7f0c00b9
+			public const int mr_volume_group_list = 2131493049;
 			
 			// aapt resource value: 0x7f0c00bb
-			public const int mr_volume_slider = 2131493051;
+			public const int mr_volume_item_icon = 2131493051;
+			
+			// aapt resource value: 0x7f0c00bc
+			public const int mr_volume_slider = 2131493052;
 			
 			// aapt resource value: 0x7f0c002e
 			public const int multiply = 2131492910;
 			
-			// aapt resource value: 0x7f0c009b
-			public const int navigation_header_container = 2131493019;
+			// aapt resource value: 0x7f0c009c
+			public const int navigation_header_container = 2131493020;
 			
 			// aapt resource value: 0x7f0c0042
 			public const int never = 2131492930;
 			
-			// aapt resource value: 0x7f0c00a4
-			public const int next = 2131493028;
-			
 			// aapt resource value: 0x7f0c00a5
-			public const int nextArrow = 2131493029;
+			public const int next = 2131493029;
+			
+			// aapt resource value: 0x7f0c00a6
+			public const int nextArrow = 2131493030;
 			
 			// aapt resource value: 0x7f0c001e
 			public const int none = 2131492894;
@@ -8052,32 +5904,32 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0026
 			public const int normal = 2131492902;
 			
-			// aapt resource value: 0x7f0c00d0
-			public const int notification_background = 2131493072;
+			// aapt resource value: 0x7f0c00d1
+			public const int notification_background = 2131493073;
+			
+			// aapt resource value: 0x7f0c00cb
+			public const int notification_main_column = 2131493067;
 			
 			// aapt resource value: 0x7f0c00ca
-			public const int notification_main_column = 2131493066;
-			
-			// aapt resource value: 0x7f0c00c9
-			public const int notification_main_column_container = 2131493065;
-			
-			// aapt resource value: 0x7f0c00d5
-			public const int os_bgimage_notif_bgimage = 2131493077;
-			
-			// aapt resource value: 0x7f0c00d4
-			public const int os_bgimage_notif_bgimage_align_layout = 2131493076;
+			public const int notification_main_column_container = 2131493066;
 			
 			// aapt resource value: 0x7f0c00d6
-			public const int os_bgimage_notif_bgimage_right_aligned = 2131493078;
+			public const int os_bgimage_notif_bgimage = 2131493078;
 			
-			// aapt resource value: 0x7f0c00d8
-			public const int os_bgimage_notif_body = 2131493080;
+			// aapt resource value: 0x7f0c00d5
+			public const int os_bgimage_notif_bgimage_align_layout = 2131493077;
 			
 			// aapt resource value: 0x7f0c00d7
-			public const int os_bgimage_notif_title = 2131493079;
+			public const int os_bgimage_notif_bgimage_right_aligned = 2131493079;
 			
-			// aapt resource value: 0x7f0c00a1
-			public const int pager = 2131493025;
+			// aapt resource value: 0x7f0c00d9
+			public const int os_bgimage_notif_body = 2131493081;
+			
+			// aapt resource value: 0x7f0c00d8
+			public const int os_bgimage_notif_title = 2131493080;
+			
+			// aapt resource value: 0x7f0c00a2
+			public const int pager = 2131493026;
 			
 			// aapt resource value: 0x7f0c0052
 			public const int parallax = 2131492946;
@@ -8091,11 +5943,11 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0053
 			public const int pin = 2131492947;
 			
-			// aapt resource value: 0x7f0c00a2
-			public const int prev = 2131493026;
-			
 			// aapt resource value: 0x7f0c00a3
-			public const int prevArrow = 2131493027;
+			public const int prev = 2131493027;
+			
+			// aapt resource value: 0x7f0c00a4
+			public const int prevArrow = 2131493028;
 			
 			// aapt resource value: 0x7f0c0006
 			public const int progress_circular = 2131492870;
@@ -8109,11 +5961,11 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0050
 			public const int right = 2131492944;
 			
-			// aapt resource value: 0x7f0c00cf
-			public const int right_icon = 2131493071;
+			// aapt resource value: 0x7f0c00d0
+			public const int right_icon = 2131493072;
 			
-			// aapt resource value: 0x7f0c00cb
-			public const int right_side = 2131493067;
+			// aapt resource value: 0x7f0c00cc
+			public const int right_side = 2131493068;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int save_image_matrix = 2131492876;
@@ -8187,17 +6039,17 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c002c
 			public const int showTitle = 2131492908;
 			
-			// aapt resource value: 0x7f0c00d9
-			public const int sliding_tabs = 2131493081;
+			// aapt resource value: 0x7f0c00da
+			public const int sliding_tabs = 2131493082;
 			
-			// aapt resource value: 0x7f0c0093
-			public const int smallLabel = 2131493011;
+			// aapt resource value: 0x7f0c0094
+			public const int smallLabel = 2131493012;
+			
+			// aapt resource value: 0x7f0c009b
+			public const int snackbar_action = 2131493019;
 			
 			// aapt resource value: 0x7f0c009a
-			public const int snackbar_action = 2131493018;
-			
-			// aapt resource value: 0x7f0c0099
-			public const int snackbar_text = 2131493017;
+			public const int snackbar_text = 2131493018;
 			
 			// aapt resource value: 0x7f0c004a
 			public const int snap = 2131492938;
@@ -8223,8 +6075,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0051
 			public const int start = 2131492945;
 			
-			// aapt resource value: 0x7f0c00c6
-			public const int status_bar_latest_event_content = 2131493062;
+			// aapt resource value: 0x7f0c00c7
+			public const int status_bar_latest_event_content = 2131493063;
 			
 			// aapt resource value: 0x7f0c007e
 			public const int submenuarrow = 2131492990;
@@ -8247,8 +6099,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0071
 			public const int textSpacerNoTitle = 2131492977;
 			
-			// aapt resource value: 0x7f0c00a0
-			public const int text_input_password_toggle = 2131493024;
+			// aapt resource value: 0x7f0c00a1
+			public const int text_input_password_toggle = 2131493025;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int textinput_counter = 2131492884;
@@ -8256,8 +6108,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0015
 			public const int textinput_error = 2131492885;
 			
-			// aapt resource value: 0x7f0c00cc
-			public const int time = 2131493068;
+			// aapt resource value: 0x7f0c00cd
+			public const int time = 2131493069;
 			
 			// aapt resource value: 0x7f0c001b
 			public const int title = 2131492891;
@@ -8268,8 +6120,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0077
 			public const int title_template = 2131492983;
 			
-			// aapt resource value: 0x7f0c00da
-			public const int toolbar = 2131493082;
+			// aapt resource value: 0x7f0c00db
+			public const int toolbar = 2131493083;
 			
 			// aapt resource value: 0x7f0c0045
 			public const int top = 2131492933;
@@ -8277,8 +6129,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0076
 			public const int topPanel = 2131492982;
 			
-			// aapt resource value: 0x7f0c0097
-			public const int touch_outside = 2131493015;
+			// aapt resource value: 0x7f0c0098
+			public const int touch_outside = 2131493016;
 			
 			// aapt resource value: 0x7f0c000f
 			public const int transition_current_scene = 2131492879;
@@ -8310,11 +6162,14 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f0c0016
 			public const int view_offset_helper = 2131492886;
 			
-			// aapt resource value: 0x7f0c00dc
-			public const int visible = 2131493084;
+			// aapt resource value: 0x7f0c00dd
+			public const int visible = 2131493085;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int volume_item_container = 2131493049;
+			// aapt resource value: 0x7f0c00ba
+			public const int volume_item_container = 2131493050;
+			
+			// aapt resource value: 0x7f0c0093
+			public const int webview = 2131493011;
 			
 			// aapt resource value: 0x7f0c0021
 			public const int wide = 2131492897;
@@ -8497,139 +6352,142 @@ namespace FodboldApp.Droid
 			public const int abc_select_dialog_material = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_bottom_navigation_item = 2130903067;
+			public const int activity_webview = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_bottom_sheet_dialog = 2130903068;
+			public const int design_bottom_navigation_item = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_snackbar = 2130903069;
+			public const int design_bottom_sheet_dialog = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_layout_snackbar_include = 2130903070;
+			public const int design_layout_snackbar = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_layout_tab_icon = 2130903071;
+			public const int design_layout_snackbar_include = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_layout_tab_text = 2130903072;
+			public const int design_layout_tab_icon = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_menu_item_action_area = 2130903073;
+			public const int design_layout_tab_text = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_item = 2130903074;
+			public const int design_menu_item_action_area = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_navigation_item_header = 2130903075;
+			public const int design_navigation_item = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_navigation_item_separator = 2130903076;
+			public const int design_navigation_item_header = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int design_navigation_item_subheader = 2130903077;
+			public const int design_navigation_item_separator = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int design_navigation_menu = 2130903078;
+			public const int design_navigation_item_subheader = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int design_navigation_menu_item = 2130903079;
+			public const int design_navigation_menu = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int design_text_input_password_icon = 2130903080;
+			public const int design_navigation_menu_item = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int horizontal_viewpager = 2130903081;
+			public const int design_text_input_password_icon = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_chooser_dialog = 2130903082;
+			public const int horizontal_viewpager = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int mr_chooser_list_item = 2130903083;
+			public const int mr_chooser_dialog = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_controller_material_dialog_b = 2130903084;
+			public const int mr_chooser_list_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_controller_volume_item = 2130903085;
+			public const int mr_controller_material_dialog_b = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int mr_playback_control = 2130903086;
+			public const int mr_controller_volume_item = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int mr_volume_control = 2130903087;
+			public const int mr_playback_control = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_action = 2130903088;
+			public const int mr_volume_control = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_action_tombstone = 2130903089;
+			public const int notification_action = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_media_action = 2130903090;
+			public const int notification_action_tombstone = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_media_cancel_action = 2130903091;
+			public const int notification_media_action = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_big_media = 2130903092;
+			public const int notification_media_cancel_action = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_big_media_custom = 2130903093;
+			public const int notification_template_big_media = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_big_media_narrow = 2130903094;
+			public const int notification_template_big_media_custom = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_big_media_narrow_custom = 2130903095;
+			public const int notification_template_big_media_narrow = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_custom_big = 2130903096;
+			public const int notification_template_big_media_narrow_custom = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_icon_group = 2130903097;
+			public const int notification_template_custom_big = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_lines_media = 2130903098;
+			public const int notification_template_icon_group = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_media = 2130903099;
+			public const int notification_template_lines_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_media_custom = 2130903100;
+			public const int notification_template_media = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_part_chronometer = 2130903101;
+			public const int notification_template_media_custom = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_part_time = 2130903102;
+			public const int notification_template_part_chronometer = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int onesignal_bgimage_notif_layout = 2130903103;
+			public const int notification_template_part_time = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int select_dialog_item_material = 2130903104;
+			public const int onesignal_bgimage_notif_layout = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_multichoice_material = 2130903105;
+			public const int select_dialog_item_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_singlechoice_material = 2130903106;
+			public const int select_dialog_multichoice_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int support_simple_spinner_dropdown_item = 2130903107;
+			public const int select_dialog_singlechoice_material = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int Tabbar = 2130903108;
+			public const int support_simple_spinner_dropdown_item = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int Toolbar = 2130903109;
+			public const int Tabbar = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int tooltip = 2130903110;
+			public const int Toolbar = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int vertical_viewpager = 2130903111;
+			public const int tooltip = 2130903111;
+			
+			// aapt resource value: 0x7f030048
+			public const int vertical_viewpager = 2130903112;
 			
 			static Layout()
 			{
@@ -8660,113 +6518,113 @@ namespace FodboldApp.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f080052
+			public const int ApplicationName = 2131230802;
+			
 			// aapt resource value: 0x7f080051
-			public const int ApplicationName = 2131230801;
-			
-			// aapt resource value: 0x7f080050
-			public const int Hello = 2131230800;
-			
-			// aapt resource value: 0x7f080027
-			public const int abc_action_bar_home_description = 2131230759;
+			public const int Hello = 2131230801;
 			
 			// aapt resource value: 0x7f080028
-			public const int abc_action_bar_home_description_format = 2131230760;
+			public const int abc_action_bar_home_description = 2131230760;
 			
 			// aapt resource value: 0x7f080029
-			public const int abc_action_bar_home_subtitle_description_format = 2131230761;
+			public const int abc_action_bar_home_description_format = 2131230761;
 			
 			// aapt resource value: 0x7f08002a
-			public const int abc_action_bar_up_description = 2131230762;
+			public const int abc_action_bar_home_subtitle_description_format = 2131230762;
 			
 			// aapt resource value: 0x7f08002b
-			public const int abc_action_menu_overflow_description = 2131230763;
+			public const int abc_action_bar_up_description = 2131230763;
 			
 			// aapt resource value: 0x7f08002c
-			public const int abc_action_mode_done = 2131230764;
+			public const int abc_action_menu_overflow_description = 2131230764;
 			
 			// aapt resource value: 0x7f08002d
-			public const int abc_activity_chooser_view_see_all = 2131230765;
+			public const int abc_action_mode_done = 2131230765;
 			
 			// aapt resource value: 0x7f08002e
-			public const int abc_activitychooserview_choose_application = 2131230766;
+			public const int abc_activity_chooser_view_see_all = 2131230766;
 			
 			// aapt resource value: 0x7f08002f
-			public const int abc_capital_off = 2131230767;
+			public const int abc_activitychooserview_choose_application = 2131230767;
 			
 			// aapt resource value: 0x7f080030
-			public const int abc_capital_on = 2131230768;
-			
-			// aapt resource value: 0x7f08003c
-			public const int abc_font_family_body_1_material = 2131230780;
-			
-			// aapt resource value: 0x7f08003d
-			public const int abc_font_family_body_2_material = 2131230781;
-			
-			// aapt resource value: 0x7f08003e
-			public const int abc_font_family_button_material = 2131230782;
-			
-			// aapt resource value: 0x7f08003f
-			public const int abc_font_family_caption_material = 2131230783;
-			
-			// aapt resource value: 0x7f080040
-			public const int abc_font_family_display_1_material = 2131230784;
-			
-			// aapt resource value: 0x7f080041
-			public const int abc_font_family_display_2_material = 2131230785;
-			
-			// aapt resource value: 0x7f080042
-			public const int abc_font_family_display_3_material = 2131230786;
-			
-			// aapt resource value: 0x7f080043
-			public const int abc_font_family_display_4_material = 2131230787;
-			
-			// aapt resource value: 0x7f080044
-			public const int abc_font_family_headline_material = 2131230788;
-			
-			// aapt resource value: 0x7f080045
-			public const int abc_font_family_menu_material = 2131230789;
-			
-			// aapt resource value: 0x7f080046
-			public const int abc_font_family_subhead_material = 2131230790;
-			
-			// aapt resource value: 0x7f080047
-			public const int abc_font_family_title_material = 2131230791;
+			public const int abc_capital_off = 2131230768;
 			
 			// aapt resource value: 0x7f080031
-			public const int abc_search_hint = 2131230769;
+			public const int abc_capital_on = 2131230769;
 			
-			// aapt resource value: 0x7f080032
-			public const int abc_searchview_description_clear = 2131230770;
+			// aapt resource value: 0x7f08003d
+			public const int abc_font_family_body_1_material = 2131230781;
 			
-			// aapt resource value: 0x7f080033
-			public const int abc_searchview_description_query = 2131230771;
+			// aapt resource value: 0x7f08003e
+			public const int abc_font_family_body_2_material = 2131230782;
 			
-			// aapt resource value: 0x7f080034
-			public const int abc_searchview_description_search = 2131230772;
+			// aapt resource value: 0x7f08003f
+			public const int abc_font_family_button_material = 2131230783;
 			
-			// aapt resource value: 0x7f080035
-			public const int abc_searchview_description_submit = 2131230773;
+			// aapt resource value: 0x7f080040
+			public const int abc_font_family_caption_material = 2131230784;
 			
-			// aapt resource value: 0x7f080036
-			public const int abc_searchview_description_voice = 2131230774;
+			// aapt resource value: 0x7f080041
+			public const int abc_font_family_display_1_material = 2131230785;
 			
-			// aapt resource value: 0x7f080037
-			public const int abc_shareactionprovider_share_with = 2131230775;
+			// aapt resource value: 0x7f080042
+			public const int abc_font_family_display_2_material = 2131230786;
 			
-			// aapt resource value: 0x7f080038
-			public const int abc_shareactionprovider_share_with_application = 2131230776;
+			// aapt resource value: 0x7f080043
+			public const int abc_font_family_display_3_material = 2131230787;
 			
-			// aapt resource value: 0x7f080039
-			public const int abc_toolbar_collapse_description = 2131230777;
+			// aapt resource value: 0x7f080044
+			public const int abc_font_family_display_4_material = 2131230788;
+			
+			// aapt resource value: 0x7f080045
+			public const int abc_font_family_headline_material = 2131230789;
+			
+			// aapt resource value: 0x7f080046
+			public const int abc_font_family_menu_material = 2131230790;
+			
+			// aapt resource value: 0x7f080047
+			public const int abc_font_family_subhead_material = 2131230791;
 			
 			// aapt resource value: 0x7f080048
-			public const int appbar_scrolling_view_behavior = 2131230792;
+			public const int abc_font_family_title_material = 2131230792;
+			
+			// aapt resource value: 0x7f080032
+			public const int abc_search_hint = 2131230770;
+			
+			// aapt resource value: 0x7f080033
+			public const int abc_searchview_description_clear = 2131230771;
+			
+			// aapt resource value: 0x7f080034
+			public const int abc_searchview_description_query = 2131230772;
+			
+			// aapt resource value: 0x7f080035
+			public const int abc_searchview_description_search = 2131230773;
+			
+			// aapt resource value: 0x7f080036
+			public const int abc_searchview_description_submit = 2131230774;
+			
+			// aapt resource value: 0x7f080037
+			public const int abc_searchview_description_voice = 2131230775;
+			
+			// aapt resource value: 0x7f080038
+			public const int abc_shareactionprovider_share_with = 2131230776;
+			
+			// aapt resource value: 0x7f080039
+			public const int abc_shareactionprovider_share_with_application = 2131230777;
+			
+			// aapt resource value: 0x7f08003a
+			public const int abc_toolbar_collapse_description = 2131230778;
 			
 			// aapt resource value: 0x7f080049
-			public const int bottom_sheet_behavior = 2131230793;
+			public const int appbar_scrolling_view_behavior = 2131230793;
 			
 			// aapt resource value: 0x7f08004a
-			public const int character_counter_pattern = 2131230794;
+			public const int bottom_sheet_behavior = 2131230794;
+			
+			// aapt resource value: 0x7f08004b
+			public const int character_counter_pattern = 2131230795;
 			
 			// aapt resource value: 0x7f080002
 			public const int common_google_play_services_enable_button = 2131230722;
@@ -8822,92 +6680,95 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f080000
 			public const int gcm_fallback_notification_channel_label = 2131230720;
 			
-			// aapt resource value: 0x7f080052
-			public const int library_name = 2131230802;
-			
-			// aapt resource value: 0x7f080012
-			public const int mr_button_content_description = 2131230738;
+			// aapt resource value: 0x7f080053
+			public const int library_name = 2131230803;
 			
 			// aapt resource value: 0x7f080013
-			public const int mr_cast_button_connected = 2131230739;
+			public const int mr_button_content_description = 2131230739;
 			
 			// aapt resource value: 0x7f080014
-			public const int mr_cast_button_connecting = 2131230740;
+			public const int mr_cast_button_connected = 2131230740;
 			
 			// aapt resource value: 0x7f080015
-			public const int mr_cast_button_disconnected = 2131230741;
+			public const int mr_cast_button_connecting = 2131230741;
 			
 			// aapt resource value: 0x7f080016
-			public const int mr_chooser_searching = 2131230742;
+			public const int mr_cast_button_disconnected = 2131230742;
 			
 			// aapt resource value: 0x7f080017
-			public const int mr_chooser_title = 2131230743;
+			public const int mr_chooser_searching = 2131230743;
 			
 			// aapt resource value: 0x7f080018
-			public const int mr_controller_album_art = 2131230744;
+			public const int mr_chooser_title = 2131230744;
 			
 			// aapt resource value: 0x7f080019
-			public const int mr_controller_casting_screen = 2131230745;
+			public const int mr_controller_album_art = 2131230745;
 			
 			// aapt resource value: 0x7f08001a
-			public const int mr_controller_close_description = 2131230746;
+			public const int mr_controller_casting_screen = 2131230746;
 			
 			// aapt resource value: 0x7f08001b
-			public const int mr_controller_collapse_group = 2131230747;
+			public const int mr_controller_close_description = 2131230747;
 			
 			// aapt resource value: 0x7f08001c
-			public const int mr_controller_disconnect = 2131230748;
+			public const int mr_controller_collapse_group = 2131230748;
 			
 			// aapt resource value: 0x7f08001d
-			public const int mr_controller_expand_group = 2131230749;
+			public const int mr_controller_disconnect = 2131230749;
 			
 			// aapt resource value: 0x7f08001e
-			public const int mr_controller_no_info_available = 2131230750;
+			public const int mr_controller_expand_group = 2131230750;
 			
 			// aapt resource value: 0x7f08001f
-			public const int mr_controller_no_media_selected = 2131230751;
+			public const int mr_controller_no_info_available = 2131230751;
 			
 			// aapt resource value: 0x7f080020
-			public const int mr_controller_pause = 2131230752;
+			public const int mr_controller_no_media_selected = 2131230752;
 			
 			// aapt resource value: 0x7f080021
-			public const int mr_controller_play = 2131230753;
+			public const int mr_controller_pause = 2131230753;
 			
 			// aapt resource value: 0x7f080022
-			public const int mr_controller_stop = 2131230754;
+			public const int mr_controller_play = 2131230754;
 			
 			// aapt resource value: 0x7f080023
-			public const int mr_controller_stop_casting = 2131230755;
+			public const int mr_controller_stop = 2131230755;
 			
 			// aapt resource value: 0x7f080024
-			public const int mr_controller_volume_slider = 2131230756;
+			public const int mr_controller_stop_casting = 2131230756;
 			
 			// aapt resource value: 0x7f080025
-			public const int mr_system_route_name = 2131230757;
+			public const int mr_controller_volume_slider = 2131230757;
 			
 			// aapt resource value: 0x7f080026
-			public const int mr_user_route_category_name = 2131230758;
+			public const int mr_system_route_name = 2131230758;
 			
-			// aapt resource value: 0x7f08004b
-			public const int password_toggle_content_description = 2131230795;
+			// aapt resource value: 0x7f080027
+			public const int mr_user_route_category_name = 2131230759;
 			
 			// aapt resource value: 0x7f08004c
-			public const int path_password_eye = 2131230796;
+			public const int password_toggle_content_description = 2131230796;
 			
 			// aapt resource value: 0x7f08004d
-			public const int path_password_eye_mask_strike_through = 2131230797;
+			public const int path_password_eye = 2131230797;
 			
 			// aapt resource value: 0x7f08004e
-			public const int path_password_eye_mask_visible = 2131230798;
+			public const int path_password_eye_mask_strike_through = 2131230798;
 			
 			// aapt resource value: 0x7f08004f
-			public const int path_password_strike_through = 2131230799;
+			public const int path_password_eye_mask_visible = 2131230799;
 			
-			// aapt resource value: 0x7f08003a
-			public const int search_menu_title = 2131230778;
+			// aapt resource value: 0x7f080050
+			public const int path_password_strike_through = 2131230800;
 			
 			// aapt resource value: 0x7f08003b
-			public const int status_bar_notification_info_overflow = 2131230779;
+			public const int search_menu_title = 2131230779;
+			
+			// aapt resource value: 0x7f08003c
+			public const int status_bar_notification_info_overflow = 2131230780;
+			
+			// aapt resource value: 0x7f080012
+			public const int title_activity_webview = 2131230738;
 			
 			static String()
 			{
