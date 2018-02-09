@@ -9,7 +9,6 @@ using Realms;
 using Realms.Sync;
 using System;
 using System.Threading.Tasks;
-using Xamarians.GoogleLogin.Interface;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -51,6 +50,29 @@ namespace FodboldApp
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
+        async void FacebookAutoLogin()
+        {
+            if (Current.Properties.ContainsKey("Token"))
+            {
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
+                await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
+                await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken);
+            }
+        }
+
+        async void GooglePlusAutoLogin()
+        {
+            if (Current.Properties.ContainsKey("Token"))
+            {
+                Console.WriteLine((string)Current.Properties["Token"]);
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
+                await ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
+                await ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
+            }
+        }
+
         public async Task SetupRealmAsync()
         {
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
@@ -76,19 +98,6 @@ namespace FodboldApp
             //});
         }
 
-
-        async void GooglePlusOnTappedAsync()
-        {
-            if (Current.Properties.ContainsKey("Token"))
-            {
-                Console.WriteLine((string)Current.Properties["Token"]);
-                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
-                CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
-                await ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
-                await ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
-            }
-        }
-
         protected override void OnStart()
         {
         }
@@ -101,11 +110,6 @@ namespace FodboldApp
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
-
-        public void OnBackButtonPressed(object sender, EventArgs e)
-        {
-            HeaderVM.BackButtonPressed();
         }
 
         public async void Login(object sender, EventArgs e)
