@@ -75,6 +75,16 @@
 				<string>com.googleusercontent.apps.274704195206-2pkc5lierlo45tqf72qadep4o0t70h0p</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>URL Type 3</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.274704195206-bplkrfn3b07bg7ruq56dss998m8me93k</string>
+			</array>
+			<key>CFBundleURLTypes</key>
+			<string>Viewer</string>
+		</dict>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

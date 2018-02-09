@@ -69,6 +69,12 @@
     <PackageReference Include="DLToolkit.Forms.Controls.FlowListView">
       <Version>2.0.10</Version>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>10.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="PCLCrypto">
+      <Version>2.0.147</Version>
+    </PackageReference>
     <PackageReference Include="Plugin.CrossPlatformTintedImage">
       <Version>1.0.0</Version>
     </PackageReference>
@@ -81,11 +87,14 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>2.0.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarians.GoogleLogin">
-      <Version>1.0.3</Version>
-    </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.RoundedBoxView">
       <Version>1.0.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs">
+      <Version>26.1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Auth">
+      <Version>1.5.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.3.4</Version>
@@ -118,6 +127,9 @@
   <ItemGroup>
     <Compile Include="CustomRenderers\CustomNavigationRenderer.cs" />
     <Compile Include="CustomRenderers\CustomSearchBarRenderer.cs" />
+    <Compile Include="CustomRenderers\GoogleCustomUrlSchemeInterceptor.cs" />
+    <Compile Include="CustomRenderers\FBLoginPageRenderer.cs" />
+    <Compile Include="CustomRenderers\GoogleLoginPageRenderer.cs" />
     <Compile Include="InterfaceImplementation\LogOutImpl.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RegistrationIntentService.cs" />

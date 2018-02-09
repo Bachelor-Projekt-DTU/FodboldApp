@@ -7,6 +7,8 @@ using Plugin.CrossPlatformTintedImage.iOS;
 using UIKit;
 using RoundedBoxView.Forms.Plugin.iOSUnified;
 using Com.OneSignal;
+using System;
+using FodboldApp.Globals;
 
 namespace FodboldApp.iOS
 {
@@ -54,12 +56,18 @@ namespace FodboldApp.iOS
         public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
             var openUrlOptions = new UIApplicationOpenUrlOptions(options);
+            var uri = new Uri(url.AbsoluteString);
+            GooglePlusSingleton.Instance.OAuthSettings.OnPageLoading(uri);
+
             return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
+
         }
 
         // For iOS 8 and older
         public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
         {
+            var uri = new Uri(url.AbsoluteString);
+            GooglePlusSingleton.Instance.OAuthSettings.OnPageLoading(uri);
             return SignIn.SharedInstance.HandleUrl(url, sourceApplication, annotation);
         }
     }

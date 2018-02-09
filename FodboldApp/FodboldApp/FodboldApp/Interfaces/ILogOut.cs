@@ -7,7 +7,7 @@ namespace FodboldApp.Interfaces
 {
     public interface ILogOut
     {
-        Task LogOutGoogleAsync();
+        void LogOutGoogle();
         void LogOutFB();
     }
 }

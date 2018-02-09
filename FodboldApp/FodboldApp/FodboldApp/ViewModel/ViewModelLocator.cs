@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FodboldApp.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +10,9 @@ namespace FodboldApp.ViewModel
         public static HeaderVM HeaderVM { get; } = new HeaderVM();
         public static MatchHeaderVM MatchHeaderVM { get; } = new MatchHeaderVM();
         public static MatchPageVM MatchPageVM { get; } = new MatchPageVM();
-        public static FacebookLoginVM FacebookLoginVM { get; } = new FacebookLoginVM();
+        public static LoginVM LoginVM { get; } = new LoginVM();
+        public static FacebookService FacebookService { get; } = new FacebookService();
+        public static GoogleService GoogleService { get; } = new GoogleService();
+
     }
 }
