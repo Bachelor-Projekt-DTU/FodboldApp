@@ -10,7 +10,8 @@
         <StackLayout Padding="0, 0, 0, 0"
                      Margin="0, 0, 0, 0"
                      Spacing="0"
-                     BackgroundColor="#ffffff">
+                     BackgroundColor="#ffffff"
+                     HorizontalOptions="FillAndExpand">
             <StackLayout.BindingContext>
                 <viewmodels:MatchesVM/>
             </StackLayout.BindingContext>

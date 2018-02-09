@@ -2,6 +2,8 @@
 using FodboldApp.Stack;
 using FodboldApp.View;
 using Realms;
+using Realms.Sync;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -10,7 +12,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class OverHundredGamesVM: INotifyPropertyChanged
+    class OverHundredGamesVM : INotifyPropertyChanged
     {
         Realm _realm;
 
@@ -38,18 +40,23 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
-        private void SetupPlayerList()
+        public async void SetupRealm()
         {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/over100games"));
+            _realm = Realm.GetInstance(config);
+
             int index = 0;
             _realm.Write(() =>
             {
+                _realm.RemoveAll();
                 _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
                 _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
                 _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
                 _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
                 _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
             });
-            _playersList = _realm.All<OverHundredGamesModel>();
+            PlayersList = _realm.All<OverHundredGamesModel>();
         }
         void Player_OnTapped()
         {
@@ -59,7 +66,7 @@ namespace FodboldApp.ViewModel
         public OverHundredGamesVM()
         {
             _realm = Realm.GetInstance();
-            SetupPlayerList();
+            SetupRealm();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }
 

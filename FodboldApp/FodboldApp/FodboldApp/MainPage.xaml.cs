@@ -23,5 +23,11 @@ namespace FodboldApp
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            HeaderVM.BackButtonPressed();
+            return true;
+        }
     }
 }

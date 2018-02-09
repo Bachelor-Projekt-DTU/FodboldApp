@@ -1,5 +1,6 @@
 ﻿using FodboldApp.Model;
 using Realms;
+using Realms.Sync;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -151,10 +152,15 @@ namespace FodboldApp.ViewModel
                 }
             }
         }
-        private void SetupHistoricalStandingsDataList()
+
+        public async void SetupRealm()
         {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/standings"));
+            _realm = Realm.GetInstance(config);
             _realm.Write(() =>
             {
+                _realm.RemoveAll();
                 _realm.Add(new HistoricalStandingTitleModel { Title = "LANDSFODBOLDTURNERINGEN" });
                 _realm.Add(new HistoricalStandingTitleModel { Title = "MESTERSKABSSERIEN" });
                 _realm.Add(new HistoricalStandingTitleModel { Title = "Kriseturneringen – kreds 3" });
@@ -167,23 +173,13 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
             });
 
-            _historicalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
-            _historicalStandingsListContent = _realm.All<HistoricalStandingModel>();
-        }
-
-        private void SetupHistoricalStandingsListContent()
-        {
-           
-
-            _historicalStandingsListContent = _realm.All<HistoricalStandingModel>();
+            HistoricalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
+            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>();
         }
 
         public HistoricalStandingVM()
         {
-            _realm = Realm.GetInstance();
-            
-            SetupHistoricalStandingsDataList();
-           // SetupHistoricalStandingsListContent();
+            SetupRealm();
             
             HideStackLayoutCommand = new Command(OnTapped);
         }

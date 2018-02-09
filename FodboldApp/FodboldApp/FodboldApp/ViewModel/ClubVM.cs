@@ -1,6 +1,7 @@
 ﻿using FodboldApp.Customs;
 using FodboldApp.View;
 using Realms;
+using Realms.Sync;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -34,6 +35,11 @@ namespace FodboldApp.ViewModel
             {
                 return _clubListSource;
             }
+            set
+            {
+                _clubListSource = value;
+                OnPropertyChanged(nameof(ClubListSource));
+            }
         }
 
         public ClubModel _selectedItem { get; set; }
@@ -64,18 +70,27 @@ namespace FodboldApp.ViewModel
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
 
-        public ClubVM()
+        public async void SetupRealm()
         {
-            _realm = Realm.GetInstance();
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/clubs"));
+            _realm = Realm.GetInstance(config);
             _realm.Write(() =>
             {
+                _realm.RemoveAll();
                 _realm.Add(new ClubModel { ClubName = "BK Frem" });
                 _realm.Add(new ClubModel { ClubName = "Klub 2" });
                 _realm.Add(new ClubModel { ClubName = "Klub 3" });
                 _realm.Add(new ClubModel { ClubName = "Klub 4" });
                 _realm.Add(new ClubModel { ClubName = "Klub 5" });
             });
-            _clubListSource = _realm.All<ClubModel>();
+            ClubListSource = _realm.All<ClubModel>();
+        }
+
+        public ClubVM()
+        {
+            SetupRealm();
+           
             ContinueCommand = new Command(OnTapped);
         }
     }
