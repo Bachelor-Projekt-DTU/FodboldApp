@@ -23,7 +23,7 @@ namespace FodboldApp
 
         public App()
         {
-            MainPage = new NavigationPage(new FrontPage());
+            //SetupRealmAsync();
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
@@ -110,37 +110,6 @@ namespace FodboldApp
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
-
-        public async void Login(object sender, EventArgs e)
-        {
-            await ((App)Current).MainPage.Navigation.PushAsync(new Login());
-        }
-        public void LogOut(object sender, EventArgs e)
-        {
-            ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
-            if (Current.Properties.ContainsKey("IsUserLoggedIn"))
-            {
-                Console.WriteLine("Logget af");
-                Current.Properties.Remove("IsUserLoggedIn");
-            }
-
-            if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Google)
-            {
-                DependencyService.Get<ILogOut>().LogOutGoogle();
-                Current.Properties.Remove("Token");
-                GooglePlusSingleton.Instance.RemoveToken();
-                GooglePlusSingleton.Instance.ResetAuthentication();
-                CurrentUser.user = new UserModel();
-            }
-            else if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Facebook)
-            {
-                DependencyService.Get<ILogOut>().LogOutFB();
-                Current.Properties.Remove("Token");
-                FacebookSingleton.Instance.RemoveToken();
-                FacebookSingleton.Instance.ResetAuthentication();
-                CurrentUser.user = new UserModel();
-            }
         }
     }
 }

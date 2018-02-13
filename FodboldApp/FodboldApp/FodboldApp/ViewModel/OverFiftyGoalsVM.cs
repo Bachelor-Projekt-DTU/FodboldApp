@@ -59,6 +59,7 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
             });
             PlayersList = _realm.All<OverFiftyGoalsModel>();
+            //_realm.Dispose();
         }
 
             void Player_OnTapped()
@@ -68,7 +69,6 @@ namespace FodboldApp.ViewModel
         }
         public OverFiftyGoalsVM()
         {
-            _realm = Realm.GetInstance();
             SetupRealm();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }

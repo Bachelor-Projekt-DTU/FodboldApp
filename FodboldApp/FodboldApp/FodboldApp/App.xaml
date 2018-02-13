@@ -96,7 +96,7 @@
                            Margin="10, 0, 0, 0 "
                                    Grid.Column="2">
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="LogOut"/>
+                                <TapGestureRecognizer Command="{Binding LogoutCommand}"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Grid>

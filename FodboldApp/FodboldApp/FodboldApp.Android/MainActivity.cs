@@ -21,7 +21,8 @@ namespace FodboldApp.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            Realm.GetInstance();
+            var db = Realm.GetInstance();
+            db.Dispose();
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

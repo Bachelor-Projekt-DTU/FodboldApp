@@ -57,6 +57,7 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
             });
             PlayersList = _realm.All<OverHundredGamesModel>();
+            //_realm.Dispose();
         }
         void Player_OnTapped()
         {
@@ -65,7 +66,6 @@ namespace FodboldApp.ViewModel
         }
         public OverHundredGamesVM()
         {
-            _realm = Realm.GetInstance();
             SetupRealm();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }

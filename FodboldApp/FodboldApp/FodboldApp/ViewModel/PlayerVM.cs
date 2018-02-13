@@ -73,6 +73,7 @@ namespace FodboldApp.ViewModel
                     });
                 });
             PlayerListSource = _realm.All<PlayerModel>();
+            //_realm.Dispose();
         }
 
         void OnTapped()
@@ -83,7 +84,6 @@ namespace FodboldApp.ViewModel
 
         public PlayerVM()
         {
-            _realm = Realm.GetInstance();
             SetupRealm();
             PlayerDescriptionCommand = new Command(OnTapped);
         }

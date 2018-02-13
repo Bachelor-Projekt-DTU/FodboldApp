@@ -1,4 +1,7 @@
-﻿using FodboldApp.Stack;
+﻿using FodboldApp.Globals;
+using FodboldApp.Interfaces;
+using FodboldApp.Model;
+using FodboldApp.Stack;
 using FodboldApp.View;
 using System;
 using System.ComponentModel;
@@ -19,6 +22,7 @@ namespace FodboldApp.ViewModel
         public ICommand TournamentTapped { get; private set; }
         public ICommand HistoryTapped { get; private set; }
         public ICommand LoginCommand { get; private set; }
+        public ICommand LogoutCommand { get; private set; }
         public ICommand BackButtonTapped { get; private set; }
 
         private Color _newsIconColor;
@@ -147,6 +151,7 @@ namespace FodboldApp.ViewModel
             TournamentTapped = new Command(TournamentTap);
             HistoryTapped = new Command(HistoryTap);
             LoginCommand = new Command(Login);
+            LogoutCommand = new Command(Logout);
             BackButtonTapped = new Command(BackButtonPressed);
         }
 
@@ -162,6 +167,33 @@ namespace FodboldApp.ViewModel
         public async void Login()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new Login());
+        }
+
+        public void Logout()
+        {
+            ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
+            if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
+            {
+                Console.WriteLine("Logget af");
+                Application.Current.Properties.Remove("IsUserLoggedIn");
+            }
+
+            if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Google)
+            {
+                DependencyService.Get<ILogOut>().LogOutGoogle();
+                Application.Current.Properties.Remove("Token");
+                GooglePlusSingleton.Instance.RemoveToken();
+                GooglePlusSingleton.Instance.ResetAuthentication();
+                CurrentUser.user = new UserModel();
+            }
+            else if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Facebook)
+            {
+                DependencyService.Get<ILogOut>().LogOutFB();
+                Application.Current.Properties.Remove("Token");
+                FacebookSingleton.Instance.RemoveToken();
+                FacebookSingleton.Instance.ResetAuthentication();
+                CurrentUser.user = new UserModel();
+            }
         }
 
         public async void NewsTap()

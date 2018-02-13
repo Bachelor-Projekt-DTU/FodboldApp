@@ -1,14 +1,13 @@
 ﻿using CarouselView.FormsPlugin.iOS;
+using Com.OneSignal;
 using FFImageLoading.Forms.Touch;
+using FodboldApp.Globals;
 using Foundation;
-using Google.SignIn;
 using ImageCircle.Forms.Plugin.iOS;
 using Plugin.CrossPlatformTintedImage.iOS;
-using UIKit;
 using RoundedBoxView.Forms.Plugin.iOSUnified;
-using Com.OneSignal;
 using System;
-using FodboldApp.Globals;
+using UIKit;
 
 namespace FodboldApp.iOS
 {

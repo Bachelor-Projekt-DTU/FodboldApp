@@ -12,7 +12,7 @@ namespace FodboldApp.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            BindingContext = new TournamentVM();
+            //BindingContext = new TournamentVM();
             //var items = vm.PlayerListSource;
             //items.RemoveAt(items.Count - 1);
 

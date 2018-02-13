@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Realms.Sync;
 
 namespace FodboldApp.ViewModel
 {
@@ -136,9 +137,12 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public MatchPageVM()
+        private async void SetupRealm()
         {
-            _realm = Realm.GetInstance();
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/matchPage"));
+            _realm = Realm.GetInstance(config);
+            int index = 0;
             _realm.Write(() =>
             {
                 _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
@@ -166,7 +170,13 @@ namespace FodboldApp.ViewModel
             _commentList = _realm.All<CommentModel>();
             _collectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
             _collectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+            //_realm.Dispose();
 
+        }
+
+        public MatchPageVM()
+        {
+            SetupRealm();
             SendCommentCommand = new Command(OnSendTapped);
         }
     }

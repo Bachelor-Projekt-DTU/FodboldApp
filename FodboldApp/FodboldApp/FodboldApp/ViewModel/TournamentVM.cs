@@ -54,11 +54,11 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new TournamentModel { ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg", Goals = "55", Games = "100", Assist = "50", MVP = "3", Clean_Sheet = "0", Index = index++ });
             });
             PlayersList = _realm.All<TournamentModel>();
+            //_realm.Dispose();
         }
         
         public TournamentVM()
         {
-            _realm = Realm.GetInstance();
             SetupRealm();
         }
     }

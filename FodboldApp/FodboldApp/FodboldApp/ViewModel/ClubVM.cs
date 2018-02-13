@@ -85,6 +85,7 @@ namespace FodboldApp.ViewModel
                 _realm.Add(new ClubModel { ClubName = "Klub 5" });
             });
             ClubListSource = _realm.All<ClubModel>();
+            //_realm.Dispose();
         }
 
         public ClubVM()
