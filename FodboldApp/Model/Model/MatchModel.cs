@@ -1,12 +1,14 @@
 ﻿using Realms;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace FodboldApp.Model
 {
     public class MatchModel : RealmObject
     {
+        public string Id { get; set; }
         public string Team1 { get; set; }
         public string Team2 { get; set; }
         public int Score1 { get; set; }

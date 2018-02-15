@@ -47,15 +47,15 @@ namespace FodboldApp.ViewModel
             _realm = Realm.GetInstance(config);
 
             int index = 0;
-            _realm.Write(() =>
-            {
-                _realm.RemoveAll();
-                _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-                _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-                _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-                _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-                _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
-            });
+            //_realm.Write(() =>
+            //{
+            //    _realm.RemoveAll();
+            //    _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            //    _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            //    _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            //    _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            //    _realm.Add(new OverHundredGamesModel { Name = "Per Wind", Period = "1973 - 1998", Games = "590", Index = index++ });
+            //});
             PlayersList = _realm.All<OverHundredGamesModel>();
             //_realm.Dispose();
         }

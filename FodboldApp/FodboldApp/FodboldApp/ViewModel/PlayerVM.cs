@@ -50,28 +50,28 @@ namespace FodboldApp.ViewModel
             SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/players"));
             _realm = Realm.GetInstance(config);
 
-            _realm.Write(() =>
-                {
-                    _realm.RemoveAll();
-                    _realm.Add(new PlayerModel
-                    {
-                        ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-                        Name = "Andreas Theil Lundberg",
-                        Position = "Forsvar/Midtbane"
-                    });
-                    _realm.Add(new PlayerModel
-                    {
-                        ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-                        Name = "Andreas Theil Lundberg 2",
-                        Position = "Forsvar/Midtbane"
-                    });
-                    _realm.Add(new PlayerModel
-                    {
-                        ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-                        Name = "Andreas Theil Lundberg 3",
-                        Position = "Forsvar/Midtbane"
-                    });
-                });
+            //_realm.Write(() =>
+            //    {
+            //        _realm.RemoveAll();
+            //        _realm.Add(new PlayerModel
+            //        {
+            //            ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
+            //            Name = "Andreas Theil Lundberg",
+            //            Position = "Forsvar/Midtbane"
+            //        });
+            //        _realm.Add(new PlayerModel
+            //        {
+            //            ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
+            //            Name = "Andreas Theil Lundberg 2",
+            //            Position = "Forsvar/Midtbane"
+            //        });
+            //        _realm.Add(new PlayerModel
+            //        {
+            //            ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
+            //            Name = "Andreas Theil Lundberg 3",
+            //            Position = "Forsvar/Midtbane"
+            //        });
+            //    });
             PlayerListSource = _realm.All<PlayerModel>();
             //_realm.Dispose();
         }

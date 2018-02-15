@@ -1,8 +1,6 @@
 ﻿using FodboldApp.Droid.InterfaceImplementation;
 using FodboldApp.Interfaces;
-using FodboldApp.ViewModel;
 using Foundation;
-using Google.SignIn;
 
 [assembly: Xamarin.Forms.Dependency(typeof(LogOutImpl))]
 namespace FodboldApp.Droid.InterfaceImplementation
@@ -17,7 +15,7 @@ namespace FodboldApp.Droid.InterfaceImplementation
                 CookieStorage.DeleteCookie(cookie);
         }
 
-        public async System.Threading.Tasks.Task LogOutGoogleAsync()
+        public void LogOutGoogle()
         {
             SignIn.SharedInstance.SignOutUser();
         }

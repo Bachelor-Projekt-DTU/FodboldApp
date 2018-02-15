@@ -87,14 +87,14 @@ namespace FodboldApp.ViewModel
 
             ChatCommand = new Command(ChatSend);
 
-            _realm.Write(() =>
-            {
-                _realm.RemoveAll();
-                _realm.Add(new ChatModel { Content = "Besked 1", Admin = false, MatchID = "1234" });
-                _realm.Add(new ChatModel { Content = "looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong text", Admin = false, MatchID = "1234" });
-                _realm.Add(new ChatModel { Content = "Besked 3", Admin = true, MatchID = "1234" });
-                _realm.Add(new ChatModel { Content = "Besked 4", Admin = false, MatchID = "1234" });
-            });
+            //_realm.Write(() =>
+            //{
+            //    _realm.RemoveAll();
+            //    _realm.Add(new ChatModel { Content = "Besked 1", Admin = false, MatchID = "1234" });
+            //    _realm.Add(new ChatModel { Content = "looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong text", Admin = false, MatchID = "1234" });
+            //    _realm.Add(new ChatModel { Content = "Besked 3", Admin = true, MatchID = "1234" });
+            //    _realm.Add(new ChatModel { Content = "Besked 4", Admin = false, MatchID = "1234" });
+            //});
             ChatList = _realm.All<ChatModel>();
         }
 

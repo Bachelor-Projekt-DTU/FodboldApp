@@ -50,12 +50,12 @@ namespace FodboldApp.ViewModel
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
             SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
             _realm = Realm.GetInstance(config);
-            _realm.Write(() =>
-            {
-                _realm.RemoveAll();
-                _realm.Add(new NewsModel { Title = "U23 kommet godt fra start", Date = "10. august 2017", Resume = "Siden 20 juli har Boldklubben FREMs nye setup været igang. Truppen begynder at tage form, og skarpheden til træning og i kamp viser en klar positiv tendens.", ImageURL = "http://www.bkfrem.dk/images/image2(9).JPG" });
-                _realm.Add(new NewsModel() { Title = "Exit i pokalen", Date = "8. august 2017", Resume = "1 runde blev endestationen. Et feststemt stadion i Hvidovre med flotte 1.126 tilskuere på lægterne blev vidne til et opgør, hvor hjemmeholdet straks fra start trykkede på for at få et hurtigt...", ImageURL = "http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg" });
-            });
+            //_realm.Write(() =>
+            //{
+            //    _realm.RemoveAll();
+            //    _realm.Add(new NewsModel { Title = "U23 kommet godt fra start", Date = "10. august 2017", Resume = "Siden 20 juli har Boldklubben FREMs nye setup været igang. Truppen begynder at tage form, og skarpheden til træning og i kamp viser en klar positiv tendens.", ImageURL = "http://www.bkfrem.dk/images/image2(9).JPG" });
+            //    _realm.Add(new NewsModel() { Title = "Exit i pokalen", Date = "8. august 2017", Resume = "1 runde blev endestationen. Et feststemt stadion i Hvidovre med flotte 1.126 tilskuere på lægterne blev vidne til et opgør, hvor hjemmeholdet straks fra start trykkede på for at få et hurtigt...", ImageURL = "http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg" });
+            //});
             NewsList = _realm.All<NewsModel>();
         }
 
