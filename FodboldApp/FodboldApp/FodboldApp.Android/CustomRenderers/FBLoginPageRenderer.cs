@@ -4,18 +4,17 @@ using Android.Content;
 using FodboldApp.Droid.CustomRenderers;
 using FodboldApp.Globals;
 using FodboldApp.View;
-using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(FBLoginPage), typeof(FBLoginPageRendererPageRenderer))]
+[assembly: ExportRenderer(typeof(FBLoginPage), typeof(FBLoginPageRenderer))]
 namespace FodboldApp.Droid.CustomRenderers
 {
     // Based on http://www.joesauve.com/using-xamarin-auth-with-xamarin-forms/
 
-    public class FBLoginPageRendererPageRenderer : PageRenderer
+    public class FBLoginPageRenderer : PageRenderer
     {
-        public FBLoginPageRendererPageRenderer(Context context) : base(context)
+        public FBLoginPageRenderer(Context context) : base(context)
         {
             
         }   

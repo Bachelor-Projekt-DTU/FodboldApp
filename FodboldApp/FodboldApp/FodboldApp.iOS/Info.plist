@@ -64,7 +64,7 @@
 			<string>URL Type 1</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.yourcompany.FodboldApp</string>
+				<string>com.fifium.FodboldApp</string>
 			</array>
 		</dict>
 		<dict>

@@ -1,10 +1,12 @@
 ﻿using CarouselView.FormsPlugin.iOS;
 using Com.OneSignal;
 using FFImageLoading.Forms.Touch;
+using FodboldApp.Globals;
 using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
 using Plugin.CrossPlatformTintedImage.iOS;
 using RoundedBoxView.Forms.Plugin.iOSUnified;
+using System;
 using UIKit;
 
 namespace FodboldApp.iOS
@@ -38,10 +40,6 @@ namespace FodboldApp.iOS
             CachedImageRenderer.Init();
             RoundedBoxViewRenderer.Init();
             CarouselViewRenderer.Init();
-            //Xamarians.GoogleLogin.iOS.DS.GoogleLogin.Init();
-
-            //var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
-            //SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
@@ -49,23 +47,16 @@ namespace FodboldApp.iOS
             return base.FinishedLaunching(app, options);
         }
 
-        // For iOS 9 or newer
-        //public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
-        //{
-        //    var openUrlOptions = new UIApplicationOpenUrlOptions(options);
-        //    var uri = new Uri(url.AbsoluteString);
-        //    GooglePlusSingleton.Instance.OAuthSettings.OnPageLoading(uri);
+        // Redirect to app and close web browser tab
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            // Convert NSUrl to Uri
+            var uri = new Uri(url.AbsoluteString);
 
-        //    return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
+            // Load redirectUrl page
+            GooglePlusSingleton.Instance.OAuthSettings.OnPageLoading(uri);
 
-        //}
-
-        // For iOS 8 and older
-        //public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
-        //{
-        //    var uri = new Uri(url.AbsoluteString);
-        //    GooglePlusSingleton.Instance.OAuthSettings.OnPageLoading(uri);
-        //    return SignIn.SharedInstance.HandleUrl(url, sourceApplication, annotation);
-        //}
+            return true;
+        }
     }
 }

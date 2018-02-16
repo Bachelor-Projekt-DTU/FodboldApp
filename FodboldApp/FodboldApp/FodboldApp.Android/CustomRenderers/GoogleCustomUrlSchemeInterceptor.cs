@@ -7,7 +7,7 @@ using FodboldApp.Globals;
 
 namespace FodboldApp.Droid.CustomRenderers
 {
-    [Activity(Label = "CustomUrlSchemeInterceptorActivity", NoHistory = true, LaunchMode = LaunchMode.SingleTask)]
+    [Activity(Label = "CustomUrlSchemeInterceptor", NoHistory = true, LaunchMode = LaunchMode.SingleTask)]
     [IntentFilter(new[] { Intent.ActionView },
     Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
     DataSchemes = new[] { "com.googleusercontent.apps.274704195206-lhp82rg3vo8fivj5do0amtrurjtjdv2a" },

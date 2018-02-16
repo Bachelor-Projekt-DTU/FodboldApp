@@ -1,9 +1,9 @@
-﻿using FodboldApp.Droid.InterfaceImplementation;
+﻿using FodboldApp.iOS.InterfaceImplementation;
 using FodboldApp.Interfaces;
 using Foundation;
 
 [assembly: Xamarin.Forms.Dependency(typeof(LogOutImpl))]
-namespace FodboldApp.Droid.InterfaceImplementation
+namespace FodboldApp.iOS.InterfaceImplementation
 {
     class LogOutImpl : ILogOut
     {
@@ -17,7 +17,10 @@ namespace FodboldApp.Droid.InterfaceImplementation
 
         public void LogOutGoogle()
         {
-            SignIn.SharedInstance.SignOutUser();
+            NSHttpCookieStorage CookieStorage = NSHttpCookieStorage.SharedStorage;
+
+            foreach (var cookie in CookieStorage.Cookies)
+                CookieStorage.DeleteCookie(cookie);
         }
     }
 }
