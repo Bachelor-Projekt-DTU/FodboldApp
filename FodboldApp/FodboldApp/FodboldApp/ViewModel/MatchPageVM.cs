@@ -9,6 +9,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Realms.Sync;
+using System.Linq;
 
 namespace FodboldApp.ViewModel
 {
@@ -27,23 +28,26 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public string Date { get; private set; }
-        public string Teams { get; private set; }
-        public ICommand SendCommentCommand { get; set; }
-
-        private string _score { get; set; }
-        public string Score
+        private MatchModel _match { get; set; } = new MatchModel { Team1 = "Loading Error", Team2 = "Loading Error" };
+        public MatchModel Match
         {
-            get
+            get { return _match; }
+            set
             {
-                return _score;
-            }
-            private set
-            {
-                _score = value;
-                OnPropertyChanged(nameof(Score));
+                _match = value;
+                UpdateLists();
+                OnPropertyChanged(nameof(Match));
+                OnPropertyChanged(nameof(Teams));
+                OnPropertyChanged(nameof(Scores));
+                OnPropertyChanged(nameof(EventList));
+                OnPropertyChanged(nameof(CommentList));
             }
         }
+        public string Date { get; private set; }
+        public ICommand SendCommentCommand { get; set; }
+        public string Teams { get { return Match.Teams; } }
+        public string Scores
+        { get { return Match.Scores; } }
 
         private bool _labelIsVisible { get; set; } = true;
         public bool LabelIsVisible
@@ -96,8 +100,8 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        private IEnumerable<object> _eventList { get; set; } = new ObservableCollection<object>();
-        public IEnumerable<object> EventList
+        private IQueryable<object> _eventList { get; set; }
+        public IQueryable<object> EventList
         {
             get
             {
@@ -110,8 +114,8 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        private IEnumerable<object> _commentList { get; set; } = new ObservableCollection<object>();
-        public IEnumerable<object> CommentList
+        private IQueryable<object> _commentList { get; set; }
+        public IQueryable<object> CommentList
         {
             get
             {
@@ -137,12 +141,31 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        private void UpdateLists()
+        {
+            try
+            {
+                EventList = _realm.All<EventModel>().Where(data => data.Match == Match);
+                Console.WriteLine("STAPLE GUN: " + EventList.Count());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            //EventList = _realm.All<EventModel>();
+            //Teams = "BK FREM - Hillerød";
+            CommentList = _realm.All<CommentModel>();
+            CollectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
+            CollectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+
+        }
+
         private async void SetupRealm()
         {
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/matchPage"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
             _realm = Realm.GetInstance(config);
-            int index = 0;
+            //int index = 0;
             //_realm.Write(() =>
             //{
             //    _realm.RemoveAll();
@@ -156,20 +179,9 @@ namespace FodboldApp.ViewModel
             //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Virkelig godt skudt ind!", UserName = "Peter Petersen" });
             //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Mååål", UserName = "Hans Hansen" });
             //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
             //});
-            _eventList = _realm.All<EventModel>();
-            Score = "2 - 2";
-            Teams = "BK FREM - Hillerød";
-            _commentList = _realm.All<CommentModel>();
-            _collectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
-            _collectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
             //_realm.Dispose();
-
+            UpdateLists();
         }
 
         public MatchPageVM()

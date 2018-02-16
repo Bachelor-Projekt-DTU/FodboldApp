@@ -19,10 +19,6 @@ namespace FodboldApp.View
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        public void TapMatch(object sender, EventArgs args)
-        {
-            CustomStack.Instance.MatchContent.Navigation.PushAsync(new MatchPage());
-            HeaderVM.UpdateContent();
-        }
+        
 	}
 }

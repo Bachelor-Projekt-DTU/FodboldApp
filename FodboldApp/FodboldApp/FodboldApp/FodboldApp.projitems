@@ -76,6 +76,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TournamentVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ChatBubbleColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ChatLayoutConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ImageSelectorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\TextAllignmentConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FBLoginPage.xaml.cs">
       <DependentUpon>FBLoginPage.xaml</DependentUpon>

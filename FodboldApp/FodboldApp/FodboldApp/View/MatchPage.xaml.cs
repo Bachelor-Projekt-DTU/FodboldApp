@@ -1,4 +1,5 @@
-﻿using FodboldApp.ViewModel;
+﻿using FodboldApp.Model;
+using FodboldApp.ViewModel;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,9 +9,10 @@ namespace FodboldApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MatchPage : ContentPage
 	{
-		public MatchPage ()
+		public MatchPage (MatchModel match)
 		{
             InitializeComponent();
+            ViewModelLocator.MatchPageVM.Match = match;
         }
     }
 }
