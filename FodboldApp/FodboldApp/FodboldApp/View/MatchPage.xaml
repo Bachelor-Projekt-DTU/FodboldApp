@@ -12,6 +12,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
             <local:TeamAlignmentConverter x:Key="teamConverter"/>
             <local:ImageAlignmentConverter x:Key="imageConverter"/>
             <local:BooleanReverser x:Key="booleanReverser"/>
+            <local:ImageSelectorConverter x:Key="imageSelector"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -31,7 +32,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                     </Grid.RowDefinitions>
                     <Label Text="{Binding Teams}" FontSize="26" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Row="0"/>
                     <Image Source="notificationsbell.png" Margin="25,10,0,0" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"/>
-                    <Label Text="{Binding Score}" FontSize="80" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="1"/>
+                    <Label Text="{Binding Scores}" FontSize="80" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="1"/>
                     <Label Text="Live" FontSize="24" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="2"/>
                 </Grid>
 
@@ -62,7 +63,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                                                 <Label Text="{Binding PlayerName}" Grid.Column="{Binding Team}" VerticalOptions="Center" 
                                        HorizontalOptions="FillAndExpand" 
                                        HorizontalTextAlignment="{Binding Team, Converter={StaticResource teamConverter}}"/>
-                                                <Image Source="{Binding ImageURL}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" Aspect="AspectFill" VerticalOptions="Center"/>
+                                                <Image Source="{Binding Type, Converter={StaticResource imageSelector}}" HorizontalOptions="Center" Grid.Column="{Binding Team, Converter={StaticResource imageConverter}}" Aspect="AspectFill" VerticalOptions="Center"/>
                                                 <BoxView BackgroundColor="Black" Grid.Column="2" HeightRequest="20" VerticalOptions="Center"/>
                                             </Grid>
                                         </DataTemplate>

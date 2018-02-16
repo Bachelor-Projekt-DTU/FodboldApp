@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
 using FodboldApp.Model;
+using FodboldApp.Stack;
+using FodboldApp.View;
 using Realms;
 using Realms.Sync;
+using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
@@ -38,6 +42,17 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        private MatchModel _selectedItem { get; set; }
+        public MatchModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                _selectedItem = value;
+            }
+        }
+        public ICommand MatchTapped { get; private set; }
+
         public async void SetupRealm()
         {
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
@@ -52,9 +67,16 @@ namespace FodboldApp.ViewModel
             MatchList = _realm.All<MatchModel>();
         }
 
+        public void MatchTap()
+        {
+            CustomStack.Instance.MatchContent.Navigation.PushAsync(new MatchPage(SelectedItem));
+            HeaderVM.UpdateContent();
+        }
+
         public MatchesVM()
         {
             SetupRealm();
+            MatchTapped = new Command(MatchTap);
         }
     }
 }

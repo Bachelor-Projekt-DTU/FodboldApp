@@ -5,10 +5,11 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class EventModel : RealmObject
+    public class EventModel : RealmObject
     {
-        public string ImageURL { get; set; }
+        public MatchModel Match { get; set; }
         public string PlayerName { get; set; }
         public int Team { get; set; }
+        public string Type { get; set; }
     }
 }

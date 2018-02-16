@@ -26,14 +26,14 @@
                    VerticalTextAlignment="Center"
                    BackgroundColor="#f0f0f0"
                    HeightRequest="38"/>
-            
-            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding NewsCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" SeparatorColor="Black"
+
+            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding MatchTapped}" FlowLastTappedItem="{Binding SelectedItem, Mode=TwoWay}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" SeparatorColor="Black"
 			   FlowItemsSource="{Binding MatchList}" VerticalOptions="FillAndExpand">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
                         <StackLayout Spacing="0"
                                      BackgroundColor="#ffffff">
-                            
+
                             <Label Text="{Binding Teams}"
                    TextColor="#e11e2c"
                    FontSize="28"
@@ -53,11 +53,9 @@
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
-                            <controls:CircleImage Source="{Binding ImageURL}" Aspect="AspectFill" WidthRequest="250" HeightRequest="250">
-                                <controls:CircleImage.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapMatch"/>
-                                </controls:CircleImage.GestureRecognizers>
-                            </controls:CircleImage>
+                            <controls:CircleImage Source="{Binding ImageURL}" Aspect="AspectFill" WidthRequest="250" HeightRequest="250"/>
+
+
                             <Label Text="LÆS MERE"
                    TextColor="#bbbbbb"
                    HorizontalOptions="FillAndExpand"
