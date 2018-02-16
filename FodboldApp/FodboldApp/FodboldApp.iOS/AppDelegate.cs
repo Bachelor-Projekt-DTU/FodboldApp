@@ -40,8 +40,8 @@ namespace FodboldApp.iOS
             CarouselViewRenderer.Init();
             //Xamarians.GoogleLogin.iOS.DS.GoogleLogin.Init();
 
-            var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
-            SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
+            //var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
+            //SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();

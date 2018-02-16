@@ -1,14 +1,38 @@
 ﻿using Realms;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace FodboldApp.Model
 {
-    class MatchModel : RealmObject
+    public class MatchModel : RealmObject
     {
-        public string Teams { get; set; }
-        public string Score { get; set; }
-        public string ImageURL { get; set; }
+        public string Id { get; set; }
+        public string Team1 { get; set; }
+        public string Team2 { get; set; }
+        public int Score1 { get; set; }
+        public int Score2 { get; set; }
+        public string Teams
+        {
+            get
+            {
+                return Team1 + " - " + Team2;
+            }
+        }
+        public string Scores
+        {
+            get
+            {
+                return Score1 + " - " + Score2;
+            }
+        }
+    public string ImageURL { get; set; } = "http://bkfrem.dk/images/hill_2.jpg";
+        public override bool Equals(object obj)
+        {
+            MatchModel match = (MatchModel)obj;
+            return Team1 == match.Team1 && Team2 == match.Team2 && Score1 == match.Score1 && Score2 == match.Score2 && ImageURL == match.ImageURL;
+        }
     }
+
 }

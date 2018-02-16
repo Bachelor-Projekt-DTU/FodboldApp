@@ -13,6 +13,20 @@ namespace FodboldApp.Model
         public string Team2 { get; set; }
         public int Score1 { get; set; }
         public int Score2 { get; set; }
+        public string Teams
+        {
+            get
+            {
+                return Team1 + " - " + Team2;
+            }
+        }
+        public string Scores
+        {
+            get
+            {
+                return Score1 + " - " + Score2;
+            }
+        }
         public string ImageURL { get; set; } = "http://bkfrem.dk/images/hill_2.jpg";
         public override bool Equals(object obj)
         {
@@ -20,5 +34,4 @@ namespace FodboldApp.Model
             return Team1 == match.Team1 && Team2 == match.Team2 && Score1 == match.Score1 && Score2 == match.Score2 && ImageURL == match.ImageURL;
         }
     }
-
 }

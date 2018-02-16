@@ -7,7 +7,7 @@ namespace FodboldApp.Model
 {
     public class EventModel : RealmObject
     {
-        public string MatchId { get; set; }
+        public MatchModel Match { get; set; }
         public string ImageURL { get; set; }
         public string PlayerName { get; set; }
         public int Team { get; set; }
