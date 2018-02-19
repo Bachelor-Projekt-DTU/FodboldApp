@@ -8,6 +8,7 @@ using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

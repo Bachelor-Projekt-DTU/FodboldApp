@@ -63,6 +63,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchesVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsPageVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NoInternetVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverHundredGamesVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderVM.cs" />
@@ -115,6 +116,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\News.xaml.cs">
       <DependentUpon>News.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\NoInternetPage.xaml.cs">
+      <DependentUpon>NoInternetPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\OverFiftyGoals.xaml.cs">
       <DependentUpon>OverFiftyGoals.xaml</DependentUpon>
@@ -218,6 +223,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\GoogleLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\NoInternetPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

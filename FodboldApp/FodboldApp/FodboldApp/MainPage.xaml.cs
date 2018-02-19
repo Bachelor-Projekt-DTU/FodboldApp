@@ -16,10 +16,12 @@ namespace FodboldApp
 
         public MainPage()
         {
+
             InitializeComponent();
 
             HeaderVM.SetContent(pageContent);
             ViewModelLocator.HeaderVM.NewsTap();
+            NoInternetVM.IsConnected(null);
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
