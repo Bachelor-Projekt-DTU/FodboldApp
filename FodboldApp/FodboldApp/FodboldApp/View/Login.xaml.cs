@@ -10,10 +10,10 @@ namespace FodboldApp.View
 	{   
 		public Login ()
 		{
-            BindingContext = ViewModelLocator.LoginVM;
+            BindingContext = ViewModel.ViewModelLocator.LoginVM;
             InitializeComponent();
 
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Globals.ColoringLogic.AppPrimary;
+            ((NavigationPage)Xamarin.Forms.Application.Current.MainPage).BarBackgroundColor = Globals.ColoringLogic.AppPrimary;
         }
 	}
 }

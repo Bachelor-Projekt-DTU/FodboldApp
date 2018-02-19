@@ -63,15 +63,15 @@ namespace FodboldApp.Globals
         {
             get
             {
-                Application.Current.Properties["Token"] = Instance.Token;
-                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
-                Application.Current.Properties["IsUserLoggedIn"] = true;
-                Application.Current.Properties["LoginType"] = "Facebook";
-                ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
-                ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken);
+                Xamarin.Forms.Application.Current.Properties["Token"] = Instance.Token;
+                ViewModel.ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                Xamarin.Forms.Application.Current.Properties["IsUserLoggedIn"] = true;
+                Xamarin.Forms.Application.Current.Properties["LoginType"] = "Facebook";
+                ViewModel.ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
+                ViewModel.ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken);
                 Console.WriteLine("Det virker");
-                ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Facebook;
-                return new Action(() => Application.Current.MainPage.Navigation.PopToRootAsync());
+                ViewModel.ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Facebook;
+                return new Action(() => Xamarin.Forms.Application.Current.MainPage.Navigation.PopToRootAsync());
             }
         }
 
@@ -79,7 +79,7 @@ namespace FodboldApp.Globals
         {
             get
             {
-                return new Action(() => Application.Current.MainPage.Navigation.PopAsync());
+                return new Action(() => Xamarin.Forms.Application.Current.MainPage.Navigation.PopAsync());
             }
         }
     }

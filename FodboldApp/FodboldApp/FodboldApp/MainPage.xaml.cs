@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace FodboldApp
@@ -20,8 +20,8 @@ namespace FodboldApp
             InitializeComponent();
 
             HeaderVM.SetContent(pageContent);
-            ViewModelLocator.HeaderVM.NewsTap();
-            NoInternetVM.IsConnected(null);
+            ViewModel.ViewModelLocator.HeaderVM.NewsTap();
+            Task.Run(()=>ViewModelLocator.NoInternetVM.IsConnectedOnMainPage(null));
 
             NavigationPage.SetHasNavigationBar(this, false);
         }

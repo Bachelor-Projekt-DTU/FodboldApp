@@ -1,14 +1,10 @@
 ﻿using Com.OneSignal;
 using DLToolkit.Forms.Controls;
 using FodboldApp.Globals;
-using FodboldApp.Interfaces;
-using FodboldApp.Model;
-using FodboldApp.View;
 using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
 using System;
-using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,7 +13,7 @@ using Xamarin.Forms.Xaml;
 
 namespace FodboldApp
 {
-    public partial class App : Application
+    public partial class App : Xamarin.Forms.Application
     {
         HeaderVM vm;
         Realm _realm;
@@ -46,7 +42,7 @@ namespace FodboldApp
                     FacebookAutoLogin();
             }
 
-            MainPage = new NavigationPage(new FrontPage());
+            ViewModelLocator.NoInternetVM.IsConnectedOnFrontPage(null);
 
             NavigationPage.SetHasNavigationBar(this, false);
         }

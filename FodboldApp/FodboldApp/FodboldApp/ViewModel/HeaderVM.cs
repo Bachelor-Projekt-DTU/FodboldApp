@@ -300,5 +300,10 @@ namespace FodboldApp.ViewModel
             }
             UpdateContent();
         }
+
+        public void NoInternetHandler()
+        {
+            contentPage.Content = new NoInternetPage().Content;
+        }
     }
 }
