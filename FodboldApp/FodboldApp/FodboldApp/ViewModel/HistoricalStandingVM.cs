@@ -155,7 +155,7 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("formerPlayers");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
 
             //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
             //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/standings"));

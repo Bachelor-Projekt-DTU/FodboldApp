@@ -59,7 +59,7 @@
                         <!-- Header content -->
                         <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0">
                             <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OnBackButtonTapped}"/>
+                                <TapGestureRecognizer Command="{Binding BackButtonTapped}"/>
                             </StackLayout.GestureRecognizers>
                         </controls:TintedImage>
 
