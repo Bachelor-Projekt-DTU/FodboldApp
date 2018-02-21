@@ -162,9 +162,10 @@ namespace FodboldApp.ViewModel
 
         private async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
-            _realm = Realm.GetInstance(config);
+            _realm = await NoInternetVM.IsConnectedOnMainPage("matches");
+            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
+            //_realm = Realm.GetInstance(config);
             //int index = 0;
             //_realm.Write(() =>
             //{
@@ -186,7 +187,7 @@ namespace FodboldApp.ViewModel
 
         public MatchPageVM()
         {
-            SetupRealm();
+            //SetupRealm();
             SendCommentCommand = new Command(OnSendTapped);
         }
     }

@@ -23,6 +23,7 @@ namespace FodboldApp.ViewModel
         public ICommand HistoryTapped { get; private set; }
         public ICommand LoginCommand { get; private set; }
         public ICommand LogoutCommand { get; private set; }
+
         public ICommand BackButtonTapped { get; private set; }
 
         private Color _newsIconColor;
@@ -142,7 +143,6 @@ namespace FodboldApp.ViewModel
 
         public HeaderVM()
         {
-            stack = CustomStack.Instance;
             ResetTint();
             
             NewsTapped = new Command(NewsTap);
@@ -153,6 +153,11 @@ namespace FodboldApp.ViewModel
             LoginCommand = new Command(Login);
             LogoutCommand = new Command(Logout);
             BackButtonTapped = new Command(BackButtonPressed);
+        }
+
+        public void CreateStack()
+        {
+            stack = CustomStack.Instance;
         }
 
         private void ResetTint()
@@ -304,6 +309,13 @@ namespace FodboldApp.ViewModel
         public void NoInternetHandler()
         {
             contentPage.Content = new NoInternetPage().Content;
+        }
+
+        internal static void ResetStack()
+        {
+            CustomStack.ResetStack();
+            stack = CustomStack.Instance;
+            UpdateContent();
         }
     }
 }

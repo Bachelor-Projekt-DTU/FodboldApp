@@ -59,7 +59,7 @@ namespace FodboldApp.ViewModel
         
         public TournamentVM()
         {
-            SetupRealm();
+            //SetupRealm();
         }
     }
 }

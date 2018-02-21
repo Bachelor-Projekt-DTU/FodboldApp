@@ -69,15 +69,18 @@ namespace FodboldApp.ViewModel
         {
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
-
-        async void IsConnectedOnFrontPage()
+        
+        async void SetupRealm()
         {
-          // _realm = ViewModelLocator.NoInternetVM.IsConnectedOnFrontPage(null);
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/clubs"));
+            _realm = Realm.GetInstance(config);
+            ClubListSource = _realm.All<ClubModel>();
         }
 
         public ClubVM()
         {
-            IsConnectedOnFrontPage();
+            SetupRealm();
             ContinueCommand = new Command(OnTapped);
         }
     }
