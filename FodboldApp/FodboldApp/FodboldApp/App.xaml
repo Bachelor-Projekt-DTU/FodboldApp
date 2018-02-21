@@ -5,8 +5,7 @@
              xmlns:converter="clr-namespace:FodboldApp.View.Converter" 
              xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions"
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel">
-    <!--BindingContext="FodboldApp.ViewModel:HeaderViewModel"-->
-
+    
     <Application.Resources>
 
         <!-- Application resource dictionary -->
@@ -52,19 +51,19 @@
                         </StackLayout.Padding>-->
 
                     <Grid HorizontalOptions="FillAndExpand" BackgroundColor="#fb433c" Padding="0, 10, 0, 10" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="70"/>
-                            </Grid.ColumnDefinitions>
-                            <!-- Header content -->
-                            <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0">
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding OnBackButtonTapped}"/>
-                                </StackLayout.GestureRecognizers>
-                            </controls:TintedImage>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- Header content -->
+                        <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OnBackButtonTapped}"/>
+                            </StackLayout.GestureRecognizers>
+                        </controls:TintedImage>
 
-                            <SearchBar x:Name="search"
+                        <SearchBar x:Name="search"
                                    Placeholder="Søg"
                                    PlaceholderColor="#d0d0d0"
                                    CancelButtonColor="#d0d0d0"
@@ -74,8 +73,9 @@
                                    HorizontalOptions="FillAndExpand"
                                    Margin="0, 0, 10, 0"
                                    MinimumWidthRequest="30"
-                                       Grid.Column="1"/>
-                            <Label Text="LOG IND"
+                                   Grid.Column="1"
+                                   Text="{Binding InputText, Mode=TwoWay}"/>
+                        <Label Text="LOG IND"
                                TextColor="#d0d0d0"
                                WidthRequest="60"
                                IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
@@ -83,10 +83,10 @@
                                VerticalTextAlignment="Center"
                            Margin="10, 0, 0, 0 "
                                    Grid.Column="2">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding LoginCommand}"/>
-                                </Label.GestureRecognizers>
-                            </Label>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LoginCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
                         <Label Text="LOG UD"
                                TextColor="#d0d0d0"
                                WidthRequest="60"
@@ -105,7 +105,7 @@
 
                     <!-- Begin Content -->
                     <ContentView Grid.Column="0" Grid.Row="1">
-                            <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                        <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
                     </ContentView>
                     <!-- End Content -->
 
@@ -168,7 +168,7 @@
                         </Grid>
                     </Grid>
                 </Grid>
-        </ControlTemplate>
+            </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

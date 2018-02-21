@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             x:Class="FodboldApp.View.SearchResultView"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
+    
+    <ContentView.Content>
+      <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:HeaderVM/>
+            </StackLayout.BindingContext>
+            <flv:FlowListView ItemsSource="{Binding SearchResultList}" FlowItemTappedCommand="{Binding ArticleTappedCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True">
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="5">
+                                <Label Grid.Column="1" Text="{Binding ArticleTitle}" FontSize="24"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

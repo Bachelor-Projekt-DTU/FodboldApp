@@ -28,6 +28,7 @@ namespace FodboldApp.ViewModel
         }
 
         public ICommand ContinueCommand { get; set; }
+
         public static IEnumerable<ClubModel> _clubListSource = new ObservableCollection<ClubModel>();
         public IEnumerable<ClubModel> ClubListSource
         {

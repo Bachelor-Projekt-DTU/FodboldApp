@@ -11,5 +11,6 @@ namespace FodboldApp.Model
         public string Date { get; set; }
         public string Resume { get; set; }
         public string ImageURL { get; set; }
+        public string Text { get; set; }
     }
 }
