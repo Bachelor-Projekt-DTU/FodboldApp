@@ -21,7 +21,7 @@ namespace FodboldApp
 
             HeaderVM.SetContent(pageContent);
             ViewModel.ViewModelLocator.HeaderVM.NewsTap();
-            Task.Run(()=>ViewModelLocator.NoInternetVM.IsConnectedOnMainPage(null));
+            //Task.Run(()=>ViewModelLocator.NoInternetVM.IsConnectedOnMainPage(null));
 
             NavigationPage.SetHasNavigationBar(this, false);
         }

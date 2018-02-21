@@ -3,8 +3,12 @@ using FodboldApp.Interfaces;
 using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
+using Realms;
+using Realms.Sync;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 using static FodboldApp.Model.Categories;
@@ -15,6 +19,8 @@ namespace FodboldApp.ViewModel
     {
         Color SelectedColor = Color.FromHex("#315baa");
         Color UnSelectedColor = Color.FromHex("#545454");
+
+        Realm _realm;
 
         public ICommand NewsTapped { get; private set; }
         public ICommand PlayersTapped { get; private set; }
@@ -48,6 +54,59 @@ namespace FodboldApp.ViewModel
         public static void SetContent(ContentView content)
         {
             contentPage = content;
+        }
+
+        private string _inputText;
+        public string InputText
+        {
+            get
+            {
+                return _inputText;
+            }
+            set
+            {
+                if (_inputText != value)
+                {
+                    _inputText = value;
+                    contentPage.Content = new SearchResultView().Content;
+                    OnPropertyChanged(nameof(InputText));
+                    FilterArticlesAsync();
+                } else{
+                    UpdateContent();
+                }
+            }
+        }
+
+        private IQueryable<NewsModel> _searchResultList;
+        public IQueryable<NewsModel> SearchResultList
+        {
+            get
+            {
+                return _searchResultList;
+            }
+            set
+            {
+                if (_searchResultList != value)
+                {
+                    _searchResultList = value;
+                    OnPropertyChanged(nameof(SearchResultList));
+                }
+            }
+        }
+
+        private async System.Threading.Tasks.Task FilterArticlesAsync()
+        {
+                if (String.IsNullOrEmpty(_inputText))
+                {
+                SearchResultList = Enumerable.Empty<NewsModel>().AsQueryable();
+                }
+                else
+                {
+                var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+                SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
+                _realm = Realm.GetInstance(config);
+                SearchResultList = _realm.All<NewsModel>().Where(Data => Data.Text.Contains(InputText));
+                }
         }
 
         public bool _isUserLoggedIn { get; set; }

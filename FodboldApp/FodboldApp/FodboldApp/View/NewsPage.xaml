@@ -25,9 +25,14 @@
                 <Label Text="{Binding SmallText}"
                        FontSize="32"
                        HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Start"/>
+                       HorizontalTextAlignment="Start"/>    
                 <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"/>
                 <Label Text="{Binding NewsText}"/>
+                <Image Source="share_button" HorizontalOptions="Start" VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShareCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

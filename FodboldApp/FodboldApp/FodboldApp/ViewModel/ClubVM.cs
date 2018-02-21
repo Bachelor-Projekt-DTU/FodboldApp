@@ -28,6 +28,7 @@ namespace FodboldApp.ViewModel
         }
 
         public ICommand ContinueCommand { get; set; }
+
         public static IEnumerable<ClubModel> _clubListSource = new ObservableCollection<ClubModel>();
         public IEnumerable<ClubModel> ClubListSource
         {
@@ -77,7 +78,7 @@ namespace FodboldApp.ViewModel
 
         public ClubVM()
         {
-            IsConnectedOnFrontPage();
+            //IsConnectedOnFrontPage();
             ContinueCommand = new Command(OnTapped);
         }
     }

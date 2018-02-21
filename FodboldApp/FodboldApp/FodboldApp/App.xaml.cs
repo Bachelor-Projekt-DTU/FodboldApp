@@ -20,7 +20,7 @@ namespace FodboldApp
 
         public App()
         {
-            //SetupRealmAsync();
+            SetupRealmAsync();
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
@@ -42,7 +42,8 @@ namespace FodboldApp
                     FacebookAutoLogin();
             }
 
-            ViewModelLocator.NoInternetVM.IsConnectedOnFrontPage(null);
+            //ViewModelLocator.NoInternetVM.IsConnectedOnFrontPage(null);
+            MainPage = new NavigationPage(new FrontPage());
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
