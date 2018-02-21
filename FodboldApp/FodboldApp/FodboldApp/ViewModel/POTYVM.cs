@@ -51,19 +51,21 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/chat"));
-            _realm = Realm.GetInstance(config);
-            int index = 0;
-            _realm.Write(() =>
-            {
-                _realm.RemoveAll();
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-                _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
-            });
+            _realm = await NoInternetVM.IsConnectedOnMainPage("POTY");
+
+            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/chat"));
+            //_realm = Realm.GetInstance(config);
+            //int index = 0;
+            //_realm.Write(() =>
+            //{
+            //    _realm.RemoveAll();
+            //    _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            //    _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            //    _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            //    _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            //    _realm.Add(new POTYModel { Year = "1958", Name = "George Lees", Index = index++ });
+            //});
             PlayersList = _realm.All<POTYModel>();
         }
         public POTYVM()
