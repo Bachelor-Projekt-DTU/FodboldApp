@@ -21,7 +21,7 @@ namespace FodboldApp.ViewModel
         Color UnSelectedColor = Color.FromHex("#545454");
 
         Realm _realm;
-        private static bool HasInternet;
+        private static bool HasInternet = true;
 
         public ICommand NewsTapped { get; private set; }
         public ICommand PlayersTapped { get; private set; }
