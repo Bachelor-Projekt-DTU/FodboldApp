@@ -21,6 +21,7 @@ namespace FodboldApp.ViewModel
         Color UnSelectedColor = Color.FromHex("#545454");
 
         Realm _realm;
+        private static bool HasInternet;
 
         public ICommand NewsTapped { get; private set; }
         public ICommand PlayersTapped { get; private set; }
@@ -269,7 +270,7 @@ namespace FodboldApp.ViewModel
                 await stack.NewsContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.NewsType;
-            contentPage.Content = ((ContentPage)stack.NewsContent.CurrentPage).Content;
+            if (HasInternet) contentPage.Content = ((ContentPage)stack.NewsContent.CurrentPage).Content;
         }
 
         public async void PlayerTap()
@@ -281,7 +282,7 @@ namespace FodboldApp.ViewModel
                 await stack.PlayerContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.PlayerType;
-            contentPage.Content = ((ContentPage)stack.PlayerContent.CurrentPage).Content;
+            if (HasInternet) contentPage.Content = ((ContentPage)stack.PlayerContent.CurrentPage).Content;
         }
 
         public async void MatchTap()
@@ -293,7 +294,7 @@ namespace FodboldApp.ViewModel
                 await stack.MatchContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.MatchType;
-            contentPage.Content = ((ContentPage)stack.MatchContent.CurrentPage).Content;
+            if (HasInternet) contentPage.Content = ((ContentPage)stack.MatchContent.CurrentPage).Content;
         }
 
         public async void TournamentTap()
@@ -305,7 +306,7 @@ namespace FodboldApp.ViewModel
                 await stack.TournamentContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.TournamentType;
-            contentPage.Content = ((ContentPage)stack.TournamentContent.CurrentPage).Content;
+            if (HasInternet) contentPage.Content = ((ContentPage)stack.TournamentContent.CurrentPage).Content;
         }
 
         public async void HistoryTap()
@@ -317,7 +318,7 @@ namespace FodboldApp.ViewModel
                 await stack.HistoryContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.HistoryType;
-            contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
+            if(HasInternet) contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
         }
 
         public static void UpdateContent()
@@ -367,11 +368,13 @@ namespace FodboldApp.ViewModel
 
         public void NoInternetHandler()
         {
+            HasInternet = false;
             contentPage.Content = new NoInternetPage().Content;
         }
 
         internal static void ResetStack()
         {
+            HasInternet = true;
             CustomStack.ResetStack();
             stack = CustomStack.Instance;
             UpdateContent();
