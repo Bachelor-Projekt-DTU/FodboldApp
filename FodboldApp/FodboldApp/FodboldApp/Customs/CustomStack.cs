@@ -1,4 +1,5 @@
-﻿using FodboldApp.Customs;
+﻿using System;
+using FodboldApp.Customs;
 using FodboldApp.View;
 using Xamarin.Forms;
 
@@ -12,7 +13,7 @@ namespace FodboldApp.Stack
         public CustomNavigationPage TournamentContent;
         public CustomNavigationPage HistoryContent;
 
-        public static CustomStack Instance { get; } = new CustomStack();
+        public static CustomStack Instance { get; private set; } = new CustomStack();
 
         public CustomStack()
         {
@@ -21,6 +22,11 @@ namespace FodboldApp.Stack
             MatchContent = new CustomNavigationPage(new Matches());
             TournamentContent = new CustomNavigationPage(new Tournament());
             HistoryContent = new CustomNavigationPage(new History());
+        }
+
+        internal static void ResetStack()
+        {
+            Instance = new CustomStack();
         }
     }
 }

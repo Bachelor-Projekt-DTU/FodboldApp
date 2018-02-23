@@ -155,23 +155,25 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/standings"));
-            _realm = Realm.GetInstance(config);
-            _realm.Write(() =>
-            {
-                _realm.RemoveAll();
-                _realm.Add(new HistoricalStandingTitleModel { Title = "LANDSFODBOLDTURNERINGEN" });
-                _realm.Add(new HistoricalStandingTitleModel { Title = "MESTERSKABSSERIEN" });
-                _realm.Add(new HistoricalStandingTitleModel { Title = "Kriseturneringen – kreds 3" });
-                _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 1. Division" });
-                _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 2. Division" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-                _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
-            });
+            _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
+
+            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/standings"));
+            //_realm = Realm.GetInstance(config);
+            //_realm.Write(() =>
+            //{
+            //    _realm.RemoveAll();
+            //    _realm.Add(new HistoricalStandingTitleModel { Title = "LANDSFODBOLDTURNERINGEN" });
+            //    _realm.Add(new HistoricalStandingTitleModel { Title = "MESTERSKABSSERIEN" });
+            //    _realm.Add(new HistoricalStandingTitleModel { Title = "Kriseturneringen – kreds 3" });
+            //    _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 1. Division" });
+            //    _realm.Add(new HistoricalStandingTitleModel { Title = "DANMARKSTURNERINGEN – 2. Division" });
+            //    _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            //    _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            //    _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            //    _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            //    _realm.Add(new HistoricalStandingModel { TournamentName = "MESTERSKABSSERIEN", Year = "1929-30", Games = "9", Record = "6-3-0", Standing = "1", Points = "15" });
+            //});
 
             HistoricalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
             HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>();

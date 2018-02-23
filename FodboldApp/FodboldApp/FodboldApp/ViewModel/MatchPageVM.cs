@@ -145,7 +145,6 @@ namespace FodboldApp.ViewModel
         {
             try
             {
-                EventList = _realm.All<EventModel>().Where(data => data.Match == Match);
                 Console.WriteLine("STAPLE GUN: " + EventList.Count());
             }
             catch (Exception e)
@@ -154,17 +153,20 @@ namespace FodboldApp.ViewModel
             }
             //EventList = _realm.All<EventModel>();
             //Teams = "BK FREM - Hillerød";
-            CommentList = _realm.All<CommentModel>();
-            CollectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
-            CollectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+            
 
         }
 
         private async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
-            _realm = Realm.GetInstance(config);
+            _realm = await NoInternetVM.IsConnectedOnMainPage("matches");
+            EventList = _realm.All<EventModel>().Where(data => data.Match == Match);
+            CommentList = _realm.All<CommentModel>();
+            CollectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
+            CollectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
+            //_realm = Realm.GetInstance(config);
             //int index = 0;
             //_realm.Write(() =>
             //{
@@ -181,7 +183,8 @@ namespace FodboldApp.ViewModel
             //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
             //});
             //_realm.Dispose();
-            UpdateLists();
+            //UpdateLists();
+            //Console.WriteLine("okokokok" +EventList.Count());
         }
 
         public MatchPageVM()

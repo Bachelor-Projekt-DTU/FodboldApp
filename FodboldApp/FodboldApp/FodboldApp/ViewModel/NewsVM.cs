@@ -47,9 +47,10 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
-            _realm = Realm.GetInstance(config);
+            _realm = await NoInternetVM.IsConnectedOnMainPage("news");
+            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
+            //_realm = Realm.GetInstance(config);
             //_realm.Write(() =>
             //{
             //    _realm.RemoveAll();
@@ -62,7 +63,7 @@ namespace FodboldApp.ViewModel
         public NewsVM()
         {
             SetupRealm();
-            
+
             Console.WriteLine("DIPSET CITY");
             NewsCommand = new Command(News_Tapped);
         }

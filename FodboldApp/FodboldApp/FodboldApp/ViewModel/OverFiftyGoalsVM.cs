@@ -45,10 +45,12 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            int index = 0;
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/over50goals"));
-            _realm = Realm.GetInstance(config);
+            _realm = await NoInternetVM.IsConnectedOnMainPage("over50goals");
+
+            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/over50goals"));
+            //_realm = Realm.GetInstance(config);
+            //int index = 0;
             //_realm.Write(() =>
             //{
             //    _realm.RemoveAll();
@@ -58,7 +60,7 @@ namespace FodboldApp.ViewModel
             //    _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
             //    _realm.Add(new OverFiftyGoalsModel { Name = "Pauli Jørgensen", Period = "1973 - 1998", Goals_Games = "288*/297", Index = index++ });
             //});
-            PlayersList = _realm.All<OverFiftyGoalsModel>();
+            //PlayersList = _realm.All<OverFiftyGoalsModel>();
             //_realm.Dispose();
         }
 

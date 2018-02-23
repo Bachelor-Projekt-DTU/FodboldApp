@@ -39,14 +39,14 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
 
             </Grid>
             <Grid RowSpacing="0" VerticalOptions="FillAndExpand">
-                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}" ShowArrows="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <cv:CarouselViewControl ItemsSource="{Binding CollectionList}" ShowArrows="True" VerticalOptions="FillAndExpand">
                     <cv:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
+                            <StackLayout>
                                 <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" Grid.Row="0"
                                   SeparatorVisibility="None" HasUnevenRows="True"  IsVisible="{Binding ListSwitch}"
                                   FlowItemsSource="{Binding CollectionList}" BackgroundColor="White" >
@@ -70,57 +70,52 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                                     </flv:FlowListView.FlowColumnTemplate>
                                 </flv:FlowListView>
 
-                                <Grid Grid.Row="0">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="50"/>
-                                    </Grid.RowDefinitions>
-                                    <flv:FlowListView x:Name="flowListView2" FlowColumnCount="1" BackgroundColor="White"
+                                <flv:FlowListView x:Name="flowListView2" FlowColumnCount="1" BackgroundColor="White"
                                   HasUnevenRows="True" HeightRequest="180" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" Grid.Row="0"
                                   FlowItemsSource="{Binding CollectionList}" SeparatorVisibility="Default" SeparatorColor="Black">
-                                        <flv:FlowListView.FlowColumnTemplate>
-                                            <DataTemplate>
-                                                <Grid RowSpacing="5">
-                                                    <Grid.RowDefinitions>
-                                                        <RowDefinition Height="*"/>
-                                                        <RowDefinition Height="*"/>
-                                                    </Grid.RowDefinitions>
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="2.5*"/>
-                                                        <ColumnDefinition Width="20*"/>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Image Source="{Binding ImageURL}" HorizontalOptions="Start" 
+                                    <flv:FlowListView.FlowColumnTemplate>
+                                        <DataTemplate>
+                                            <Grid RowSpacing="5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2.5*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Image Source="{Binding ImageURL}" HorizontalOptions="Start" 
                                        Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Margin="0,10,0,0" VerticalOptions="Start"/>
-                                                    <Label Text="{Binding UserName}" Grid.Row="0" Grid.Column="1" VerticalOptions="Start" 
+                                                <Label Text="{Binding UserName}" Grid.Row="0" Grid.Column="1" VerticalOptions="Start" 
                                        HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="0,10,0,5" />
-                                                    <Label Text="{Binding UserComment}" Grid.Row="1" Grid.Column="0" VerticalOptions="Start" 
+                                                <Label Text="{Binding UserComment}" Grid.Row="1" Grid.Column="0" VerticalOptions="Start" 
                                        HorizontalOptions="StartAndExpand" FontSize="Medium" HorizontalTextAlignment="Start" Grid.ColumnSpan="2" Margin="0,0,0,10" />
-                                                </Grid>
-                                            </DataTemplate>
-                                        </flv:FlowListView.FlowColumnTemplate>
-                                    </flv:FlowListView>
-                                    <StackLayout Grid.Row="1" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" >
-                                        <Label Text="Log ind for at kommentere" IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
-                                               BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}"
-                                               HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
-                                        <Grid IsVisible="{Binding IsUserLoggedIn}" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
-                                            <Editor Text="{Binding UserComment, Mode=TwoWay}"
-                                                HorizontalOptions="FillAndExpand"
-                                                BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
-                                            </Editor>
-                                            <Label Text="Skriv en kommentar" Margin="0,10,0,0"
-                                               HorizontalOptions="StartAndExpand" IsVisible="{Binding LabelIsVisible}" InputTransparent="True"
-                                               BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
-                                            </Label>
-                                            <Button Text="Send" HorizontalOptions="End" Command="{Binding SendCommentCommand}" VerticalOptions="Center" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
-                                            </Button>
-                                        </Grid>
-                                    </StackLayout>
-                                </Grid>
-                            </Grid>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </flv:FlowListView.FlowColumnTemplate>
+                                </flv:FlowListView>
+
+                            </StackLayout>
                         </DataTemplate>
                     </cv:CarouselViewControl.ItemTemplate>
                 </cv:CarouselViewControl>
+                <StackLayout Grid.Row="1" HeightRequest="50">
+                    <Label Text="Log ind for at kommentere" IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
+                                               BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}"
+                                               HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+                    <Grid IsVisible="{Binding IsUserLoggedIn}" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
+                        <Editor Text="{Binding UserComment, Mode=TwoWay}"
+                                                HorizontalOptions="FillAndExpand"
+                                                BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
+                        </Editor>
+                        <Label Text="Skriv en kommentar" Margin="0,10,0,0"
+                                               HorizontalOptions="StartAndExpand" IsVisible="{Binding LabelIsVisible}" InputTransparent="True"
+                                               BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
+                        </Label>
+                        <Button Text="Send" HorizontalOptions="End" Command="{Binding SendCommentCommand}" VerticalOptions="Center" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
+                        </Button>
+                    </Grid>
+                </StackLayout>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

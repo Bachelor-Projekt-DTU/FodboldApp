@@ -17,11 +17,13 @@ namespace FodboldApp
         public MainPage()
         {
 
+
             InitializeComponent();
 
             HeaderVM.SetContent(pageContent);
-            ViewModel.ViewModelLocator.HeaderVM.NewsTap();
-            //Task.Run(()=>ViewModelLocator.NoInternetVM.IsConnectedOnMainPage(null));
+            ViewModelLocator.HeaderVM.CreateStack();
+            ViewModelLocator.HeaderVM.NewsTap();
+            Task.Run(()=>NoInternetVM.IsConnectedOnMainPage(null));
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
