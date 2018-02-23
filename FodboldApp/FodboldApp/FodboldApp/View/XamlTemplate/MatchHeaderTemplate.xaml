@@ -14,7 +14,7 @@
         <local:BooleanReverser x:Key="booleanReverser"/>
     </ResourceDictionary>-->
 
-    <StackLayout IsVisible="{Binding Live,  Converter={StaticResource booleanReverser}}">
+    <StackLayout IsVisible="{Binding Live,  Converter={StaticResource booleanReverser}}" HorizontalOptions="FillAndExpand">
         <StackLayout.Resources>
             <ResourceDictionary>
                 <local:BooleanReverser x:Key="booleanReverser"/>
@@ -57,7 +57,7 @@
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
     </StackLayout>
-    <StackLayout IsVisible="{Binding Live}">
+    <StackLayout IsVisible="{Binding Live}" HorizontalOptions="FillAndExpand">
         <StackLayout.BindingContext>
             <viewmodels:MatchHeaderVM/>
         </StackLayout.BindingContext>
