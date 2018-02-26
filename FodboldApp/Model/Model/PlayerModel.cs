@@ -2,7 +2,7 @@
 
 namespace FodboldApp.Model
 {
-    public class PlayersModel : RealmObject
+    public class PlayerModel : RealmObject
     {
         public string ImageURL { get; set; }
         public string Sponsor { get; set; }

@@ -9,7 +9,15 @@ namespace FodboldApp.Model
     {
         public string Title { get; set; }
         public string Date { get; set; }
-        public string Resume { get; set; }
+        public string Text { get; set; }
+        public string Resume
+        {
+            get
+            {
+                if (Text.Length < 200) return Text;
+                return Text.Substring(0, 200) + "...";
+            }
+        }
         public string ImageURL { get; set; }
     }
 }
