@@ -28,7 +28,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Globals\FacebookSingleton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Globals\GoogleConfigurations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Globals\GooglePlusSingleton.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Globals\OAuthSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILogOut.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Categories.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ChatModel.cs" />

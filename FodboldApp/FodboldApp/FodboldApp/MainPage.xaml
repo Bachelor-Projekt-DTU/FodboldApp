@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FodboldApp.MainPage"
              BackgroundColor="#F0F0F0"
-             Title="TEST"
              ControlTemplate="{StaticResource MainPageTemplate}"
              xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions">
     <ContentView x:Name="pageContent" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>

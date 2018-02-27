@@ -40,10 +40,8 @@
                 </ListView>
             </Grid>
 
-            <Button Text="Næste"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                    Command="{Binding ContinueCommand}"/>
+            <Button Text="Næste" HorizontalOptions="Center" VerticalOptions="Center" 
+                    Command="{Binding ContinueCommand}" Style="{StaticResource buttonStyle}" />
         </StackLayout>
     </ContentPage.Content>
 

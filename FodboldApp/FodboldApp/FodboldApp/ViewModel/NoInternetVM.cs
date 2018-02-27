@@ -1,13 +1,9 @@
-﻿using FodboldApp.Stack;
-using FodboldApp.View;
+﻿using FodboldApp.View;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using Realms;
 using Realms.Sync;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
