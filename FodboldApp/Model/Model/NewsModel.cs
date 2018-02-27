@@ -19,5 +19,6 @@ namespace FodboldApp.Model
             }
         }
         public string ImageURL { get; set; }
+        public string ArticleId { get; set; }
     }
 }

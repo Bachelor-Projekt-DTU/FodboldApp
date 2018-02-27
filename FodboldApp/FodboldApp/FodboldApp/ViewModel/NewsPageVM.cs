@@ -1,4 +1,5 @@
-﻿using Plugin.Share;
+﻿using FodboldApp.Model;
+using Plugin.Share;
 using Plugin.Share.Abstractions;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -7,6 +8,7 @@ namespace FodboldApp.ViewModel
 {
     public class NewsPageVM
     {
+        NewsModel newsModel = new NewsModel();
         public ICommand ShareCommand { get; set; }
         public string Title { get; private set; } = "U23 kommet godt fra start";
         public string DateTime { get; private set; } = "10. august 2017";
@@ -20,7 +22,7 @@ namespace FodboldApp.ViewModel
 
             CrossShare.Current.Share(new ShareMessage
             {
-                Url = "http://www.bkfrem.dk/default.asp?vis=nyheder&id=4459"
+                Url = "http://www.bkfrem.dk/default.asp?vis=nyheder&id=" + newsModel.ArticleId
             });
         }
 
