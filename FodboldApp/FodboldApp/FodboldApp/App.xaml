@@ -35,7 +35,14 @@
 
                 <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition>
+                            <RowDefinition.Height>
+                                <OnPlatform x:TypeArguments="GridLength">
+                                    <OnPlatform.iOS>70</OnPlatform.iOS>
+                                    <OnPlatform.Android>50</OnPlatform.Android>
+                                </OnPlatform>
+                            </RowDefinition.Height>
+                        </RowDefinition>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="48"/>
                     </Grid.RowDefinitions>
@@ -56,10 +63,23 @@
                         </StackLayout.Padding>-->
 
                     <Grid HorizontalOptions="FillAndExpand" BackgroundColor="#fb433c" Padding="0, 10, 0, 10" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
+                        <Grid.Margin>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <OnPlatform.iOS>0,20,0,0</OnPlatform.iOS>
+                                <OnPlatform.Android>0,0,0,0</OnPlatform.Android>
+                            </OnPlatform>
+                        </Grid.Margin>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="40"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition>
+                                <ColumnDefinition.Width>
+                                    <OnPlatform x:TypeArguments="GridLength">
+                                        <OnPlatform.iOS>80</OnPlatform.iOS>
+                                        <OnPlatform.Android>70</OnPlatform.Android>
+                                    </OnPlatform>
+                                </ColumnDefinition.Width>
+                            </ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <!-- Header content -->
                         <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0">
@@ -74,32 +94,49 @@
                                    CancelButtonColor="#d0d0d0"
                                    TextColor="#d0d0d0"
                                    VerticalOptions="Center"
-                                   BackgroundColor="#e43932"
                                    HorizontalOptions="FillAndExpand"
                                    Margin="0, 0, 10, 0"
                                    MinimumWidthRequest="30"
                                    Grid.Column="1"
-                                   Text="{Binding InputText, Mode=TwoWay}"/>
+                                   Text="{Binding InputText, Mode=TwoWay}">
+                            <SearchBar.BackgroundColor>
+                                <OnPlatform x:TypeArguments="Color">
+                                    <OnPlatform.Android>#e43932</OnPlatform.Android>
+                                    <OnPlatform.iOS>#fb433c</OnPlatform.iOS>
+                                </OnPlatform>
+                            </SearchBar.BackgroundColor>
+                        </SearchBar>
+                        
                         <Label Text="LOG IND"
                                TextColor="#d0d0d0"
-                               WidthRequest="60"
+                               WidthRequest="80"
                                IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
                                HorizontalOptions="FillAndExpand"
                                VerticalTextAlignment="Center"
-                           Margin="10, 0, 0, 0 "
-                                   Grid.Column="2">
+                               Grid.Column="2">
+                            <Label.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <OnPlatform.iOS>0,0,0,0</OnPlatform.iOS>
+                                    <OnPlatform.Android>10, 0, 0, 0</OnPlatform.Android>
+                                </OnPlatform>
+                            </Label.Margin>
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding LoginCommand}"/>
                             </Label.GestureRecognizers>
                         </Label>
                         <Label Text="LOG UD"
                                TextColor="#d0d0d0"
-                               WidthRequest="60"
+                               WidthRequest="80"
                                IsVisible="{Binding IsUserLoggedIn}"
                                HorizontalOptions="FillAndExpand"
                                VerticalTextAlignment="Center"
-                           Margin="10, 0, 0, 0 "
-                                   Grid.Column="2">
+                               Grid.Column="2">
+                            <Label.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <OnPlatform.iOS>0,0,0,0</OnPlatform.iOS>
+                                    <OnPlatform.Android>10, 0, 0, 0</OnPlatform.Android>
+                                </OnPlatform>
+                            </Label.Margin>
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding LogoutCommand}"/>
                             </Label.GestureRecognizers>
