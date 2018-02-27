@@ -14,6 +14,14 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
                 <Setter Property="BackgroundColor" Value="#D3D3D3"/>
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <OnPlatform.iOS>60</OnPlatform.iOS>
+                            <OnPlatform.Android>65</OnPlatform.Android>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
                 <Setter Property="TextColor" Value="#000000" />
             </Style>
       
