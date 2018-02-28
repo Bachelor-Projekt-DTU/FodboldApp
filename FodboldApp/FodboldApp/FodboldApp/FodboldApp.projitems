@@ -39,6 +39,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayerModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingTitleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\LeagueTableModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsPageModel.cs" />
@@ -240,12 +241,12 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\share_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\frontpage_background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\SearchResultView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\frontpage_background.png" />
   </ItemGroup>
 </Project>
