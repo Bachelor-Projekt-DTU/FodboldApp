@@ -16,7 +16,7 @@
                 <viewmodels:NewsVM/>
             </StackLayout.BindingContext>
 
-            <xamltemp:MatchHeaderTemplate BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}"/>
+            <xamltemp:MatchHeaderTemplate/>
 
             <Label Text="NYHEDER"
                    TextColor="{StaticResource textColor}"

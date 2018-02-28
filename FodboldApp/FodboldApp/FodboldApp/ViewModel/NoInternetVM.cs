@@ -18,7 +18,17 @@ namespace FodboldApp.ViewModel
                 CrossConnectivity.Current.ConnectivityChanged += UpdateRealm;
                 ViewModelLocator.HeaderVM.NoInternetHandler();
             }
-            return await SetupRealm(path);
+            try
+            {
+                var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+                SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/" + path));
+                return Realm.GetInstance(config);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return Realm.GetInstance();
+            }
         }
 
         public static void UpdateRealm(object sender, ConnectivityChangedEventArgs arg)
@@ -42,21 +52,6 @@ namespace FodboldApp.ViewModel
         {
             Application.Current.MainPage = new NavigationPage(new FrontPage());
             CrossConnectivity.Current.ConnectivityChanged -= ChangeToNoInternetPage;
-        }
-
-        public static async Task<Realm> SetupRealm(string path)
-        {
-            try
-            {
-                var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-                SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/" + path));
-                return Realm.GetInstance(config);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                return Realm.GetInstance();
-            }
         }
     }
 }

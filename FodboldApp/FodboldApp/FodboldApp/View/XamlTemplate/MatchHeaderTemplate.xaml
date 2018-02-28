@@ -14,16 +14,16 @@
         <local:BooleanReverser x:Key="booleanReverser"/>
     </ResourceDictionary>-->
 
-    <StackLayout IsVisible="{Binding Live,  Converter={StaticResource booleanReverser}}" HorizontalOptions="FillAndExpand">
-        <StackLayout.Resources>
+    <StackLayout IsVisible="{Binding Live,  Converter={StaticResource booleanReverser}}" HorizontalOptions="FillAndExpand" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}">
+        <!--<StackLayout.Resources>
             <ResourceDictionary>
                 <local:BooleanReverser x:Key="booleanReverser"/>
             </ResourceDictionary>
-        </StackLayout.Resources>
+        </StackLayout.Resources>-->
 
-        <StackLayout.BindingContext>
+        <!--<StackLayout.BindingContext>
             <viewmodels:MatchHeaderVM/>
-        </StackLayout.BindingContext>
+        </StackLayout.BindingContext>-->
         <Label Text="NÆSTE KAMP"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
@@ -57,11 +57,11 @@
                    HorizontalTextAlignment="Center"
                    BackgroundColor="#ffffff"/>
     </StackLayout>
-    <StackLayout IsVisible="{Binding Live}" HorizontalOptions="FillAndExpand">
-        <StackLayout.BindingContext>
+    <StackLayout IsVisible="{Binding Live}" HorizontalOptions="FillAndExpand" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}">
+        <!--<StackLayout.BindingContext>
             <viewmodels:MatchHeaderVM/>
-        </StackLayout.BindingContext>
-        <Label Text="NÆSTE KAMP"
+        </StackLayout.BindingContext>-->
+        <Label Text="LIVE"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"
                    FontSize="Large"

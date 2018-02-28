@@ -8,7 +8,9 @@ namespace FodboldApp.Model
 {
     public class MatchModel : RealmObject
     {
+        [PrimaryKey]
         public string Id { get; set; }
+        public int Status { get; set; }
         public string Team1 { get; set; }
         public string Team2 { get; set; }
         public int Score1 { get; set; }

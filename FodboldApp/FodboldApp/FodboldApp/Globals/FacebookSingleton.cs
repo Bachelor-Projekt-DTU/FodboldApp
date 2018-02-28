@@ -20,13 +20,15 @@ namespace FodboldApp.Globals
                     {
                         if (_Instance == null)
                         {
-                            _Instance = new FacebookSingleton();
-                            _Instance.OAuthSettings =
+                            _Instance = new FacebookSingleton
+                            {
+                                OAuthSettings =
                                 new OAuth2Authenticator(
                                     clientId: "162558454388984",
-                                    scope: "public_profile",                                   
-                                    authorizeUrl: new Uri("https://facebook.com/v2.12/dialog/oauth/"), 
-                                    redirectUrl: new Uri("https://www.facebook.com/connect/login_success.html"));
+                                    scope: "public_profile",
+                                    authorizeUrl: new Uri("https://facebook.com/v2.12/dialog/oauth/"),
+                                    redirectUrl: new Uri("https://www.facebook.com/connect/login_success.html"))
+                            };
                         }
                     }
                 }

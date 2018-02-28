@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -29,9 +30,9 @@ namespace FodboldApp.ViewModel
 
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private IEnumerable<PlayerModel> _playerListSource { get; set; } = new ObservableCollection<PlayerModel>();
+        private IQueryable<PlayerModel> _playerListSource { get; set; }
 
-        public IEnumerable<PlayerModel> PlayerListSource
+        public IQueryable<PlayerModel> PlayerListSource
         {
             get
             {
@@ -75,6 +76,8 @@ namespace FodboldApp.ViewModel
             //        });
             //    });
             PlayerListSource = _realm.All<PlayerModel>();
+            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + PlayerListSource.Count());
+            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + _realm == null);
             //_realm.Dispose();
         }
 
@@ -86,7 +89,7 @@ namespace FodboldApp.ViewModel
 
         public PlayerVM()
         {
-            SetupRealm();
+            //SetupRealm();
             PlayerDescriptionCommand = new Command(OnTapped);
         }
     }

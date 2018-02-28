@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using FodboldApp.Model;
@@ -27,8 +28,8 @@ namespace FodboldApp.ViewModel
                 handler(this, new PropertyChangedEventArgs(name));
             }
         }
-        private IEnumerable<MatchModel> _matchList { get; set; } = new ObservableCollection<MatchModel>();
-        public IEnumerable<MatchModel> MatchList
+        private IQueryable<MatchModel> _matchList { get; set; }
+        public IQueryable<MatchModel> MatchList
         {
 
             get
@@ -66,6 +67,8 @@ namespace FodboldApp.ViewModel
             //    _realm.Add(new MatchModel { Teams = "BK FREM  -  Hillerød", Score = "2 - 2", ImageURL = "http://bkfrem.dk/images/hill_2.jpg" });
             //});
             MatchList = _realm.All<MatchModel>();
+            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + MatchList.Count());
+            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + _realm == null);
         }
 
         public void MatchTap()
