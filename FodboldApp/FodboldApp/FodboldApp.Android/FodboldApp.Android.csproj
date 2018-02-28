@@ -383,6 +383,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\share_button.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\share_button.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\share_button.png" />
+    <AndroidResource Include="Resources\drawable\frontpage_background.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\frontpage_background.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\frontpage_background.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\frontpage_background.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\FodboldApp\FodboldApp.projitems" Label="Shared" />

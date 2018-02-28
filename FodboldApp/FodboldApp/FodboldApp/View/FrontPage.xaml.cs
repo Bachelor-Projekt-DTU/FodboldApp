@@ -1,10 +1,4 @@
-﻿using FodboldApp.Customs;
-using FodboldApp.Stack;
-using FodboldApp.View;
-using FodboldApp.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using FodboldApp.ViewModel;
 using Xamarin.Forms;
 
 namespace FodboldApp
