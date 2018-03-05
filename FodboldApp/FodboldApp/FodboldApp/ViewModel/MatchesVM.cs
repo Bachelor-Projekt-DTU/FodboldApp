@@ -67,8 +67,6 @@ namespace FodboldApp.ViewModel
             //    _realm.Add(new MatchModel { Teams = "BK FREM  -  Hillerød", Score = "2 - 2", ImageURL = "http://bkfrem.dk/images/hill_2.jpg" });
             //});
             MatchList = _realm.All<MatchModel>();
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + MatchList.Count());
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + _realm == null);
         }
 
         public void MatchTap()

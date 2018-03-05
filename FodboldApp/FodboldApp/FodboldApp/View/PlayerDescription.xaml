@@ -8,10 +8,9 @@
             <StackLayout Padding="0, 0, 0, 0"
                          Margin="0, 0, 0, 0"
                          Spacing="0"
-                         HorizontalOptions="FillAndExpand">
-                <StackLayout.BindingContext>
-                    <viewmodels:PlayerDescriptionVM/>
-                </StackLayout.BindingContext>
+                         HorizontalOptions="FillAndExpand"
+                         BindingContext="{x:Static viewmodels:ViewModelLocator.PlayerDescriptionVM}">
+
                 <Label Text="{Binding Name}"
                        TextColor="{StaticResource textColor}"
                        FontSize="32"
