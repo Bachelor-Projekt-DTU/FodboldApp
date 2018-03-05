@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundImage="Images/frontpage_background.png"
              xmlns:local="clr-namespace:FodboldApp.View.Converter" 
              x:Class="FodboldApp.FrontPage">
 
@@ -12,37 +11,43 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-      
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="12.5*" />
-                    <ColumnDefinition Width="75*" />
-                    <ColumnDefinition Width="12.5*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <ListView x:Name="clubList" ItemsSource="{Binding ClubListSource}" 
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Source="frontpage_background.png" Aspect="AspectFill"/>
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="12.5*" />
+                            <ColumnDefinition Width="75*" />
+                            <ColumnDefinition Width="12.5*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <ListView x:Name="clubList" ItemsSource="{Binding ClubListSource}" 
                           BackgroundColor="White" SeparatorColor="Black" HorizontalOptions="Center" 
                           Grid.Row="0" Grid.Column="1" SelectedItem="{Binding SelectedItem}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Label Text="{Binding ClubName}" 
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Label Text="{Binding ClubName}" 
                                        TextColor="Black" 
                                        HorizontalTextAlignment="Center" 
                                        VerticalTextAlignment="Center"
                                        BackgroundColor="{Binding Selected, Converter={StaticResource colorConvert}}"/>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
 
-            <Button Text="Næste" HorizontalOptions="Center" VerticalOptions="Center" 
-                    Command="{Binding ContinueCommand}" Style="{StaticResource buttonStyle}" />
-        </StackLayout>
+                    <Button Text="Næste"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" Style="{StaticResource buttonStyle}"
+                    Command="{Binding ContinueCommand}"/>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 
 </ContentPage>

@@ -353,6 +353,9 @@
     <BundleResource Include="Resources\share_button.png" />
     <BundleResource Include="Resources\share_button%402x.png" />
     <BundleResource Include="Resources\share_button%403x.png" />
+    <BundleResource Include="Resources\frontpage_background.png" />
+    <BundleResource Include="Resources\frontpage_background%402x.png" />
+    <BundleResource Include="Resources\frontpage_background%403x.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
