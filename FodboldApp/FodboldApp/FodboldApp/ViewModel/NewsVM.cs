@@ -63,8 +63,6 @@ namespace FodboldApp.ViewModel
             //    _realm.Add(new NewsModel() { Title = "Exit i pokalen", Date = "8. august 2017", Resume = "1 runde blev endestationen. Et feststemt stadion i Hvidovre med flotte 1.126 tilskuere på lægterne blev vidne til et opgør, hvor hjemmeholdet straks fra start trykkede på for at få et hurtigt...", ImageURL = "http://www.bkfrem.dk/images/20746806_1630657970299346_218944165_o.jpg" });
             //});
             NewsList = _realm.All<NewsModel>();
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + NewsList.Count());
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + _realm==null);
         }
 
         public NewsVM()

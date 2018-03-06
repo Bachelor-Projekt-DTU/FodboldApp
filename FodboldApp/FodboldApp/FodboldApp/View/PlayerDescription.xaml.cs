@@ -1,4 +1,5 @@
-﻿using FodboldApp.ViewModel;
+﻿using FodboldApp.Model;
+using FodboldApp.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,9 +15,10 @@ namespace FodboldApp.View
             return true;
         }
 
-        public PlayerDescription()
+        public PlayerDescription(PlayerModel player)
         {
             InitializeComponent();
+            ViewModelLocator.PlayerDescriptionVM.Player = player;
         }
     }
 }

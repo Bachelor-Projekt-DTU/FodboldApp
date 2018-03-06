@@ -20,19 +20,14 @@ namespace FodboldApp.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
-            var handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private IQueryable<PlayerModel> _playerListSource { get; set; }
+        private ObservableCollection<PlayerModel> _playerListSource { get; set; }
 
-        public IQueryable<PlayerModel> PlayerListSource
+        public ObservableCollection<PlayerModel> PlayerListSource
         {
             get
             {
@@ -45,51 +40,36 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        private PlayerModel _selectedItem { get; set; }
+        public PlayerModel SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                _selectedItem = value;
+                OnPropertyChanged(nameof(SelectedItem));
+            }
+        }
+
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("players");
-
-            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/players"));
-            //_realm = Realm.GetInstance(config);
-
-            //_realm.Write(() =>
-            //    {
-            //        _realm.RemoveAll();
-            //        _realm.Add(new PlayerModel
-            //        {
-            //            ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-            //            Name = "Andreas Theil Lundberg",
-            //            Position = "Forsvar/Midtbane"
-            //        });
-            //        _realm.Add(new PlayerModel
-            //        {
-            //            ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-            //            Name = "Andreas Theil Lundberg 2",
-            //            Position = "Forsvar/Midtbane"
-            //        });
-            //        _realm.Add(new PlayerModel
-            //        {
-            //            ImageURL = "http://www.bkfrem.dk/images/spillere/07_andreas_lundberg.jpg",
-            //            Name = "Andreas Theil Lundberg 3",
-            //            Position = "Forsvar/Midtbane"
-            //        });
-            //    });
-            PlayerListSource = _realm.All<PlayerModel>();
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + PlayerListSource.Count());
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAY" + _realm == null);
-            //_realm.Dispose();
+            var temp = _realm.All<PlayerModel>().ToList().OrderBy(x => Int32.Parse(x.Name.Split('.')[0]));
+            PlayerListSource = new ObservableCollection<PlayerModel>(temp);
         }
 
         void OnTapped()
         {
-            CustomStack.Instance.PlayerContent.Navigation.PushAsync(new PlayerDescription());
+            CustomStack.Instance.PlayerContent.Navigation.PushAsync(new PlayerDescription(SelectedItem));
             HeaderVM.UpdateContent();
         }
 
         public PlayerVM()
         {
-            //SetupRealm();
+            SetupRealm();
             PlayerDescriptionCommand = new Command(OnTapped);
         }
     }

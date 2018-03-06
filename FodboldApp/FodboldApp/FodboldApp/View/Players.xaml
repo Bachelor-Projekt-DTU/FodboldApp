@@ -22,7 +22,7 @@
                 <viewmodels:PlayerVM/>
             </StackLayout.BindingContext>
 
-            <flv:FlowListView x:Name="flowListView" FlowColumnCount="2" SeparatorVisibility="None" HasUnevenRows="True" 
+            <flv:FlowListView x:Name="flowListView" FlowColumnCount="2" SeparatorVisibility="None" HasUnevenRows="True" FlowLastTappedItem="{Binding SelectedItem, Mode=TwoWay}"
 			FlowItemsSource="{Binding PlayerListSource}" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" BackgroundColor="#F0f0f0">
 
                 <flv:FlowListView.FlowColumnTemplate>

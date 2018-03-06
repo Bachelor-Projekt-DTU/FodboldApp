@@ -66,7 +66,7 @@ namespace FodboldApp.ViewModel
 
             void Player_OnTapped()
         {
-            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription());
+            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
             HeaderVM.UpdateContent();
         }
         public OverFiftyGoalsVM()

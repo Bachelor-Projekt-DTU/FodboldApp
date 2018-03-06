@@ -12,7 +12,7 @@ namespace FodboldApp.View
 		public MatchPage (MatchModel match)
 		{
             InitializeComponent();
-            ViewModel.ViewModelLocator.MatchPageVM.Match = match;
+            ViewModelLocator.MatchPageVM.Match = match;
         }
     }
 }
