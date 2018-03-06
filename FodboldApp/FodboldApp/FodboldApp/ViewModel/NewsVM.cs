@@ -40,6 +40,15 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(NewsList));
             }
         }
+        private NewsModel _selectedItem { get; set; }
+        public NewsModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                _selectedItem = value;
+            }
+        }
 
         public async void SetupRealm()
         {
@@ -66,7 +75,7 @@ namespace FodboldApp.ViewModel
 
         void News_Tapped()
         {
-            CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage());
+            CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
             HeaderVM.UpdateContent();
         }
     }

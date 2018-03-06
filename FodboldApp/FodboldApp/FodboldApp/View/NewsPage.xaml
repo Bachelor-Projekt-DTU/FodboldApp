@@ -8,10 +8,8 @@
             <StackLayout  Padding="0, 0, 0, 0"
                           Margin="0, 0, 0, 0"
                           Spacing="0"
-                          BackgroundColor="#ffffff">
-                <StackLayout.BindingContext>
-                    <viewmodels:NewsPageVM/>
-                </StackLayout.BindingContext>
+                          BackgroundColor="#ffffff"
+                          BindingContext="{x:Static viewmodels:ViewModelLocator.NewsPageVM}">
                 <Label Text="{Binding Title}"
                        TextColor="#e11e2c"
                        FontSize="36"
@@ -26,7 +24,7 @@
                        FontSize="32"
                        HorizontalOptions="FillAndExpand"
                        HorizontalTextAlignment="Start"/>    
-                <Image Source="http://www.bkfrem.dk/images/image2(9).JPG"/>
+                <Image Source="{Binding ImageURL}"/>
                 <Label Text="{Binding NewsText}"/>
                 <Image Source="share_button" HorizontalOptions="Start" VerticalOptions="Center">
                     <Image.GestureRecognizers>

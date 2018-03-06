@@ -27,8 +27,10 @@
                    BackgroundColor="#f0f0f0"
                    HeightRequest="38"/>
 
-            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding NewsCommand}" FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
-			   FlowItemsSource="{Binding NewsList}" VerticalOptions="FillAndExpand">
+            <flv:FlowListView x:Name="flowListView" FlowLastTappedItem="{Binding SelectedItem, Mode=TwoWay}"
+                              FlowItemTappedCommand="{Binding NewsCommand}" FlowItemsSource="{Binding NewsList}"
+                              FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
+                              VerticalOptions="FillAndExpand">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
                         <StackLayout Spacing="0" >

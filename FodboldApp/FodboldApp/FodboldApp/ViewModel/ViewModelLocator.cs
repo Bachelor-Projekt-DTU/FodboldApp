@@ -14,6 +14,7 @@ namespace FodboldApp.ViewModel
         public static FacebookService FacebookService { get; } = new FacebookService();
         public static GoogleService GoogleService { get; } = new GoogleService();
         public static NoInternetVM NoInternetVM { get; } = new NoInternetVM();
+        public static NewsPageVM NewsPageVM { get; } = new NewsPageVM();
 
     }
 }

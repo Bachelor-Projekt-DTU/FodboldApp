@@ -1,7 +1,4 @@
 ﻿using Realms;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FodboldApp.Model
 {
@@ -14,10 +11,11 @@ namespace FodboldApp.Model
         {
             get
             {
-                if (Text.Length < 200) return Text;
-                return Text.Substring(0, 200) + "...";
+                if (Text == null || Text.Length < 200) return Text;
+                return Text.Substring(0, 200).Replace("\n", "") + "...";
             }
         }
+        public string SmallText { get; set; }
         public string ImageURL { get; set; }
         public string ArticleId { get; set; }
     }

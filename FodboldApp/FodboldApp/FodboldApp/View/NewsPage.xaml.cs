@@ -1,4 +1,5 @@
-﻿using FodboldApp.ViewModel;
+﻿using FodboldApp.Model;
+using FodboldApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,10 +21,10 @@ namespace FodboldApp.View
             return false;
         }
 
-        public NewsPage ()
+        public NewsPage (NewsModel newsModel)
 		{
-			InitializeComponent ();
-            
+            InitializeComponent();
+            ViewModelLocator.NewsPageVM.NewsModel = newsModel;
             NavigationPage.SetHasNavigationBar(this, false);
         }
 	}

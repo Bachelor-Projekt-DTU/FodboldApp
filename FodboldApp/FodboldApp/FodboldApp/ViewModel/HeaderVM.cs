@@ -30,8 +30,8 @@ namespace FodboldApp.ViewModel
         public ICommand HistoryTapped { get; private set; }
         public ICommand LoginCommand { get; private set; }
         public ICommand LogoutCommand { get; private set; }
-
         public ICommand BackButtonTapped { get; private set; }
+        public ICommand ArticleCommand { get; private set; }
 
         private Color _newsIconColor;
         private Color _playerIconColor;
@@ -68,7 +68,9 @@ namespace FodboldApp.ViewModel
                     contentPage.Content = new SearchResultView().Content;
                     OnPropertyChanged(nameof(InputText));
                     FilterArticlesAsync();
-                } else{
+                }
+                else
+                {
                     UpdateContent();
                 }
             }
@@ -93,17 +95,26 @@ namespace FodboldApp.ViewModel
 
         private async System.Threading.Tasks.Task FilterArticlesAsync()
         {
-                if (String.IsNullOrEmpty(_inputText))
-                {
-                SearchResultList = Enumerable.Empty<NewsModel>().AsQueryable();
-                }
-                else
-                {
+            if (String.IsNullOrEmpty(_inputText))
+            {
+                SearchResultList = null;
+                UpdateContent();
+            }
+            else
+            {
                 var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
                 SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
                 _realm = Realm.GetInstance(config);
                 SearchResultList = _realm.All<NewsModel>().Where(Data => Data.Text.Contains(InputText));
-                }
+                Console.WriteLine(SearchResultList.Count());
+            }
+        }
+
+        public void ArticleTap()
+        {
+            CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
+            currentCategory = CategoryType.NewsType;
+            UpdateContent();
         }
 
         public bool _isUserLoggedIn { get; set; }
@@ -119,9 +130,10 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(IsUserLoggedIn));
             }
         }
-        public enum LoginType {Facebook, Google };
+        public enum LoginType { Facebook, Google };
         private LoginType _typeOfLogin { get; set; }
-        public LoginType TypeOfLogin {
+        public LoginType TypeOfLogin
+        {
             get
             {
                 return _typeOfLogin;
@@ -181,6 +193,16 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(TournamentIconColor));
             }
         }
+        private NewsModel _selectedItem { get; set; }
+        public NewsModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                _selectedItem = value;
+            }
+        }
+
         public Color HistoryIconColor
         {
             get
@@ -199,7 +221,7 @@ namespace FodboldApp.ViewModel
         public HeaderVM()
         {
             ResetTint();
-            
+
             NewsTapped = new Command(NewsTap);
             PlayersTapped = new Command(PlayerTap);
             MatchesTapped = new Command(MatchTap);
@@ -208,6 +230,7 @@ namespace FodboldApp.ViewModel
             LoginCommand = new Command(Login);
             LogoutCommand = new Command(Logout);
             BackButtonTapped = new Command(BackButtonPressed);
+            ArticleCommand = new Command(ArticleTap);
         }
 
         public void CreateStack()
@@ -313,12 +336,12 @@ namespace FodboldApp.ViewModel
                 await stack.HistoryContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.HistoryType;
-            if(HasInternet) contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
+            if (HasInternet) contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
         }
 
         public static void UpdateContent()
         {
-            switch(currentCategory)
+            switch (currentCategory)
             {
                 case CategoryType.NewsType:
                     contentPage.Content = ((ContentPage)stack.NewsContent.CurrentPage).Content;
@@ -340,7 +363,7 @@ namespace FodboldApp.ViewModel
 
         public static async void BackButtonPressed()
         {
-            switch(currentCategory)
+            switch (currentCategory)
             {
                 case CategoryType.NewsType:
                     await stack.NewsContent.Navigation.PopAsync();
