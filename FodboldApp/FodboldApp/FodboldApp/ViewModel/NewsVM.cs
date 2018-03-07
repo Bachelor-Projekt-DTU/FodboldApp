@@ -74,7 +74,7 @@ namespace FodboldApp.ViewModel
         void News_Tapped()
         {
             CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
     }
 }

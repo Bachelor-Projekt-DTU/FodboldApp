@@ -2,7 +2,7 @@
 
 namespace FodboldApp.Model
 {
-    class LeagueTableModel : RealmObject
+    public class LeagueTableModel : RealmObject
     {
         public string Position { get; set; }
         public string Team { get; set; }

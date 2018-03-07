@@ -46,7 +46,7 @@ namespace FodboldApp.ViewModel
         void Player_OnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
 
         public async void SetupRealm()

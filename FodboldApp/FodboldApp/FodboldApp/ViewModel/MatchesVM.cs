@@ -72,7 +72,7 @@ namespace FodboldApp.ViewModel
         public void MatchTap()
         {
             CustomStack.Instance.MatchContent.Navigation.PushAsync(new MatchPage(SelectedItem));
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
 
         public MatchesVM()
