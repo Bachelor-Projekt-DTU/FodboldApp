@@ -7,7 +7,7 @@
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView">
 
-    <ContentPage.Resources>
+    <!--<ContentPage.Resources>
         <ResourceDictionary>
             <local:ListColorConverter x:Key="colorConvert"/>
         </ResourceDictionary>
@@ -69,5 +69,5 @@
                 </flv:FlowListView>
             </flv:FlowListView>
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
 </ContentPage>

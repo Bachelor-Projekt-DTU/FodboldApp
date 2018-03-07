@@ -30,7 +30,7 @@ namespace FodboldApp
 
         protected override bool OnBackButtonPressed()
         {
-            HeaderVM.BackButtonPressed();
+            ViewModelLocator.HeaderVM.BackButtonPressed();
             return true;
         }
     }

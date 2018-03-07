@@ -22,7 +22,19 @@ namespace FodboldApp.ViewModel
 
         Realm _realm;
         private static bool HasInternet = true;
-        public static bool NotMainPage { get; private set; } = false;
+        private bool _notMainPage { get; set; } = false;
+        public bool NotMainPage
+        {
+            get
+            {
+                return _notMainPage;
+            }
+            private set
+            {
+                _notMainPage = value;
+                OnPropertyChanged(nameof(NotMainPage));
+            }
+        }
 
         public ICommand NewsTapped { get; private set; }
         public ICommand PlayersTapped { get; private set; }
@@ -326,7 +338,7 @@ namespace FodboldApp.ViewModel
             if (currentCategory == CategoryType.TournamentType)
             {
                 NotMainPage = false;
-                await stack.TournamentContent.Navigation.PopToRootAsync();
+                await stack.LeagueTableContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.TournamentType;
             if (HasInternet) contentPage.Content = ((ContentPage)stack.LeagueTableContent.CurrentPage).Content;
@@ -345,7 +357,7 @@ namespace FodboldApp.ViewModel
             if (HasInternet) contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
         }
 
-        public static void UpdateContent()
+        public void UpdateContent()
         {
             ContentPage contemp = null;
             switch (currentCategory)
@@ -366,15 +378,15 @@ namespace FodboldApp.ViewModel
                     contemp = ((ContentPage)stack.HistoryContent.CurrentPage);
                     break;
             }
-            contentPage.Content = contemp.Content;
-            if (contentPage.Navigation.NavigationStack.Count == 0)
+            if (contemp.Navigation.NavigationStack.Count == 1)
             {
                 NotMainPage = false;
             }
             else NotMainPage = true;
+            contentPage.Content = contemp.Content;
         }
 
-        public static async void BackButtonPressed()
+        public async void BackButtonPressed()
         {
             switch (currentCategory)
             {
@@ -403,7 +415,7 @@ namespace FodboldApp.ViewModel
             contentPage.Content = new NoInternetPage().Content;
         }
 
-        internal static void ResetStack()
+        internal void ResetStack()
         {
             HasInternet = true;
             CustomStack.ResetStack();

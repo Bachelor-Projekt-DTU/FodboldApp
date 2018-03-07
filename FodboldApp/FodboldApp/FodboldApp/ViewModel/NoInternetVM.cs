@@ -33,7 +33,7 @@ namespace FodboldApp.ViewModel
 
         public static void UpdateRealm(object sender, ConnectivityChangedEventArgs arg)
         {
-            HeaderVM.ResetStack();
+            ViewModelLocator.HeaderVM.ResetStack();
             CrossConnectivity.Current.ConnectivityChanged -= UpdateRealm;
         }
 

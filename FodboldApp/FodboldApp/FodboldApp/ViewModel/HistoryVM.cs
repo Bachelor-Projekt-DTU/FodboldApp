@@ -32,33 +32,33 @@ namespace FodboldApp.ViewModel
         void FormerPlayersOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new FormerPlayers());
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
         void POTYOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new POTY());
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
         void OverFiftyGoalsOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new OverFiftyGoals());
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
         void OverHundredGanesOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new OverHundredGames());
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
         void HistoricalStandingsOnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new HistoricalStandings());
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
 
         void Temp_OnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new Chat());
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
 
         public HistoryVM()

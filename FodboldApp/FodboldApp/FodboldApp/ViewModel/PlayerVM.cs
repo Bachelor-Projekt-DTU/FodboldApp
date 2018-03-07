@@ -64,7 +64,7 @@ namespace FodboldApp.ViewModel
         void OnTapped()
         {
             CustomStack.Instance.PlayerContent.Navigation.PushAsync(new PlayerDescription(SelectedItem));
-            HeaderVM.UpdateContent();
+            ViewModelLocator.HeaderVM.UpdateContent();
         }
 
         public PlayerVM()
