@@ -1,17 +1,13 @@
 ﻿using FodboldApp.Model;
-using FodboldApp.Stack;
-using FodboldApp.View;
 using Realms;
-using Realms.Sync;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 
 namespace FodboldApp.ViewModel
 {
-    class LeagueTableVM : INotifyPropertyChanged
+    public class LeagueTableVM : INotifyPropertyChanged
     {
         Realm _realm;
 
@@ -21,8 +17,9 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        private ObservableCollection <HeadLeagueTable> _headLeagueTableCollection { get; set; }
-        public ObservableCollection <HeadLeagueTable> HeadLeagueTableCollection { get
+        private ObservableCollection<HeadLeagueTable> _headLeagueTableCollection { get; set; } = new ObservableCollection<HeadLeagueTable>();
+        public ObservableCollection <HeadLeagueTable> HeadLeagueTableCollection {
+            get
             {
                 return _headLeagueTableCollection;
             }
@@ -50,14 +47,26 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
             LeagueTable = _realm.All<LeagueTableModel>();
+
             int i = 0;
             _realm.Write(() =>
             {
                 foreach (var item in LeagueTable)
                 {
                     item.Index = i++;
+                    var promotionGroup = HeadLeagueTableCollection.Where(x => x.GroupName == item.GroupName);
+                    if (promotionGroup.Count() == 0)
+                    {
+                        var temp = new HeadLeagueTable { GroupName = item.GroupName };
+                        temp.LeagueTableCollection.Add(item);
+                        HeadLeagueTableCollection.Add(temp);
+                    } else
+                    {
+                        promotionGroup.First().LeagueTableCollection.Add(item);
+                    }
                 }
             });
+            Console.WriteLine("Heeer " + HeadLeagueTableCollection.Count()+" "+HeadLeagueTableCollection.First().LeagueTableCollection.Count);
         }
         
         public LeagueTableVM()
@@ -65,10 +74,10 @@ namespace FodboldApp.ViewModel
             SetupRealm();
         }
 
-        public class HeadLeagueTable
+        public class HeadLeagueTable 
         {
             public string GroupName { get; set; }
-            public ObservableCollection<LeagueTableModel> LeagueTableCollection = new ObservableCollection<LeagueTableModel>();
+            public ObservableCollection<LeagueTableModel> LeagueTableCollection { get; set; } = new ObservableCollection<LeagueTableModel>();
         }
     }
 }

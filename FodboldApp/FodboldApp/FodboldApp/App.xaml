@@ -106,7 +106,7 @@
                                 </OnPlatform>
                             </SearchBar.BackgroundColor>
                         </SearchBar>
-                        
+
                         <Label Text="LOG IND"
                                TextColor="#d0d0d0"
                                WidthRequest="80"
@@ -114,12 +114,6 @@
                                HorizontalOptions="FillAndExpand"
                                VerticalTextAlignment="Center"
                                Grid.Column="2">
-                            <Label.Margin>
-                                <OnPlatform x:TypeArguments="Thickness">
-                                    <OnPlatform.iOS>0,0,0,0</OnPlatform.iOS>
-                                    <OnPlatform.Android>10, 0, 0, 0</OnPlatform.Android>
-                                </OnPlatform>
-                            </Label.Margin>
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding LoginCommand}"/>
                             </Label.GestureRecognizers>
@@ -131,12 +125,6 @@
                                HorizontalOptions="FillAndExpand"
                                VerticalTextAlignment="Center"
                                Grid.Column="2">
-                            <Label.Margin>
-                                <OnPlatform x:TypeArguments="Thickness">
-                                    <OnPlatform.iOS>0,0,0,0</OnPlatform.iOS>
-                                    <OnPlatform.Android>10, 0, 0, 0</OnPlatform.Android>
-                                </OnPlatform>
-                            </Label.Margin>
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding LogoutCommand}"/>
                             </Label.GestureRecognizers>

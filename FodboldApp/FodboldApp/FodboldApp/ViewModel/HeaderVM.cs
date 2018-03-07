@@ -112,6 +112,7 @@ namespace FodboldApp.ViewModel
 
         public void ArticleTap()
         {
+            InputText = String.Empty;
             CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
             currentCategory = CategoryType.NewsType;
             UpdateContent();

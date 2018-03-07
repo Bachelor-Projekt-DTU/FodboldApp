@@ -77,15 +77,15 @@ namespace FodboldApp.Globals
         {
             get
             {
-                Xamarin.Forms.Application.Current.Properties["Token"] = Instance.Token;
-                ViewModel.ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
-                Xamarin.Forms.Application.Current.Properties["IsUserLoggedIn"] = true;
-                Xamarin.Forms.Application.Current.Properties["LoginType"] = "Google";
-                ViewModel.ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
-                ViewModel.ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
+                Application.Current.Properties["Token"] = Instance.Token;
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                Application.Current.Properties["IsUserLoggedIn"] = true;
+                Application.Current.Properties["LoginType"] = "Google";
+                ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
+                ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
                 Console.WriteLine("Det virker");
-                ViewModel.ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
-                return new Action(() => Xamarin.Forms.Application.Current.MainPage.Navigation.PopToRootAsync());
+                ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
+                return new Action(() => Application.Current.MainPage.Navigation.PopToRootAsync());
             }
         }
 
@@ -93,7 +93,7 @@ namespace FodboldApp.Globals
         {
             get
             {
-                return new Action(() => Xamarin.Forms.Application.Current.MainPage.Navigation.PopAsync());
+                return new Action(() => Application.Current.MainPage.Navigation.PopAsync());
             }
         }
     }
