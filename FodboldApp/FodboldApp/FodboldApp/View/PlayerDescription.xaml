@@ -80,9 +80,9 @@
                 </Grid>
                 <Grid x:Name="descriptionGrid" ColumnSpacing="0" RowSpacing="0" VerticalOptions="FillAndExpand">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="15"/>
                         <ColumnDefinition/>
-                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="15"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>

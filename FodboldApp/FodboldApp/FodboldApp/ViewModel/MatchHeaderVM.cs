@@ -1,8 +1,10 @@
 ﻿using FodboldApp.Model;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Linq;
 
 namespace FodboldApp.ViewModel
 {
@@ -13,8 +15,18 @@ namespace FodboldApp.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
+
+        private Realm _realm;
         
-        public string DateTime { get; private set; }
+        public string DateTime
+        {
+            get
+            {
+                var temp0 = HeaderMatch.DateTime.Split(' ');
+                var temp1 = temp0[0].Split('-');
+                return temp1[2] + "-" + temp1[1] + "-" + temp1[0] + " " + temp0[1];
+            }
+        }
         public string Location { get; private set; }
         public string Division { get; private set; }
 
@@ -22,7 +34,7 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                return Match.Status == 2;
+                return HeaderMatch.Status == "Live";
             }
         }
 
@@ -30,7 +42,7 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                return Match.Scores;
+                return "2-2"/* Match.Scores*/;
             }
         }
 
@@ -38,27 +50,34 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                return Match.Teams;
+                return HeaderMatch.Team1 + "-" + HeaderMatch.Team2;
             }
         }
 
-        private MatchModel _match { get; set; } = new MatchModel();
-        public MatchModel Match
+        private HeaderMatchModel _headerMatch { get; set; } = new HeaderMatchModel();
+        public HeaderMatchModel HeaderMatch
         {
-            get { return _match; }
+            get { return _headerMatch; }
             set
             {
-                _match = value;
-                OnPropertyChanged(nameof(Match));
+                _headerMatch = value;
+                OnPropertyChanged(nameof(HeaderMatch));
                 OnPropertyChanged(nameof(Teams));
-                OnPropertyChanged(nameof(Scores));
+                OnPropertyChanged(nameof(DateTime));
                 OnPropertyChanged(nameof(Live));
             }
         }
 
+        private async void SetupRealm()
+        {
+            _realm = await NoInternetVM.IsConnectedOnMainPage("futureMatches");
+            HeaderMatch = _realm.All<HeaderMatchModel>().First();
+            Console.WriteLine("STAPLE GUN" + _realm.All<HeaderMatchModel>().AsRealmCollection().Count);
+        }
+
         public MatchHeaderVM()
         {
-            DateTime = "12. august 2017 15:00";
+            SetupRealm();
             Location = "Skovshoved IP";
             Division = "2. Division Pulje 1";
         }
