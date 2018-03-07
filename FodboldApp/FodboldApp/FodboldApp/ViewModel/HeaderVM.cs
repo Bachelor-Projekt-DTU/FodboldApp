@@ -321,10 +321,10 @@ namespace FodboldApp.ViewModel
             TournamentIconColor = SelectedColor;
             if (currentCategory == CategoryType.TournamentType)
             {
-                await stack.TournamentContent.Navigation.PopToRootAsync();
+                await stack.LeagueTableContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.TournamentType;
-            if (HasInternet) contentPage.Content = ((ContentPage)stack.TournamentContent.CurrentPage).Content;
+            if (HasInternet) contentPage.Content = ((ContentPage)stack.LeagueTableContent.CurrentPage).Content;
         }
 
         public async void HistoryTap()
@@ -353,7 +353,7 @@ namespace FodboldApp.ViewModel
                     contentPage.Content = ((ContentPage)stack.MatchContent.CurrentPage).Content;
                     break;
                 case CategoryType.TournamentType:
-                    contentPage.Content = ((ContentPage)stack.TournamentContent.CurrentPage).Content;
+                    contentPage.Content = ((ContentPage)stack.LeagueTableContent.CurrentPage).Content;
                     break;
                 case CategoryType.HistoryType:
                     contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
@@ -375,7 +375,7 @@ namespace FodboldApp.ViewModel
                     await stack.MatchContent.Navigation.PopAsync();
                     break;
                 case CategoryType.TournamentType:
-                    await stack.TournamentContent.Navigation.PopAsync();
+                    await stack.LeagueTableContent.Navigation.PopAsync();
                     break;
                 case CategoryType.HistoryType:
                     await stack.HistoryContent.Navigation.PopAsync();

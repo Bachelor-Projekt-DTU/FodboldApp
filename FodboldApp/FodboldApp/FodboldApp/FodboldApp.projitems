@@ -15,7 +15,7 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\News.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Players.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Matches.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Tournament.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\LeagueTable.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\History.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Chat.xaml" />
@@ -49,7 +49,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\PlayerModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\POTYModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomStack.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\TournamentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Customs\CustomNavigationPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\UserModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\FacebookService.cs" />
@@ -74,7 +73,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TournamentVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LeagueTableVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ChatBubbleColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ChatLayoutConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ImageSelectorConverter.cs" />
@@ -147,8 +146,8 @@
       <DependentUpon>SearchResultView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\Tournament.xaml.cs">
-      <DependentUpon>Tournament.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\LeagueTable.xaml.cs">
+      <DependentUpon>LeagueTable.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\History.xaml.cs">
       <DependentUpon>History.xaml</DependentUpon>
