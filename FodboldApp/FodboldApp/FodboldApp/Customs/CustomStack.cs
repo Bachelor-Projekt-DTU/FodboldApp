@@ -10,7 +10,7 @@ namespace FodboldApp.Stack
         public CustomNavigationPage NewsContent;
         public CustomNavigationPage PlayerContent;
         public CustomNavigationPage MatchContent;
-        public CustomNavigationPage TournamentContent;
+        public CustomNavigationPage LeagueTableContent;
         public CustomNavigationPage HistoryContent;
 
         public static CustomStack Instance { get; private set; } = new CustomStack();
@@ -20,7 +20,7 @@ namespace FodboldApp.Stack
             NewsContent = new CustomNavigationPage(new News());
             PlayerContent = new CustomNavigationPage(new Players());
             MatchContent = new CustomNavigationPage(new Matches());
-            TournamentContent = new CustomNavigationPage(new Tournament());
+            LeagueTableContent = new CustomNavigationPage(new LeagueTable());
             HistoryContent = new CustomNavigationPage(new History());
         }
 

@@ -46,7 +46,7 @@ namespace FodboldApp.ViewModel
                     CurrentPage = (ContentPage) stack.MatchContent.CurrentPage;
                     break;
                 case 3:
-                    CurrentPage = (ContentPage) stack.TournamentContent.CurrentPage;
+                    CurrentPage = (ContentPage) stack.LeagueTableContent.CurrentPage;
                     break;
                 case 4:
                     CurrentPage = (ContentPage) stack.HistoryContent.CurrentPage;
