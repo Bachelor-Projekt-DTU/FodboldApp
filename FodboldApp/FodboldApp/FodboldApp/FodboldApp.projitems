@@ -37,6 +37,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\EventModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FBUserModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FormerPlayerModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HeaderMatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HistoricalStandingTitleModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\LeagueTableModel.cs" />
