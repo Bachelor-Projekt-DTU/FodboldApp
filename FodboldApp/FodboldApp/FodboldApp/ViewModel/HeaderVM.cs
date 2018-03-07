@@ -22,6 +22,7 @@ namespace FodboldApp.ViewModel
 
         Realm _realm;
         private static bool HasInternet = true;
+        public static bool NotMainPage { get; private set; } = false;
 
         public ICommand NewsTapped { get; private set; }
         public ICommand PlayersTapped { get; private set; }
@@ -285,6 +286,7 @@ namespace FodboldApp.ViewModel
             NewsIconColor = SelectedColor;
             if (currentCategory == CategoryType.NewsType)
             {
+                NotMainPage = false;
                 await stack.NewsContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.NewsType;
@@ -297,6 +299,7 @@ namespace FodboldApp.ViewModel
             PlayerIconColor = SelectedColor;
             if (currentCategory == CategoryType.PlayerType)
             {
+                NotMainPage = false;
                 await stack.PlayerContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.PlayerType;
@@ -309,6 +312,7 @@ namespace FodboldApp.ViewModel
             MatchIconColor = SelectedColor;
             if (currentCategory == CategoryType.MatchType)
             {
+                NotMainPage = false;
                 await stack.MatchContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.MatchType;
@@ -321,6 +325,7 @@ namespace FodboldApp.ViewModel
             TournamentIconColor = SelectedColor;
             if (currentCategory == CategoryType.TournamentType)
             {
+                NotMainPage = false;
                 await stack.TournamentContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.TournamentType;
@@ -333,6 +338,7 @@ namespace FodboldApp.ViewModel
             HistoryIconColor = SelectedColor;
             if (currentCategory == CategoryType.HistoryType)
             {
+                NotMainPage = false;
                 await stack.HistoryContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.HistoryType;
@@ -341,24 +347,31 @@ namespace FodboldApp.ViewModel
 
         public static void UpdateContent()
         {
+            ContentPage contemp = null;
             switch (currentCategory)
             {
                 case CategoryType.NewsType:
-                    contentPage.Content = ((ContentPage)stack.NewsContent.CurrentPage).Content;
+                    contemp = ((ContentPage)stack.NewsContent.CurrentPage);
                     break;
                 case CategoryType.PlayerType:
-                    contentPage.Content = ((ContentPage)stack.PlayerContent.CurrentPage).Content;
+                    contemp = ((ContentPage)stack.PlayerContent.CurrentPage);
                     break;
                 case CategoryType.MatchType:
-                    contentPage.Content = ((ContentPage)stack.MatchContent.CurrentPage).Content;
+                    contemp = ((ContentPage)stack.MatchContent.CurrentPage);
                     break;
                 case CategoryType.TournamentType:
-                    contentPage.Content = ((ContentPage)stack.TournamentContent.CurrentPage).Content;
+                    contemp = ((ContentPage)stack.TournamentContent.CurrentPage);
                     break;
                 case CategoryType.HistoryType:
-                    contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
+                    contemp = ((ContentPage)stack.HistoryContent.CurrentPage);
                     break;
             }
+            contentPage.Content = contemp.Content;
+            if (contentPage.Navigation.NavigationStack.Count == 0)
+            {
+                NotMainPage = false;
+            }
+            else NotMainPage = true;
         }
 
         public static async void BackButtonPressed()

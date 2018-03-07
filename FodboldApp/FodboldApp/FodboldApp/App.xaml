@@ -82,7 +82,7 @@
                             </ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <!-- Header content -->
-                        <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0">
+                        <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0" IsVisible="{Binding NotMainPage}">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding BackButtonTapped}"/>
                             </StackLayout.GestureRecognizers>
@@ -152,10 +152,6 @@
                     <!-- End Content -->
 
                     <Grid ColumnSpacing="0" RowSpacing="0" Grid.Column="0" Grid.Row="2" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
-                        <!--<Grid.BindingContext>
-                            <x:Static/>
-                            <viewmodels:ViewModelLocator.HeaderVM/>
-                        </Grid.BindingContext>-->
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="2"/>
@@ -164,7 +160,7 @@
                         <ContentView x:Name="PlaceHolder" Grid.Row="0"/>
                         <BoxView Grid.Row="1" BackgroundColor="#f0f0f0"/>
 
-                        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
+                        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2" VerticalOptions="FillAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
@@ -173,36 +169,36 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <StackLayout x:Name="news" Spacing="0" Grid.Column="0" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30" TintColor="{Binding NewsIconColor}"/>
+                            <StackLayout x:Name="news" Spacing="0" Grid.Column="0" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                                <controls:TintedImage x:Name="tintedImage_News" Source="nyheder.png"  HeightRequest="30" TintColor="{Binding NewsIconColor}" VerticalOptions="CenterAndExpand"/>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding NewsTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
-                            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30" TintColor="{Binding PlayerIconColor}"/>
+                            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                                <controls:TintedImage x:Name="tintedImage_Players" Source="aaretsspiller.png"  HeightRequest="30" TintColor="{Binding PlayerIconColor}" VerticalOptions="CenterAndExpand"/>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding PlayersTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
-                            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30" TintColor="{Binding MatchIconColor}"/>
+                            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                                <controls:TintedImage x:Name="tintedImage_Matches" Source="turnering.png"  HeightRequest="30" TintColor="{Binding MatchIconColor}" VerticalOptions="CenterAndExpand"/>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding MatchesTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
-                            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30" TintColor="{Binding TournamentIconColor}"/>
+                            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                                <controls:TintedImage x:Name="tintedImage_Tournament" Source="statistik.png"  HeightRequest="30" TintColor="{Binding TournamentIconColor}" VerticalOptions="CenterAndExpand"/>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding TournamentTapped}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
 
-                            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White">
-                                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30" TintColor="{Binding HistoryIconColor}"/>
+                            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                                <controls:TintedImage x:Name="tintedImage_History" Source="burgermenu.png"  HeightRequest="30" TintColor="{Binding HistoryIconColor}" VerticalOptions="CenterAndExpand"/>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding HistoryTapped}"/>
                                 </StackLayout.GestureRecognizers>
