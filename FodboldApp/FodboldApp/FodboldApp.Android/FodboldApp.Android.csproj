@@ -250,9 +250,6 @@
     <AndroidResource Include="Resources\drawable\tidligere_spillere.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\tidligere_kampe.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\tidligere_spillere.png" />
   </ItemGroup>
   <ItemGroup>
@@ -266,9 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\mangekampe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\tidligere_kampe.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\tidligere_spillere.png" />
@@ -286,9 +280,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\mangekampe.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\tidligere_kampe.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\tidligere_spillere.png" />
   </ItemGroup>
   <ItemGroup>
@@ -302,9 +293,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\mangekampe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\tidligere_kampe.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\facebook_icon.png" />
@@ -387,6 +375,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\frontpage_background.jpg" />
     <AndroidResource Include="Resources\drawable-xhdpi\frontpage_background.jpg" />
     <AndroidResource Include="Resources\drawable-xxhdpi\frontpage_background.jpg" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\settings.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\settings.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\settings.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\FodboldApp\FodboldApp.projitems" Label="Shared" />

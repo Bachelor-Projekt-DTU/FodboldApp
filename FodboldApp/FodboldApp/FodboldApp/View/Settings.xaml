@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
+             x:Class="FodboldApp.View.Settings">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:SettingsVM/>
+            </StackLayout.BindingContext>
+            <Label Text="Indstillinger"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   HeightRequest="60"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource textColor}"
+                   BackgroundColor="#f0f0f0"/>
+            <Button Text="Skift klub"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" Style="{StaticResource buttonStyle2}"
+                    Command="{Binding ChangeClubCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

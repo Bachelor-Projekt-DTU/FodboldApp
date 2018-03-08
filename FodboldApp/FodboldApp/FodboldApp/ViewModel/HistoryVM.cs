@@ -1,9 +1,7 @@
 ﻿using FodboldApp.Stack;
 using FodboldApp.View;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -14,12 +12,7 @@ namespace FodboldApp.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
-            var handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
         public ICommand FormerPlayersCommand { get; private set; }
@@ -27,7 +20,7 @@ namespace FodboldApp.ViewModel
         public ICommand OverFiftyGoalsCommand { get; private set; }
         public ICommand OverHundredGamesCommand { get; private set; }
         public ICommand HistoricalStandingsCommand { get; private set; }
-        public ICommand TempCommand { get; private set; }
+        public ICommand ChangeClubCommand { get; private set; }
 
         void FormerPlayersOnTapped()
         {
@@ -54,10 +47,9 @@ namespace FodboldApp.ViewModel
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new HistoricalStandings());
             ViewModelLocator.HeaderVM.UpdateContent();
         }
-
-        void Temp_OnTapped()
+        void ChangeClubOnTapped()
         {
-            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new Chat());
+            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new Settings());
             ViewModelLocator.HeaderVM.UpdateContent();
         }
 
@@ -68,7 +60,7 @@ namespace FodboldApp.ViewModel
             OverFiftyGoalsCommand = new Command(OverFiftyGoalsOnTapped);
             OverHundredGamesCommand = new Command(OverHundredGanesOnTapped);
             HistoricalStandingsCommand = new Command(HistoricalStandingsOnTapped);
-            TempCommand = new Command(Temp_OnTapped);
+            ChangeClubCommand = new Command(ChangeClubOnTapped);
         }
     }
 }

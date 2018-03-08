@@ -24,8 +24,22 @@
                 </Setter>
                 <Setter Property="TextColor" Value="#000000" />
             </Style>
-      
             
+            <Style x:Key="buttonStyle2" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="BackgroundColor" Value="#D3D3D3"/>
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <OnPlatform.iOS>80</OnPlatform.iOS>
+                            <OnPlatform.Android>85</OnPlatform.Android>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="TextColor" Value="#000000" />
+            </Style>
+
             <Color x:Key="textColor">#243f73</Color>
             <Color x:Key="backgroundColor">#f0f0f0</Color>
 
