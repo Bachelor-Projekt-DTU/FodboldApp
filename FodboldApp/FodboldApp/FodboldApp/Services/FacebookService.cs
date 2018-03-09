@@ -21,5 +21,12 @@ namespace FodboldApp.Services
             var temp = JsonConvert.DeserializeObject<FBUserModel>(json);
             return temp.Picture;
         }
+        public async Task<string> GetIdAsync(string accessToken)
+        {
+            var httpClient = new HttpClient();
+            var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=id&access_token={accessToken}");
+            var temp = JsonConvert.DeserializeObject<FBUserModel>(json);
+            return temp.Id;
+        }
     }
 }

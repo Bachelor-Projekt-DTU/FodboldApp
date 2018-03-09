@@ -1,6 +1,5 @@
 ﻿using FodboldApp.Stack;
 using FodboldApp.View;
-using System;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;

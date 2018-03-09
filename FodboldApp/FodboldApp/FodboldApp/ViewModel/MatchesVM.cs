@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Linq;
-using System.Text;
 using System.Windows.Input;
 using FodboldApp.Model;
 using FodboldApp.Stack;
 using FodboldApp.View;
 using Realms;
-using Realms.Sync;
 using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
@@ -21,12 +16,7 @@ namespace FodboldApp.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
-            var handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         private IQueryable<MatchModel> _matchList { get; set; }
         public IQueryable<MatchModel> MatchList
@@ -57,15 +47,6 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("matches");
-            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
-            //_realm = await ViewModelLocator.NoInternetVM.IsConnectedOnMainPage("matches");
-            //_realm.Write(() =>
-            //{
-            //    _realm.RemoveAll();
-            //    _realm.Add(new MatchModel { Teams = "BK FREM  -  Hillerød", Score = "2 - 2", ImageURL = "http://bkfrem.dk/images/hill_2.jpg" });
-            //    _realm.Add(new MatchModel { Teams = "BK FREM  -  Hillerød", Score = "2 - 2", ImageURL = "http://bkfrem.dk/images/hill_2.jpg" });
-            //});
             MatchList = _realm.All<MatchModel>();
         }
 

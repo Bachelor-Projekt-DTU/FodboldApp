@@ -1,9 +1,6 @@
 ﻿using FodboldApp.Model;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace FodboldApp.Services
@@ -23,6 +20,13 @@ namespace FodboldApp.Services
             var json = await httpClient.GetStringAsync($"https://www.googleapis.com/userinfo/v2/me?fields=picture&access_token={accessToken}");
             var temp = JsonConvert.DeserializeObject<UserModel>(json);
             return temp.Picture;
+        }
+        public async Task<string> GetIdAsync(string accessToken)
+        {
+            var httpClient = new HttpClient();
+            var json = await httpClient.GetStringAsync($"https://www.googleapis.com/userinfo/v2/me?fields=id&access_token={accessToken}");
+            var temp = JsonConvert.DeserializeObject<UserModel>(json);
+            return temp.Id;
         }
     }
 }

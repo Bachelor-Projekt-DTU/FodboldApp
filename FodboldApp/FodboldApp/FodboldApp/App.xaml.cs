@@ -54,8 +54,7 @@ namespace FodboldApp
             {
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
                 CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
-                await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
-                await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken);
+                FacebookSingleton.Instance.GetUserInfoAsync();
             }
         }
 
@@ -63,11 +62,9 @@ namespace FodboldApp
         {
             if (Current.Properties.ContainsKey("Token"))
             {
-                Console.WriteLine((string)Current.Properties["Token"]);
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
                 CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
-                await ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
-                await ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
+                GooglePlusSingleton.Instance.GetUserInfoAsync();
             }
         }
 
@@ -76,13 +73,6 @@ namespace FodboldApp
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
             SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data"));
             _realm = Realm.GetInstance(config);
-
-            //await EmptyDB("chat");
-            //await EmptyDB("news");
-            //await EmptyDB("formerPlayers");
-            //await EmptyDB("matches");
-            //await EmptyDB("clubs");
-
         }
 
         public async Task EmptyDB(string folder)
@@ -90,10 +80,6 @@ namespace FodboldApp
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
             SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/" + folder));
             _realm = Realm.GetInstance(config);
-            //_realm.Write(() =>
-            //{
-            //    _realm.RemoveAll();
-            //});
         }
 
         protected override void OnStart()
