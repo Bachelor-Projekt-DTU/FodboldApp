@@ -1,6 +1,7 @@
 ﻿using Com.OneSignal;
 using DLToolkit.Forms.Controls;
 using FodboldApp.Globals;
+using FodboldApp.View;
 using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;

@@ -46,13 +46,19 @@
             <flv:FlowListView FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" FlowItemsSource="{Binding HeadLeagueTableCollection}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
-                        <Grid Margin="0,0,0,-110">
+                        <Grid>
+                            <Grid.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <OnPlatform.iOS>0,0,0,-440</OnPlatform.iOS>
+                                    <OnPlatform.Android>0,0,0,-110</OnPlatform.Android>
+                                </OnPlatform>
+                            </Grid.Margin>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Label Text="{Binding GroupName}" Grid.Row="0" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
-                            <flv:FlowListView FlowColumnCount="1" Grid.Row="1" SeparatorVisibility="None" HasUnevenRows="True" FlowItemsSource="{Binding LeagueTableCollection}">
+                            <flv:FlowListView FlowColumnCount="1" Grid.Row="1" SeparatorVisibility="None" HasUnevenRows="True" FlowItemsSource="{Binding LeagueTableCollection}" >
                                 <flv:FlowListView.FlowColumnTemplate>
                                     <DataTemplate>
                                         <Grid ColumnSpacing="0">
