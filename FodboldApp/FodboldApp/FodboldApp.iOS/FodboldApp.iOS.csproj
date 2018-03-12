@@ -165,6 +165,9 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>2.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.KeyboardOverlap">
+      <Version>1.0.0.4</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.RoundedBoxView">
       <Version>1.0.0.7</Version>
     </PackageReference>

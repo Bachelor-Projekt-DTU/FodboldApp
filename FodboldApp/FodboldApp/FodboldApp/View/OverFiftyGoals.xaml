@@ -40,13 +40,13 @@
 			   FlowItemsSource="{Binding PlayersList}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
-                        <Grid ColumnSpacing="0">
+                        <Grid ColumnSpacing="0" RowSpacing="20">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Name}" HeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Name}" MinimumHeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                             <Label Text="{Binding Period}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                             <Label Text="{Binding Goals_Games}" FontSize="Medium" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                         </Grid>

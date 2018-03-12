@@ -149,7 +149,7 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
 
             HistoricalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
             HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>();

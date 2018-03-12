@@ -4,6 +4,7 @@ using FFImageLoading.Forms.Touch;
 using FodboldApp.Globals;
 using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
+using KeyboardOverlap.Forms.Plugin.iOSUnified;
 using Plugin.CrossPlatformTintedImage.iOS;
 using RoundedBoxView.Forms.Plugin.iOSUnified;
 using System;
@@ -40,6 +41,7 @@ namespace FodboldApp.iOS
             CachedImageRenderer.Init();
             RoundedBoxViewRenderer.Init();
             CarouselViewRenderer.Init();
+            KeyboardOverlapRenderer.Init();
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();

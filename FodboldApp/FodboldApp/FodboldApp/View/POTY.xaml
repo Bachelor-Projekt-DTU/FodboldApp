@@ -44,7 +44,7 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Label Text="{Binding Year}" HeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
-                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                         </Grid>
                     </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>

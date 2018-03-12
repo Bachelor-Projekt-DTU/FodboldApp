@@ -37,10 +37,11 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("over50goals");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("overfiftygoals");
+            PlayersList = _realm.All<OverFiftyGoalsModel>();
         }
 
-            void Player_OnTapped()
+        void Player_OnTapped()
         {
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
             ViewModelLocator.HeaderVM.UpdateContent();

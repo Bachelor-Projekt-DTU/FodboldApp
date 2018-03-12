@@ -48,7 +48,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                         <DataTemplate>
                             <StackLayout>
                                 <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" Grid.Row="0"
-                                  SeparatorVisibility="None" HasUnevenRows="True"  IsVisible="{Binding ListSwitch}"
+                                  SeparatorVisibility="None" HasUnevenRows="{Binding ListSwitch}"  IsVisible="{Binding ListSwitch}"
                                   FlowItemsSource="{Binding CollectionList}" BackgroundColor="White" >
                                     <flv:FlowListView.FlowColumnTemplate>
                                         <DataTemplate>
@@ -71,7 +71,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                                 </flv:FlowListView>
 
                                 <flv:FlowListView x:Name="flowListView2" FlowColumnCount="1" BackgroundColor="White"
-                                  HasUnevenRows="True" HeightRequest="180" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" Grid.Row="0"
+                                  HasUnevenRows="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" HeightRequest="180" IsVisible="{Binding ListSwitch, Converter={StaticResource booleanReverser}}" Grid.Row="0"
                                   FlowItemsSource="{Binding CollectionList}" SeparatorVisibility="Default" SeparatorColor="Black">
                                     <flv:FlowListView.FlowColumnTemplate>
                                         <DataTemplate>

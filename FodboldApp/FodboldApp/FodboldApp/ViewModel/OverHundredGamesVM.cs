@@ -35,7 +35,7 @@ namespace FodboldApp.ViewModel
         }
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("over100games");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("overhundredgames");
 
             PlayersList = _realm.All<OverHundredGamesModel>();
         }
