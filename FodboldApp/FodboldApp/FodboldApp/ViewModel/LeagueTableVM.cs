@@ -65,8 +65,8 @@ namespace FodboldApp.ViewModel
                         promotionGroup.First().LeagueTableCollection.Add(item);
                     }
                 }
-            });
             Console.WriteLine("Heeer " + HeadLeagueTableCollection.Count()+" "+HeadLeagueTableCollection.First().LeagueTableCollection.Count);
+            });
         }
         
         public LeagueTableVM()

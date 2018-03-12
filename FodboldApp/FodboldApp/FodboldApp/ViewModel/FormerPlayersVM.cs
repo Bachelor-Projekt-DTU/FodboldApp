@@ -5,6 +5,7 @@ using Realms;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -14,14 +15,27 @@ namespace FodboldApp.ViewModel
     {
         Realm _realm;
 
+        private PlayerModel _selectedItem { get; set; }
+        public PlayerModel SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                _selectedItem = value;
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private IEnumerable<FormerPlayerModel> _playersList { get; set; } = new ObservableCollection<FormerPlayerModel>();
-        public IEnumerable<FormerPlayerModel> PlayersList
+        private IQueryable<PlayerModel> _playersList { get; set; }
+        public IQueryable<PlayerModel> PlayersList
         {
             get
             {
@@ -38,12 +52,21 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("formerPlayers");
 
-            PlayersList = _realm.All<FormerPlayerModel>();
+            PlayersList = _realm.All<PlayerModel>().OrderBy(x => x.Name);
+
+            _realm.Write(() =>
+            {
+                int i = 0;
+                foreach (PlayerModel item in PlayersList)
+                {
+                    item.Index = i++;
+                }
+            });
         }
 
         void PlayerOnTapped()
         {
-            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
+            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(SelectedItem));
             ViewModelLocator.HeaderVM.UpdateContent();
         }
         public FormerPlayersVM()

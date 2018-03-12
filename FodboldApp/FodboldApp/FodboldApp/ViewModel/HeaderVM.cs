@@ -126,6 +126,9 @@ namespace FodboldApp.ViewModel
         {
             InputText = String.Empty;
             CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
+            SearchBar editor = App.Searchbar;
+            //editor.Unfocus();
+            Console.WriteLine("EEEEEEE" + editor);
             currentCategory = CategoryType.NewsType;
             UpdateContent();
         }

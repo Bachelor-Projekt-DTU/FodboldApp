@@ -1,6 +1,7 @@
 ﻿using Com.OneSignal;
 using DLToolkit.Forms.Controls;
 using FodboldApp.Globals;
+using FodboldApp.View;
 using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
@@ -17,6 +18,7 @@ namespace FodboldApp
     {
         HeaderVM vm;
         Realm _realm;
+        public static SearchBar Searchbar;
 
         public App()
         {
@@ -26,6 +28,10 @@ namespace FodboldApp
                   .EndInit();
 
             InitializeComponent();
+
+            var temp = this.FindByName<ControlTemplate>("Template");
+            //temp.
+            Console.WriteLine("ok here we go fam" + Searchbar);
 
             vm = ViewModelLocator.HeaderVM;
 

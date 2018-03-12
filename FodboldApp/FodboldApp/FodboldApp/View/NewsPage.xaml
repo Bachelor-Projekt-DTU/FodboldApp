@@ -4,11 +4,11 @@
              xmlns:viewmodels="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.NewsPage">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView HorizontalOptions="FillAndExpand" BackgroundColor="#ffffff">
             <StackLayout  Padding="0, 0, 0, 0"
-                          Margin="0, 0, 0, 0"
+                          Margin="10, 0, 0, 0"
                           Spacing="0"
-                          BackgroundColor="#ffffff"
+                          HorizontalOptions="FillAndExpand"
                           BindingContext="{x:Static viewmodels:ViewModelLocator.NewsPageVM}">
                 <Label Text="{Binding Title}"
                        TextColor="#e11e2c"
@@ -23,9 +23,9 @@
                 <Label Text="{Binding SmallText}"
                        FontSize="32"
                        HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Start"/>    
-                <Image Source="{Binding ImageURL}"/>
-                <Label Text="{Binding NewsText}"/>
+                       HorizontalTextAlignment="Start"/>
+                <Image Source="{Binding ImageURL}" Aspect="AspectFill" Margin="-10,0,0,0"/>
+                <Label Text="{Binding NewsText}" Margin="0, 0, 10, 0"/>
                 <Image Source="share_button" HorizontalOptions="Start" VerticalOptions="Center">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ShareCommand}"/>

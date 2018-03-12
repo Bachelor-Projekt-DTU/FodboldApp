@@ -5,6 +5,7 @@ using Realms;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -14,14 +15,27 @@ namespace FodboldApp.ViewModel
     {
         Realm _realm;
 
+        private POTYModel _selectedItem { get; set; }
+        public POTYModel SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                _selectedItem = value;
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private IEnumerable<POTYModel> _playersList { get; set; } = new ObservableCollection<POTYModel>();
-        public IEnumerable<POTYModel> PlayersList
+        private IQueryable<POTYModel> _playersList { get; set; }
+        public IQueryable<POTYModel> PlayersList
         {
             get
             {
@@ -33,11 +47,11 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
-        private void SetupPlayerList()
-        {
-        }
+        
         void Player_OnTapped()
         {
+            _realm = NoInternetVM.IsConnectedOnMainPage("formerPlayers").GetAwaiter().GetResult();
+            PlayerModel temp = _realm.All<PlayerModel>().Where(x => x.Name.Trim() == SelectedItem.Name.Trim()).First();
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
             ViewModelLocator.HeaderVM.UpdateContent();
         }
@@ -46,8 +60,18 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("POTY");
 
-            PlayersList = _realm.All<POTYModel>();
+            PlayersList = _realm.All<POTYModel>().OrderByDescending(x => x.Year);
+
+            _realm.Write(() =>
+            {
+                int i = 0;
+                foreach (POTYModel item in PlayersList)
+                {
+                    item.Index = i++;
+                }
+            });
         }
+
         public POTYVM()
         {
             SetupRealm();
