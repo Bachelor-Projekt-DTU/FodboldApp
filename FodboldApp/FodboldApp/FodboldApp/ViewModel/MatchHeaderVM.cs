@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using System.Linq;
+using Com.OneSignal;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
@@ -17,7 +20,40 @@ namespace FodboldApp.ViewModel
         }
 
         private Realm _realm;
-        
+
+        public ICommand SubscribeToNotifications { get; set; }
+
+        private string NotificationTag = "SubscribedToMatch";
+        private bool _isSubscribedtoNotifications { get; set; }
+        public bool IsSubscribedtoNotifications
+        {
+            get
+            {
+                return _isSubscribedtoNotifications;
+            }
+            set
+            {
+                _isSubscribedtoNotifications = value;
+                OnPropertyChanged(nameof(IsSubscribedtoNotifications));
+            }
+        }
+
+        private Color SelectedColor = Color.FromHex("#ffc200");
+        private Color UnSelectedColor = Color.Gray;
+        private Color _bellColor { get; set; }
+        public Color BellColor
+        {
+            get
+            {
+                return _bellColor;
+            }
+            set
+            {
+                _bellColor = value;
+                OnPropertyChanged(nameof(BellColor));
+            }
+        }
+
         public string DateTime
         {
             get
@@ -75,11 +111,32 @@ namespace FodboldApp.ViewModel
             Console.WriteLine("STAPLE GUN" + _realm.All<HeaderMatchModel>().AsRealmCollection().Count);
         }
 
+        private void SubscribeToMatch()
+        {
+            if (IsSubscribedtoNotifications)
+            {
+                BellColor = UnSelectedColor;
+                OneSignal.Current.DeleteTag(NotificationTag);
+            }
+            else
+            {
+                BellColor = SelectedColor;
+                OneSignal.Current.SendTag(NotificationTag, HeaderMatch.Id);
+            }
+            IsSubscribedtoNotifications = !IsSubscribedtoNotifications;
+        }
+
         public MatchHeaderVM()
         {
             SetupRealm();
-            Location = "Skovshoved IP";
-            Division = "2. Division Pulje 1";
+            SubscribeToNotifications = new Command(SubscribeToMatch);
+            OneSignal.Current.GetTags(InitBellColor);
+        }
+
+        private void InitBellColor(Dictionary<string, object> tags)
+        {
+            if (tags.ContainsKey(NotificationTag)) BellColor = SelectedColor;
+            else BellColor = UnSelectedColor;
         }
     }
 }
