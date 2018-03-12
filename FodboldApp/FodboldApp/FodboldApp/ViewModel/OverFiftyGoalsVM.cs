@@ -5,6 +5,7 @@ using Realms;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -21,8 +22,8 @@ namespace FodboldApp.ViewModel
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private IEnumerable<OverFiftyGoalsModel> _playersList { get; set; } = new ObservableCollection<OverFiftyGoalsModel>();
-        public IEnumerable<OverFiftyGoalsModel> PlayersList
+        private IQueryable<OverFiftyGoalsModel> _playersList { get; set; }
+        public IQueryable<OverFiftyGoalsModel> PlayersList
         {
             get
             {
@@ -38,7 +39,16 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("overfiftygoals");
-            PlayersList = _realm.All<OverFiftyGoalsModel>();
+            PlayersList = _realm.All<OverFiftyGoalsModel>().OrderByDescending(x => x.Goals_Games);
+
+            _realm.Write(() =>
+            {
+                int i = 0;
+                foreach (OverFiftyGoalsModel item in PlayersList)
+                {
+                    item.Index = i++;
+                }
+            });
         }
 
         void Player_OnTapped()

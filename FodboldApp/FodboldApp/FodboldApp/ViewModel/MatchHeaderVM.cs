@@ -134,7 +134,7 @@ namespace FodboldApp.ViewModel
 
         private void InitBellColor(Dictionary<string, object> tags)
         {
-            if (tags.ContainsKey(NotificationTag)) BellColor = SelectedColor;
+            if (tags !=null && tags.ContainsKey(NotificationTag)) BellColor = SelectedColor;
             else BellColor = UnSelectedColor;
         }
     }
