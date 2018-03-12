@@ -45,7 +45,7 @@
 
             <converter:BooleanReverser x:Key="booleanReverser"/>
 
-            <ControlTemplate x:Key="MainPageTemplate">
+            <ControlTemplate x:Key="MainPageTemplate" x:Name="Template">
 
                 <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
                     <Grid.RowDefinitions>
@@ -103,7 +103,8 @@
                         </controls:TintedImage>
 
                         <SearchBar x:Name="search"
-                                   Placeholder="Søg"
+                                   
+                                   Placeholder="Søg efter artikel"
                                    PlaceholderColor="#d0d0d0"
                                    CancelButtonColor="#d0d0d0"
                                    TextColor="#d0d0d0"

@@ -6,6 +6,7 @@ using System.Linq;
 using Com.OneSignal;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace FodboldApp.ViewModel
 {

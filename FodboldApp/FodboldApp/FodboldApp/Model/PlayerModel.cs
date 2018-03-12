@@ -20,7 +20,7 @@ namespace FodboldApp.Model
         public string Assists { get; set; }
         public string MVP { get; set; }
         public string Clean_Sheet { get; set; }
-               
+        public int Index { get; set; }
         public string Position { get; set; }
         public string Debut { get; set; }
         public string Former_Clubs { get; set; }
