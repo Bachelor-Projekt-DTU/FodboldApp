@@ -6,7 +6,6 @@ using FodboldApp.View;
 using Realms;
 using Realms.Sync;
 using System;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;

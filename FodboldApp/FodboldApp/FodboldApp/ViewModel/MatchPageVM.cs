@@ -1,15 +1,12 @@
 ﻿using FodboldApp.Model;
-using FodboldApp.Stack;
-using FodboldApp.View;
 using Realms;
-using System.Collections.Generic;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Realms.Sync;
 using System.Linq;
+using FodboldApp.Globals;
 
 namespace FodboldApp.ViewModel
 {
@@ -20,12 +17,7 @@ namespace FodboldApp.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
         {
-            var handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
         private MatchModel _match { get; set; } = new MatchModel { Team1 = "Loading Error", Team2 = "Loading Error" };
@@ -77,12 +69,42 @@ namespace FodboldApp.ViewModel
                 if (_userComment.Length > 0)
                 {
                     LabelIsVisible = false;
+                    SendButtonIsVisible = true;
                 }
                 else
                 {
                     LabelIsVisible = true;
+                    SendButtonIsVisible = false;
                 }
                 OnPropertyChanged(nameof(UserComment));
+            }
+        }
+
+        private int _pagePosition { get; set; }
+        public int PagePosition
+        {
+            get
+            {
+                return _pagePosition;
+            }
+            set
+            {
+                _pagePosition = value;
+                OnPropertyChanged(nameof(PagePosition));
+            }
+        }
+        
+        private bool _sendButtonIsVisible { get; set; }
+        public bool SendButtonIsVisible
+        {
+            get
+            {
+                return _sendButtonIsVisible;
+            }
+            set
+            {
+                _sendButtonIsVisible = value;
+                OnPropertyChanged(nameof(SendButtonIsVisible));
             }
         }
 
@@ -130,15 +152,18 @@ namespace FodboldApp.ViewModel
 
         void OnSendTapped()
         {
-            _realm.Write(() =>
-            {
-                _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = this.UserComment, UserName = "Peter Petersen" });
-            });
+                _realm.Write(() =>
+                {
+                    _realm.Add(new CommentModel { UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name });
+                });
             CommentList = _realm.All<CommentModel>();
             foreach (CommentModel Comment in CollectionList[1].CollectionList)
             {
                 Console.WriteLine(Comment.UserComment);
             }
+            UserComment = String.Empty;
+            Console.WriteLine("HHHHH " + PagePosition);
+            if (PagePosition == 0) PagePosition = 1;
         }
 
         private void UpdateLists()
@@ -151,10 +176,6 @@ namespace FodboldApp.ViewModel
             {
                 Console.WriteLine(e.Message);
             }
-            //EventList = _realm.All<EventModel>();
-            //Teams = "BK FREM - Hillerød";
-            
-
         }
 
         private async void SetupRealm()
@@ -164,27 +185,6 @@ namespace FodboldApp.ViewModel
             CommentList = _realm.All<CommentModel>();
             CollectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
             CollectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
-            //var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            //SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/matches"));
-            //_realm = Realm.GetInstance(config);
-            //int index = 0;
-            //_realm.Write(() =>
-            //{
-            //    _realm.RemoveAll();
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "OSB. Peteresen", Team = 4 });
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "OSB. Peteresen", Team = 4 });
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
-            //    _realm.Add(new EventModel { ImageURL = "https://icon-icons.com/icons2/553/PNG/96/footbal_icon-icons.com_53569.png", PlayerName = "H. Horani", Team = 0 });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Virkelig godt skudt ind!", UserName = "Peter Petersen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Mååål", UserName = "Hans Hansen" });
-            //    _realm.Add(new CommentModel { ImageURL = "https://icon-icons.com/icons2/37/PNG/96/name_user_3716.png", UserComment = "Sådan! Så fik vi det ene point", UserName = "Kasper Kaspersen" });
-            //});
-            //_realm.Dispose();
-            //UpdateLists();
-            //Console.WriteLine("okokokok" +EventList.Count());
         }
 
         public MatchPageVM()

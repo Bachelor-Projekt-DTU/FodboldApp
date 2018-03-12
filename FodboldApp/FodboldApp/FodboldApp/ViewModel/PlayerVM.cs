@@ -2,9 +2,7 @@
 using FodboldApp.Stack;
 using FodboldApp.View;
 using Realms;
-using Realms.Sync;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;

@@ -73,6 +73,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoricalStandingVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\POTYVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SettingsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LeagueTableVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Converter\ChatBubbleColorConverter.cs" />
@@ -155,6 +156,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\XamlTemplate\MatchHeaderTemplate.xaml.cs">
       <DependentUpon>MatchHeaderTemplate.xaml</DependentUpon>
@@ -239,6 +244,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\SearchResultView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Settings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

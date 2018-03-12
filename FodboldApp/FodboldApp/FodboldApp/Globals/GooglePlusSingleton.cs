@@ -73,18 +73,25 @@ namespace FodboldApp.Globals
             _Token = null;
         }
 
+        public async void GetUserInfoAsync()
+        {
+            CurrentUser.user.Name = await ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
+            CurrentUser.user.Picture = await ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
+            CurrentUser.user.Id = await ViewModelLocator.GoogleService.GetIdAsync(CurrentUser.user.AccessToken);
+            Console.WriteLine("Userinfo: " + CurrentUser.user.Name + " " + CurrentUser.user.Picture + " " + CurrentUser.user.Id);
+        }
+
         public Action SuccessfulLoginAction
         {
             get
             {
                 Application.Current.Properties["Token"] = Instance.Token;
+                CurrentUser.user.AccessToken = Instance.Token;
                 ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
                 Application.Current.Properties["IsUserLoggedIn"] = true;
                 Application.Current.Properties["LoginType"] = "Google";
-                ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
-                ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
-                Console.WriteLine("Det virker");
                 ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Google;
+                GetUserInfoAsync();
                 return new Action(() => Application.Current.MainPage.Navigation.PopToRootAsync());
             }
         }

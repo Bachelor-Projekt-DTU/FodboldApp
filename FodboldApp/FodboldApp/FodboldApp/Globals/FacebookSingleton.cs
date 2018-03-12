@@ -61,19 +61,26 @@ namespace FodboldApp.Globals
             _Token = null;
         }
 
+        public async void GetUserInfoAsync()
+        {
+            CurrentUser.user.Name = await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
+            CurrentUser.user.Picture = (await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken)).Data.Url;
+            CurrentUser.user.Id = await ViewModelLocator.FacebookService.GetIdAsync(CurrentUser.user.AccessToken);
+            Console.WriteLine("Userinfo: " + CurrentUser.user.Name + " " + CurrentUser.user.Picture + " " + CurrentUser.user.Id);
+        }
+
         public Action SuccessfulLoginAction
         {
             get
             {
-                Xamarin.Forms.Application.Current.Properties["Token"] = Instance.Token;
-                ViewModel.ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
-                Xamarin.Forms.Application.Current.Properties["IsUserLoggedIn"] = true;
-                Xamarin.Forms.Application.Current.Properties["LoginType"] = "Facebook";
-                ViewModel.ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
-                ViewModel.ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken);
-                Console.WriteLine("Det virker");
-                ViewModel.ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Facebook;
-                return new Action(() => Xamarin.Forms.Application.Current.MainPage.Navigation.PopToRootAsync());
+                Application.Current.Properties["Token"] = Instance.Token;
+                CurrentUser.user.AccessToken = Instance.Token;
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+                Application.Current.Properties["IsUserLoggedIn"] = true;
+                Application.Current.Properties["LoginType"] = "Facebook";
+                ViewModelLocator.HeaderVM.TypeOfLogin = HeaderVM.LoginType.Facebook;
+                GetUserInfoAsync();
+                return new Action(() => Application.Current.MainPage.Navigation.PopToRootAsync());
             }
         }
 
@@ -81,7 +88,7 @@ namespace FodboldApp.Globals
         {
             get
             {
-                return new Action(() => Xamarin.Forms.Application.Current.MainPage.Navigation.PopAsync());
+                return new Action(() => Application.Current.MainPage.Navigation.PopAsync());
             }
         }
     }

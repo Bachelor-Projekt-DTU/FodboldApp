@@ -5475,13 +5475,13 @@ namespace FodboldApp.Droid
 			public const int Prev = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int share_button = 2130837847;
+			public const int settings = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int statistik = 2130837848;
+			public const int share_button = 2130837848;
 			
 			// aapt resource value: 0x7f020159
-			public const int tidligere_kampe = 2130837849;
+			public const int statistik = 2130837849;
 			
 			// aapt resource value: 0x7f02015a
 			public const int tidligere_spillere = 2130837850;
