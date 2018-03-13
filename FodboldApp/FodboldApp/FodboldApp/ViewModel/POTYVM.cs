@@ -51,7 +51,7 @@ namespace FodboldApp.ViewModel
         void Player_OnTapped()
         {
             _realm = NoInternetVM.IsConnectedOnMainPage("formerPlayers").GetAwaiter().GetResult();
-            PlayerModel temp = _realm.All<PlayerModel>().Where(x => x.Name.Trim() == SelectedItem.Name.Trim()).First();
+            //PlayerModel temp = _realm.All<PlayerModel>().Where(x => x.Name.Trim() == SelectedItem.Name.Trim()).First();
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
             ViewModelLocator.HeaderVM.UpdateContent();
         }

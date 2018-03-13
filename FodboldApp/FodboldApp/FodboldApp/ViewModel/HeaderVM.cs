@@ -8,6 +8,8 @@ using Realms.Sync;
 using System;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using static FodboldApp.Model.Categories;
@@ -88,6 +90,20 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        private bool _searchbarEnabled { get; set; } = true;
+        public bool SearchbarEnabled
+        {
+            get
+            {
+                return _searchbarEnabled;
+            }
+            set
+            {
+                _searchbarEnabled = value;
+                OnPropertyChanged(nameof(SearchbarEnabled));
+            }
+        }
+
         private IQueryable<NewsModel> _searchResultList;
         public IQueryable<NewsModel> SearchResultList
         {
@@ -126,11 +142,17 @@ namespace FodboldApp.ViewModel
         {
             InputText = String.Empty;
             CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
-            SearchBar editor = App.Searchbar;
-            //editor.Unfocus();
-            Console.WriteLine("EEEEEEE" + editor);
+            SearchbarEnabled = false;
+            new Task(EnableSeachBar).Start();
             currentCategory = CategoryType.NewsType;
             UpdateContent();
+        }
+
+        private void EnableSeachBar()
+        {
+            Thread.Sleep(500);
+            SearchbarEnabled = true;
+
         }
 
         public bool _isUserLoggedIn { get; set; }

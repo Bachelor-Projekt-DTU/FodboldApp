@@ -2,6 +2,7 @@
 using FodboldApp.Stack;
 using FodboldApp.View;
 using Realms;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -22,8 +23,8 @@ namespace FodboldApp.ViewModel
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private IQueryable<OverFiftyGoalsModel> _playersList { get; set; }
-        public IQueryable<OverFiftyGoalsModel> PlayersList
+        private ObservableCollection<OverFiftyGoalsModel> _playersList { get; set; }
+        public ObservableCollection<OverFiftyGoalsModel> PlayersList
         {
             get
             {
@@ -39,7 +40,9 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("overfiftygoals");
-            PlayersList = _realm.All<OverFiftyGoalsModel>().OrderByDescending(x => x.Goals_Games);
+            var temp = _realm.All<OverFiftyGoalsModel>().ToList().OrderByDescending(x => Int32.Parse(x.Goals_Games.Split('/')[0]. Trim('*')));
+
+            PlayersList = new ObservableCollection<OverFiftyGoalsModel>(temp);
 
             _realm.Write(() =>
             {

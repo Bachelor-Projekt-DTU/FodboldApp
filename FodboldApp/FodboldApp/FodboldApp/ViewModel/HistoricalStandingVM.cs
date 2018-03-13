@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Linq;
 
 namespace FodboldApp.ViewModel
 {
@@ -19,8 +20,8 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand HideStackLayoutCommand { get; private set; }
-        private IEnumerable<HistoricalStandingTitleModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel >();
-        public IEnumerable<HistoricalStandingTitleModel > HistoricalStandingsDataList
+        private ObservableCollection<HistoricalStandingTitleModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel >();
+        public ObservableCollection<HistoricalStandingTitleModel > HistoricalStandingsDataList
         {
             get
             {
@@ -32,8 +33,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsDataList));
             }
         }
-        private IEnumerable<HistoricalStandingModel> _historicalStandingsListContent { get; set; } = new ObservableCollection<HistoricalStandingModel >();
-        public IEnumerable<HistoricalStandingModel> HistoricalStandingsListContent
+        private ObservableCollection<HistoricalStandingModel> _historicalStandingsListContent { get; set; }
+        public ObservableCollection<HistoricalStandingModel> HistoricalStandingsListContent
         {
             get
             {
@@ -107,15 +108,18 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public string tournamentLabelName { get; set; } = "Vælg en turnering";
+        public string _tournamentLabelName { get; set; } = "Vælg en turnering";
         public string TournamentLabelName {
             get
             {
-                return tournamentLabelName;
+                return _tournamentLabelName;
             }
             set
             {
-                tournamentLabelName = value;
+                _tournamentLabelName = value;
+                var temp = _realm.All<HistoricalStandingModel>().ToList();
+                HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(temp.Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year));
+                //_realm.All<HistoricalStandingModel>().Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper()));
                 OnPropertyChanged(nameof(TournamentLabelName));
             }
         }
@@ -151,8 +155,22 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
 
-            HistoricalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
-            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>();
+            var temp = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
+
+            HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = temp.First().TournamentName });
+
+            for(int i = 1; i < temp.Count(); i++)
+            {
+                if(temp.ElementAt(i).TournamentName != temp.ElementAt(i - 1).TournamentName)
+                {
+                    bool add = true;
+                    foreach (var item in HistoricalStandingsDataList)
+                    {
+                        if (item.Title.ToUpper() == temp.ElementAt(i).TournamentName.ToUpper()) add = false;
+                    }
+                    if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = temp.ElementAt(i).TournamentName });
+                }
+            }
         }
 
         public HistoricalStandingVM()

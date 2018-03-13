@@ -103,7 +103,7 @@
                         </controls:TintedImage>
 
                         <SearchBar x:Name="search"
-                                   
+                                   IsEnabled="{Binding SearchbarEnabled}"
                                    Placeholder="Søg efter artikel"
                                    PlaceholderColor="#d0d0d0"
                                    CancelButtonColor="#d0d0d0"
