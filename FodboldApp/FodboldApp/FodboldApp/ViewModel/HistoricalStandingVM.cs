@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Linq;
 
 namespace FodboldApp.ViewModel
 {
@@ -19,8 +20,8 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand HideStackLayoutCommand { get; private set; }
-        private IEnumerable<HistoricalStandingTitleModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel >();
-        public IEnumerable<HistoricalStandingTitleModel > HistoricalStandingsDataList
+        private ObservableCollection<HistoricalStandingTitleModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel >();
+        public ObservableCollection<HistoricalStandingTitleModel > HistoricalStandingsDataList
         {
             get
             {
@@ -32,8 +33,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsDataList));
             }
         }
-        private IEnumerable<HistoricalStandingModel> _historicalStandingsListContent { get; set; } = new ObservableCollection<HistoricalStandingModel >();
-        public IEnumerable<HistoricalStandingModel> HistoricalStandingsListContent
+        private IQueryable<HistoricalStandingModel> _historicalStandingsListContent { get; set; }
+        public IQueryable<HistoricalStandingModel> HistoricalStandingsListContent
         {
             get
             {
@@ -151,8 +152,17 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
 
-            HistoricalStandingsDataList = _realm.All<HistoricalStandingTitleModel>();
-            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>();
+            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
+
+            HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.First().TournamentName });
+
+            for(int i = 1; i < HistoricalStandingsListContent.Count(); i++)
+            {
+                if(HistoricalStandingsListContent.ElementAt(i).TournamentName != HistoricalStandingsListContent.ElementAt(i - 1).TournamentName)
+                {
+                    HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.ElementAt(i).TournamentName });
+                }
+            }
         }
 
         public HistoricalStandingVM()
