@@ -33,8 +33,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsDataList));
             }
         }
-        private IQueryable<HistoricalStandingModel> _historicalStandingsListContent { get; set; }
-        public IQueryable<HistoricalStandingModel> HistoricalStandingsListContent
+        private ObservableCollection<HistoricalStandingModel> _historicalStandingsListContent { get; set; }
+        public ObservableCollection<HistoricalStandingModel> HistoricalStandingsListContent
         {
             get
             {
@@ -108,15 +108,18 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public string tournamentLabelName { get; set; } = "Vælg en turnering";
+        public string _tournamentLabelName { get; set; } = "Vælg en turnering";
         public string TournamentLabelName {
             get
             {
-                return tournamentLabelName;
+                return _tournamentLabelName;
             }
             set
             {
-                tournamentLabelName = value;
+                _tournamentLabelName = value;
+                var temp = _realm.All<HistoricalStandingModel>().ToList();
+                HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(temp.Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year));
+                //_realm.All<HistoricalStandingModel>().Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper()));
                 OnPropertyChanged(nameof(TournamentLabelName));
             }
         }
@@ -152,15 +155,20 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
 
-            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
+            var temp = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
 
-            HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.First().TournamentName });
+            HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = temp.First().TournamentName });
 
-            for(int i = 1; i < HistoricalStandingsListContent.Count(); i++)
+            for(int i = 1; i < temp.Count(); i++)
             {
-                if(HistoricalStandingsListContent.ElementAt(i).TournamentName != HistoricalStandingsListContent.ElementAt(i - 1).TournamentName)
+                if(temp.ElementAt(i).TournamentName != temp.ElementAt(i - 1).TournamentName)
                 {
-                    HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.ElementAt(i).TournamentName });
+                    bool add = true;
+                    foreach (var item in HistoricalStandingsDataList)
+                    {
+                        if (item.Title.ToUpper() == temp.ElementAt(i).TournamentName.ToUpper()) add = false;
+                    }
+                    if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = temp.ElementAt(i).TournamentName });
                 }
             }
         }
