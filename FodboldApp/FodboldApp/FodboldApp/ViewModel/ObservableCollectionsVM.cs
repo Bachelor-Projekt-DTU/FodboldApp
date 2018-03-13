@@ -40,7 +40,7 @@ namespace FodboldApp.ViewModel
             {
                 if (CurrentUser.IsAdmin || TappedItem.UserId == CurrentUser.user.Id)
                 {
-                    var answer = await Application.Current.MainPage.DisplayAlert("Slet kommentar", "Vil du gerne slette din kommentar?", "Ja", "Nej");
+                    var answer = await Application.Current.MainPage.DisplayAlert("Slet kommentar", "Vil du gerne slette denne kommentar?", "Ja", "Nej");
                     if (answer == true)
                     {
                         MatchPageVM._realm.Write(() =>
