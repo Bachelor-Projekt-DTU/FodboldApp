@@ -237,7 +237,6 @@ namespace FodboldApp.ViewModel
         public HeaderVM()
         {
             ResetTint();
-
             NewsTapped = new Command(NewsTap);
             PlayersTapped = new Command(PlayerTap);
             MatchesTapped = new Command(MatchTap);
@@ -263,6 +262,19 @@ namespace FodboldApp.ViewModel
             HistoryIconColor = UnSelectedColor;
         }
 
+        public async void CheckForAdmin()
+        {
+            Realm _realm;
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
+            _realm = Realm.GetInstance(config);
+
+            if(_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
+            {
+                CurrentUser.IsAdmin = true;
+            }
+        }
+
         public async void Login()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new Login());
@@ -270,6 +282,7 @@ namespace FodboldApp.ViewModel
 
         public void Logout()
         {
+            CurrentUser.IsAdmin = false;
             ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
             if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
             {

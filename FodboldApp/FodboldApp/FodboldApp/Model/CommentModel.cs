@@ -2,7 +2,7 @@
 
 namespace FodboldApp.Model
 {
-    class CommentModel : RealmObject
+    public class CommentModel : RealmObject
     {
         public MatchModel Match { get; set; }
         public string ImageURL { get; set; }

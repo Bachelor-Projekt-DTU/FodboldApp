@@ -12,7 +12,7 @@ namespace FodboldApp.ViewModel
 {
     class MatchPageVM : INotifyPropertyChanged
     {
-        Realm _realm;
+        public static Realm _realm;
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
@@ -108,8 +108,8 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        private ObservableCollection<ObservableCollectionsModel> _collectionList { get; set; } = new ObservableCollection<ObservableCollectionsModel>();
-        public ObservableCollection<ObservableCollectionsModel> CollectionList
+        private ObservableCollection<ObservableCollectionsVM> _collectionList { get; set; } = new ObservableCollection<ObservableCollectionsVM>();
+        public ObservableCollection<ObservableCollectionsVM> CollectionList
         {
             get
             {
@@ -183,8 +183,8 @@ namespace FodboldApp.ViewModel
             _realm = await NoInternetVM.IsConnectedOnMainPage("matches");
             EventList = _realm.All<EventModel>().Where(data => data.Match == Match);
             CommentList = _realm.All<CommentModel>();
-            CollectionList.Add(new ObservableCollectionsModel { CollectionList = EventList, ListSwitch = true });
-            CollectionList.Add(new ObservableCollectionsModel { CollectionList = CommentList, ListSwitch = false });
+            CollectionList.Add(new ObservableCollectionsVM { CollectionList = EventList, ListSwitch = true });
+            CollectionList.Add(new ObservableCollectionsVM { CollectionList = CommentList, ListSwitch = false });
         }
 
         public MatchPageVM()

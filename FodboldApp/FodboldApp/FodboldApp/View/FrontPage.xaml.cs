@@ -10,7 +10,7 @@ namespace FodboldApp
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
-            BindingContext = new ClubVM();
+            BindingContext = new FrontpageVM();
 
             // Listviewet skal reduceres for at fjerne tomrum: HeightRequest = (#items * itemHeight) +(Standardhøjde + #items)
             clubList.HeightRequest = (5 * clubList.RowHeight) + (10 * 22.5);

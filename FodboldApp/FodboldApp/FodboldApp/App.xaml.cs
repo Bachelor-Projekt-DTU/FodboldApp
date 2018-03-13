@@ -1,12 +1,8 @@
 ﻿using Com.OneSignal;
 using DLToolkit.Forms.Controls;
 using FodboldApp.Globals;
-using FodboldApp.View;
 using FodboldApp.ViewModel;
-using Realms;
-using Realms.Sync;
 using System;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,17 +10,14 @@ using Xamarin.Forms.Xaml;
 
 namespace FodboldApp
 {
-    public partial class App : Xamarin.Forms.Application
+    public partial class App : Application
     {
         HeaderVM vm;
-        Realm _realm;
         public static SearchBar Searchbar;
 
         public App()
         {
-            SetupRealmAsync();
-
-            OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
+           OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
 
             InitializeComponent();
@@ -72,20 +65,6 @@ namespace FodboldApp
                 CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
                 GooglePlusSingleton.Instance.GetUserInfoAsync();
             }
-        }
-
-        public async Task SetupRealmAsync()
-        {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data"));
-            _realm = Realm.GetInstance(config);
-        }
-
-        public async Task EmptyDB(string folder)
-        {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/" + folder));
-            _realm = Realm.GetInstance(config);
         }
 
         protected override void OnStart()

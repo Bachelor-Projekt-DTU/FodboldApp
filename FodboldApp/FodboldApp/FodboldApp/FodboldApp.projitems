@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Globals\GoogleConfigurations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Globals\GooglePlusSingleton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILogOut.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\AdminModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Categories.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ChatModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ClubModel.cs" />
@@ -44,7 +45,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\NewsPageModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\ObservableCollectionsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ObservableCollectionsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverFiftyGoalsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\OverHundredGamesModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PlayerModel.cs" />
@@ -55,7 +56,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\FacebookService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\GoogleService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ChatVM.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClubVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FrontpageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormerPlayersVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HistoryVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LoginVM.cs" />
