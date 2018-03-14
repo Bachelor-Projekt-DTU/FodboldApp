@@ -49,7 +49,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                             <StackLayout>
                                 <flv:FlowListView FlowColumnCount="1" Grid.Row="0"
                                   SeparatorVisibility="None" HasUnevenRows="{Binding ListSwitch}"  IsVisible="{Binding ListSwitch}"
-                                  FlowItemsSource="{Binding CollectionList}" BackgroundColor="White" >
+                                  FlowItemsSource="{Binding CollectionList}" BackgroundColor="White">
                                     <x:Arguments>
                                         <ListViewCachingStrategy>RetainElement</ListViewCachingStrategy>
                                     </x:Arguments>

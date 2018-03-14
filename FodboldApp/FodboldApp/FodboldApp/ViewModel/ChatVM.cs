@@ -36,11 +36,17 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public bool IsEditorVisible
+        private bool _sendButtonIsVisible { get; set; }
+        public bool SendButtonIsVisible
         {
             get
             {
-                return ViewModelLocator.HeaderVM.IsUserLoggedIn && _isChatRoomOpen;
+                return _sendButtonIsVisible;
+            }
+            set
+            {
+                _sendButtonIsVisible = value;
+                OnPropertyChanged(nameof(SendButtonIsVisible));
             }
         }
 
@@ -54,7 +60,40 @@ namespace FodboldApp.ViewModel
             set
             {
                 _userChatMessage = value;
+
+                if (_userChatMessage.Length > 0)
+                {
+                    LabelIsVisible = false;
+                    SendButtonIsVisible = true;
+                }
+                else
+                {
+                    LabelIsVisible = true;
+                    SendButtonIsVisible = false;
+                }
                 OnPropertyChanged(nameof(UserChatMessage));
+            }
+        }
+
+        private bool _labelIsVisible { get; set; } = true;
+        public bool LabelIsVisible
+        {
+            get
+            {
+                return _labelIsVisible;
+            }
+            set
+            {
+                _labelIsVisible = value;
+                OnPropertyChanged(nameof(LabelIsVisible));
+            }
+        }
+
+        public bool IsEditorVisible
+        {
+            get
+            {
+                return ViewModelLocator.HeaderVM.IsUserLoggedIn && _isChatRoomOpen;
             }
         }
 
