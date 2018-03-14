@@ -382,6 +382,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\settings.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\settings.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\settings.png" />
+    <AndroidResource Include="Resources\drawable\verified.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\verified.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\verified.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\verified.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\FodboldApp\FodboldApp.projitems" Label="Shared" />

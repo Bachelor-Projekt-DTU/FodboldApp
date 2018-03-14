@@ -16,7 +16,15 @@
                 <viewmodels:NewsVM/>
             </StackLayout.BindingContext>
 
-            <xamltemp:MatchHeaderTemplate/>
+            <StackLayout>
+                <StackLayout.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <OnPlatform.iOS>300</OnPlatform.iOS>
+                        <OnPlatform.Android>200</OnPlatform.Android>
+                    </OnPlatform>
+                </StackLayout.HeightRequest>
+                <xamltemp:MatchHeaderTemplate/>
+            </StackLayout>
 
             <Label Text="NYHEDER"
                    TextColor="{StaticResource textColor}"
@@ -27,9 +35,9 @@
                    BackgroundColor="#f0f0f0"
                    HeightRequest="38"/>
 
-            <flv:FlowListView x:Name="flowListView" FlowLastTappedItem="{Binding SelectedItem, Mode=TwoWay}"
+            <flv:FlowListView FlowLastTappedItem="{Binding SelectedItem, Mode=TwoWay}"
                               FlowItemTappedCommand="{Binding NewsCommand}" FlowItemsSource="{Binding NewsList}"
-                              FlowColumnCount="1" SeparatorVisibility="Default" HasUnevenRows="True" SeparatorColor="Black"
+                              FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" SeparatorColor="Black"
                               VerticalOptions="FillAndExpand">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>

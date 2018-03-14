@@ -34,7 +34,7 @@
                 <Label Text="ÅR" Grid.Column="0" HeightRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
                 <Label Text="NAVN" Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
             </Grid>
-            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
+            <flv:FlowListView FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
 			   FlowItemsSource="{Binding PlayersList}" FlowLastTappedItem="{Binding SelectedItem}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
@@ -44,7 +44,7 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Label Text="{Binding Year}" HeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
-                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                         </Grid>
                     </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>
