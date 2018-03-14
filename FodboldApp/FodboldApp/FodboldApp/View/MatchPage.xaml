@@ -116,7 +116,7 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="54"/>
                         </Grid.ColumnDefinitions>
-                        <Editor Text="{Binding UserComment, Mode=TwoWay}"
+                        <Editor Text="{Binding UserComment, Mode=TwoWay}" BackgroundColor="#f0f0f0"
                                                 HorizontalOptions="FillAndExpand" Grid.Column="0"
                                                 BindingContext="{x:Static viewmodels:ViewModelLocator.MatchPageVM}">
                         </Editor>
