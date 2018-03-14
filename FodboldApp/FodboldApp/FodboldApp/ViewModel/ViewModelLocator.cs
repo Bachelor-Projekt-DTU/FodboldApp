@@ -13,6 +13,7 @@ namespace FodboldApp.ViewModel
         public static GoogleService GoogleService { get; } = new GoogleService();
         public static NoInternetVM NoInternetVM { get; } = new NoInternetVM();
         public static NewsPageVM NewsPageVM { get; } = new NewsPageVM();
+        public static ChatVM ChatVM { get; } = new ChatVM();
 
     }
 }

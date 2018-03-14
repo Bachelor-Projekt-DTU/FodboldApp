@@ -119,7 +119,6 @@ namespace FodboldApp.ViewModel
                 _tournamentLabelName = value;
                 var temp = _realm.All<HistoricalStandingModel>().ToList();
                 HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(temp.Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year));
-                //_realm.All<HistoricalStandingModel>().Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper()));
                 OnPropertyChanged(nameof(TournamentLabelName));
             }
         }

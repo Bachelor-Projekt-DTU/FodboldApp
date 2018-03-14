@@ -17,10 +17,7 @@
     
     
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand">
-            <StackLayout.BindingContext>
-                <viewmodels:ChatVM/>
-            </StackLayout.BindingContext>
+        <StackLayout HorizontalOptions="FillAndExpand" BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}">
             <flv:FlowListView x:Name="flowListView" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True" HorizontalOptions="FillAndExpand"
 			   FlowItemsSource="{Binding ChatList}">
                 <flv:FlowListView.FlowColumnTemplate>
@@ -38,9 +35,28 @@
                     </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>
             </flv:FlowListView>
-            <StackLayout Orientation="Horizontal">
-                <Editor Text="{Binding UserChatMessage}" IsVisible="{Binding IsEditorVisible}"/>
-                <Button Command="{Binding ChatCommand}">Send</Button>
+            <StackLayout Grid.Row="1" HeightRequest="50">
+                <Label Text="Log ind for at chatte" IsVisible="{Binding IsUserLoggedIn, Converter={StaticResource booleanReverser}}"
+                                               BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}"
+                                               HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+                <Grid IsVisible="{Binding IsUserLoggedIn}" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="54"/>
+                    </Grid.ColumnDefinitions>
+                    <Editor Text="{Binding UserChatMessage, Mode=TwoWay}"
+                                                HorizontalOptions="FillAndExpand" Grid.Column="0"
+                                                BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}">
+                    </Editor>
+                    <Label Text="Skriv en besked" Margin="5,15,0,0"
+                                               HorizontalOptions="StartAndExpand" IsVisible="{Binding LabelIsVisible}" Grid.Column="0" InputTransparent="True"
+                                               BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}">
+                    </Label>
+                    <Button Text="Send" HorizontalOptions="End" Command="{Binding SendChatCommand}" 
+                                Grid.Column="1" VerticalOptions="Center" Style="{StaticResource buttonStyle2}"
+                                BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}" IsVisible="{Binding SendButtonIsVisible}">
+                    </Button>
+                </Grid>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

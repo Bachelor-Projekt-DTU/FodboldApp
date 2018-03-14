@@ -20,6 +20,10 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center" Style="{StaticResource buttonStyle2}"
                     Command="{Binding ChangeClubCommand}"/>
+            <Button Text="Test Chat"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" Style="{StaticResource buttonStyle2}"
+                    Command="{Binding ChatTestCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
