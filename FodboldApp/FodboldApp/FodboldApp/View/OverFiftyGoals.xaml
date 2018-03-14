@@ -36,17 +36,17 @@
                 <Label Text="PERIODE" Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
                 <Label Text="MÅL/KAMPE" Grid.Column="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
             </Grid>
-            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
+            <flv:FlowListView FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
 			   FlowItemsSource="{Binding PlayersList}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
-                        <Grid ColumnSpacing="0" RowSpacing="20">
+                        <Grid ColumnSpacing="0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Name}" MinimumHeightRequest="50" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
+                            <Label Text="{Binding Name}" FontSize="Medium" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                             <Label Text="{Binding Period}" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                             <Label Text="{Binding Goals_Games}" FontSize="Medium" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Index, Converter={StaticResource colorConvert}}"/>
                         </Grid>

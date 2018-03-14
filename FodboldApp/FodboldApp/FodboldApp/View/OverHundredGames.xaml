@@ -35,7 +35,7 @@
                 <Label Text="PERIODE" Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
                 <Label Text="KAMPE" Grid.Column="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
             </Grid>
-            <flv:FlowListView x:Name="flowListView" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
+            <flv:FlowListView FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
 			   FlowItemsSource="{Binding PlayersList}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>

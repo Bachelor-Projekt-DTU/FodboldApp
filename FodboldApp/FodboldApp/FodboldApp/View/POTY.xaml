@@ -34,8 +34,8 @@
                 <Label Text="ÅR" Grid.Column="0" HeightRequest="50" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
                 <Label Text="NAVN" Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
             </Grid>
-            <flv:FlowListView FlowItemTappedCommand="{Binding PlayerDescriptionCommand}" FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
-			   FlowItemsSource="{Binding PlayersList}" FlowLastTappedItem="{Binding SelectedItem}">
+            <flv:FlowListView FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
+			   FlowItemsSource="{Binding PlayersList}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
                         <Grid ColumnSpacing="0">

@@ -21,7 +21,7 @@
                        HeightRequest="60"/>
                 <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="5*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
@@ -47,7 +47,7 @@
                             <RowDefinition Height="25"/>
                         </Grid.RowDefinitions>
                         <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0"/>
-                        <Label Text="Trøjesponsor:" FontSize="14.2" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="Trøjesponsor:" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
                         <Label Text="{Binding Sponsor}" BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="2"/>
                         <Label BackgroundColor="{Binding GetColor}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0"/>
                         <Label Text="Position: " BackgroundColor="{Binding GetColor}}" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1"/>
