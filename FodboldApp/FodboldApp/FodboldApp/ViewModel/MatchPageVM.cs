@@ -154,7 +154,7 @@ namespace FodboldApp.ViewModel
         {
                 _realm.Write(() =>
                 {
-                    _realm.Add(new CommentModel { UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name });
+                    _realm.Add(new CommentModel { UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name, IsVerified = CurrentUser.IsAdmin});
                 });
             CommentList = _realm.All<CommentModel>();
             foreach (CommentModel Comment in CollectionList[1].CollectionList)
