@@ -154,7 +154,7 @@ namespace FodboldApp.ViewModel
         {
                 _realm.Write(() =>
                 {
-                    _realm.Add(new CommentModel { UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name, IsVerified = CurrentUser.IsAdmin});
+                    _realm.Add(new CommentModel {MatchId = Match.Id, UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name, IsVerified = CurrentUser.IsAdmin});
                 });
             CommentList = _realm.All<CommentModel>();
             foreach (CommentModel Comment in CollectionList[1].CollectionList)
@@ -182,7 +182,7 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("matches");
             EventList = _realm.All<EventModel>().Where(data => data.Match == Match);
-            CommentList = _realm.All<CommentModel>();
+            CommentList = _realm.All<CommentModel>().Where(data => data.MatchId == Match.Id);
             CollectionList.Add(new ObservableCollectionsVM { CollectionList = EventList, ListSwitch = true });
             CollectionList.Add(new ObservableCollectionsVM { CollectionList = CommentList, ListSwitch = false });
         }

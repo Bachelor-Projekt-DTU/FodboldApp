@@ -63,6 +63,9 @@ namespace FodboldApp.ViewModel
                 return temp1[2] + "-" + temp1[1] + "-" + temp1[0] + " " + temp0[1];
             }
         }
+
+        public string Id { get; set; }
+
         public string Location { get; private set; }
         public string Division { get; private set; }
 
@@ -106,15 +109,10 @@ namespace FodboldApp.ViewModel
 
         private async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("futureMatches");
-            Thread.Sleep(2000);
+            _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("futureMatches");
             var temp = _realm.All<HeaderMatchModel>();
-            Console.WriteLine("LB BLUE" + temp.Count());
-            if(temp.Count() > 0)
-            {
-
             HeaderMatch = temp.First();
-            }
+            Id = HeaderMatch.Id;
         }
 
         private void SubscribeToMatch()
@@ -141,7 +139,7 @@ namespace FodboldApp.ViewModel
 
         private void InitBellColor(Dictionary<string, object> tags)
         {
-            if (tags != null && (string)tags[NotificationTag] == HeaderMatch.Id) BellColor = SelectedColor;
+            if (tags != null && (string)tags[NotificationTag] == Id) BellColor = SelectedColor;
             else BellColor = UnSelectedColor;
         }
     }
