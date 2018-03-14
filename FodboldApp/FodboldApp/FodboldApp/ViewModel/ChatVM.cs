@@ -1,4 +1,5 @@
-﻿using FodboldApp.Model;
+﻿using FodboldApp.Globals;
+using FodboldApp.Model;
 using Realms;
 using Realms.Sync;
 using System;
@@ -20,6 +21,8 @@ namespace FodboldApp.ViewModel
         }
 
         public ICommand ChatCommand { get; private set; }
+
+        public string Id { get; set; }
 
         private bool _isChatRoomOpen { get; set; } = true;
         public bool IsChatRoomOpen
@@ -131,7 +134,7 @@ namespace FodboldApp.ViewModel
         {
             _realm.Write(() =>
             {
-                _realm.Add(new ChatModel { Content = _userChatMessage, Admin = false, MatchID = "1234" });
+                _realm.Add(new ChatModel { Content = _userChatMessage, Admin = CurrentUser.IsAdmin, MatchID = Id });
             });
         }
     }

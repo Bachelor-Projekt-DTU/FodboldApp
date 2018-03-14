@@ -19,6 +19,8 @@ namespace FodboldApp
 
         public App()
         {
+            SetupRealm();
+
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
 
@@ -47,6 +49,13 @@ namespace FodboldApp
             MainPage = new NavigationPage(new FrontPage());
 
             NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        async void SetupRealm()
+        {
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/futureMatches"));
+            Realm.GetInstance(config);
         }
 
         async void FacebookAutoLogin()
