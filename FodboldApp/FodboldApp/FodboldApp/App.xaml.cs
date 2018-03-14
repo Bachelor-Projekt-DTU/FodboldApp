@@ -2,6 +2,8 @@
 using DLToolkit.Forms.Controls;
 using FodboldApp.Globals;
 using FodboldApp.ViewModel;
+using Realms;
+using Realms.Sync;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,7 +19,7 @@ namespace FodboldApp
 
         public App()
         {
-           OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
+            OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
 
             InitializeComponent();

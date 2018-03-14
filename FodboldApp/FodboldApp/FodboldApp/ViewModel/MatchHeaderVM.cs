@@ -7,6 +7,7 @@ using Com.OneSignal;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace FodboldApp.ViewModel
 {
@@ -106,8 +107,14 @@ namespace FodboldApp.ViewModel
         private async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("futureMatches");
-            HeaderMatch = _realm.All<HeaderMatchModel>().First();
-            Console.WriteLine("STAPLE GUN" + _realm.All<HeaderMatchModel>().AsRealmCollection().Count);
+            Thread.Sleep(2000);
+            var temp = _realm.All<HeaderMatchModel>();
+            Console.WriteLine("LB BLUE" + temp.Count());
+            if(temp.Count() > 0)
+            {
+
+            HeaderMatch = temp.First();
+            }
         }
 
         private void SubscribeToMatch()
@@ -134,7 +141,7 @@ namespace FodboldApp.ViewModel
 
         private void InitBellColor(Dictionary<string, object> tags)
         {
-            if (tags !=null && tags.ContainsKey(NotificationTag)) BellColor = SelectedColor;
+            if (tags != null && (string)tags[NotificationTag] == HeaderMatch.Id) BellColor = SelectedColor;
             else BellColor = UnSelectedColor;
         }
     }
