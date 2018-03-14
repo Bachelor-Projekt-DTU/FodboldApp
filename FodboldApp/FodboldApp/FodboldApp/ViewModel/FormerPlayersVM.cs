@@ -56,7 +56,7 @@ namespace FodboldApp.ViewModel
 
             _realm.Write(() =>
             {
-                int i = 0;
+                int i = 1;
                 foreach (PlayerModel item in PlayersList)
                 {
                     item.Index = i++;

@@ -4,11 +4,9 @@ namespace FodboldApp.Model
 {
     public class PlayerModel : RealmObject
     {
-        private string _name { get; set; }
-        public string Name { get; set; }
-        public string Number { get; set; }
         public string ImageURL { get; set; }
         public string Sponsor { get; set; }
+        public string Number { get; set; }
         public string Height { get; set; }
         public string Weight { get; set; }
         public string Birthday { get; set; }
@@ -20,7 +18,7 @@ namespace FodboldApp.Model
         public string Assists { get; set; }
         public string MVP { get; set; }
         public string Clean_Sheet { get; set; }
-        public int Index { get; set; }
+        public string Name { get; set; }
         public string Position { get; set; }
         public string Debut { get; set; }
         public string Former_Clubs { get; set; }
