@@ -1,4 +1,7 @@
-﻿using FodboldApp.ViewModel;
+﻿using FodboldApp.Model;
+using FodboldApp.ViewModel;
+using Realms;
+using Realms.Sync;
 using System;
 using Xamarin.Auth;
 using Xamarin.Forms;
@@ -67,6 +70,16 @@ namespace FodboldApp.Globals
             CurrentUser.user.Picture = (await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken)).Data.Url;
             CurrentUser.user.Id = await ViewModelLocator.FacebookService.GetIdAsync(CurrentUser.user.AccessToken);
             Console.WriteLine("Userinfo: " + CurrentUser.user.Name + " " + CurrentUser.user.Picture + " " + CurrentUser.user.Id);
+
+            Realm _realm;
+            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
+            _realm = Realm.GetInstance(config);
+
+            if (_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
+            {
+                CurrentUser.IsAdmin = true;
+            }
         }
 
         public Action SuccessfulLoginAction

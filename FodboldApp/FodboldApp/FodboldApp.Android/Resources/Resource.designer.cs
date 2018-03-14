@@ -26,6 +26,7 @@ namespace FodboldApp.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::AndroidHUD.Resource.String.library_name = global::FodboldApp.Droid.Resource.String.library_name;
 			global::CarouselView.FormsPlugin.Android.Resource.Animation.abc_fade_in = global::FodboldApp.Droid.Resource.Animation.abc_fade_in;
 			global::CarouselView.FormsPlugin.Android.Resource.Animation.abc_fade_out = global::FodboldApp.Droid.Resource.Animation.abc_fade_out;
 			global::CarouselView.FormsPlugin.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::FodboldApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;

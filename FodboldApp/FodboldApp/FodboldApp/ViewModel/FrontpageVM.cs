@@ -1,18 +1,17 @@
 ﻿using FodboldApp.Customs;
-using FodboldApp.View;
+using FodboldApp.Globals;
 using Realms;
 using Realms.Sync;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace FodboldApp.ViewModel
 {
-    class ClubVM : INotifyPropertyChanged
+    class FrontpageVM : INotifyPropertyChanged
     {
         Realm _realm;
 
@@ -65,16 +64,16 @@ namespace FodboldApp.ViewModel
         {
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
-        
+
         async void SetupRealm()
         {
             var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/clubs"));
+            var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/clubs"));
             _realm = Realm.GetInstance(config);
             ClubListSource = _realm.All<ClubModel>();
         }
 
-        public ClubVM()
+        public FrontpageVM()
         {
             SetupRealm();
             ContinueCommand = new Command(OnTapped);
