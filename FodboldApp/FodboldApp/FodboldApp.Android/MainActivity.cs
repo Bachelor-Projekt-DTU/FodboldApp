@@ -13,7 +13,6 @@ using System;
 using Android.Gms.Common;
 using Android.Content;
 using Com.OneSignal;
-using Acr.UserDialogs;
 
 namespace FodboldApp.Droid
 {
@@ -41,7 +40,6 @@ namespace FodboldApp.Droid
             CarouselViewRenderer.Init();
             RoundedBoxViewRenderer.Init();
             CachedImageRenderer.Init(enableFastRenderer: true);
-            UserDialogs.Init(this);
 
             OneSignal.Current.StartInit("84ec0128-74a1-40f9-89b1-35e35da35acd")
                   .EndInit();
