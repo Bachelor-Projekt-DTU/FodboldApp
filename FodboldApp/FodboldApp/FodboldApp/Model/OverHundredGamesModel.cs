@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class OverHundredGamesModel : RealmObject
+    public class OverHundredGamesModel : RealmObject
     {
         [Ignored]
         public int Index { get; set; }
