@@ -8,7 +8,6 @@ namespace FodboldApp.Model
     class HistoricalStandingTitleModel : RealmObject
     {
         public string Title { get; set; }
-
         public bool _selected { get; set; } = false;
         public bool Selected
         {

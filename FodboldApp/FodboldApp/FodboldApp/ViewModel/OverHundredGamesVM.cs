@@ -22,8 +22,8 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private ObservableCollection<OverHundredGamesModel> _playersList { get; set; }
-        public ObservableCollection<OverHundredGamesModel> PlayersList
+        private IQueryable<OverHundredGamesModel> _playersList { get; set; }
+        public IQueryable<OverHundredGamesModel> PlayersList
         {
             get
             {
@@ -32,23 +32,25 @@ namespace FodboldApp.ViewModel
             set
             {
                 _playersList = value;
+
+                if (_playersList != null)
+                {
+                    int i = 0;
+                    foreach (OverHundredGamesModel item in PlayersList)
+                    {
+                        item.Index = i++;
+                    }
+                }
+
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("overhundredgames");
-            var temp = _realm.All<OverHundredGamesModel>().ToList().OrderByDescending(x => Int32.Parse(x.Games));
-            PlayersList = new ObservableCollection<OverHundredGamesModel>(temp);
-
-            _realm.Write(() =>
-            {
-                int i = 0;
-                foreach (OverHundredGamesModel item in PlayersList)
-                {
-                    item.Index = i++;
-                }
-            });
+            _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("overhundredgames");
+            PlayersList = _realm.All<OverHundredGamesModel>().OrderByDescending(x => x.Games);
+            
+                
         }
         void Player_OnTapped()
         {

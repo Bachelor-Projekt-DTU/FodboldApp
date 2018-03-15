@@ -4,6 +4,8 @@ namespace FodboldApp.Model
 {
     public class LeagueTableModel : RealmObject
     {
+        [Ignored]
+        public int Index { get; set; }
         public string Position { get; set; }
         public string Team { get; set; }
         public string MP { get; set;}
@@ -23,7 +25,6 @@ namespace FodboldApp.Model
             }
         }
         public string Points { get; set; }
-        public int Index { get; set; }
         public string GroupName { get; set; }
     }
 }

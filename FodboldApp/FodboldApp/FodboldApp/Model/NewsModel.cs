@@ -4,6 +4,8 @@ namespace FodboldApp.Model
 {
     public class NewsModel : RealmObject
     {
+        [PrimaryKey]
+        public string ArticleId { get; set; }
         public string Title { get; set; }
         public string Date { get; set; }
         public string Text { get; set; }
@@ -17,6 +19,5 @@ namespace FodboldApp.Model
         }
         public string SmallText { get; set; }
         public string ImageURL { get; set; }
-        public string ArticleId { get; set; }
     }
 }

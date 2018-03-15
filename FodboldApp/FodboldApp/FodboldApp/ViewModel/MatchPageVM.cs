@@ -181,7 +181,7 @@ namespace FodboldApp.ViewModel
         private async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("matches");
-            EventList = _realm.All<EventModel>().Where(data => data.Match == Match);
+            EventList = _realm.All<EventModel>().Where(data => data.MatchId == Match.Id);
             CommentList = _realm.All<CommentModel>().Where(data => data.MatchId == Match.Id);
             CollectionList.Add(new ObservableCollectionsVM { CollectionList = EventList, ListSwitch = true });
             CollectionList.Add(new ObservableCollectionsVM { CollectionList = CommentList, ListSwitch = false });

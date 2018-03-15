@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    public class ChatModel : RealmObject
+    class ChatModel : RealmObject
     {
         public string MatchID { get; set; }
         public bool Admin { get; set; }

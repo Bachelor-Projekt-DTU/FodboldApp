@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    public class Categories
+    class Categories
     {
         public enum CategoryType { NewsType, PlayerType, MatchType, TournamentType, HistoryType };
     }

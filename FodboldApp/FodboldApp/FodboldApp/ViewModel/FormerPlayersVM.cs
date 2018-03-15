@@ -44,6 +44,16 @@ namespace FodboldApp.ViewModel
             set
             {
                 _playersList = value;
+
+                if (_playersList != null)
+                {
+                    int i = 1;
+                    foreach (PlayerModel item in PlayersList)
+                    {
+                        item.Index = i++;
+                    }
+                }
+
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
@@ -53,15 +63,6 @@ namespace FodboldApp.ViewModel
             _realm = await NoInternetVM.IsConnectedOnMainPage("formerPlayers");
 
             PlayersList = _realm.All<PlayerModel>().OrderBy(x => x.Name);
-
-            _realm.Write(() =>
-            {
-                int i = 1;
-                foreach (PlayerModel item in PlayersList)
-                {
-                    item.Index = i++;
-                }
-            });
         }
 
         void PlayerOnTapped()

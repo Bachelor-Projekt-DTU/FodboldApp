@@ -5,10 +5,9 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    public class HistoricalStandingTitleModel : RealmObject
+    class HistoricalStandingTitleModel : RealmObject
     {
         public string Title { get; set; }
-
         public bool _selected { get; set; } = false;
         public bool Selected
         {

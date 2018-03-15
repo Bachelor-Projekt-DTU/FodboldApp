@@ -40,6 +40,28 @@ namespace FodboldApp.ViewModel
             set
             {
                 _leagueTable = value;
+                if (_leagueTable != null)
+                {
+                    int i = 0;
+                    _realm.Write(() =>
+                    {
+                        foreach (var item in LeagueTable)
+                        {
+                            item.Index = i++;
+                            var promotionGroup = HeadLeagueTableCollection.Where(x => x.GroupName == item.GroupName);
+                            if (promotionGroup.Count() == 0)
+                            {
+                                var temp = new HeadLeagueTable { GroupName = item.GroupName };
+                                temp.LeagueTableCollection.Add(item);
+                                HeadLeagueTableCollection.Add(temp);
+                            }
+                            else
+                            {
+                                promotionGroup.First().LeagueTableCollection.Add(item);
+                            }
+                        }
+                    });
+                }
                 OnPropertyChanged(nameof(LeagueTable));
             }
         }
@@ -47,25 +69,6 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
             LeagueTable = _realm.All<LeagueTableModel>();
-
-            int i = 0;
-            _realm.Write(() =>
-            {
-                foreach (var item in LeagueTable)
-                {
-                    item.Index = i++;
-                    var promotionGroup = HeadLeagueTableCollection.Where(x => x.GroupName == item.GroupName);
-                    if (promotionGroup.Count() == 0)
-                    {
-                        var temp = new HeadLeagueTable { GroupName = item.GroupName };
-                        temp.LeagueTableCollection.Add(item);
-                        HeadLeagueTableCollection.Add(temp);
-                    } else
-                    {
-                        promotionGroup.First().LeagueTableCollection.Add(item);
-                    }
-                }
-            });
         }
         
         public LeagueTableVM()

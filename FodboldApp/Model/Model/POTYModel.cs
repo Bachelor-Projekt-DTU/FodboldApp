@@ -5,10 +5,13 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    public class POTYModel : RealmObject
+    class POTYModel : RealmObject
     {
+        [Ignored]
+        public int Index { get; set; }
+        [PrimaryKey]
+        public string PlayerId { get; set; }
         public string Name { get; set; }
         public string Year { get; set; }
-        public int Index { get; set; }
     }
 }

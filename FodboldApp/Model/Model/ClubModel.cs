@@ -3,10 +3,13 @@ using System.ComponentModel;
 
 namespace FodboldApp
 {
-    public class ClubModel : RealmObject
+    class ClubModel : RealmObject
     {
+        [PrimaryKey]
         public string ClubName { get; set; }
+        [Ignored]
         public bool _selected { get; set; } = false;
+        [Ignored]
         public bool Selected
         {
             get

@@ -12,7 +12,7 @@ namespace FodboldApp.ViewModel
         async void GooglePlusOnTapped()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new GoogleLoginPage());
-            Application.Current.MainPage.Navigation.PopAsync();
+            await Application.Current.MainPage.Navigation.PopAsync();
         }
 
         async void FacebookOnTapped()
