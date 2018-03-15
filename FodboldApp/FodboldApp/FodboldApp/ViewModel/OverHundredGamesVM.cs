@@ -32,9 +32,9 @@ namespace FodboldApp.ViewModel
             set
             {
                 _playersList = value;
-
-                if (_playersList != null)
+                if (_playersList.Count() > 0)
                 {
+                    Console.WriteLine("STAPLE GUN:" + _playersList.Count());
                     int i = 0;
                     foreach (OverHundredGamesModel item in PlayersList)
                     {

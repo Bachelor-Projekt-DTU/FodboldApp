@@ -23,9 +23,8 @@ namespace FodboldApp.ViewModel
 
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private ObservableCollection<PlayerModel> _playerListSource { get; set; }
-
-        public ObservableCollection<PlayerModel> PlayerListSource
+        private IQueryable<PlayerModel> _playerListSource { get; set; }
+        public IQueryable<PlayerModel> PlayerListSource
         {
             get
             {
@@ -55,8 +54,7 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("players");
-            var temp = _realm.All<PlayerModel>().ToList().OrderBy(x => Int32.Parse(x.Name.Split('.')[0]));
-            PlayerListSource = new ObservableCollection<PlayerModel>(temp);
+            PlayerListSource = _realm.All<PlayerModel>().OrderBy(x => x.Number);
         }
 
         void OnTapped()

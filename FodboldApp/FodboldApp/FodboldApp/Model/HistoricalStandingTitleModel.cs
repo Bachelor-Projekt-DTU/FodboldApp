@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FodboldApp.Model
 {
-    class HistoricalStandingTitleModel : RealmObject
+    public class HistoricalStandingTitleModel : RealmObject
     {
         public string Title { get; set; }
         public bool _selected { get; set; } = false;

@@ -58,9 +58,13 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                var temp0 = HeaderMatch.DateTime.Split(' ');
-                var temp1 = temp0[0].Split('-');
-                return temp1[2] + "-" + temp1[1] + "-" + temp1[0] + " " + temp0[1];
+                if (HeaderMatch.DateTime != null)
+                {
+                    var temp0 = HeaderMatch.DateTime.Split(' ');
+                    var temp1 = temp0[0].Split('-');
+                    return temp1[2] + "-" + temp1[1] + "-" + temp1[0] + " " + temp0[1];
+                }
+                return "Ingen fremtidig kamp";
             }
         }
 
@@ -107,12 +111,28 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        private IQueryable<HeaderMatchModel> _futureMatchList { get; set; }
+        private IQueryable<HeaderMatchModel> FutureMatchList
+        {
+            get
+            {
+                return _futureMatchList;
+            }
+            set
+            {
+                _futureMatchList = value;
+                if (_futureMatchList.Count() > 0)
+                {
+                    HeaderMatch = _futureMatchList.First();
+                    Id = HeaderMatch.Id;
+                }
+            }
+        }
+
         private async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("futureMatches");
-            var temp = _realm.All<HeaderMatchModel>();
-            HeaderMatch = temp.First();
-            Id = HeaderMatch.Id;
+            FutureMatchList = _realm.All<HeaderMatchModel>();
         }
 
         private void SubscribeToMatch()

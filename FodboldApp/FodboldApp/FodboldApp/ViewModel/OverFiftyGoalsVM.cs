@@ -34,7 +34,7 @@ namespace FodboldApp.ViewModel
             {
                 _playersList = value;
 
-                if (_playersList != null)
+                if (_playersList.Count() > 0)
                 {
                     _realm.Write(() =>
                     {
