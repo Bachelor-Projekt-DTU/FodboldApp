@@ -53,7 +53,7 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("players");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("players");
             PlayerListSource = _realm.All<PlayerModel>().OrderBy(x => x.Number);
         }
 

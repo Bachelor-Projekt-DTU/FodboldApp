@@ -64,7 +64,7 @@ namespace FodboldApp.ViewModel
                     var temp1 = temp0[0].Split('-');
                     return temp1[2] + "-" + temp1[1] + "-" + temp1[0] + " " + temp0[1];
                 }
-                return "Ingen fremtidig kamp";
+                return "Ingen fremtidige kampe";
             }
         }
 
@@ -93,7 +93,8 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                return HeaderMatch.Team1 + "-" + HeaderMatch.Team2;
+                if(HeaderMatch.Team1 != null) return HeaderMatch.Team1 + "-" + HeaderMatch.Team2;
+                return "";
             }
         }
 
@@ -116,11 +117,16 @@ namespace FodboldApp.ViewModel
         {
             get
             {
+                if(_futureMatchList.Count() > 0)
+                {
+                    HeaderMatch = _futureMatchList.First();
+                }
                 return _futureMatchList;
             }
             set
             {
                 _futureMatchList = value;
+                Console.WriteLine("FUTURE SOUND" + _futureMatchList.Count());
                 if (_futureMatchList.Count() > 0)
                 {
                     HeaderMatch = _futureMatchList.First();
@@ -131,7 +137,7 @@ namespace FodboldApp.ViewModel
 
         private async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("futureMatches");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("futureMatches");
             FutureMatchList = _realm.All<HeaderMatchModel>();
         }
 

@@ -15,18 +15,7 @@ namespace FodboldApp.ViewModel
     {
         Realm _realm;
 
-        private POTYModel _selectedItem { get; set; }
-        public POTYModel SelectedItem
-        {
-            get
-            {
-                return _selectedItem;
-            }
-            set
-            {
-                _selectedItem = value;
-            }
-        }
+        public POTYModel SelectedItem { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
@@ -47,13 +36,17 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
-        
-        void Player_OnTapped()
+
+        async void Player_OnTapped()
         {
-            _realm = NoInternetVM.IsConnectedOnMainPage("formerPlayers").GetAwaiter().GetResult();
-            //PlayerModel temp = _realm.All<PlayerModel>().Where(x => x.Name.Trim() == SelectedItem.Name.Trim()).First();
-            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
-            ViewModelLocator.HeaderVM.UpdateContent();
+            Realm _realm = await NoInternetVM.IsConnectedOnMainPage("formerPlayers");
+            PlayerModel player = _realm.Find<PlayerModel>(SelectedItem.PlayerId);
+            var temp = _realm.All<PlayerModel>();
+            if (player != null)
+            {
+                await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(player));
+                ViewModelLocator.HeaderVM.UpdateContent();
+            }
         }
 
         public async void SetupRealm()

@@ -168,7 +168,7 @@ namespace FodboldApp.ViewModel
 
         public async void SetupRealm()
         {
-            _realm = await NoInternetVM.IsConnectedOnMainPageGuaranteeData("historicalStandings");
+            _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
 
             var temp = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
 

@@ -21,6 +21,9 @@ namespace FodboldApp.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
+
+        public OverFiftyGoalsModel SelectedItem { get; set; }
+
         public ICommand PlayerDescriptionCommand { get; private set; }
 
         private IQueryable<OverFiftyGoalsModel> _playersList { get; set; }
@@ -55,10 +58,16 @@ namespace FodboldApp.ViewModel
             PlayersList = _realm.All<OverFiftyGoalsModel>().OrderByDescending(x => x.Goals);
         }
 
-        void Player_OnTapped()
+        async void Player_OnTapped()
         {
-            CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(new PlayerModel()));
-            ViewModelLocator.HeaderVM.UpdateContent();
+            Realm _realm = await NoInternetVM.IsConnectedOnMainPage("formerPlayers");
+            PlayerModel player = _realm.Find<PlayerModel>(SelectedItem.PlayerId);
+            var temp = _realm.All<PlayerModel>();
+            if (player != null)
+            {
+                await CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(player));
+                ViewModelLocator.HeaderVM.UpdateContent();
+            }
         }
         public OverFiftyGoalsVM()
         {

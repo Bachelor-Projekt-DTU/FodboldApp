@@ -35,7 +35,7 @@
                 <Label Text="NAVN" Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="White"/>
             </Grid>
             <flv:FlowListView FlowColumnCount="1" SeparatorVisibility="None" HasUnevenRows="True"
-			   FlowItemsSource="{Binding PlayersList}">
+			   FlowItemsSource="{Binding PlayersList}" FlowLastTappedItem="{Binding SelectedItem, Mode=TwoWay}" FlowItemTappedCommand="{Binding PlayerDescriptionCommand}">
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
                         <Grid ColumnSpacing="0">
