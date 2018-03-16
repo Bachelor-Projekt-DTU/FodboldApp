@@ -1,9 +1,9 @@
 ﻿using Realms;
 using System.ComponentModel;
 
-namespace FodboldApp
+namespace FodboldApp.Model
 {
-    class ClubModel : RealmObject
+    public class ClubModel : RealmObject
     {
         [PrimaryKey]
         public string ClubName { get; set; }
