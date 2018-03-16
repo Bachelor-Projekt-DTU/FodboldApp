@@ -1,5 +1,5 @@
 ﻿using FodboldApp.Customs;
-using FodboldApp.Globals;
+using FodboldApp.Model;
 using Realms;
 using Realms.Sync;
 using System;
