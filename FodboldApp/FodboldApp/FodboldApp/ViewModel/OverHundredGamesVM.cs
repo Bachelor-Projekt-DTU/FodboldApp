@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -35,17 +37,29 @@ namespace FodboldApp.ViewModel
             set
             {
                 _playersList = value;
-                if (_playersList.Count() > 0)
-                {
-                    Console.WriteLine("STAPLE GUN:" + _playersList.Count());
-                    int i = 0;
-                    foreach (OverHundredGamesModel item in PlayersList)
-                    {
-                        item.Index = i++;
-                    }
-                }
-
                 OnPropertyChanged(nameof(PlayersList));
+            }
+        }
+        private async void CheckForUpdate()
+        {
+            int oldCount = 0;
+            while (true)
+            {
+                if (PlayersList != null && PlayersList.Count() != oldCount)
+                {
+                    oldCount = PlayersList.Count();
+                    _realm.Write(() =>
+                    {
+                        int i = 0;
+                        foreach (OverHundredGamesModel item in PlayersList)
+                        {
+                            item.Index = i++;
+                            Console.WriteLine(item.Index);
+                        }
+                    OnPropertyChanged(nameof(PlayersList));
+                    });
+                }
+                await Task.Delay(500);
             }
         }
 
@@ -53,8 +67,6 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("overhundredgames");
             PlayersList = _realm.All<OverHundredGamesModel>().OrderByDescending(x => x.Games);
-            
-                
         }
 
         async void Player_OnTapped()
@@ -73,6 +85,7 @@ namespace FodboldApp.ViewModel
         {
             SetupRealm();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
+            CheckForUpdate();
         }
 
     }

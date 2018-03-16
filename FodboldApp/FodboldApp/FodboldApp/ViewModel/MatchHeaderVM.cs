@@ -8,6 +8,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace FodboldApp.ViewModel
 {
@@ -93,7 +94,7 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                if(HeaderMatch.Team1 != null) return HeaderMatch.Team1 + "-" + HeaderMatch.Team2;
+                if (HeaderMatch.Team1 != null) return HeaderMatch.Team1 + "-" + HeaderMatch.Team2;
                 return "";
             }
         }
@@ -117,10 +118,7 @@ namespace FodboldApp.ViewModel
         {
             get
             {
-                if(_futureMatchList.Count() > 0)
-                {
-                    HeaderMatch = _futureMatchList.First();
-                }
+
                 return _futureMatchList;
             }
             set
@@ -156,17 +154,36 @@ namespace FodboldApp.ViewModel
             IsSubscribedtoNotifications = !IsSubscribedtoNotifications;
         }
 
+        private void InitBellColor(Dictionary<string, object> tags)
+        {
+            if (tags != null && tags.ContainsKey(NotificationTag) && (string)tags[NotificationTag] == Id) BellColor = SelectedColor;
+            else BellColor = UnSelectedColor;
+        }
+
+        private async void CheckForUpdate()
+        {
+            int oldCount = 0;
+            while (true)
+            {
+                if (FutureMatchList != null && FutureMatchList.Count() != oldCount)
+                {
+                    oldCount = FutureMatchList.Count();
+                    _realm.Write(() =>
+                    {
+                        int i = 0;
+                        HeaderMatch = FutureMatchList.First();
+                    });
+                }
+                await Task.Delay(500);
+            }
+        }
+
         public MatchHeaderVM()
         {
             SetupRealm();
             SubscribeToNotifications = new Command(SubscribeToMatch);
             OneSignal.Current.GetTags(InitBellColor);
-        }
-
-        private void InitBellColor(Dictionary<string, object> tags)
-        {
-            if (tags != null && (string)tags[NotificationTag] == Id) BellColor = SelectedColor;
-            else BellColor = UnSelectedColor;
+            CheckForUpdate();
         }
     }
 }

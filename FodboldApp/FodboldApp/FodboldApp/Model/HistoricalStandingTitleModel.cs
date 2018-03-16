@@ -8,7 +8,9 @@ namespace FodboldApp.Model
     public class HistoricalStandingTitleModel : RealmObject
     {
         public string Title { get; set; }
+        [Ignored]
         public bool _selected { get; set; } = false;
+        [Ignored]
         public bool Selected
         {
             get
