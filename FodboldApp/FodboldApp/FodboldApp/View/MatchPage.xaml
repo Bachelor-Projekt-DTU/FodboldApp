@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-             xmlns:local="clr-namespace:FodboldApp.View.Converter" 
-xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:local="clr-namespace:FodboldApp.View.Converter"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:controls="clr-namespace:Plugin.CrossPlatformTintedImage.Abstractions;assembly=Plugin.CrossPlatformTintedImage.Abstractions"
              xmlns:viewmodels ="clr-namespace:FodboldApp.ViewModel"
              x:Class="FodboldApp.View.MatchPage">
 
@@ -31,7 +32,12 @@ xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselV
                         <RowDefinition Height="0.8*" />
                     </Grid.RowDefinitions>
                     <Label Text="{Binding Teams}" FontSize="26" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Row="0"/>
-                    <Image Source="notificationsbell.png" Margin="25,10,0,0" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"/>
+                    <controls:TintedImage Source="notificationsbell.png" Margin="25,10,0,0" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"
+                                          BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}" TintColor="{Binding BellColor}">
+                        <controls:TintedImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SubscribeToNotifications}"/>
+                        </controls:TintedImage.GestureRecognizers>
+                    </controls:TintedImage>
                     <Label Text="{Binding Scores}" FontSize="80" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="1"/>
                     <Label Text="Live" FontSize="24" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Row="2"/>
                 </Grid>

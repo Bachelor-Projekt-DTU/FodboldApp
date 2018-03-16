@@ -19,8 +19,8 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand HideStackLayoutCommand { get; private set; }
-        private ObservableCollection<HistoricalStandingTitleModel > _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel >();
-        public ObservableCollection<HistoricalStandingTitleModel > HistoricalStandingsDataList
+        private ObservableCollection<HistoricalStandingTitleModel> _historicalStandingsDataList { get; set; } = new ObservableCollection<HistoricalStandingTitleModel>();
+        public ObservableCollection<HistoricalStandingTitleModel> HistoricalStandingsDataList
         {
             get
             {
@@ -42,23 +42,6 @@ namespace FodboldApp.ViewModel
             set
             {
                 _historicalStandingsListContent = value;
-
-                if (_historicalStandingsListContent != null)
-                {
-                    for (int i = 1; i < _historicalStandingsListContent.Count(); i++)
-                    {
-                        if (_historicalStandingsListContent.ElementAt(i).TournamentName != _historicalStandingsListContent.ElementAt(i - 1).TournamentName)
-                        {
-                            bool add = true;
-                            foreach (var item in HistoricalStandingsDataList)
-                            {
-                                if (item.Title.ToUpper() == _historicalStandingsListContent.ElementAt(i).TournamentName.ToUpper()) add = false;
-                            }
-                            if (add) HistoricalStandingsDataList. Add(new HistoricalStandingTitleModel { Title = _historicalStandingsListContent.ElementAt(i).TournamentName });
-                        }
-                    }
-                }
-
                 OnPropertyChanged(nameof(HistoricalStandingsListContent));
             }
         }
@@ -84,7 +67,8 @@ namespace FodboldApp.ViewModel
             }
         }
         private string _arrowImage { get; set; } = "down_arrow.png";
-        public string ArrowImage {
+        public string ArrowImage
+        {
             get
             {
                 return _arrowImage;
@@ -109,23 +93,41 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(ShowListView));
             }
         }
-        
+
         void OnTapped()
         {
-            ShowListView = !_showListView;
-            Console.WriteLine("Trykket");
-            if (_showListView)
+            if (HistoricalStandingsListContent.Count() > 0)
             {
-                ArrowImage = "up_arrow.png";
-            }
-            else
-            {
-                ArrowImage = "down_arrow.png";
+                HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.First().TournamentName });
+
+                for (int i = 1; i < _historicalStandingsListContent.Count(); i++)
+                {
+                    if (_historicalStandingsListContent.ElementAt(i).TournamentName != _historicalStandingsListContent.ElementAt(i - 1).TournamentName)
+                    {
+                        bool add = true;
+                        foreach (var item in HistoricalStandingsDataList)
+                        {
+                            Console.WriteLine("CHECK 1 2 HOLLA" + item);
+                            if (item.Title.ToUpper() == _historicalStandingsListContent.ElementAt(i).TournamentName.ToUpper()) add = false;
+                        }
+                        if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = _historicalStandingsListContent.ElementAt(i).TournamentName });
+                    }
+                }
+                ShowListView = !_showListView;
+                if (_showListView)
+                {
+                    ArrowImage = "up_arrow.png";
+                }
+                else
+                {
+                    ArrowImage = "down_arrow.png";
+                }
             }
         }
 
         public string _tournamentLabelName { get; set; } = "Vælg en turnering";
-        public string TournamentLabelName {
+        public string TournamentLabelName
+        {
             get
             {
                 return _tournamentLabelName;
@@ -133,34 +135,31 @@ namespace FodboldApp.ViewModel
             set
             {
                 _tournamentLabelName = value;
-                HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(HistoricalStandingsListContent.Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year)).AsQueryable();
+                HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(HistoricalStandingsListContent.ToList().Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year)).AsQueryable();
                 OnPropertyChanged(nameof(TournamentLabelName));
             }
         }
 
-        public HistoricalStandingTitleModel  _selectedItem { get; set; }
-        public HistoricalStandingTitleModel  SelectedItem
+        public HistoricalStandingTitleModel _selectedItem { get; set; }
+        public HistoricalStandingTitleModel SelectedItem
         {
             get { return _selectedItem; }
             set
             {
                 if (_selectedItem != value)
                 {
-                    _realm.Write(() =>
-                    {
-                        if (_selectedItem != null)
-                            _selectedItem.Selected = false;
+                    if (_selectedItem != null)
+                        _selectedItem.Selected = false;
 
-                        _selectedItem = value;
+                    _selectedItem = value;
 
-                        if (_selectedItem != null)
-                            _selectedItem.Selected = true;
-                        ShowStackLayout = true;
+                    if (_selectedItem != null)
+                        _selectedItem.Selected = true;
+                    ShowStackLayout = true;
 
-                        TournamentLabelName = _selectedItem.Title;
+                    TournamentLabelName = _selectedItem.Title;
 
-                        OnPropertyChanged(nameof(SelectedItem));
-                    });
+                    OnPropertyChanged(nameof(SelectedItem));
                 }
             }
         }
@@ -169,17 +168,13 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
 
-            var temp = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
-
-            HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = temp.First().TournamentName });
-
-            
+            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
         }
 
         public HistoricalStandingVM()
         {
             SetupRealm();
-            
+
             HideStackLayoutCommand = new Command(OnTapped);
         }
     }

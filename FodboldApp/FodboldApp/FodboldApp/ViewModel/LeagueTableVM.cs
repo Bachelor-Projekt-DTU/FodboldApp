@@ -4,6 +4,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace FodboldApp.ViewModel
 {
@@ -40,7 +41,20 @@ namespace FodboldApp.ViewModel
             set
             {
                 _leagueTable = value;
-                if (_leagueTable != null)
+                OnPropertyChanged(nameof(LeagueTable));
+            }
+        }
+        public async void SetupRealm()
+        {
+            _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
+            LeagueTable = _realm.All<LeagueTableModel>();
+        }
+        private async void CheckForUpdate()
+        {
+            int oldCount = 0;
+            while (true)
+            {
+                if (LeagueTable != null && LeagueTable.Count() != oldCount)
                 {
                     int i = 0;
                     _realm.Write(() =>
@@ -62,18 +76,14 @@ namespace FodboldApp.ViewModel
                         }
                     });
                 }
-                OnPropertyChanged(nameof(LeagueTable));
+                await Task.Delay(500);
             }
         }
-        public async void SetupRealm()
-        {
-            _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
-            LeagueTable = _realm.All<LeagueTableModel>();
-        }
-        
+
         public LeagueTableVM()
         {
             SetupRealm();
+            CheckForUpdate();
         }
 
         public class HeadLeagueTable 
