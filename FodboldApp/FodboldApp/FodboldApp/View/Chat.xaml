@@ -44,7 +44,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="54"/>
                     </Grid.ColumnDefinitions>
-                    <Editor Text="{Binding UserChatMessage, Mode=TwoWay}"
+                    <Editor Text="{Binding UserChatMessage, Mode=TwoWay}" BackgroundColor="#f0f0f0"
                                                 HorizontalOptions="FillAndExpand" Grid.Column="0"
                                                 BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}">
                     </Editor>
