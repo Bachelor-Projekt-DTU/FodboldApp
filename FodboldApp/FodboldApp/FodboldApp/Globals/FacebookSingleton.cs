@@ -3,6 +3,7 @@ using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
 using System;
+using System.Threading.Tasks;
 using Xamarin.Auth;
 using Xamarin.Forms;
 
@@ -76,9 +77,14 @@ namespace FodboldApp.Globals
             var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
             _realm = Realm.GetInstance(config);
 
-            if (_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
+            for (int i = 0; i < 5; i++)
             {
-                CurrentUser.IsAdmin = true;
+                if (_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
+                {
+                    CurrentUser.IsAdmin = true;
+                    break;
+                }
+                await Task.Delay(500);
             }
         }
 
