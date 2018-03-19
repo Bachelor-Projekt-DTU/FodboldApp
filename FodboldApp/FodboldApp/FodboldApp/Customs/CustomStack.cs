@@ -13,6 +13,7 @@ namespace FodboldApp.Stack
 
         public static CustomStack Instance { get; private set; } = new CustomStack();
 
+        //keeps one navigationpage per tab to save user's position when he chooses another tab
         public CustomStack()
         {
             NewsContent = new CustomNavigationPage(new News());

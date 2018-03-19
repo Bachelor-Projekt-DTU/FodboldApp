@@ -13,6 +13,7 @@ namespace FodboldApp.Model
         public string AccessToken { get; set; }
     }
 
+    //classes to unwrap picture json from facebook to access URL 
     public class Picture
     {
         public Data Data { get; set; }

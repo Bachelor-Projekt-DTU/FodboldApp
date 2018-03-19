@@ -30,6 +30,7 @@ namespace FodboldApp.ViewModel
         public string Description { get { return Player.Description; } }
         public int rowIndex = 3;
 
+        //updates view when chosen player changes
         private PlayerModel _player { get; set; } = new PlayerModel();
         public PlayerModel Player
         {

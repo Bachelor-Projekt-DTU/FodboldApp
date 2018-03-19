@@ -27,7 +27,6 @@ namespace FodboldApp
             InitializeComponent();
 
             var temp = this.FindByName<ControlTemplate>("Template");
-            //temp.
             Console.WriteLine("ok here we go fam" + Searchbar);
 
             vm = ViewModelLocator.HeaderVM;
@@ -45,7 +44,6 @@ namespace FodboldApp
                     FacebookAutoLogin();
             }
 
-            //ViewModelLocator.NoInternetVM.IsConnectedOnFrontPage(null);
             MainPage = new NavigationPage(new FrontPage());
 
             NavigationPage.SetHasNavigationBar(this, false);
@@ -53,7 +51,7 @@ namespace FodboldApp
 
         async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
             var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/futureMatches"));
             Realm.GetInstance(config);
         }

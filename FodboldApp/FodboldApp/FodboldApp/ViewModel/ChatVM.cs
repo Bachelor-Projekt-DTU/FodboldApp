@@ -24,6 +24,7 @@ namespace FodboldApp.ViewModel
 
         public string Id { get; set; }
 
+        //used to check whether a user currently can chat
         private bool _isChatRoomOpen { get; set; } = true;
         public bool IsChatRoomOpen
         {
@@ -119,9 +120,10 @@ namespace FodboldApp.ViewModel
             SetupRealm();
         }
 
+        //connects to the database
         public async void SetupRealm()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
             SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/chat"));
             _realm = Realm.GetInstance(config);
 

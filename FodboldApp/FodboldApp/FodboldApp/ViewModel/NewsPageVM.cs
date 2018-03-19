@@ -15,6 +15,7 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        //updates view if chosen article has changed
         private NewsModel _newsModel { get; set; } = new NewsModel();
         public NewsModel NewsModel
         {

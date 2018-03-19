@@ -44,6 +44,7 @@ namespace FodboldApp.ViewModel
         }
         public ICommand MatchTapped { get; private set; }
 
+        //loads previous matches
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("matches");

@@ -40,6 +40,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
+
+        //used to avoid bug on initial realm setup
         private async void CheckForUpdate()
         {
             int oldCount = 0;

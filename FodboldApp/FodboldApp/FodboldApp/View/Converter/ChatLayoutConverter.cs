@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
+    //used to place chat depending on whether the author is an admin or not
     class ChatLayoutConverter : IValueConverter
     {
 

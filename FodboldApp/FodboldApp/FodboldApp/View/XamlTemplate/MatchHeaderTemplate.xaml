@@ -12,7 +12,7 @@
         </ResourceDictionary>
     </StackLayout.Resources>
 
-
+    <!--Layout for upcoming match matches-->
     <StackLayout IsVisible="{Binding Live,  Converter={StaticResource booleanReverser}}" HorizontalOptions="FillAndExpand" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}">
             <Label Text="NÆSTE KAMP"
                    HorizontalOptions="FillAndExpand"
@@ -61,6 +61,8 @@
             </StackLayout>
         </Grid>
     </StackLayout>
+    
+    <!--Layout for live matches-->
     <StackLayout IsVisible="{Binding Live}" HorizontalOptions="FillAndExpand" BindingContext="{x:Static viewmodels:ViewModelLocator.MatchHeaderVM}">
         <Label Text="LIVE"
                    HorizontalOptions="FillAndExpand"

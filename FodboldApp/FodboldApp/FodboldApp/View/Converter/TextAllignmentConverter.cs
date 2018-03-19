@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
+    //used to align text in event
     class TextAllignmentConverter : IValueConverter
     {
 

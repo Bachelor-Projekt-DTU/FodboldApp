@@ -22,7 +22,11 @@ namespace FodboldApp.ViewModel
         Color UnSelectedColor = Color.FromHex("#545454");
 
         Realm _realm;
+
+        //used to check whether the phone is connected to the internet
         private static bool HasInternet = true;
+
+        //used to control visibility of backbutton in header
         private bool _notMainPage { get; set; } = false;
         public bool NotMainPage
         {
@@ -37,6 +41,7 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        //footer commands
         public ICommand NewsTapped { get; private set; }
         public ICommand PlayersTapped { get; private set; }
         public ICommand MatchesTapped { get; private set; }
@@ -47,6 +52,7 @@ namespace FodboldApp.ViewModel
         public ICommand BackButtonTapped { get; private set; }
         public ICommand ArticleCommand { get; private set; }
 
+        //footer colors
         private Color _newsIconColor;
         private Color _playerIconColor;
         private Color _matchIconColor;
@@ -62,11 +68,13 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        //changes the main content of the application
         public static void SetContent(ContentView content)
         {
             contentPage = content;
         }
 
+        //used to search for article
         private string _inputText;
         public string InputText
         {
@@ -90,6 +98,7 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        //switch to deselect the searchbar
         private bool _searchbarEnabled { get; set; } = true;
         public bool SearchbarEnabled
         {
@@ -121,7 +130,7 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        private async System.Threading.Tasks.Task FilterArticlesAsync()
+        private async Task FilterArticlesAsync()
         {
             if (String.IsNullOrEmpty(_inputText))
             {
@@ -130,7 +139,7 @@ namespace FodboldApp.ViewModel
             }
             else
             {
-                var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+                var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
                 SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
                 _realm = Realm.GetInstance(config);
                 SearchResultList = _realm.All<NewsModel>().Where(Data => Data.Text.Contains(InputText));
@@ -142,8 +151,11 @@ namespace FodboldApp.ViewModel
         {
             InputText = String.Empty;
             CustomStack.Instance.NewsContent.Navigation.PushAsync(new NewsPage(SelectedItem));
+            
+            //disable the searchbar to untoggle it, lets it register before enabling it in another thread
             SearchbarEnabled = false;
             new Task(EnableSeachBar).Start();
+
             currentCategory = CategoryType.NewsType;
             UpdateContent();
         }
@@ -231,15 +243,6 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(TournamentIconColor));
             }
         }
-        private NewsModel _selectedItem { get; set; }
-        public NewsModel SelectedItem
-        {
-            get { return _selectedItem; }
-            set
-            {
-                _selectedItem = value;
-            }
-        }
 
         public Color HistoryIconColor
         {
@@ -251,6 +254,17 @@ namespace FodboldApp.ViewModel
             {
                 _historyIconColor = value;
                 OnPropertyChanged(nameof(HistoryIconColor));
+            }
+        }
+
+        //used to get selected article on search
+        private NewsModel _selectedItem { get; set; }
+        public NewsModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                _selectedItem = value;
             }
         }
 
@@ -275,6 +289,7 @@ namespace FodboldApp.ViewModel
             stack = CustomStack.Instance;
         }
 
+        //colors all footer icons grey
         private void ResetTint()
         {
             NewsIconColor = UnSelectedColor;
@@ -282,19 +297,6 @@ namespace FodboldApp.ViewModel
             MatchIconColor = UnSelectedColor;
             TournamentIconColor = UnSelectedColor;
             HistoryIconColor = UnSelectedColor;
-        }
-
-        public async void CheckForAdmin()
-        {
-            Realm _realm;
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
-            var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
-            _realm = Realm.GetInstance(config);
-
-            if(_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
-            {
-                CurrentUser.IsAdmin = true;
-            }
         }
 
         public async void Login()
@@ -312,6 +314,7 @@ namespace FodboldApp.ViewModel
                 Application.Current.Properties.Remove("IsUserLoggedIn");
             }
 
+            //Checks which service to log out from
             if (ViewModelLocator.HeaderVM.TypeOfLogin == HeaderVM.LoginType.Google)
             {
                 DependencyService.Get<ILogOut>().LogOutGoogle();
@@ -340,7 +343,7 @@ namespace FodboldApp.ViewModel
                 await stack.NewsContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.NewsType;
-            if (HasInternet) contentPage.Content = ((ContentPage)stack.NewsContent.CurrentPage).Content;
+            if (HasInternet) UpdateContent();
         }
 
         public async void PlayerTap()
@@ -353,7 +356,7 @@ namespace FodboldApp.ViewModel
                 await stack.PlayerContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.PlayerType;
-            if (HasInternet) contentPage.Content = ((ContentPage)stack.PlayerContent.CurrentPage).Content;
+            if (HasInternet) UpdateContent();
         }
 
         public async void MatchTap()
@@ -366,7 +369,7 @@ namespace FodboldApp.ViewModel
                 await stack.MatchContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.MatchType;
-            if (HasInternet) contentPage.Content = ((ContentPage)stack.MatchContent.CurrentPage).Content;
+            if (HasInternet) UpdateContent();
         }
 
         public async void TournamentTap()
@@ -379,7 +382,7 @@ namespace FodboldApp.ViewModel
                 await stack.LeagueTableContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.TournamentType;
-            if (HasInternet) contentPage.Content = ((ContentPage)stack.LeagueTableContent.CurrentPage).Content;
+            if (HasInternet) UpdateContent();
         }
 
         public async void HistoryTap()
@@ -392,9 +395,10 @@ namespace FodboldApp.ViewModel
                 await stack.HistoryContent.Navigation.PopToRootAsync();
             }
             currentCategory = CategoryType.HistoryType;
-            if (HasInternet) contentPage.Content = ((ContentPage)stack.HistoryContent.CurrentPage).Content;
+            if (HasInternet) UpdateContent();
         }
 
+        //sets the content of the main page according to selected tab and checks for backbutton visibility
         public void UpdateContent()
         {
             ContentPage contemp = null;
@@ -424,6 +428,7 @@ namespace FodboldApp.ViewModel
             contentPage.Content = contemp.Content;
         }
 
+        //pops the currently selected navigationpage
         public async void BackButtonPressed()
         {
             switch (currentCategory)

@@ -14,6 +14,7 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        //commands for the different buttons
         public ICommand FormerPlayersCommand { get; private set; }
         public ICommand POTYCommand { get; private set; }
         public ICommand OverFiftyGoalsCommand { get; private set; }

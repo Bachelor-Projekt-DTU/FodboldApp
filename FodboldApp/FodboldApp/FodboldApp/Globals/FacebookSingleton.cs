@@ -14,6 +14,7 @@ namespace FodboldApp.Globals
     {
         static volatile FacebookSingleton _Instance;
         static object _SyncRoot = new Object();
+        //makes sure to have a working authenticator
         public static FacebookSingleton Instance
         {
             get
@@ -48,6 +49,7 @@ namespace FodboldApp.Globals
             _Instance = null;
         }
 
+        //token is used to get user info from facebook
         string _Token;
         public string Token
         {
@@ -65,6 +67,7 @@ namespace FodboldApp.Globals
             _Token = null;
         }
 
+        //uses token to get user info
         public async void GetUserInfoAsync()
         {
             CurrentUser.user.Name = await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
@@ -73,10 +76,11 @@ namespace FodboldApp.Globals
             Console.WriteLine("Userinfo: " + CurrentUser.user.Name + " " + CurrentUser.user.Picture + " " + CurrentUser.user.Id);
 
             Realm _realm;
-            var user = await User.LoginAsync(Credentials.UsernamePassword("realm-admin", "bachelor", false), new Uri($"http://13.59.205.12:9080"));
+            var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
             var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
             _realm = Realm.GetInstance(config);
 
+            //repeatedly checks the server for admin status to avoid bug
             for (int i = 0; i < 5; i++)
             {
                 if (_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
