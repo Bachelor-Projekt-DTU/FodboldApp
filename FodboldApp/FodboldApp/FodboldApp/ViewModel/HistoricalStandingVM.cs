@@ -110,7 +110,6 @@ namespace FodboldApp.ViewModel
                         bool add = true;
                         foreach (var item in HistoricalStandingsDataList)
                         {
-                            Console.WriteLine("CHECK 1 2 HOLLA" + item);
                             if (item.Title.ToUpper() == _historicalStandingsListContent.ElementAt(i).TournamentName.ToUpper()) add = false;
                         }
                         if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = _historicalStandingsListContent.ElementAt(i).TournamentName });

@@ -143,7 +143,6 @@ namespace FodboldApp.ViewModel
                 SyncConfiguration config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/news"));
                 _realm = Realm.GetInstance(config);
                 SearchResultList = _realm.All<NewsModel>().Where(Data => Data.Text.Contains(InputText));
-                Console.WriteLine(SearchResultList.Count());
             }
         }
 
@@ -310,7 +309,6 @@ namespace FodboldApp.ViewModel
             ViewModelLocator.HeaderVM.IsUserLoggedIn = false;
             if (Application.Current.Properties.ContainsKey("IsUserLoggedIn"))
             {
-                Console.WriteLine("Logget af");
                 Application.Current.Properties.Remove("IsUserLoggedIn");
             }
 

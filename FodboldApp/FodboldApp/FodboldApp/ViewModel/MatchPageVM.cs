@@ -158,12 +158,7 @@ namespace FodboldApp.ViewModel
                     _realm.Add(new CommentModel {MatchId = Match.Id, UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name, IsVerified = CurrentUser.IsAdmin});
                 });
             CommentList = _realm.All<CommentModel>();
-            foreach (CommentModel Comment in CollectionList[1].CollectionList)
-            {
-                Console.WriteLine(Comment.UserComment);
-            }
             UserComment = String.Empty;
-            Console.WriteLine("HHHHH " + PagePosition);
             if (PagePosition == 0) PagePosition = 1;
         }
 

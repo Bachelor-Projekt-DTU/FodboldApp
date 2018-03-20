@@ -73,7 +73,6 @@ namespace FodboldApp.Globals
             CurrentUser.user.Name = await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
             CurrentUser.user.Picture = (await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken)).Data.Url;
             CurrentUser.user.Id = await ViewModelLocator.FacebookService.GetIdAsync(CurrentUser.user.AccessToken);
-            Console.WriteLine("Userinfo: " + CurrentUser.user.Name + " " + CurrentUser.user.Picture + " " + CurrentUser.user.Id);
 
             Realm _realm;
             var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));

@@ -56,7 +56,6 @@ namespace FodboldApp.ViewModel
                         foreach (OverHundredGamesModel item in PlayersList)
                         {
                             item.Index = i++;
-                            Console.WriteLine(item.Index);
                         }
                     OnPropertyChanged(nameof(PlayersList));
                     });

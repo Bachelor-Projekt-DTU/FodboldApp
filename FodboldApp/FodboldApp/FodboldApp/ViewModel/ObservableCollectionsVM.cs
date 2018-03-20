@@ -59,7 +59,6 @@ namespace FodboldApp.ViewModel
 
         void OnDeleteTapped()
         {
-            Console.WriteLine("Tapped");
             DisplayDialog();
         }
 

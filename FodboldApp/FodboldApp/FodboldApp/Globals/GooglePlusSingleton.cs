@@ -85,7 +85,6 @@ namespace FodboldApp.Globals
             CurrentUser.user.Name = await ViewModelLocator.GoogleService.GetNameAsync(CurrentUser.user.AccessToken);
             CurrentUser.user.Picture = await ViewModelLocator.GoogleService.GetPictureAsync(CurrentUser.user.AccessToken);
             CurrentUser.user.Id = await ViewModelLocator.GoogleService.GetIdAsync(CurrentUser.user.AccessToken);
-            Console.WriteLine("Userinfo: " + CurrentUser.user.Name + " " + CurrentUser.user.Picture + " " + CurrentUser.user.Id);
 
             Realm _realm;
             var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));

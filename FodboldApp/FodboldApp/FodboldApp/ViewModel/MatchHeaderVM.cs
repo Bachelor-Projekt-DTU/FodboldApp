@@ -124,7 +124,6 @@ namespace FodboldApp.ViewModel
             set
             {
                 _futureMatchList = value;
-                Console.WriteLine("FUTURE SOUND" + _futureMatchList.Count());
                 if (_futureMatchList.Count() > 0)
                 {
                     HeaderMatch = _futureMatchList.First();

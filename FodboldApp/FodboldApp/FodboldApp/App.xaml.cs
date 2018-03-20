@@ -27,7 +27,6 @@ namespace FodboldApp
             InitializeComponent();
 
             var temp = this.FindByName<ControlTemplate>("Template");
-            Console.WriteLine("ok here we go fam" + Searchbar);
 
             vm = ViewModelLocator.HeaderVM;
 
