@@ -15,7 +15,7 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <AndroidKeyStore>true</AndroidKeyStore>
@@ -141,6 +141,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomRenderers\CustomCarouselViewRenderer.cs" />
     <Compile Include="CustomRenderers\CustomNavigationRenderer.cs" />
     <Compile Include="CustomRenderers\CustomSearchBarRenderer.cs" />
     <Compile Include="CustomRenderers\GoogleCustomUrlSchemeInterceptor.cs" />

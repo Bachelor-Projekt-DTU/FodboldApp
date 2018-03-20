@@ -1,8 +1,6 @@
 ﻿using System;
 using Android.App;
 using Android.Content;
-using Android.Graphics;
-using Android.Support.CustomTabs;
 using FodboldApp.Droid.CustomRenderers;
 using FodboldApp.Globals;
 using FodboldApp.View;

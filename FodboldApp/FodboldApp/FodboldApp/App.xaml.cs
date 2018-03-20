@@ -35,14 +35,20 @@ namespace FodboldApp
             BindingContext = vm;
 
             FlowListView.Init();
-
-            if (Current.Properties.ContainsKey("IsUserLoggedIn"))
+            try
             {
-                if ((string)Current.Properties["LoginType"] == "Google")
-                    GooglePlusAutoLogin();
+                if (Current.Properties.ContainsKey("IsUserLoggedIn"))
+                {
+                    if ((string)Current.Properties["LoginType"] == "Google")
+                        GooglePlusAutoLogin();
 
-                else if ((string)Current.Properties["LoginType"] == "Facebook")
-                    FacebookAutoLogin();
+                    else if ((string)Current.Properties["LoginType"] == "Facebook")
+                        FacebookAutoLogin();
+                }
+            }
+            catch (Exception)
+            {
+                Current.Properties.Remove("IsUserLoggedIn");
             }
 
             //ViewModelLocator.NoInternetVM.IsConnectedOnFrontPage(null);
