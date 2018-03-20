@@ -2,6 +2,7 @@
 
 namespace FodboldApp.Customs
 {
+    //Class solely exists to change the backgroundcolor of our pages
     public class CustomNavigationPage : NavigationPage
     {
         public CustomNavigationPage(Page page) : base(page)

@@ -96,10 +96,13 @@ namespace FodboldApp.ViewModel
 
         void OnTapped()
         {
+            //checks that the database has elements before proceeding
             if (HistoricalStandingsListContent.Count() > 0)
             {
+                //adds first category
                 HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.First().TournamentName });
 
+                //checks for each element if there already exists a matching category, adds it if not
                 for (int i = 1; i < _historicalStandingsListContent.Count(); i++)
                 {
                     if (_historicalStandingsListContent.ElementAt(i).TournamentName != _historicalStandingsListContent.ElementAt(i - 1).TournamentName)
@@ -107,7 +110,6 @@ namespace FodboldApp.ViewModel
                         bool add = true;
                         foreach (var item in HistoricalStandingsDataList)
                         {
-                            Console.WriteLine("CHECK 1 2 HOLLA" + item);
                             if (item.Title.ToUpper() == _historicalStandingsListContent.ElementAt(i).TournamentName.ToUpper()) add = false;
                         }
                         if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = _historicalStandingsListContent.ElementAt(i).TournamentName });

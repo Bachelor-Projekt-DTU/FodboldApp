@@ -2,6 +2,7 @@
 
 namespace FodboldApp.ViewModel
 {
+    //contains all ViewModels that require same instance for several views
     static class ViewModelLocator
     {
         public static MatchHeaderVM MatchHeaderVM { get; } = new MatchHeaderVM();

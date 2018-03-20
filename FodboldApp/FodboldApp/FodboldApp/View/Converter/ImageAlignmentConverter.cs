@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
+    //used to place an event on the right side in the page
     class ImageAlignmentConverter : IValueConverter
     {
 

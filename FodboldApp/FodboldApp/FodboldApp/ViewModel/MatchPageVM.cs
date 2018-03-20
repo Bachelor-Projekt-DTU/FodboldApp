@@ -20,6 +20,7 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        //updates view if chosen match has changed
         private MatchModel _match { get; set; } = new MatchModel { Team1 = "Loading Error", Team2 = "Loading Error" };
         public MatchModel Match
         {
@@ -27,7 +28,6 @@ namespace FodboldApp.ViewModel
             set
             {
                 _match = value;
-                UpdateLists();
                 OnPropertyChanged(nameof(Match));
                 OnPropertyChanged(nameof(Teams));
                 OnPropertyChanged(nameof(Scores));
@@ -66,6 +66,7 @@ namespace FodboldApp.ViewModel
             {
                 _userComment = value;
 
+                //hides send button if nothing is written in the user input field
                 if (_userComment.Length > 0)
                 {
                     LabelIsVisible = false;
@@ -157,25 +158,8 @@ namespace FodboldApp.ViewModel
                     _realm.Add(new CommentModel {MatchId = Match.Id, UserId = CurrentUser.user.Id, ImageURL = CurrentUser.user.Picture, UserComment = this.UserComment, UserName = CurrentUser.user.Name, IsVerified = CurrentUser.IsAdmin});
                 });
             CommentList = _realm.All<CommentModel>();
-            foreach (CommentModel Comment in CollectionList[1].CollectionList)
-            {
-                Console.WriteLine(Comment.UserComment);
-            }
             UserComment = String.Empty;
-            Console.WriteLine("HHHHH " + PagePosition);
             if (PagePosition == 0) PagePosition = 1;
-        }
-
-        private void UpdateLists()
-        {
-            try
-            {
-                Console.WriteLine("STAPLE GUN: " + EventList.Count());
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
         }
 
         private async void SetupRealm()

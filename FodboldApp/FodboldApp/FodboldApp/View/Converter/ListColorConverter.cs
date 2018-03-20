@@ -4,6 +4,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
+    //alternates between colors for list items
     class ListColorConverter : IValueConverter
     {
 

@@ -49,20 +49,25 @@ namespace FodboldApp.ViewModel
             _realm = await NoInternetVM.IsConnectedOnMainPage("standings");
             LeagueTable = _realm.All<LeagueTableModel>();
         }
+
+        //used to circumvent empty database on initialization
         private async void CheckForUpdate()
         {
             int oldCount = 0;
             while (true)
             {
+                //checks if the league table is empty before continuing
                 if (LeagueTable != null && LeagueTable.Count() != oldCount)
                 {
                     int i = 0;
                     _realm.Write(() =>
                     {
+                        //creates a new leaguetable for each league in the division
                         foreach (var item in LeagueTable)
                         {
                             item.Index = i++;
                             var promotionGroup = HeadLeagueTableCollection.Where(x => x.GroupName == item.GroupName);
+                            //add the relevant clubs
                             if (promotionGroup.Count() == 0)
                             {
                                 var temp = new HeadLeagueTable { GroupName = item.GroupName };

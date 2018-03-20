@@ -77,21 +77,7 @@
                         <RowDefinition Height="48"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Begin Header -->
-                    <!--<StackLayout 
-                        Orientation="Horizontal"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
-                        Spacing="0"
-                        BackgroundColor="#fb433c"
-                        HeightRequest="50"
-                        Grid.Column="0" Grid.Row="0">
-                        <StackLayout.Padding>
-                            <OnPlatform x:TypeArguments="Thickness"
-                            iOS="10, 10, 10, 10"
-                            Android="10, 10, 10, 10"/>
-                        </StackLayout.Padding>-->
-
+                    <!--Layout for header-->
                     <Grid HorizontalOptions="FillAndExpand" BackgroundColor="#fb433c" Padding="0, 10, 0, 10" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
                         <Grid.Margin>
                             <OnPlatform x:TypeArguments="Thickness">
@@ -111,7 +97,7 @@
                                 </ColumnDefinition.Width>
                             </ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <!-- Header content -->
+                        
                         <controls:TintedImage Source="backbutton.png"  WidthRequest="40" TintColor="#D0D0D0" Grid.Column="0" IsVisible="{Binding NotMainPage}">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding BackButtonTapped}"/>
@@ -161,15 +147,15 @@
                             </Label.GestureRecognizers>
                         </Label>
                     </Grid>
-                    <!--</StackLayout>-->
                     <!-- End Header -->
 
-                    <!-- Begin Content -->
+                    <!-- Page content -->
                     <ContentView Grid.Column="0" Grid.Row="1">
                         <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
                     </ContentView>
-                    <!-- End Content -->
+                    <!-- End Page Content -->
 
+                    <!--Layout for footer-->
                     <Grid ColumnSpacing="0" RowSpacing="0" Grid.Column="0" Grid.Row="2" BindingContext="{x:Static viewmodels:ViewModelLocator.HeaderVM}">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>

@@ -34,6 +34,7 @@ namespace FodboldApp.ViewModel
             }
         }
 
+        //displays error message if exception is raised while trying to delete comment
         async void DisplayDialog()
         {
             try
@@ -58,7 +59,6 @@ namespace FodboldApp.ViewModel
 
         void OnDeleteTapped()
         {
-            Console.WriteLine("Tapped");
             DisplayDialog();
         }
 

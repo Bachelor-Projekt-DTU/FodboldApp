@@ -40,6 +40,8 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
+
+        //used to avoid bug on initial realm setup
         private async void CheckForUpdate()
         {
             int oldCount = 0;
@@ -54,7 +56,6 @@ namespace FodboldApp.ViewModel
                         foreach (OverHundredGamesModel item in PlayersList)
                         {
                             item.Index = i++;
-                            Console.WriteLine(item.Index);
                         }
                     OnPropertyChanged(nameof(PlayersList));
                     });

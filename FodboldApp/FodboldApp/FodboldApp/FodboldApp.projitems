@@ -66,7 +66,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverFiftyGoalsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\OverHundredGamesVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HeaderVM.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NewsVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerDescriptionVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerVM.cs" />

@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
+    //used to color chat bubbles for easier visibility of whose chat comment it is
     class ChatBubbleColorConverter : IValueConverter
     {
 

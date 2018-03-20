@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 namespace FodboldApp.View.Converter
 {
+    //custom color for selected item in listviews
     public class SelectedItemColorConverter : IValueConverter
     {
 
