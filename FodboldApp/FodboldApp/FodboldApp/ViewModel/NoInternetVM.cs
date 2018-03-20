@@ -54,7 +54,7 @@ namespace FodboldApp.ViewModel
 
         public async void ChangeToNoInternetPage(object sender, ConnectivityChangedEventArgs args)
         {
-            await Application.Current.MainPage = new NavigationPage(new FrontPage());
+            Application.Current.MainPage = new NavigationPage(new FrontPage());
             CrossConnectivity.Current.ConnectivityChanged -= ChangeToNoInternetPage;
         }
     }
