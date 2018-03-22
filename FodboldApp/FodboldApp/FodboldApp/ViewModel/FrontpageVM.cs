@@ -63,6 +63,9 @@ namespace FodboldApp.ViewModel
         }
         void OnTapped()
         {
+            if (ViewModelLocator.HeaderVM.HasAutoLoginFailed)
+                Application.Current.MainPage.DisplayAlert("Session udløbet", "Din log ind session er udløbet. Venligst log ind igen", "OK");
+
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
 
@@ -71,7 +74,7 @@ namespace FodboldApp.ViewModel
             var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
             var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/clubs"));
             _realm = Realm.GetInstance(config);
-            
+
             ClubListSource = _realm.All<ClubModel>();
         }
 

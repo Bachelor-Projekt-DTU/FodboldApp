@@ -108,6 +108,7 @@ namespace FodboldApp.Globals
             catch (Exception)
             {
                 Application.Current.Properties.Remove("IsUserLoggedIn");
+                ViewModelLocator.HeaderVM.HasAutoLoginFailed = true;
             }
         }
 
