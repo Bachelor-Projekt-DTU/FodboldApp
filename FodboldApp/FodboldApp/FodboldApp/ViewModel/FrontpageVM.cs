@@ -63,7 +63,7 @@ namespace FodboldApp.ViewModel
         void OnTapped()
         {
             if (ViewModelLocator.HeaderVM.HasAutoLoginFailed)
-                Application.Current.MainPage.DisplayAlert("Session udløbet", "Din log ind session er udløbet. Venligst log ind.", "OK");
+                Application.Current.MainPage.DisplayAlert("Session udløbet", "Din log ind session er udløbet. Venligst log ind igen", "OK");
 
             Application.Current.MainPage = new CustomNavigationPage(new MainPage());
         }
