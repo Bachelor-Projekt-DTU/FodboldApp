@@ -5,6 +5,7 @@ using Realms.Sync;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -101,8 +102,8 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        private IEnumerable<ChatModel> _chatList { get; set; }
-        public IEnumerable<ChatModel> ChatList
+        private IQueryable<ChatModel> _chatList { get; set; }
+        public IQueryable<ChatModel> ChatList
         {
             get
             {

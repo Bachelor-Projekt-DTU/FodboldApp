@@ -52,7 +52,7 @@
                                                HorizontalOptions="StartAndExpand" IsVisible="{Binding LabelIsVisible}" Grid.Column="0" InputTransparent="True"
                                                BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}">
                     </Label>
-                    <Button Text="Send" HorizontalOptions="End" Command="{Binding SendChatCommand}" 
+                    <Button Text="Send" HorizontalOptions="End" Command="{Binding ChatCommand}" 
                                 Grid.Column="1" VerticalOptions="Center" Style="{StaticResource buttonStyle2}"
                                 BindingContext="{x:Static viewmodels:ViewModelLocator.ChatVM}" IsVisible="{Binding SendButtonIsVisible}">
                     </Button>
