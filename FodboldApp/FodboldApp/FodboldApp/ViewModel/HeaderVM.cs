@@ -26,6 +26,9 @@ namespace FodboldApp.ViewModel
         //used to check whether the phone is connected to the internet
         private static bool HasInternet = true;
 
+        //check if user is logged in
+        public bool HasAutoLoginFailed = false;
+
         //used to control visibility of backbutton in header
         private bool _notMainPage { get; set; } = false;
         public bool NotMainPage

@@ -116,11 +116,6 @@ namespace FodboldApp.ViewModel
             }
         }
 
-        public ChatVM()
-        {
-            SetupRealm();
-        }
-
         //connects to the database
         public async void SetupRealm()
         {
@@ -139,6 +134,12 @@ namespace FodboldApp.ViewModel
             {
                 _realm.Add(new ChatModel { Content = _userChatMessage, Admin = CurrentUser.IsAdmin, MatchID = Id });
             });
+            UserChatMessage = String.Empty;
+        }
+
+        public ChatVM()
+        {
+            SetupRealm();
         }
     }
 }
