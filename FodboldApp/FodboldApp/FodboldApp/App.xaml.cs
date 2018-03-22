@@ -5,6 +5,7 @@ using FodboldApp.ViewModel;
 using Realms;
 using Realms.Sync;
 using System;
+using System.Net.Http;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -33,8 +34,7 @@ namespace FodboldApp
             BindingContext = vm;
 
             FlowListView.Init();
-            try
-            {
+                        
                 if (Current.Properties.ContainsKey("IsUserLoggedIn"))
                 {
                     if ((string)Current.Properties["LoginType"] == "Google")
@@ -43,11 +43,6 @@ namespace FodboldApp
                     else if ((string)Current.Properties["LoginType"] == "Facebook")
                         FacebookAutoLogin();
                 }
-            }
-            catch (Exception)
-            {
-                Current.Properties.Remove("IsUserLoggedIn");
-            }
 
             MainPage = new NavigationPage(new FrontPage());
 
@@ -65,7 +60,6 @@ namespace FodboldApp
         {
             if (Current.Properties.ContainsKey("Token"))
             {
-                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
                 CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
                 FacebookSingleton.Instance.GetUserInfoAsync();
             }
@@ -75,7 +69,6 @@ namespace FodboldApp
         {
             if (Current.Properties.ContainsKey("Token"))
             {
-                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
                 CurrentUser.user.AccessToken = (string)Current.Properties["Token"];
                 GooglePlusSingleton.Instance.GetUserInfoAsync();
             }

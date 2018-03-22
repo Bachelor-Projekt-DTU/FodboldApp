@@ -70,24 +70,32 @@ namespace FodboldApp.Globals
         //uses token to get user info
         public async void GetUserInfoAsync()
         {
-            CurrentUser.user.Name = await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
-            CurrentUser.user.Picture = (await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken)).Data.Url;
-            CurrentUser.user.Id = await ViewModelLocator.FacebookService.GetIdAsync(CurrentUser.user.AccessToken);
-
-            Realm _realm;
-            var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
-            var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
-            _realm = Realm.GetInstance(config);
-
-            //repeatedly checks the server for admin status to avoid bug
-            for (int i = 0; i < 5; i++)
+            try
             {
-                if (_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
+                CurrentUser.user.Name = await ViewModelLocator.FacebookService.GetNameAsync(CurrentUser.user.AccessToken);
+                CurrentUser.user.Picture = (await ViewModelLocator.FacebookService.GetPictureAsync(CurrentUser.user.AccessToken)).Data.Url;
+                CurrentUser.user.Id = await ViewModelLocator.FacebookService.GetIdAsync(CurrentUser.user.AccessToken);
+
+                Realm _realm;
+                var user = await User.LoginAsync(Credentials.UsernamePassword("StandardUser", "12345", false), new Uri($"http://13.59.205.12:9080"));
+                var config = new SyncConfiguration(user, new Uri($"realm://13.59.205.12:9080/data/admins"));
+                _realm = Realm.GetInstance(config);
+
+                //repeatedly checks the server for admin status to avoid bug
+                for (int i = 0; i < 5; i++)
                 {
-                    CurrentUser.IsAdmin = true;
-                    break;
+                    if (_realm.Find<AdminModel>(CurrentUser.user.Id) != null)
+                    {
+                        CurrentUser.IsAdmin = true;
+                        break;
+                    }
+                    await Task.Delay(500);
                 }
-                await Task.Delay(500);
+                ViewModelLocator.HeaderVM.IsUserLoggedIn = true;
+            }
+            catch (Exception)
+            {
+                Application.Current.Properties.Remove("IsUserLoggedIn");
             }
         }
 
