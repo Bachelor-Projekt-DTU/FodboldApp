@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Linq;
 
 namespace FodboldApp.ViewModel
 {
@@ -23,8 +24,8 @@ namespace FodboldApp.ViewModel
 
         public ICommand ContinueCommand { get; set; }
 
-        public static IEnumerable<ClubModel> _clubListSource = new ObservableCollection<ClubModel>();
-        public IEnumerable<ClubModel> ClubListSource
+        public static IQueryable<ClubModel> _clubListSource;
+        public IQueryable<ClubModel> ClubListSource
         {
             get
             {

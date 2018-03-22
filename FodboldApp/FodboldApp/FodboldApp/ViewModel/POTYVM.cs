@@ -90,7 +90,7 @@ namespace FodboldApp.ViewModel
                         OnPropertyChanged(nameof(PlayersList));
                     });
                 }
-                await Task.Delay(500);
+                await Task.Delay(100);
             }
         }
 
