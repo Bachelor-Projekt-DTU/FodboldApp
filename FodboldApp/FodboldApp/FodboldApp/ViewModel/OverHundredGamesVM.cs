@@ -27,8 +27,23 @@ namespace FodboldApp.ViewModel
         public OverHundredGamesModel SelectedItem { get; set; }
 
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private IQueryable<OverHundredGamesModel> _playersList { get; set; }
-        public IQueryable<OverHundredGamesModel> PlayersList
+
+        private IQueryable<OverHundredGamesModel> _queryList { get; set; }
+        public IQueryable<OverHundredGamesModel> QueryList
+        {
+            get
+            {
+                return _queryList;
+            }
+            set
+            {
+                _queryList = value;
+                OnPropertyChanged(nameof(QueryList));
+            }
+        }
+
+        private ObservableCollection<OverHundredGamesModel> _playersList { get; set; }
+        public ObservableCollection<OverHundredGamesModel> PlayersList
         {
             get
             {
@@ -47,11 +62,12 @@ namespace FodboldApp.ViewModel
             int oldCount = 0;
             while (true)
             {
-                if (PlayersList != null && PlayersList.Count() != oldCount)
+                if (QueryList != null && QueryList.Count() != oldCount)
                 {
-                    oldCount = PlayersList.Count();
+                    oldCount = QueryList.Count();
                     _realm.Write(() =>
                     {
+                        PlayersList = new ObservableCollection<OverHundredGamesModel>(QueryList.ToList());
                         int i = 0;
                         foreach (OverHundredGamesModel item in PlayersList)
                         {
@@ -67,7 +83,7 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("overhundredgames");
-            PlayersList = _realm.All<OverHundredGamesModel>().OrderByDescending(x => x.Games);
+            QueryList = _realm.All<OverHundredGamesModel>().OrderByDescending(x => x.Games);
         }
 
         async void Player_OnTapped()

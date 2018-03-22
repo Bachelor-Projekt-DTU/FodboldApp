@@ -62,6 +62,7 @@ namespace FodboldApp.ViewModel
                     int i = 0;
                     _realm.Write(() =>
                     {
+                        HeadLeagueTableCollection.Clear();
                         //creates a new leaguetable for each league in the division
                         foreach (var item in LeagueTable)
                         {

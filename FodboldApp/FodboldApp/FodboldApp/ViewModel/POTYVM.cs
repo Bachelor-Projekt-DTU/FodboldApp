@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -23,8 +24,23 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private IQueryable<POTYModel> _playersList { get; set; }
-        public IQueryable<POTYModel> PlayersList
+
+        private IQueryable<POTYModel> _queryList { get; set; }
+        public IQueryable<POTYModel> QueryList
+        {
+            get
+            {
+                return _queryList;
+            }
+            set
+            {
+                _queryList = value;
+                OnPropertyChanged(nameof(QueryList));
+            }
+        }
+
+        private ObservableCollection<POTYModel> _playersList { get; set; }
+        public ObservableCollection<POTYModel> PlayersList
         {
             get
             {
@@ -52,22 +68,36 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("POTY");
+            QueryList = _realm.All<POTYModel>().OrderByDescending(x => x.Year);
+        }
 
-            PlayersList = _realm.All<POTYModel>().OrderByDescending(x => x.Year);
-
-            _realm.Write(() =>
+        private async void CheckForUpdate()
+        {
+            int oldCount = 0;
+            while (true)
             {
-                int i = 0;
-                foreach (POTYModel item in PlayersList)
+                if (QueryList != null && QueryList.Count() != oldCount)
                 {
-                    item.Index = i++;
+                    oldCount = QueryList.Count();
+                    _realm.Write(() =>
+                    {
+                        PlayersList = new ObservableCollection<POTYModel>(QueryList.ToList());
+                        int i = 0;
+                        foreach (POTYModel item in PlayersList)
+                        {
+                            item.Index = i++;
+                        }
+                        OnPropertyChanged(nameof(PlayersList));
+                    });
                 }
-            });
+                await Task.Delay(500);
+            }
         }
 
         public POTYVM()
         {
             SetupRealm();
+            CheckForUpdate();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }
     }

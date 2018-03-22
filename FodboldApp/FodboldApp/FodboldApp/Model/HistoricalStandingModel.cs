@@ -17,7 +17,13 @@ namespace FodboldApp.Model
         public string Losses { get; set; }
         public string Draws { get; set; }
         public string Score { get; set; }
-        public string Record { get; set; }
+        public string Record
+        {
+            get
+            {
+                return Wins + "-" + Draws + "-" + Losses;
+            }
+        }
         public string Points { get; set; }
         public string Other { get; set; }
     }

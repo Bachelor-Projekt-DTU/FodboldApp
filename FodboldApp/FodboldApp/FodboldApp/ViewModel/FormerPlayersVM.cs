@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -34,8 +35,23 @@ namespace FodboldApp.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
         public ICommand PlayerDescriptionCommand { get; private set; }
-        private IQueryable<PlayerModel> _playersList { get; set; }
-        public IQueryable<PlayerModel> PlayersList
+
+        private IQueryable<PlayerModel> _queryList { get; set; }
+        public IQueryable<PlayerModel> QueryList
+        {
+            get
+            {
+                return _queryList;
+            }
+            set
+            {
+                _queryList = value;
+                OnPropertyChanged(nameof(QueryList));
+            }
+        }
+
+        private ObservableCollection<PlayerModel> _playersList { get; set; }
+        public ObservableCollection<PlayerModel> PlayersList
         {
             get
             {
@@ -62,7 +78,7 @@ namespace FodboldApp.ViewModel
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("formerPlayers");
 
-            PlayersList = _realm.All<PlayerModel>().OrderBy(x => x.Name);
+            QueryList = _realm.All<PlayerModel>().OrderBy(x => x.Name);
         }
 
         void PlayerOnTapped()
@@ -70,9 +86,34 @@ namespace FodboldApp.ViewModel
             CustomStack.Instance.HistoryContent.Navigation.PushAsync(new PlayerDescription(SelectedItem));
             ViewModelLocator.HeaderVM.UpdateContent();
         }
+
+        private async void CheckForUpdate()
+        {
+            int oldCount = 0;
+            while (true)
+            {
+                if (QueryList != null && QueryList.Count() != oldCount)
+                {
+                    oldCount = QueryList.Count();
+                    _realm.Write(() =>
+                    {
+                        PlayersList = new ObservableCollection<PlayerModel>(QueryList.ToList());
+                        int i = 1 ;
+                        foreach (PlayerModel item in PlayersList)
+                        {
+                            item.Index = i++;
+                        }
+                        OnPropertyChanged(nameof(PlayersList));
+                    });
+                }
+                await Task.Delay(500);
+            }
+        }
+
         public FormerPlayersVM()
         {
             SetupRealm();
+            CheckForUpdate();
             PlayerDescriptionCommand = new Command(PlayerOnTapped);
         }
     }

@@ -32,8 +32,23 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsDataList));
             }
         }
-        private IQueryable<HistoricalStandingModel> _historicalStandingsListContent { get; set; }
-        public IQueryable<HistoricalStandingModel> HistoricalStandingsListContent
+
+        private IQueryable<HistoricalStandingModel> _queryList { get; set; }
+        public IQueryable<HistoricalStandingModel> QueryList
+        {
+            get
+            {
+                return _queryList;
+            }
+            set
+            {
+                _queryList = value;
+                OnPropertyChanged(nameof(QueryList));
+            }
+        }
+
+        private ObservableCollection<HistoricalStandingModel> _historicalStandingsListContent { get; set; }
+        public ObservableCollection<HistoricalStandingModel> HistoricalStandingsListContent
         {
             get
             {
@@ -45,6 +60,7 @@ namespace FodboldApp.ViewModel
                 OnPropertyChanged(nameof(HistoricalStandingsListContent));
             }
         }
+
         public bool _showStackLayout { get; set; } = false;
         public bool ShowStackLayout
         {
@@ -97,22 +113,22 @@ namespace FodboldApp.ViewModel
         void OnTapped()
         {
             //checks that the database has elements before proceeding
-            if (HistoricalStandingsListContent.Count() > 0)
+            if (QueryList.Count() > 0)
             {
                 //adds first category
-                HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = HistoricalStandingsListContent.First().TournamentName });
+                HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = QueryList.First().TournamentName });
 
                 //checks for each element if there already exists a matching category, adds it if not
-                for (int i = 1; i < _historicalStandingsListContent.Count(); i++)
+                for (int i = 1; i < QueryList.Count(); i++)
                 {
-                    if (_historicalStandingsListContent.ElementAt(i).TournamentName != _historicalStandingsListContent.ElementAt(i - 1).TournamentName)
+                    if (QueryList.ElementAt(i).TournamentName != QueryList.ElementAt(i - 1).TournamentName)
                     {
                         bool add = true;
                         foreach (var item in HistoricalStandingsDataList)
                         {
-                            if (item.Title.ToUpper() == _historicalStandingsListContent.ElementAt(i).TournamentName.ToUpper()) add = false;
+                            if (item.Title.ToUpper() == QueryList.ElementAt(i).TournamentName.ToUpper()) add = false;
                         }
-                        if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = _historicalStandingsListContent.ElementAt(i).TournamentName });
+                        if (add) HistoricalStandingsDataList.Add(new HistoricalStandingTitleModel { Title = QueryList.ElementAt(i).TournamentName });
                     }
                 }
                 ShowListView = !_showListView;
@@ -137,7 +153,7 @@ namespace FodboldApp.ViewModel
             set
             {
                 _tournamentLabelName = value;
-                HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(HistoricalStandingsListContent.ToList().Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year)).AsQueryable();
+                HistoricalStandingsListContent = new ObservableCollection<HistoricalStandingModel>(QueryList.ToList().Where(x => x.TournamentName.ToUpper().Equals(_tournamentLabelName.ToUpper())).OrderByDescending(x => x.Year));
                 OnPropertyChanged(nameof(TournamentLabelName));
             }
         }
@@ -169,8 +185,7 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("historicalStandings");
-
-            HistoricalStandingsListContent = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
+            QueryList = _realm.All<HistoricalStandingModel>().OrderBy(x => x.TournamentName);
         }
 
         public HistoricalStandingVM()

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -26,8 +27,21 @@ namespace FodboldApp.ViewModel
 
         public ICommand PlayerDescriptionCommand { get; private set; }
 
-        private IQueryable<OverFiftyGoalsModel> _playersList { get; set; }
-        public IQueryable<OverFiftyGoalsModel> PlayersList
+        private IQueryable<OverFiftyGoalsModel> _queryList { get; set; }
+        public IQueryable<OverFiftyGoalsModel> QueryList
+        {
+            get
+            {
+                return _queryList;
+            }
+            set
+            {
+                _queryList = value;
+                OnPropertyChanged(nameof(QueryList));
+            }
+        }
+        private ObservableCollection<OverFiftyGoalsModel> _playersList { get; set; }
+        public ObservableCollection<OverFiftyGoalsModel> PlayersList
         {
             get
             {
@@ -36,18 +50,6 @@ namespace FodboldApp.ViewModel
             set
             {
                 _playersList = value;
-
-                if (_playersList.Count() > 0)
-                {
-                    _realm.Write(() =>
-                    {
-                        int i = 0;
-                        foreach (OverFiftyGoalsModel item in PlayersList)
-                        {
-                            item.Index = i++;
-                        }
-                    });
-                }
                 OnPropertyChanged(nameof(PlayersList));
             }
         }
@@ -55,7 +57,7 @@ namespace FodboldApp.ViewModel
         public async void SetupRealm()
         {
             _realm = await NoInternetVM.IsConnectedOnMainPage("overfiftygoals");
-            PlayersList = _realm.All<OverFiftyGoalsModel>().OrderByDescending(x => x.Goals);
+            QueryList = _realm.All<OverFiftyGoalsModel>().OrderByDescending(x => x.Goals);
         }
 
         async void Player_OnTapped()
@@ -69,9 +71,35 @@ namespace FodboldApp.ViewModel
                 ViewModelLocator.HeaderVM.UpdateContent();
             }
         }
+
+        //used to avoid bug on initial realm setup
+        private async void CheckForUpdate()
+        {
+            int oldCount = 0;
+            while (true)
+            {
+                if (QueryList != null && QueryList.Count() != oldCount)
+                {
+                    oldCount = QueryList.Count();
+                    _realm.Write(() =>
+                    {
+                        PlayersList = new ObservableCollection<OverFiftyGoalsModel>(QueryList.ToList());
+                        int i = 0;
+                        foreach (OverFiftyGoalsModel item in PlayersList)
+                        {
+                            item.Index = i++;
+                        }
+                        OnPropertyChanged(nameof(PlayersList));
+                    });
+                }
+                await Task.Delay(500);
+            }
+        }
+
         public OverFiftyGoalsVM()
         {
             SetupRealm();
+            CheckForUpdate();
             PlayerDescriptionCommand = new Command(Player_OnTapped);
         }
 
