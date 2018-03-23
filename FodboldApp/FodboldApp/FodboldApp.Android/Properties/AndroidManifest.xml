@@ -10,6 +10,9 @@
 	<uses-permission android:name="com.fifium.FodboldApp.permission.C2D_MESSAGE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+	<uses-permission android:name="android.permission.DELETE_PACKAGES" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
 	<permission android:name="com.fifium.FodboldApp.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 	<application android:label="FodboldApp.Android">
 		<receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">

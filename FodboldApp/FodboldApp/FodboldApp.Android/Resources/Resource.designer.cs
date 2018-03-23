@@ -739,13 +739,7 @@ namespace FodboldApp.Droid
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.abc_textfield_search_material = global::FodboldApp.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.abc_vector_test = global::FodboldApp.Droid.Resource.Drawable.abc_vector_test;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password_1 = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password_1;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password_2 = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password_2;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password_3 = global::FodboldApp.Droid.Resource.Drawable.avd_hide_password_3;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password = global::FodboldApp.Droid.Resource.Drawable.avd_show_password;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password_1 = global::FodboldApp.Droid.Resource.Drawable.avd_show_password_1;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password_2 = global::FodboldApp.Droid.Resource.Drawable.avd_show_password_2;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password_3 = global::FodboldApp.Droid.Resource.Drawable.avd_show_password_3;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.design_bottom_navigation_item_background = global::FodboldApp.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.design_fab_background = global::FodboldApp.Droid.Resource.Drawable.design_fab_background;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.design_ic_visibility = global::FodboldApp.Droid.Resource.Drawable.design_ic_visibility;
@@ -4679,26 +4673,8 @@ namespace FodboldApp.Droid
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f020163
-			public const int avd_hide_password_1 = 2130837859;
-			
-			// aapt resource value: 0x7f020164
-			public const int avd_hide_password_2 = 2130837860;
-			
-			// aapt resource value: 0x7f020165
-			public const int avd_hide_password_3 = 2130837861;
-			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
-			
-			// aapt resource value: 0x7f020166
-			public const int avd_show_password_1 = 2130837862;
-			
-			// aapt resource value: 0x7f020167
-			public const int avd_show_password_2 = 2130837863;
-			
-			// aapt resource value: 0x7f020168
-			public const int avd_show_password_3 = 2130837864;
 			
 			// aapt resource value: 0x7f020057
 			public const int backbutton = 2130837591;
