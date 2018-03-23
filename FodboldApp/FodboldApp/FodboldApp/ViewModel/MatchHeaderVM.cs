@@ -106,6 +106,8 @@ namespace FodboldApp.ViewModel
             set
             {
                 _headerMatch = value;
+                Id = HeaderMatch.Id;
+                OneSignal.Current.GetTags(InitBellColor);
                 OnPropertyChanged(nameof(HeaderMatch));
                 OnPropertyChanged(nameof(Teams));
                 OnPropertyChanged(nameof(DateTime));
@@ -167,11 +169,14 @@ namespace FodboldApp.ViewModel
                 if (FutureMatchList != null && FutureMatchList.Count() != oldCount)
                 {
                     oldCount = FutureMatchList.Count();
-                    _realm.Write(() =>
+                    if (!HeaderMatch.Equals(FutureMatchList.First()))
                     {
-                        int i = 0;
-                        HeaderMatch = FutureMatchList.First();
-                    });
+                        _realm.Write(() =>
+                        {
+                            int i = 0;
+                            HeaderMatch = FutureMatchList.First();
+                        });
+                    }
                 }
                 await Task.Delay(500);
             }
@@ -181,7 +186,6 @@ namespace FodboldApp.ViewModel
         {
             SetupRealm();
             SubscribeToNotifications = new Command(SubscribeToMatch);
-            OneSignal.Current.GetTags(InitBellColor);
             CheckForUpdate();
         }
     }
